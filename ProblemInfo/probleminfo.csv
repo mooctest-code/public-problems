@@ -1,0 +1,148 @@
+题目名称,难度,简单题目描述,知识点,题目来源,包名,是否上传,题目链接
+Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,null
+读取和输出一个数据,1,基本数据类型的读取和输出,输入输出-标准流|类型转换-基本数据类型,谢子聪,1_BasicType,1,null
+读取和输出几个数据,1,一行中多个数据的读取和输出,输入输出-标准流|类型转换-基本数据类型|字符串-格式化-%和format()|字符串-内置函数-split(),谢子聪,2_SomeData,1,null
+读取和输出一个数组,2,一行数组的读取和输出,输入输出-标准流|函数-参数传递|生成-列表生成式|高阶函数-map()|字符串-内置函数-join(),谢子聪,3_DataList,1,null
+读取和输出多行数据,2,多行数据的读取和输出,输入输出-标准流|流程控制-循环|流程控制-异常,谢子聪,4_MultiLine,1,null
+读取和输出多行多列数据,3,矩阵和不定长数组的读取和输出,输入输出-标准流|流程控制-循环|高阶函数-map()|流程控制-异常|数学运算-sum(),谢子聪,5_Matrix,1,null
+读取和输出Python格式的数据,1,Python数据类型数据的读取和输出,输入输出-标准流|编译执行-eval(),谢子聪,6_PythonIO,1,null
+无重复三位数,1,从四个数字选三个进行全排列,流程控制-循环|itertools-permutations,RUNOOB,1_NoDupThree,1,null
+企业奖金发放,1,给定企业月利润，根据规则计算奖金,流程控制-条件判断,RUNOOB,2_EnterpriseBonuses,1,null
+完全平方数,3,一个整数加上某个数后是完全平方数，再加上一个数后还是安全平方数，求这个数,数学,RUNOOB,3_PerfectSquareNum,1,null
+判断天数,2,计算日期是该年的第几天,流程控制-条件判断|流程控制-循环,RUNOOB,4_JudgeDayNum,1,null
+简单排序,1,给三个数排序,流程控制-条件判断,RUNOOB,5_SimpleSort,1,null
+斐波那契数列,1,求第k个斐波那契数,数学-常见数列-斐波那契,RUNOOB,6_Fibonacci,1,null
+列表复制,1,深拷贝列表,列表-内置函数-copy()|列表-运算符-[],RUNOOB,7_ListCopy,1,null
+乘法口诀表,2,输出乘法口诀表,流程控制-循环|迭代-可迭代对象-range()|字符串-格式化,RUNOOB,8_Mulyiplication,1,null
+兔子繁殖,2,n个月后有多少只兔子？,数学-常见数列-斐波那契,RUNOOB,11_RabbitReprod,1,null
+素数判断,2,判断一个数是否是素数,math,RUNOOB,12_JudgePrime,1,null
+水仙花数,2,输出水仙花数（各位数字立方和等于该数本身的数）,流程控制-循环|数值计算-运算符,RUNOOB,13_Narcissus,1,null
+比赛名单,3,已知一些比赛信息，找出比赛的名单,数学-其它,RUNOOB,22_CompetitionList,1,null
+打印菱形,2,打印出一个菱形,字符串-格式化|字符串-运算符,RUNOOB,23_PrintDiamond,1,null
+递推年龄,1,使用递归的思想求出年龄,函数-递归,RUNOOB,28_RecurrenceAge,1,null
+打印每位数,2,打印一个整数的每一位,数值计算-运算符,RUNOOB,29_PrintEachNum,1,null
+星期几,2,输入星期的英文表示的前几个字母，判断出是星期几,字符串-运算符|字符串-内置函数|流程控制-条件判断,RUNOOB,31_WhatDayIsIt,1,null
+矩阵对角线和,2,计算矩阵（二维列表）的主对角线和,列表-嵌套,RUNOOB,38_DiagonalSum,1,null
+矩阵相加,2,两个矩阵对应位置元素相加,列表-嵌套,RUNOOB,44_MatrixAddition,1,null
+lambda函数,2,创建lambda匿名函数,高阶函数-lambda,RUNOOB,49_LambdaFunc,1,null
+创建随机数,1,使用random模块生成随机数,random-uniform()|random-seed(),RUNOOB,50_RandomUniform,1,null
+简单位运算,1,一些基本的位运算,数值计算-运算符-位运算,RUNOOB,51_52_53_55_SimpleBit,1,null
+整数取位,3,取一个整数的二进制表示的某几位,数值计算-运算符-位运算|类型转换-进制转换,RUNOOB,54_IntegerBits,1,null
+杨辉三角,3,输出前n行的杨辉三角,字符串-格式化|生成-生成器|流程控制-循环,RUNOOB,61_YangHuiTriangle,1,null
+最大最小值交换,2,交换列表中最大值和最小值的位置,列表-内置函数|高阶函数-map(),RUNOOB,67_SwapMinMax,1,null
+年龄最大者,2,从用户字典中找出年龄最大者,字典-遍历|字典-运算符,RUNOOB,78_OldestPerson,1,null
+几个九,2,给定一个数字，问多少个9组成的数字能够被整除,数值计算-运算符-整数运算,RUNOOB,85_NumberofNine,1,null
+回文数,1,判断数字是否为回文数,数学运算-abs()|类型转换-基本数据类型,MOOCTEST,1_Plalindrome,1,null
+多项式乘法,3,多项式相乘,列表-遍历|NumPy,MOOCTEST,3_PolynomialMultiplication,1,null
+统计数字次数,2,统计一串数字中每个数字的出现次数,字符串-内置函数-count()|collections-Counter,MOOCTEST,4_Num-str-statistic,1,null
+水果出售记录,3,帮店老板统计每个水果卖出了多少,collections-Counter|列表-内置函数-sort()|functools-cmp_to_key,MOOCTEST,5_Fruit-sold-times,1,null
+*英文文本读取,2,统计英文文本中出现次数最多的英文字母,输入输出-文件|collections-Counter|字符串-内置函数|os-path,MOOCTEST,7_ReadENGText,1,null
+*中文文本读取,3,统计一个文本中出现次数最多的中文字符,输入输出-文件|collections-Counter|字符串-内置函数|os-path|字符串-字符编码,MOOCTEST,8_ReadCHNText,1,null
+字符串倒置,1,将一个字符串倒置输出,字符串-运算符,MOOCTEST,9_ReverseStr,1,null
+大小写转换,1,转换一个字符串中每个字符的大小写,字符串-内置函数-swapcase(),MOOCTEST,10_Capslock,1,null
+试一试map()函数,2,使用 map() 函数对列表进行操作,高阶函数-map(),MOOCTEST,11_TryMapFunc,1,null
+试一试reduce()函数,2,使用 reduce() 函数计算一个列表的“和”,functools-reduce|高阶函数-lambda,MOOCTEST,12_Reduce,1,null
+求集合的子集,2,判断一个集合是否为另一个集合的子集,集合-内置函数-is?(),MOOCTEST,13_GetSubset,1,null
+求集合的交集,2,求两个集合的交集,集合-内置函数-交差并,MOOCTEST,14_GetIntersection,1,null
+求集合的并集,2,求两个集合的并集,集合-内置函数-交差并,MOOCTEST,15_GetUnion,1,null
+求集合的差集,2,求两个集合的差集,集合-内置函数-交差并,MOOCTEST,16_GetSubtract,1,null
+试一试自定义类,2,设计一个学生类并实现打印方法,内置类属性-__print__,MOOCTEST,17_CustomizedClass,1,null
+试一试列表生成器,1,给定一个范围，输出每个数的平方,生成-列表生成式,MOOCTEST,18_ListGenerator,1,null
+进制转换,2,将八进制数转为十进制,数值计算-运算符,MOOCTEST,19_Conversion,1,null
+排序,1,给一个列表排序,高阶函数-sorted()|排序|列表-内置函数-sort(),MOOCTEST,20_Sort,1,null
+百钱买百鸡,2,给你一百元买一百只鸡，有多少种买法？,数学|数值计算-运算符,MOOCTEST,21_Dollars2Chickens,1,null
+砝码问题,3,至少需要多少个砝码才能称出1到n克重的物品？,数学|数值计算-运算符,MOOCTEST,22_Weight,1,null
+奇数的个数,3,求使用 0~n 所能组成的奇数的个数,数学,MOOCTEST,23_OddNum,1,null
+桃子问题,2,有一些猴子分桃子，求原来最少有多少个桃子,数学,MOOCTEST,24_Peach,1,null
+青蛙跳台阶,2,一只青蛙跳上n级台阶有多少种方法？,动态规划-线性动规,MOOCTEST,25_FrogSteps,1,null
+逆解最大公约数与最小公倍数,3,给你一个最大公约数和最小公倍数，要你求一组数,数学,MOOCTEST,26_InverseGCD&LCM,1,null
+欧拉数,3,输出与n互质的小于n的正整数个数,数学,MOOCTEST,28_Euler,1,null
+丑数,4,丑数是指只包含因子2、3和5的数，求第n个丑数,队列-优先队列|集合-内置函数,MOOCTEST,29_UglyNum,1,null
+计算糖果,1,已知一些条件，计算三个人每个人手里的糖果数,数值计算-运算符,MOOCTEST,30_Candy,1,null
+组合数的奇偶性,2,求组合数的奇偶性,数学-组合数学,MOOCTEST,34_ParityCombination,1,null
+因子平方和,4,求前n个数的每个数的因子平方和的和,数学-其它,MOOCTEST,36_SumSquareFactor,1,null
+分拆素数和,3,将一个偶数分拆成两个素数的不同方法,数学-常见数列-素数,MOOCTEST,37_SplitPrimes,1,null
+特殊的倍数,3,求一个数的仅有0和1构成的倍数,类型转换-进制转换,MOOCTEST,38_SpecMultiple,1,null
+阶乘除法,4,给你一个数 k，求满足 k=n!/m! 的 n 和 m,数学,MOOCTEST,39_FractorialDivision,1,null
+全排列序列,2,求出n个数的全排列中的第k个排列,itertools-permutations,MOOCTEST,40_FullyArrangedSeries,1,null
+整数表示,3,将一个整数用内存中存储方式表示,数值计算-运算符|字符串-格式化|类型转换-进制转换,MOOCTEST,42_PresentInteger,1,null
+特殊的9位数,3,给定位数n，求满足一定条件的n位数,图算法-搜索-深度优先|函数-递归,MOOCTEST,43_Spec9-digitNumber,1,null
+变态超级楼梯,2,你可以任意走上n级台阶，求走上n级台阶的不同走法,数学-其它,MOOCTEST,44_SuperStairs,1,null
+选猴王,2,一群猴子做成一圈按照一定方法选择猴王,数学-数学问题-约瑟夫环,MOOCTEST,46_SelectMonkeyKing,1,null
+求中位数,1,求一个列表的中位数,数学-其它,MOOCTEST,48_Median,1,null
+最大公约数,1,求两个数的最大公约数,数学-其它,MOOCTEST,49_GCD,1,null
+最小公倍数,1,求两个数的最小公倍数,数学-其它,MOOCTEST,50_LCM,1,null
+光棍的悲伤,2,求一个整数的二进制表示中1的个数,类型转换-进制转换|字符串-内置函数-count(),MOOCTEST,51_BachelorSorrow,1,null
+统计单词,3,统计一个字符串中每个单词出现的次数并降序输出,排序|collections-Counter|列表-内置函数-sort(),MOOCTEST,53_StrWordCount,1,null
+函数递归,1,按题目中的递归公式求函数值,函数-递归,MOOCTEST,54_FuncRecursive,1,null
+数字组成,3,给你一个整数数列，求能够组成不同两位数的个数,数学-组合数学,MOOCTEST,59_NumComposition,1,null
+统计得分,2,根据一定规则统计字符得分,流程控制-循环,MOOCTEST,60_PointsStatistics,1,null
+闰年判断,1,判断一个年份是否为闰年,流程控制-条件判断,MOOCTEST,61_JudgeLeapYear,1,null
+统计字符出现次数,3,统计每个字符的出现次数并降序输出,字符串-内置函数-count()|collections-Counter|functools,MOOCTEST,62_WordCount,1,null
+两两相加,2,判断一个整数列表中两数相加为特定值的个数,列表-遍历,MOOCTEST,63_Add,1,null
+统计元素出现次数,2,使用 random 生成随机数列并统计每个数的出现次数,random-seed()|random-randint()|collections-Counter,MOOCTEST,67_ElementsCount,1,null
+默尼森数,3,满足 M=2^p-1 的素数 M,数学-常见数列,MOOCTEST,68_MonisenNum,1,null
+交换key-value,3,将key作为value、将value作为key创建新字典,字典|高阶函数-sorted(),MOOCTEST,69_Exchangekey-value,1,null
+咖啡名称提取,2,从字符串中提取英文字符,字符串-内置函数-is?(),MOOCTEST,70_GetCoffeeName,1,null
+求方程的结果,1,计算方差的y值,数值计算-运算符,MOOCTEST,71_TheResultEquation,1,null
+整数简单四则运算,1,简单的四则运算,数值计算-运算符,MOOCTEST,72_SimpleArithmetic,1,null
+求长方体体积,1,给你长宽高，求长方体的体积,数值计算-运算符,MOOCTEST,73_CuboidVolume,1,null
+整数分解,1,将一个9位整数以3位为一组分隔开,字符串-运算符,MOOCTEST,74_IntegerDecomposition,1,null
+调用库函数求最小公倍数,1,调用 math 库函数求最小公倍数,math-gcd(),MOOCTEST,75_LeastCommonMultiple,1,null
+华氏摄氏温度转换,1,将华氏温度转为摄氏温度,数值计算-运算符,MOOCTEST,76_TemperatureConversion,1,null
+求其它除法的余数,3,求一个其它除以某个数的余数,数学-其它|字符串-运算符,MOOCTEST,77_LargeNumberDivisionRemainder,1,null
+字符串排序,2,将字符串分隔开并进行排序,字符串-内置函数|列表-内置函数-sort(),MOOCTEST,78_SortingStrings,1,null
+列表元素处理,2,对列表进行一些处理,列表-运算符|高阶函数-filter(),MOOCTEST,79_ListElementProcessing,1,null
+找子串,3,统计一个字符串在另一个字符串中的出现次数,字符串-内置函数-find(),MOOCTEST,80_FindSubstrings,1,null
+回文串判断,1,判断一个字符串是否为回文串,字符串-运算符,MOOCTEST,82_Palindrome,1,null
+求三角形的面积,2,求三角形的面积，考虑不成立的情况,数值计算-运算符|流程控制-条件判断,MOOCTEST,83_AreaTriangle,1,null
+计算BMI值,1,根据BMI表格判断一个人的健康情况,流程控制-循环|流程控制-条件判断,MOOCTEST,84_BMI,1,null
+计算方程的根,2,给定二元一次方程的三个参数，求根,数学-数学问题,MOOCTEST,85_TheRootOfEquation,1,null
+日期格式转换,2,给你年月日，按照一定格式输出,字符串-格式化-填充与对齐,MOOCTEST,87_DateFormatConversion,1,null
+个税计算,1,根据个税表格计算月收入应缴税,流程控制-循环,MOOCTEST,88_TaxCalculation,1,null
+累加,1,计算1~n的累加和,数学-其它,MOOCTEST,89_Accumulate,1,null
+累乘,1,计算 n!,数学-其它,MOOCTEST,90_Multiplication,1,null
+成绩等级判断,2,根据方案对成绩进行分级,字符串-字符编码-编码解码|流程控制-条件判断,MOOCTEST,91_GradeLevel,1,null
+判断字符串特征,2,判断字符串是否满足首字母大写，其余小写,字符串-内置函数,MOOCTEST,92_StringCharacteristics,1,null
+批量修改字符串,2,按照一定格式格式化字符串,字符串-格式化,MOOCTEST,93_ModifyString,1,null
+凯撒加密,3,给出经凯撒加密后的密文，求原文,字符串-字符编码-编码解码,MOOCTEST,95_CaesarEncryption,1,null
+角谷猜想,2,输出角谷猜想的演算过程,字符串-格式化|数学-数学问题,MOOCTEST,96_KakuguConjecture,1,null
+排队,3,n个人排队，给出所有可能队形的数量,数学-数学问题,MOOCTEST,97_Queue,1,null
+求π的值,2,根据莱布尼茨级数公式求π的近似值,数学-数学问题,MOOCTEST,100_FindPI,1,null
+计算各位数字和的特征,2,计算1到n之间有多少个数其各位数之和能被5整除,数值计算-运算符,MOOCTEST,103_SumEachNum,1,null
+爱因斯坦台阶问题,1,一道很简单的数(xun)学(huan)题,流程控制-循环,MOOCTEST,105_EinsteinStairs,1,null
+分数序列求和,2,计算一个分数数列的前n项和,数学-常见数列,MOOCTEST,106_FractionalSummation,1,null
+一元人民币兑换方案,2,统计一元人民币换成一分、两分和五分的所有兑换方案个数,数值计算-运算符|流程控制-循环,MOOCTEST,108_RMB,1,null
+数值计算,1,一些简单的数值计算,数值计算-运算符,Python快速入门-刘锦涛,1_num,1,null
+文本计算,2,一些简单的文本操作,字符串-运算符,Python快速入门-刘锦涛,2_str,1,null
+其它运算,2,一些简单的其它运算,数值计算-运算符,Python快速入门-刘锦涛,3_logic,1,null
+运动会报名册,1,一些简单的列表操作,列表-运算符,Python快速入门-刘锦涛,4_register,1,null
+运动会成绩单1,1,将运动成绩信息组成元组,元组,Python快速入门-刘锦涛,5_sport1,1,null
+运动会成绩单2,1,将运动成绩信息组成元组列表,元组|列表-嵌套,Python快速入门-刘锦涛,6_sport2,1,null
+考试成绩单,1,将运动成绩信息组成字典,字典,Python快速入门-刘锦涛,7_exam,1,null
+面向对象,3,实现一个成绩单对象，以及一个成员函数输出大于80分的同学名字,类和实例,Python快速入门-刘锦涛,9_oo,1,null
+自定义对象之迭代器,2,使用迭代器实现对学生成绩单的遍历,迭代-迭代器,Python快速入门-刘锦涛,10_iter,1,null
+自定义对象之生成器,2,使用生成器实现课程的分配,生成-生成器,Python快速入门-刘锦涛,11_gen,1,null
+构建数组,2,学习使用 NumPy 各种构造数组的方式,NumPy,NumPy基础-刘锦涛,1_ndarray,1,null
+算术运算,2,学习 NumPy 的基本算术运算,NumPy,NumPy基础-刘锦涛,2_operation,1,null
+切片和遍历,1,学习 NumPy 基本的数组访问方式,NumPy,NumPy基础-刘锦涛,3_slice,1,null
+形状操作,3,学习 NumPy 各种对数组的形状操作,NumPy,NumPy基础-刘锦涛,4_shape,1,null
+友善的索引,2,学习 NumPy 的各种索引方式,NumPy,NumPy基础-刘锦涛,5_index,1,null
+线代不怕啦,3,学习 NumPy 内置的一些线性代数函数,NumPy,NumPy基础-刘锦涛,6_linear,1,null
+数据读取,1,学习 Pandas 基本的数据读取方式,Pandas,Pandas基础-刘锦涛,1_readdata,1,null
+数据切片,2,学习 Pandas 基本的数据切片方式,Pandas,Pandas基础-刘锦涛,2_slice,1,null
+数据聚合,2,学习 Pandas 基本的数据聚合方式,Pandas,Pandas基础-刘锦涛,3_groupby,1,null
+数据删除,2,学习 Pandas 如何删除特定的数据,Pandas,Pandas基础-刘锦涛,4_drop,1,null
+处理字符串,2,学习 Pandas 如何处理字符串,Pandas,Pandas基础-刘锦涛,5_string,1,null
+数据清洗,2,学习 Pandas 如何处理无效的数据,Pandas,Pandas基础-刘锦涛,6_clean,1,null
+格式转换,2,学习 Pandas 如何转换数据的格式,Pandas,Pandas基础-刘锦涛,7_convert,1,null
+冒泡排序,2,实现冒泡排序,排序-交换排序,排序算法,1_Bubble,0,null
+选择排序,2,实现选择排序,排序-选择排序,排序算法,2_Selection,0,null
+插入排序,2,实现插入排序,排序-插入排序,排序算法,3_Insertion,0,null
+计数排序,2,实现计数排序,排序-非比较排序,排序算法,4_Counting,0,null
+桶排序,2,实现桶排序,排序-非比较排序,排序算法,5_Bucket,0,null
+基数排序,2,实现基数排序,排序-非比较排序,排序算法,6_Radix,0,null
+希尔排序,3,实现希尔排序,排序-插入排序,排序算法,7_Shell,0,null
+归并排序,3,实现归并排序,排序-归并排序,排序算法,8_Merge,0,null
+快速排序,3,实现快速排序,排序-交换排序,排序算法,9_Quick,0,null
+堆排序,3,实现堆排序,排序-选择排序,排序算法,10_Heap,0,null
