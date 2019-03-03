@@ -1,7 +1,8 @@
 import json
+from os import path
 
-problem_path = './probleminfo.csv'
-tree_path = './python_learning_tree.km'
+problem_path = 'probleminfo.csv'
+tree_path = 'python_learning_tree.km'
 
 points = {}
 with open(problem_path, 'r', encoding="utf-8") as f:
@@ -68,5 +69,5 @@ with open(tree_path, 'r', encoding="utf-8") as f:
 print('Not in Tree:')
 print(set(points.keys()) - is_on_tree)
 
-with open('./python_learning_tree.json', 'w', encoding='utf-8') as f:
+with open('python_learning_tree.json', 'w', encoding='utf-8') as f:
     json.dump(tree, f, ensure_ascii=False)

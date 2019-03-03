@@ -2,9 +2,9 @@
 
 ## 当前情况
 
-您可以通过 [题目信息表格](ProblemInfo/probleminfo.csv) 和 [Python 学习路线图](www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
+您可以通过 [题目信息表格](res/probleminfo.csv) 和 [Python 学习路线图](http://www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
 
-您可以在 http://code.mooctest.net 上找到题目。
+您可以在 [code.mooctest.net](http://code.mooctest.net) 上找到题目。
 
 ## 参与进来
 
@@ -18,7 +18,7 @@
 
 该路线图目前为个人整理，肯定有遗漏、不合理和错误的分支，欢迎提出来。
 
-源文件为 [Python_learning_tree.km](python_learning_tree.km)。
+源文件为 [python_learning_tree.km](res/python_learning_tree.km)。
 
 ### 3. 改进题目信息表格
 
