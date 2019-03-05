@@ -1,0 +1,26 @@
+[
+    {
+        "input": "1996",
+        "output": "True\n"
+    },
+    {
+        "input": "2000",
+        "output": "True\n"
+    },
+    {
+        "input": "2100",
+        "output": "False\n"
+    },
+    {
+        "input": "3478",
+        "output": "False\n"
+    },
+    {
+        "input": "2019",
+        "output": "False\n"
+    },
+    {
+        "input": "2003",
+        "output": "False\n"
+    }
+]

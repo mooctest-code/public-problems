@@ -1,0 +1,29 @@
+{
+    "title": "\u8f93\u51fa\u661f\u671f\u51e0",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u661f\u671f\u4e00\u5230\u661f\u671f\u65e5\u7684\u82f1\u6587\u4e3aMonday\u3001Tuesday\u3001Wednesday\u3001Thursday\u3001Friday\u3001Saturday\u548cSunday\uff0c\u7f16\u5199\u7a0b\u5e8f\u5b9e\u73b0\u8f93\u5165\u6570\u5b57n\uff081~7\u4e4b\u95f4\uff09\u8f93\u51fa\u5bf9\u5e94\u661f\u671f\u51e0\u7684\u82f1\u6587\uff0c\u7a0b\u5e8f\u65e0\u9700\u8003\u8651\u8f93\u5165\u6570\u5b57\u5f02\u5e38\u7684\u60c5\u51b5\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6570\u5b57\u8868\u793a\u4e00\u4e2a\u661f\u671f\u7684\u7b2c n \u5929\uff0c\u5047\u8bbe\u6bcf\u5468\u7684\u7b2c\u4e00\u5929\u662f\u661f\u671f\u4e00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8fd9\u4e00\u5929\u7684\u82f1\u6587\u540d\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nTuesday\n```\n",
+    "templateCode": "",
+    "sourceCode": "a = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']\n\nprint(a[int(input())-1])",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1",
+            "output": "Monday\n"
+        },
+        {
+            "input": "3",
+            "output": "Wednesday\n"
+        },
+        {
+            "input": "4",
+            "output": "Thursday\n"
+        },
+        {
+            "input": "6",
+            "output": "Saturday\n"
+        },
+        {
+            "input": "7",
+            "output": "Sunday\n"
+        }
+    ]
+}

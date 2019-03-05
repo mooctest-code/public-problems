@@ -1,0 +1,5 @@
+n = int(input())
+a = map(float, input().split())
+print(*map('{:.2f}'.format, a))
+b = map(int, input().split())
+print(*map(lambda x: x*2, b))

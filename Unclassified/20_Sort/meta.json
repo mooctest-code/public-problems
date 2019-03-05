@@ -1,0 +1,21 @@
+{
+    "title": "\u6392\u5e8f",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4e00\u4e2a\u6574\u6570\u5e8f\u5217\u6392\u5e8f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u4e3a\u4e00\u4e2a\u6574\u6570 n \u8868\u793a\u6570\u7ec4\u7684\u957f\u5ea6\n\n\u7b2c\u4e8c\u884c\u4e3a n \u4e2a\u6574\u6570\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u4e00\u4e2a\u7a7a\u683c\u9694\u5f00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e00\u884c\u4e3a\u4ece\u5c0f\u5230\u5927\u7684\u6392\u5e8f\u7ed3\u679c\uff0c\u4e24\u4e24\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n3 1 2\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3\n1 2 3\n```\n\n\n",
+    "templateCode": "",
+    "sourceCode": "n = int(input())\nl = list(map(int, input().split()))\nl.sort()\nprint(' '.join(map(str, l)))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "13\n13 10 9 2 4 65 34 123 43 65 23 19 87",
+            "output": "2 4 9 10 13 19 23 34 43 65 65 87 123\n"
+        },
+        {
+            "input": "5\n5 17 8 12 1",
+            "output": "1 5 8 12 17\n"
+        },
+        {
+            "input": "9\n9 8 7 6 5 4 3 2 1",
+            "output": "1 2 3 4 5 6 7 8 9\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "input": "1\n",
+        "output": "True\n"
+    },
+    {
+        "input": "-1\n",
+        "output": "True\n"
+    },
+    {
+        "input": "-12\n",
+        "output": "False\n"
+    },
+    {
+        "input": "123321\n",
+        "output": "True\n"
+    }
+]

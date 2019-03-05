@@ -1,0 +1,25 @@
+{
+    "title": "\u7d2f\u4e58",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u6574\u6570 n\uff0c\u8ba1\u7b97 `1*2*...*n ` \u7684\u503c\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6574\u6570 n (0 < n < 10)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa n \u7684\u9636\u4e58\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n10\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3628800\n```\n",
+    "templateCode": "",
+    "sourceCode": "a = int(input())\n\nm = 1\nfor i in range(2, a+1):\n    m *= i\nprint(m)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2",
+            "output": "2\n"
+        },
+        {
+            "input": "4",
+            "output": "24\n"
+        },
+        {
+            "input": "7",
+            "output": "5040\n"
+        },
+        {
+            "input": "9",
+            "output": "362880\n"
+        }
+    ]
+}

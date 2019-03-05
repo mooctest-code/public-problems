@@ -1,0 +1,17 @@
+{
+    "title": "\u82f1\u6587\u6587\u672c\u8bfb\u53d6",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bf7\u4f7f\u7528 with \u5173\u952e\u5b57\u8bfb\u53d6\u82f1\u6587\u6587\u672c\u6587\u4ef6\uff0c\u7edf\u8ba1\u51fa\u51fa\u73b0\u6b21\u6570\u6700\u591a\u7684\u82f1\u6587\u5b57\u6bcd\uff08\u4e0d\u533a\u5206\u5927\u5c0f\u5199\uff09\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6587\u4ef6\u8def\u5f84\uff0c\u4f60\u9700\u8981\u8bfb\u53d6\u8be5\u6587\u4ef6\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u8be5\u6587\u4ef6\u4e2d\u51fa\u73b0\u6b21\u6570\u6700\u591a\u7684\u82f1\u6587\u5b57\u6bcd\uff08\u7528\u5927\u5199\u8868\u793a\uff09\uff0c\u6211\u4eec\u4fdd\u8bc1\u53ea\u6709\u4e00\u4e2a\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n./public/a.txt\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nA\n```\n",
+    "templateCode": "",
+    "sourceCode": "from collections import Counter\n\nfilePath = input()\ndirpath = __file__.split('/')[0:-1]\ndirpath.append(filePath)\nwith open('/'.join(dirpath), 'r') as f:\n    print(Counter(filter(str.isalpha, f.read().upper())).most_common(1)[0][0])\n    ",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "./public/distrub.txt",
+            "output": "A\n"
+        },
+        {
+            "input": "./public/biography.txt",
+            "output": "E\n"
+        }
+    ]
+}

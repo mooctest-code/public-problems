@@ -1,0 +1,14 @@
+[
+    {
+        "input": "C++ Go Java PHP Python C++ Go PHP Python Java",
+        "output": "C++ 2\nGo 2\nJava 2\nPHP 2\nPython 2\n"
+    },
+    {
+        "input": "def abc abb cde cde abc def abc",
+        "output": "abc 3\ncde 2\ndef 2\nabb 1\n"
+    },
+    {
+        "input": "b a b c d e f a b c d a b c a b a",
+        "output": "a 5\nb 5\nc 3\nd 2\ne 1\nf 1\n"
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "title": "Hello World!",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\nHello World!\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa `Hello World!`\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nHello World!\n```\n",
+    "templateCode": "",
+    "sourceCode": "print('Hello World!')",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None",
+            "output": "Hello World!\n"
+        }
+    ]
+}

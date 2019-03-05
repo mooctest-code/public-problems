@@ -1,0 +1,21 @@
+{
+    "title": "\u7edf\u8ba1\u5355\u8bcd",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7edf\u8ba1\u7ed9\u5b9a\u7684\u5b57\u7b26\u4e32\u4e2d\u5404\u4e2a\u5355\u8bcd\u51fa\u73b0\u7684\u6b21\u6570\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0c\u5b57\u7b26\u4e32\u4e2d\u53ea\u5305\u542b\u82f1\u6587\u5355\u8bcd\u548c\u7a7a\u683c\uff0c\u6ca1\u6709\u5176\u4ed6\u7279\u6b8a\u5b57\u7b26\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u5165\u591a\u884c\uff0c\u6bcf\u884c\u5206\u522b\u4e3a\u5355\u8bcd\u548c\u5176\u51fa\u73b0\u6b21\u6570\uff0c\u6309\u51fa\u73b0\u6b21\u6570\u4ece\u591a\u5230\u5c11\u8f93\u51fa\uff0c\u5982\u679c\u51fa\u73b0\u6b21\u6570\u4e00\u6837\uff0c\u5219\u6309\u5355\u8bcd\u5b57\u5178\u5e8f\u8f93\u51fa\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nC++ Go Python C++ Go Python Java\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nC++ 2\nGo 2\nPython 2\nJava 1\n```\n",
+    "templateCode": "",
+    "sourceCode": "from collections import Counter\nimport functools\n\ndef cmp(x, y):\n    if x[1] == y[1]:\n        return -1 if x[0] < y[0] else x[0] > y[0]\n    return -1 if x[1] > y[1] else x[1] < y[1]\n\nl = Counter(input().split()).most_common()\nl.sort(key=functools.cmp_to_key(cmp))\nfor i in l:\n    print('{} {}'.format(i[0], i[1]))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "C++ Go Java PHP Python C++ Go PHP Python Java",
+            "output": "C++ 2\nGo 2\nJava 2\nPHP 2\nPython 2\n"
+        },
+        {
+            "input": "def abc abb cde cde abc def abc",
+            "output": "abc 3\ncde 2\ndef 2\nabb 1\n"
+        },
+        {
+            "input": "b a b c d e f a b c d a b c a b a",
+            "output": "a 5\nb 5\nc 3\nd 2\ne 1\nf 1\n"
+        }
+    ]
+}

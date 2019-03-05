@@ -1,0 +1,26 @@
+[
+    {
+        "input": "10",
+        "output": "1\n"
+    },
+    {
+        "input": "100",
+        "output": "6\n"
+    },
+    {
+        "input": "432",
+        "output": "19\n"
+    },
+    {
+        "input": "2",
+        "output": "0\n"
+    },
+    {
+        "input": "4326",
+        "output": "124\n"
+    },
+    {
+        "input": "7434",
+        "output": "191\n"
+    }
+]

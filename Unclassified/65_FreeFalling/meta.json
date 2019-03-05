@@ -1,0 +1,25 @@
+{
+    "title": "\u81ea\u7531\u843d\u4f53",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e00\u7403\u4ece n \u7c73\u9ad8\u5ea6\u81ea\u7531\u843d\u4e0b\uff0c\u5047\u8bbe\u6bcf\u6b21\u843d\u5730\u540e\u53cd\u8df3\u56de\u539f\u9ad8\u5ea6\u7684\u4e00\u534a\uff1b\u518d\u843d\u4e0b\uff0c\u6c42\u5b83\u5728\u7b2c m \u6b21\u843d\u5730\u65f6\uff0c\u5171\u7ecf\u8fc7\u591a\u5c11\u7c73\uff1f\u7b2c m \u6b21\u53cd\u5f39\u591a\u9ad8\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u7403\u843d\u4e0b\u7684\u521d\u59cb\u9ad8\u5ea6 n \u548c\u7403\u7b2c m \u6b21\u843d\u5730\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e24\u4e2a\u503c\uff0c\u5206\u522b\u4e3a\u5176\u5728\u7b2c m \u6b21\u843d\u5730\u65f6\u5171\u7ecf\u8fc7\u7684\u8ddd\u79bb\u4ee5\u53ca\u5176\u7b2c m \u6b21\u53cd\u5f39\u7684\u9ad8\u5ea6\uff0c\u4e2d\u95f4\u7528\u4e00\u4e2a\u7a7a\u683c\u9694\u5f00\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n100 10\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n299.609 0.195\n```\n",
+    "templateCode": "",
+    "sourceCode": "n, m = map(int, input().split())\n\nd = n\nwhile m > 1:\n    d += n\n    n /= 2\n    m -= 1\n\nprint(d, n)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "100 10",
+            "output": "299.609375 0.1953125\n"
+        },
+        {
+            "input": "43278 8",
+            "output": "129157.78125 338.109375\n"
+        },
+        {
+            "input": "4324 8",
+            "output": "12904.4375 33.78125\n"
+        },
+        {
+            "input": "12345 6",
+            "output": "36263.4375 385.78125\n"
+        }
+    ]
+}

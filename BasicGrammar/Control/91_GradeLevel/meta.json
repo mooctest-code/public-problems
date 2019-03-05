@@ -1,0 +1,21 @@
+{
+    "title": "\u6210\u7ee9\u7b49\u7ea7\u5224\u65ad",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7f16\u5199\u7a0b\u5e8f\u8bfb\u53d6\u591a\u4e2a\u6210\u7ee9\uff0c\u7136\u540e\u6309\u7167\u5982\u4e0b\u65b9\u6848\u5bf9\u6210\u7ee9\u5206\u7ea7\uff1a\n\u82e5\u6210\u7ee9>=90, \u5219\u7ea7\u522b\u4e3aA\uff1b\n\u82e5\u6210\u7ee9>=80, \u5219\u7ea7\u522b\u4e3aB\uff1b\n\u82e5\u6210\u7ee9>=70, \u5219\u7ea7\u522b\u4e3aC\uff1b\n\u82e5\u6210\u7ee9>=60, \u5219\u7ea7\u522b\u4e3aD\uff1b\n\u5426\u5219\u6210\u7ee9\u4e3aF\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u662f\u4e00\u4e2a\u6210\u7ee9\u5217\u8868\uff0c\u6bcf\u4e00\u4e2a\u6210\u7ee9\u90fd\u5927\u4e8e0\u4e14\u5c0f\u4e8e\u7b49\u4e8e100\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u6210\u7ee9\u7ea7\u522b\u5217\u8868\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n[90, 85, 20]\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n['A', 'B', 'F']\n```\n",
+    "templateCode": "",
+    "sourceCode": "print([chr(ord('A')+((abs(100-i-1)//10) if i > 59 else 5)) for i in eval(input())])",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "[100, 54, 34, 84]",
+            "output": "['A', 'F', 'F', 'B']\n"
+        },
+        {
+            "input": "[42, 65, 61, 99]",
+            "output": "['F', 'D', 'D', 'A']\n"
+        },
+        {
+            "input": "[100, 90, 70, 74]",
+            "output": "['A', 'A', 'C', 'C']\n"
+        }
+    ]
+}

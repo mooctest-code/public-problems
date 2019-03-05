@@ -1,0 +1,14 @@
+[
+    {
+        "input": "Hello World\n12\n3.1415936",
+        "output": "Hello World\n12\n3.142\n"
+    },
+    {
+        "input": "Hello Python\n0\n0.123456",
+        "output": "Hello Python\n0\n0.123\n"
+    },
+    {
+        "input": "Hello Kitty\n-1\n11.111111",
+        "output": "Hello Kitty\n-1\n11.111\n"
+    }
+]

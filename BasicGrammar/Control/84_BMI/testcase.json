@@ -1,0 +1,18 @@
+[
+    {
+        "input": "60 160",
+        "output": "Your BMI is 23.4, normal\n"
+    },
+    {
+        "input": "40 170",
+        "output": "Your BMI is 13.8, too thin\n"
+    },
+    {
+        "input": "120 160",
+        "output": "Your BMI is 46.9, fat\n"
+    },
+    {
+        "input": "90 180",
+        "output": "Your BMI is 27.8, overweight\n"
+    }
+]

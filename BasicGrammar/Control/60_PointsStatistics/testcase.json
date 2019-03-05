@@ -1,0 +1,26 @@
+[
+    {
+        "input": "AAA",
+        "output": "6\n"
+    },
+    {
+        "input": "XAXA",
+        "output": "2\n"
+    },
+    {
+        "input": "AXXAAAAXXAXAXXXAXAXXXXAAAAXAXAAXAAAAXAXAXAXAXXXXAAA",
+        "output": "49\n"
+    },
+    {
+        "input": "AAAAXXXXXXXAAAAXXXXXAXAXAAAAXXXXAXAAAAXAXAXAXXXXXXXXXXXAAAAAAAXXXXXAAAAAAAAAAXA",
+        "output": "130\n"
+    },
+    {
+        "input": "AAAAAAXXXXXXAAAAAAAXXXXXXAAAAAAAXXXXAAAAAAAAAXXXXAAAAAAXXXXXXAAAXXAXAXAXAAAAX",
+        "output": "162\n"
+    },
+    {
+        "input": "AAXAXXXAXXXXXXXAAAAAAAAAAAAAAAAAXXXXXXAAAAAAAAXXXXXXXXAAAAAAA",
+        "output": "222\n"
+    }
+]

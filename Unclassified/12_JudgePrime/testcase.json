@@ -1,0 +1,26 @@
+[
+    {
+        "input": "2",
+        "output": "True\n"
+    },
+    {
+        "input": "1",
+        "output": "False\n"
+    },
+    {
+        "input": "7",
+        "output": "True\n"
+    },
+    {
+        "input": "12347",
+        "output": "True\n"
+    },
+    {
+        "input": "98765",
+        "output": "False\n"
+    },
+    {
+        "input": "98773",
+        "output": "True\n"
+    }
+]

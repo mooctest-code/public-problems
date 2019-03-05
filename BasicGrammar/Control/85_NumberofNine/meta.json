@@ -1,0 +1,25 @@
+{
+    "title": "\u51e0\u4e2a\u4e5d",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u5947\u6570\uff0c\u7136\u540e\u5224\u65ad\u6700\u5c11\u51e0\u4e2a 9 \u9664\u4e8e\u8be5\u6570\u7684\u7ed3\u679c\u4e3a\u6574\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5947\u6570\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u6700\u5c11\u51e0\u4e2a 9 \u53ef\u4ee5\u6574\u9664\u8fd9\u4e2a\u5947\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n13\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n6\n```\n\n### \u8bf4\u660e\n\n999999 / 13 = 76923\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM\n",
+    "templateCode": "",
+    "sourceCode": "a = int(input())\n\nn = 9\nwhile n % a != 0:\n    n = n * 10 + 9\n\nprint(len(str(n)))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "13",
+            "output": "6\n"
+        },
+        {
+            "input": "17",
+            "output": "16\n"
+        },
+        {
+            "input": "29",
+            "output": "28\n"
+        },
+        {
+            "input": "123",
+            "output": "5\n"
+        }
+    ]
+}

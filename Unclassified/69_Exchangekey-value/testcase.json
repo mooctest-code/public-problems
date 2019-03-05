@@ -1,0 +1,10 @@
+[
+    {
+        "input": "{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1005}",
+        "output": "{1001: 'Wangbing', 1003: 'Maling', 1005: 'Xulei'}\n"
+    },
+    {
+        "input": "{'Wangbing': 1001, 'Xulei': 1005, 'Maling': 1003}",
+        "output": "{1001: 'Wangbing', 1003: 'Maling', 1005: 'Xulei'}\n"
+    }
+]

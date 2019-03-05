@@ -1,0 +1,25 @@
+{
+    "title": "\u5206\u6570\u5e8f\u5217\u6c42\u548c",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u4e00\u5206\u6570\u5e8f\u5217\uff1a2/1, 3/2, 5/3, 8/5, 13/8, 21/13,\u2026\uff0c\u6c42\u8fd9\u4e2a\u6570\u5217\u7684\u524dn\u9879\u4e4b\u548c\u5e76\u8f93\u51fa\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u6570\u5217\u7684\u9879\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u8fd9\u4e2a\u6570\u5217\u7684\u524d n \u9879\u548c\uff0c\u7ed3\u679c\u4fdd\u7559\u4e24\u4f4d\u5c0f\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n10\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n16.48\n```\n",
+    "templateCode": "",
+    "sourceCode": "a = int(input())\n\nans = 0\nu = 2\nd = 1\nfor i in range(0, a):\n    ans += u / d\n    d, u = u, d + u\n\nprint('%.2f' % ans)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "8",
+            "output": "13.24\n"
+        },
+        {
+            "input": "13",
+            "output": "21.33\n"
+        },
+        {
+            "input": "15",
+            "output": "24.57\n"
+        },
+        {
+            "input": "5",
+            "output": "8.39\n"
+        }
+    ]
+}

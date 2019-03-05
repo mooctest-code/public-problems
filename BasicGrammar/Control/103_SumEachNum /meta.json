@@ -1,0 +1,21 @@
+{
+    "title": "\u8ba1\u7b97\u5404\u4f4d\u6570\u5b57\u548c\u7684\u7279\u5f81",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8ba1\u7b971\u5230n\u4e4b\u95f4\uff08\u5305\u62ecn\u5728\u5185\uff09\u6709\u591a\u5c11\u4e2a\u6570\u5176\u5404\u4f4d\u6570\u5b57\u548c\u80fd\u88ab5\u6574\u9664\uff0c\u8f93\u51fa\u4e2a\u6570\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6b63\u6574\u6570 n (1 < n < 1000)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u5176\u5404\u4f4d\u6570\u5b57\u548c\u80fd\u88ab5\u6574\u9664\u7684\u4e2a\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n100\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n19\n```\n",
+    "templateCode": "",
+    "sourceCode": "n = int(input())\n\ncnt = 0\nfor i in range(1, n+1):\n    x = i\n    s = 0\n    while x:\n        s += x % 10\n        x //= 10\n    if s % 5 == 0:\n        cnt += 1\n\nprint(cnt)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "80",
+            "output": "15\n"
+        },
+        {
+            "input": "120",
+            "output": "23\n"
+        },
+        {
+            "input": "400",
+            "output": "79\n"
+        }
+    ]
+}

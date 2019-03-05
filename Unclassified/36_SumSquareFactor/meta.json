@@ -1,0 +1,25 @@
+{
+    "title": "\u56e0\u5b50\u5e73\u65b9\u548c",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n6 \u7684\u56e0\u5b50\u6709 1, 2, 3 \u548c 6, \u5b83\u4eec\u7684\u5e73\u65b9\u548c\u662f 1 + 4 + 9 + 36 = 50\u3002\n\u5982\u679c f(N) \u4ee3\u8868\u6b63\u6574\u6570 N \u6240\u6709\u56e0\u5b50\u7684\u5e73\u65b9\u548c, \u90a3\u4e48 f(6) = 50\u3002\n\u73b0\u5728\u4ee4 F \u4ee3\u8868 f \u7684\u6c42\u548c\u51fd\u6570, \u4ea6\u5373 F(N) = f(1) + f(2) + .. + f(N), \u663e\u7136 F \u4e00\u5f00\u59cb\u7684 6 \u4e2a\u503c\u662f: 1, 6, 16, 37, 63 \u548c 113\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6574\u6570 N (0 < N < 10^3)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8bf7\u8f93\u51fa F(N) \u7684\u503c\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n6\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n113\n```\n",
+    "templateCode": "",
+    "sourceCode": "def sum(n): \n    return int(n*(n+1)*(2*n+1)/6)\n\nN = int(input())\n\nm = int(N**0.5) \ns = 0 \ni = 1\nwhile i <= N**(1/2.0): \n    s = s + i**2*(N//i) \n    if i**2 != N: \n        s = s + (sum(N//i) - sum(m)) \n    i = i + 1\n\nprint(s)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "6",
+            "output": "113\n"
+        },
+        {
+            "input": "20",
+            "output": "3475\n"
+        },
+        {
+            "input": "123",
+            "output": "753798\n"
+        },
+        {
+            "input": "654",
+            "output": "112373295\n"
+        }
+    ]
+}

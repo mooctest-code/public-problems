@@ -1,0 +1,1 @@
+print('%04d-%02d-%02d' %  tuple(map(int, input().split())))

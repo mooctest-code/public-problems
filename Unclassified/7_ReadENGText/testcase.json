@@ -1,0 +1,10 @@
+[
+    {
+        "input": "./public/distrub.txt",
+        "output": "A\n"
+    },
+    {
+        "input": "./public/biography.txt",
+        "output": "E\n"
+    }
+]

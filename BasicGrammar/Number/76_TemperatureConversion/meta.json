@@ -1,0 +1,21 @@
+{
+    "title": "\u534e\u6c0f\u6444\u6c0f\u6e29\u5ea6\u8f6c\u6362",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u534e\u6c0f\u6e29\u5ea6\uff08F\uff09\u8f6c\u6362\u4e3a\u6444\u6c0f\u6e29\u5ea6\uff08C\uff09\u7684\u516c\u5f0f\u4e3a\uff1aC=5/9*(F-32)\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u534e\u6c0f\u6e29\u5ea6\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u5bf9\u5e94\u7684\u6444\u6c0f\u6e29\u5ea6\uff0c\u4fdd\u7559\u4e24\u4f4d\u5c0f\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n32\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n0.0\n```\n",
+    "templateCode": "",
+    "sourceCode": "a = float(input())\n\nprint('{:.2f}'.format(5*(a-32)/9))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "33",
+            "output": "0.56\n"
+        },
+        {
+            "input": "45",
+            "output": "7.22\n"
+        },
+        {
+            "input": "123",
+            "output": "50.56\n"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "title": "\u65e0\u91cd\u590d\u4e09\u4f4d\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u56db\u4e2a\u6570\u5b57\uff0c\u80fd\u7ec4\u6210\u591a\u5c11\u4e2a\u4e92\u4e0d\u76f8\u540c\u4e14\u65e0\u91cd\u590d\u6570\u5b57\u7684\u4e09\u4f4d\u6570\uff1f\u8bf7\u4f60\u8f93\u51fa\u6bcf\u4e00\u4e2a\u4e09\u4f4d\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u884c\u56db\u4e2a\u6570\u5b57\uff0c\u6bcf\u4e2a\u6570\u5b57\u7684\u8303\u56f4\u5747\u662f 1 \\~ 9\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u7a7a\u683c\u9694\u5f00\uff0c\u4fdd\u8bc1\u6ca1\u6709\u91cd\u590d\u7684\u6570\u5b57\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8bf7\u4f60\u6309\u7167\u7ec4\u6210\u7684\u4e09\u4f4d\u6570\u7684\u5927\u5c0f\uff0c\u4ece\u5c0f\u5230\u5927\u8f93\u51fa\u6240\u6709\u7684\u4e09\u4f4d\u6570\uff0c\u6bcf\u4e2a\u5360\u4e00\u884c\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n1 2 3 4\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n123\n124\n132\n...\n431\n432\n```\n\n> \u8f93\u51fa\u6709\u70b9\u591a\uff0c\u8fd9\u91cc\u7528 `...` \u7701\u7565\u4e86\u4e00\u4e9b\uff0c\u4f60\u8981\u5168\u90e8\u8f93\u51fa\u3002\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "from itertools import permutations\n\na = map(int, input().split(' '))\nfor i in permutations(a, 3):\n    print('{}{}{}'.format(i[0], i[1], i[2]))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1 2 3 4",
+            "output": "123\n124\n132\n134\n142\n143\n213\n214\n231\n234\n241\n243\n312\n314\n321\n324\n341\n342\n412\n413\n421\n423\n431\n432\n"
+        },
+        {
+            "input": "9 8 7 6",
+            "output": "987\n986\n978\n976\n968\n967\n897\n896\n879\n876\n869\n867\n798\n796\n789\n786\n769\n768\n698\n697\n689\n687\n679\n678\n"
+        },
+        {
+            "input": "2 3 6 7",
+            "output": "236\n237\n263\n267\n273\n276\n326\n327\n362\n367\n372\n376\n623\n627\n632\n637\n672\n673\n723\n726\n732\n736\n762\n763\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "input": "32",
+        "output": "26\n"
+    },
+    {
+        "input": "45",
+        "output": "37\n"
+    },
+    {
+        "input": "324235123",
+        "output": "55654995\n"
+    },
+    {
+        "input": "3943256",
+        "output": "Invalid octal number!\n"
+    }
+]

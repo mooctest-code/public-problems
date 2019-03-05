@@ -1,0 +1,29 @@
+{
+    "title": "\u6c34\u4ed9\u82b1\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6253\u5370\u51fa\u6240\u6709\u7684\"\u6c34\u4ed9\u82b1\u6570\"\uff0c\u6240\u8c13\"\u6c34\u4ed9\u82b1\u6570\"\u662f\u6307\u4e00\u4e2a\u4e09\u4f4d\u6570\uff0c\u5176\u5404\u4f4d\u6570\u5b57\u7acb\u65b9\u548c\u7b49\u4e8e\u8be5\u6570\u672c\u8eab\u3002\u4f8b\u5982\uff1a153\u662f\u4e00\u4e2a\"\u6c34\u4ed9\u82b1\u6570\"\uff0c\u56e0\u4e3a153=1\u7684\u4e09\u6b21\u65b9\uff0b5\u7684\u4e09\u6b21\u65b9\uff0b3\u7684\u4e09\u6b21\u65b9\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u4e09\u4f4d\u6574\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u79bb n \u6700\u8fd1\u7684\u4e00\u4e2a\u6c34\u4ed9\u82b1\u6570\uff0c\u7ed3\u679c\u53ea\u6709\u4e00\u4e2a\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n372\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n371\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "nar = [153, 370, 371, 407]\na = int(input())\ndif = 999\nans = 0\nfor i in nar:\n    d = abs(a-i)\n    if d < dif:\n        dif = d\n        ans = i\nprint(ans)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "123",
+            "output": "153\n"
+        },
+        {
+            "input": "370",
+            "output": "370\n"
+        },
+        {
+            "input": "372",
+            "output": "371\n"
+        },
+        {
+            "input": "400",
+            "output": "407\n"
+        },
+        {
+            "input": "999",
+            "output": "407\n"
+        }
+    ]
+}

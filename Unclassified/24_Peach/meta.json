@@ -1,0 +1,33 @@
+{
+    "title": "\u6843\u5b50\u95ee\u9898",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6d77\u6ee9\u4e0a\u6709\u4e00\u5806\u6843\u5b50\uff0cm\u53ea\u7334\u5b50\u6765\u5206\u3002\u7b2c\u4e00\u53ea\u7334\u5b50\u628a\u8fd9\u5806\u6843\u5b50\u51ed\u636e\u5206\u4e3a\u4e94\u4efd\uff0c\u591a\u4e86\u4e00\u4e2a\uff0c\u8fd9\u53ea\u7334\u5b50\u628a\u591a\u7684\u4e00\u4e2a\u6254\u5165\u6d77\u4e2d\uff0c\u62ff\u8d70\u4e86\u4e00\u4efd\u3002\u7b2c\u4e8c\u53ea\u7334\u5b50\u628a\u5269\u4e0b\u7684\u6843\u5b50\u53c8\u5e73\u5747\u5206\u6210m\u4efd\uff0c\u53c8\u591a\u4e86\u4e00\u4e2a\uff0c\u5b83\u540c\u6837\u628a\u591a\u7684\u4e00\u4e2a\u6254\u5165\u6d77\u4e2d\uff0c\u62ff\u8d70\u4e86\u4e00\u4efd\uff0c\u7b2c\u4e09\u3001\u7b2c\u56db\u3001\u7b2c\u4e94\u53ea\u3001\u7b2cm\u53ea\u7334\u5b50\u90fd\u662f\u8fd9\u6837\u505a\u7684\uff0c\u95ee\u6d77\u6ee9\u4e0a\u539f\u6765\u6700\u5c11\u6709\u591a\u5c11\u4e2a\u6843\u5b50\uff1f \n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u7334\u5b50\u7684\u4e2a\u6570 m\uff083\u2264m\u22649\uff09\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a n\uff0c \u8868\u793a\u6d77\u6ee9\u4e0a\u539f\u6765\u6700\u5c11\u6709 n \u4e2a\u6843\u5b50\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n4\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n253\n```\n",
+    "templateCode": "",
+    "sourceCode": "m = int(input())\nprint(pow(m,m)-m+1)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3",
+            "output": "25\n"
+        },
+        {
+            "input": "5",
+            "output": "3121\n"
+        },
+        {
+            "input": "6",
+            "output": "46651\n"
+        },
+        {
+            "input": "7",
+            "output": "823537\n"
+        },
+        {
+            "input": "8",
+            "output": "16777209\n"
+        },
+        {
+            "input": "9",
+            "output": "387420481\n"
+        }
+    ]
+}

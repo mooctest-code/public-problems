@@ -1,0 +1,17 @@
+{
+    "title": "\u77e9\u9635\u76f8\u52a0",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e24\u4e2a n*n \u7684\u77e9\u9635\uff0c\u5b9e\u73b0\u5bf9\u5e94\u4f4d\u7f6e\u7684\u6570\u636e\u76f8\u52a0\uff0c\u8f93\u51fa\u76f8\u52a0\u540e\u7684\u77e9\u9635\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u4e3a n\n\n\u7b2c\u4e8c\u884c\u5230\u7b2c n+1 \u884c\u4ee3\u8868\u77e9\u9635 A1\n\n\u7b2c n+2 \u884c\u5230 2n+1 \u884c\u4ee3\u8868\u77e9\u9635 A2\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa A1 + A2 \u5f97\u5230\u7684\u65b0\u77e9\u9635 A3\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2\n1 2\n2 1\n2 1\n1 2\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3 3\n3 3\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM\n",
+    "templateCode": "",
+    "sourceCode": "def getMatrix(n):\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    return a\n\nn = int(input())\na1 = getMatrix(n)\na2 = getMatrix(n)\n\nfor i in range(n):\n    print(' '.join(map(str, [a1[i][j] + a2[i][j] for j in range(n)])))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2\n1 2\n2 1\n2 1\n1 2",
+            "output": "3 3\n3 3\n"
+        },
+        {
+            "input": "3\n1 2 3\n3 2 1\n1 2 3\n3 3 3\n1 1 1\n-1 -1 -1",
+            "output": "4 5 6\n4 3 2\n0 1 2\n"
+        }
+    ]
+}

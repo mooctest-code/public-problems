@@ -1,0 +1,13 @@
+{
+    "title": "\u6bd4\u8d5b\u540d\u5355",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e24\u4e2a\u4e52\u4e53\u7403\u961f\u8fdb\u884c\u6bd4\u8d5b\uff0c\u5404\u51fa\u4e09\u4eba\u3002\u7532\u961f\u4e3aa,b,c\u4e09\u4eba\uff0c\u4e59\u961f\u4e3ax,y,z\u4e09\u4eba\u3002\u5df2\u62bd\u7b7e\u51b3\u5b9a\u6bd4\u8d5b\u540d\u5355\u3002\u6709\u4eba\u5411\u961f\u5458\u6253\u542c\u6bd4\u8d5b\u7684\u540d\u5355\u3002a\u8bf4\u4ed6\u4e0d\u548cx\u6bd4\uff0cc\u8bf4\u4ed6\u4e0d\u548cx,z\u6bd4\uff0c\u8bf7\u7f16\u7a0b\u5e8f\u627e\u51fa\u4e09\u573a\u6bd4\u8d5b\u7684\u5bf9\u8d5b\u540d\u5355\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u5206\u4e3a\u4e09\u884c\uff0c\u6bcf\u884c\u4e24\u4e2a\u961f\u5458\u540d\uff0c\u4ee3\u8868\u4e00\u573a\u6bd4\u8d5b\u7684\u5bf9\u6218\u540d\u5355\u3002\u5de6\u8fb9\u662f\u7532\u961f\u961f\u5458\uff0c\u53f3\u8fb9\u662f\u4e59\u961f\u961f\u5458\uff0c\u6bd4\u5982 a \u548c x \u6253\uff0c\u5219\u8f93\u51fa `a x`\uff08\u4e0d\u662f\u6b63\u786e\u7b54\u6848\uff09\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "for i in range(ord('x'),ord('z') + 1):\n    for j in range(ord('x'),ord('z') + 1):\n        if i != j:\n            for k in range(ord('x'),ord('z') + 1):\n                if (i != k) and (j != k):\n                    if (i != ord('x')) and (k != ord('x')) and (k != ord('z')):\n                        print('a {}'.format(chr(i)))\n                        print('b {}'.format(chr(j)))\n                        print('c {}'.format(chr(k)))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None",
+            "output": "a z\nb x\nc y\n"
+        }
+    ]
+}

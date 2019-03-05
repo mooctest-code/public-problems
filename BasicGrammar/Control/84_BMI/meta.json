@@ -1,0 +1,25 @@
+{
+    "title": "\u7b97BMI\u503c",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8eab\u4f53\u8d28\u91cf\u6307\u6570\uff08BMI\uff0cBody Mass Index\uff09\u662f\u56fd\u9645\u4e0a\u5e38\u7528\u7684\u8861\u91cf\u4eba\u4f53\u80a5\u80d6\u7a0b\u5ea6\u548c\u662f\u5426\u5065\u5eb7\u7684\u91cd\u8981\u6807\u51c6\uff0c\u8ba1\u7b97\u516c\u5f0f\u4e3a\uff1aBMI=\u4f53\u91cd/\u8eab\u9ad8\u7684\u5e73\u65b9\uff08\u56fd\u9645\u5355\u4f4dkg/\u33a1\uff09\u3002\u4e2d\u56fd\u7684\u6210\u5e74\u4ebaBMI\u6570\u503c\u5b9a\u4e49\u4e3a\uff1a\n\n| \u5065\u5eb7\u60c5\u51b5   | \u6570\u503c\u8303\u56f4         |\n| ---------- | ---------------- |\n| too thin   | BMI < 18.5       |\n| normal     | 18.5 <= BMI < 24 |\n| overweight | 24 <= BMI < 28   |\n| fat        | BMI >= 28        |\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u4e2a\u6574\u6570\uff0c\u5206\u522b\u8868\u793a\u4f60\u7684\u4f53\u91cd(kg)\u548c\u8eab\u9ad8(cm)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8bf7\u53c2\u7167\u6837\u4f8b\u8f93\u51fa\uff0c\u5148\u8f93\u51fa\u4f60\u7684 BMI(\u7ed3\u679c\u4fdd\u7559\u4e00\u4f4d\u5c0f\u6570)\uff0c\u7136\u540e\u8f93\u51fa\u5f53\u524d\u5065\u5eb7\u60c5\u51b5\u662f too thin, normal, overweight \u8fd8\u662f fat\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n60 160\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nYour BMI is 23.4, normal\n```\n",
+    "templateCode": "",
+    "sourceCode": "a = list(map(int, input().split()))\n\nb = a[0]/((a[1]/100)**2)\n\nl = [18.5, 24, 28]\ns = ['too thin', 'normal', 'overweight', 'fat']\n\ni = 0\nwhile i < 3 and b > l[i]:\n    i += 1\n\nprint('Your BMI is {:.1f}, {}'.format(b, s[i]))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "60 160",
+            "output": "Your BMI is 23.4, normal\n"
+        },
+        {
+            "input": "40 170",
+            "output": "Your BMI is 13.8, too thin\n"
+        },
+        {
+            "input": "120 160",
+            "output": "Your BMI is 46.9, fat\n"
+        },
+        {
+            "input": "90 180",
+            "output": "Your BMI is 27.8, overweight\n"
+        }
+    ]
+}

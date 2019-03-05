@@ -1,0 +1,26 @@
+[
+    {
+        "input": "1",
+        "output": "No\n"
+    },
+    {
+        "input": "2",
+        "output": "Yes\n"
+    },
+    {
+        "input": "13",
+        "output": "Yes\n"
+    },
+    {
+        "input": "234231",
+        "output": "No\n"
+    },
+    {
+        "input": "9834283",
+        "output": "Yes\n"
+    },
+    {
+        "input": "4294967291",
+        "output": "Yes\n"
+    }
+]

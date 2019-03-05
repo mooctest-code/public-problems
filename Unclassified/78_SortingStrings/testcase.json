@@ -1,0 +1,14 @@
+[
+    {
+        "input": "java,c,python",
+        "output": "c,java,python\n"
+    },
+    {
+        "input": "i,love,coding",
+        "output": "coding,i,love\n"
+    },
+    {
+        "input": "hello,world",
+        "output": "hello,world\n"
+    }
+]

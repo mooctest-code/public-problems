@@ -1,0 +1,21 @@
+{
+    "title": "\u5496\u5561\u540d\u79f0\u63d0\u53d6",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u4e00\u4e2a\u5b57\u7b26\u4e32\u8868\u793a\u5496\u5561\u4fe1\u606f\uff0c\u7531\u5496\u5561\u540d\u79f0\u3001 \u4ef7\u683c\u548c\u4e00\u4e9b\u5176\u4ed6\u975e\u5b57\u6bcd\u5b57\u7b26\u7ec4\u6210\uff0c\u8bf7\u5c06\u5496\u5561\u540d\u5b57\u4ece\u8be5\u5496\u5561\u4fe1\u606f\u4e2d\u63d0\u53d6\u51fa\u6765\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\u5305\u542b\u5496\u5561\u540d\u79f0\u3001 \u4ef7\u683c\u548c\u4e00\u4e9b\u5176\u4ed6\u975e\u5b57\u6bcd\u5b57\u7b26\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u5496\u5561\u540d\u79f0\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n_Americano30\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nAmericano\n```\n\n### \u63d0\u793a\n\n\u5496\u5561\u540d\u79f0\u53ea\u7531\u82f1\u6587\u5b57\u6bcd\u7ec4\u6210\n",
+    "templateCode": "",
+    "sourceCode": "x = input()\n\nprint(''.join(filter(str.isalpha, x)))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "_Americano30",
+            "output": "Americano\n"
+        },
+        {
+            "input": "/34Cappuccino",
+            "output": "Cappuccino\n"
+        },
+        {
+            "input": "Mocha35",
+            "output": "Mocha\n"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "title": "\u7403\u8ff7\u8d2d\u7968\u95ee\u9898",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7403\u8d5b\u95e8\u7968\u7684\u552e\u7968\u5904\u89c4\u5b9a\u6bcf\u4f4d\u8d2d\u7968\u8005\u9650\u8d2d\u4e00\u5f20\u95e8\u7968\uff0c\u4e14\u6bcf\u5f20\u95e8\u7968\u552e\u4ef750\u5143\u3002\n\n\u5047\u8bbe\u8d2d\u7968\u8005\u4e2d\u6709m\u4f4d\u624b\u630150\u5143\u94b1\u5e01\uff0c\u53e6\u6709n\u4eba\u624b\u6301100\u5143\u3002\u552e\u7968\u5904\u5f00\u59cb\u552e\u7968\u65f6\u65e0\u96f6\u94b1\u3002\u8bf7\u95ee\u8fd9m+n\u4eba\u6709\u51e0\u79cd\u6392\u961f\u65b9\u5f0f\u53ef\u4f7f\u552e\u7968\u5904\u4e0d\u81f4\u51fa\u73b0\u627e\u4e0d\u51fa\u94b1\u7684\u5c40\u9762\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a m \u548c n (0 \u2264 m, n \u2264 30)\uff0c\u8868\u793a\u6709 m \u4eba\u624b\u630150\u5143\u94b1\u5e01\uff0c\u53e6\u6709n\u4eba\u624b\u6301100\u5143\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8fd9 m+n \u4eba\u53ef\u4f7f\u552e\u7968\u5904\u4e0d\u81f4\u51fa\u73b0\u627e\u4e0d\u51fa\u94b1\u7684\u5c40\u9762\u7684\u6392\u961f\u65b9\u5f0f\n\n### \u6837\u4f8b\u8f93\u5165\n```\n23 10\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n53993940\n```\n",
+    "templateCode": "",
+    "sourceCode": "m, n = map(int, input().split())\n\nAn = [[0 for x in range(n+1)] for x in range(m+1)]\nAn[0][0] = 1\nfor i in range(n+1):\n    for j in range(1,m+1):\n        if i > j:\n            An[j][i] == 0\n        else:\n            An[j][i] = An[j-1][i] + An[j][i-1]\nprint(An[m][n])",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "23 10",
+            "output": "53993940\n"
+        },
+        {
+            "input": "12 14",
+            "output": "0\n"
+        },
+        {
+            "input": "13 5",
+            "output": "5508\n"
+        }
+    ]
+}

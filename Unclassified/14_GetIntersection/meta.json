@@ -1,0 +1,21 @@
+{
+    "title": "\u6c42\u96c6\u5408\u7684\u4ea4\u96c6",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e24\u4e2a\u96c6\u5408\uff0c\u8bf7\u6c42\u5b83\u4eec\u7684\u4ea4\u96c6\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u884c\uff0c\u5206\u522b\u4e3a\u4e24\u4e2a\u96c6\u5408 set1 \u548c set2\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a set1 \u548c set2 \u7684\u4ea4\u96c6\uff0c\u5982\u679c\u662f\u7a7a\u96c6\u8bf7\u8f93\u51fa None\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n{1, 2}\n{2, 3}\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n{2}\n```\n",
+    "templateCode": "",
+    "sourceCode": "set1 = eval(input())\nset2 = eval(input())\n\ninter = set1.intersection(set2)\n\nprint(inter or None)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "{1}\n{1}",
+            "output": "{1}\n"
+        },
+        {
+            "input": "{1, 2, 3}\n{2, 3, 4}",
+            "output": "{2, 3}\n"
+        },
+        {
+            "input": "{1}\n{0}",
+            "output": "None\n"
+        }
+    ]
+}

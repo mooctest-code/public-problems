@@ -1,0 +1,13 @@
+{
+    "title": "\u6253\u5370\u83f1\u5f62",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6253\u5370\u51fa\u5982\u4e0b\u83f1\u5f62\uff1a\n\n```\n   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n```\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u6253\u5370\u51fa\u4e0a\u9762\u7684\u83f1\u5f62\uff0c\u6bcf\u884c\u6700\u540e\u7684 `*` \u540e\u6ca1\u6709\u7a7a\u683c\u3002\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "for i in range(4):\n    print((3-i)*' '+(2*i+1)*'*')\nfor i in range(3):\n    print((i+1)*' '+(5-2*i)*'*')",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None",
+            "output": "   *\n  ***\n *****\n*******\n *****\n  ***\n   *\n"
+        }
+    ]
+}

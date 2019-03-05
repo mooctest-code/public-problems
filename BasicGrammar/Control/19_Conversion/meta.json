@@ -1,0 +1,25 @@
+{
+    "title": "\u8fdb\u5236\u8f6c\u6362",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u516b\u8fdb\u5236\u7684\u6570\uff0c\u4f60\u80fd\u5c06\u5b83\u8f6c\u6362\u4e3a\u5341\u8fdb\u5236\u7684\u6570\u5417\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u516b\u8fdb\u5236\u7684\u6570 a\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a a \u7684\u5341\u8fdb\u5236\u8868\u793a\uff0c\u5982\u679c\u8f93\u5165\u4e0d\u7b26\u5408\u8981\u6c42\uff0c\u8bf7\u8f93\u51fa \u300cInvalid octal number!\u300d\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n123\n```\n\n```\n88\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n83\n```\n\n```\nInvalid octal number!\n```\n",
+    "templateCode": "",
+    "sourceCode": "def oct2dec(o):\n    d = 0\n    b = 1\n    for i in o[::-1]:\n        n = int(i)\n        if n > 7: return('Invalid octal number!')\n        d += b * n\n        b *= 8\n    return d\n\no = input()\n\nprint(oct2dec(o))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "32",
+            "output": "26\n"
+        },
+        {
+            "input": "45",
+            "output": "37\n"
+        },
+        {
+            "input": "324235123",
+            "output": "55654995\n"
+        },
+        {
+            "input": "3943256",
+            "output": "Invalid octal number!\n"
+        }
+    ]
+}

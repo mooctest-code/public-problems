@@ -1,0 +1,18 @@
+[
+    {
+        "input": "Abc",
+        "output": "False\n"
+    },
+    {
+        "input": "aBa",
+        "output": "True\n"
+    },
+    {
+        "input": "aaaBBaaa",
+        "output": "True\n"
+    },
+    {
+        "input": "abba",
+        "output": "True\n"
+    }
+]

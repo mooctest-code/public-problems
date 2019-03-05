@@ -1,0 +1,18 @@
+[
+    {
+        "input": "13",
+        "output": "6\n"
+    },
+    {
+        "input": "17",
+        "output": "16\n"
+    },
+    {
+        "input": "29",
+        "output": "28\n"
+    },
+    {
+        "input": "123",
+        "output": "5\n"
+    }
+]

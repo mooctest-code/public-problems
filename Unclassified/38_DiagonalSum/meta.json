@@ -1,0 +1,21 @@
+{
+    "title": "\u77e9\u9635\u5bf9\u89d2\u7ebf\u548c",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e00\u4e2a n*n \u7684\u77e9\u9635\uff0c\u8bf7\u4f60\u8ba1\u7b97\u8be5\u77e9\u9635\u7684\u5bf9\u89d2\u7ebf\u548c\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u4e3a\u6b63\u6574\u6570 n\n\n\u7b2c\u4e8c\u884c\u5230\u7b2c n+1 \u884c\u8868\u793a\u8be5\u77e9\u9635\uff0c\u6bcf\u884c\u6709 n \u4e2a\u6574\u6570\uff0c\u4e24\u4e24\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8be5\u77e9\u9635\u7684\u5bf9\u89d2\u7ebf\u548c\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n1 2 3\n4 5 6\n7 8 9\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n15\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "n = int(input())\ns = 0\nfor i in range(n):\n    a = list(map(int, input().split()))\n    s += a[i]\nprint(s)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3\n1 2 3\n4 5 6\n7 8 9",
+            "output": "15\n"
+        },
+        {
+            "input": "2\n1 2\n2 1",
+            "output": "2\n"
+        },
+        {
+            "input": "5\n9 8 7 6 5\n4 3 2 1 0\n1 2 3 4 5\n6 7 8 9 0\n1 3 5 7 9",
+            "output": "33\n"
+        }
+    ]
+}

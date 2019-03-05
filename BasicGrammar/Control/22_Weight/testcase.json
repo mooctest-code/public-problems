@@ -1,0 +1,30 @@
+[
+    {
+        "input": "13",
+        "output": "3\n"
+    },
+    {
+        "input": "40",
+        "output": "4\n"
+    },
+    {
+        "input": "123",
+        "output": "6\n"
+    },
+    {
+        "input": "0",
+        "output": "0\n"
+    },
+    {
+        "input": "2",
+        "output": "2\n"
+    },
+    {
+        "input": "123456",
+        "output": "12\n"
+    },
+    {
+        "input": "1234567890123456",
+        "output": "33\n"
+    }
+]

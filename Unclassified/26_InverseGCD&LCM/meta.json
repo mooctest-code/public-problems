@@ -1,0 +1,33 @@
+{
+    "title": "\u9006\u89e3\u6700\u5927\u516c\u7ea6\u6570\u4e0e\u6700\u5c0f\u516c\u500d\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6211\u4eec\u7ecf\u5e38\u9047\u5230\u7684\u95ee\u9898\u662f\u7ed9\u4f60\u4e24\u4e2a\u6570\uff0c\u8981\u4f60\u6c42\u6700\u5927\u516c\u7ea6\u6570\u548c\u6700\u5c0f\u516c\u500d\u6570\u3002\n\u4eca\u5929\u6211\u4eec\u53cd\u5176\u9053\u800c\u884c\u4e4b\uff0c\u7ed9\u4f60\u4e24\u4e2a\u6570 a \u548c b\uff0c\u8ba1\u7b97\u51fa\u5b83\u4eec\u5206\u522b\u662f\u54ea\u4e24\u4e2a\u6570\u7684\u6700\u5927\u516c\u7ea6\u6570\u548c\u6700\u5c0f\u516c\u500d\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u884c\u4e24\u4e2a\u6574\u6570 `gcd lcm` \u8868\u793a\u4e24\u4e2a\u6570\u7684\u6700\u5927\u516c\u7ea6\u6570\u548c\u6700\u5c0f\u516c\u500d\u6570\uff08 0 < gcd < lcm < 10^8 \uff09\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u884c\u4e24\u4e2a\u6574\u6570\uff0c\u8868\u793a\u8fd9\u4e24\u4e2a\u6570\u3002\u5c0f\u7684\u5728\u524d\uff0c\u5927\u7684\u5728\u540e\uff08\u82e5\u6709\u591a\u7ec4\u89e3\uff0c\u8f93\u51fa\u5b83\u4eec\u4e4b\u548c\u6700\u5c0f\u7684\u90a3\u7ec4\uff09\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3 60\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n12 15\n```\n",
+    "templateCode": "",
+    "sourceCode": "import math\n\n[gcd, lcm] = list(map(int, input().split()))\n\nk = 1\nm = 0\nans = (0, 0)\nfor k in range(1, lcm//gcd):\n    n1 = k * gcd # num1\n    if lcm % n1: # check num1\n        continue\n    [n2, m] = divmod(lcm, k) # num2\n    if n2 <= n1 or math.gcd(n1, n2) != gcd: break\n    if m or n2 % gcd: \n        continue\n    if n1 + n2 >= m:\n        m = n1 + n2\n        ans = (n1, n2)\n\nprint('{} {}'.format(ans[0], ans[1]))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 60",
+            "output": "12 20\n"
+        },
+        {
+            "input": "2 228",
+            "output": "12 38\n"
+        },
+        {
+            "input": "28 392",
+            "output": "56 196\n"
+        },
+        {
+            "input": "16 2304",
+            "output": "16 2304\n"
+        },
+        {
+            "input": "193 11580",
+            "output": "193 11580\n"
+        },
+        {
+            "input": "128 768",
+            "output": "256 384\n"
+        }
+    ]
+}

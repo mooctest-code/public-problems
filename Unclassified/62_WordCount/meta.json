@@ -1,0 +1,25 @@
+{
+    "title": "\u7edf\u8ba1\u5b57\u7b26\u51fa\u73b0\u6b21\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bf7\u7edf\u8ba1\u4e00\u4e2a\u5b57\u7b26\u4e32\u4e2d\uff0c\u6bcf\u4e2a\u82f1\u6587\u5b57\u6bcd\u7684\u51fa\u73b0\u6b21\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0c\u5305\u542b\u5404\u79cd\u5b57\u7b26\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u591a\u884c\uff0c\u6309\u51fa\u73b0\u6b21\u6570\u4ece\u591a\u5230\u5c11\uff0c\u5982\u679c\u51fa\u73b0\u6b21\u6570\u76f8\u540c\uff0c\u5219\u6309\u5b57\u6bcd\u7684\u5b57\u6bcd\u8868\u987a\u5e8f\uff0c\u6bcf\u884c\u4e3a\u4e00\u4e2a\u5b57\u6bcd\u548c\u5176\u51fa\u73b0\u6b21\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nHello World!\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nl 3\no 2\nd 1\ne 1\nh 1\nr 1\nw 1\n```\n",
+    "templateCode": "",
+    "sourceCode": "from collections import Counter\nimport functools\n\ndef cmp(x, y):\n    if x[1] == y[1]:\n        return -1 if x[0] < y[0] else x[0] > y[0]\n    return -1 if x[1] > y[1] else x[1] < y[1]\n\nl = Counter(filter(str.isalpha, input().lower())).most_common()\nl.sort(key=functools.cmp_to_key(cmp))\nfor i in l:\n    print('{} {}'.format(i[0], i[1]))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "Hello World!",
+            "output": "l 3\no 2\nd 1\ne 1\nh 1\nr 1\nw 1\n"
+        },
+        {
+            "input": "This is a test text",
+            "output": "t 5\ns 3\ne 2\ni 2\na 1\nh 1\nx 1\n"
+        },
+        {
+            "input": "Hola World!",
+            "output": "l 2\no 2\na 1\nd 1\nh 1\nr 1\nw 1\n"
+        },
+        {
+            "input": "fneakjnfoaidjkasopdhwquonr3o.e13[p.e13o2jme.12';e.;'1,e;'12.,dso21pmd12,'1e2,ep,[]]",
+            "output": "e 8\no 6\nd 4\np 4\na 3\nj 3\nn 3\nf 2\nk 2\nm 2\ns 2\nh 1\ni 1\nq 1\nr 1\nu 1\nw 1\n"
+        }
+    ]
+}

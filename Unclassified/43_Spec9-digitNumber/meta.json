@@ -1,0 +1,25 @@
+{
+    "title": "\u7279\u6b8a\u7684n\u4f4d\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n1~9\u76849\u4e2a\u6570\u5b57\uff0c \u6bcf\u4e2a\u6570\u5b57\u53ea\u80fd\u51fa\u73b0\u4e00\u6b21\u3002\u8981\u6c42\u8fd9\u6837\u7684n\u4f4d\u6570\uff1a\u5176\u7b2c\u4e00\u4f4d\u80fd\u88ab1\u6574\u9664\uff0c \u524d\u4e24\u4f4d\u80fd\u88ab2\u6574\u9664\uff0c \u524d\u4e09\u4f4d\u80fd\u88ab3\u6574\u9664...\u4f9d\u6b21\u7c7b\u63a8\uff0c\u524dn\u4f4d\u80fd\u88abn\u6574\u9664\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6b63\u6574\u6570 n (0 < n < 10)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u6ee1\u8db3\u9898\u76ee\u63cf\u8ff0\u7684\u7279\u6b8a\u7684 n \u4f4d\u6570\uff0c\u5982\u679c\u6709\u591a\u4e2a\uff0c\u53ea\u8981\u8f93\u51fa\u6700\u5c0f\u7684\u90a3\u4e2a\u6570\u5373\u53ef\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n123\n```\n\n### \u8bf4\u660e\n\n123 \u7684\u7b2c\u4e00\u4f4d\u53ef\u4ee5\u88ab 1 \u6574\u9664\uff0c\u524d\u4e24\u4f4d 12 \u53ef\u4ee5\u88ab 2 \u6574\u9664\uff0c\u4ee5\u6b64\u7c7b\u63a8\u3002\n\n\u6ce8\u610f\u6bcf\u4e2a\u6570\u5b57\u53ea\u80fd\u51fa\u73b0\u4e00\u6b21\u3002",
+    "templateCode": "",
+    "sourceCode": "# http://www.pythontip.com/coding/report_detail/1651/\n\nisfind=0\ndef make(i,s):\n    global isfind,n\n    if isfind:\n        return\n    else:\n        if i==n and isfind==0:\n            print(int(s))\n            isfind=1\n        else:\n            for k in range(1,10):\n                s2=s+str(k)\n                if str(k) not in s and int(s2)%(i+1)==0:\n                    make(i+1,s2)\n\nn = int(input())               \nmake(0, '')",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2",
+            "output": "12\n"
+        },
+        {
+            "input": "4",
+            "output": "1236\n"
+        },
+        {
+            "input": "7",
+            "output": "1296547\n"
+        },
+        {
+            "input": "9",
+            "output": "381654729\n"
+        }
+    ]
+}

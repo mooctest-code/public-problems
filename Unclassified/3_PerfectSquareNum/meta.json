@@ -1,0 +1,21 @@
+{
+    "title": "\u5b8c\u5168\u5e73\u65b9\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e00\u4e2a\u6574\u6570\uff0c\u5b83\u52a0\u4e0a\u67d0\u4e2a\u6570\u540e\u662f\u4e00\u4e2a\u5b8c\u5168\u5e73\u65b9\u6570\uff0c\u518d\u52a0\u4e0a\u53e6\u4e00\u4e2a\u6570\u540e\u53c8\u662f\u4e00\u4e2a\u5b8c\u5168\u5e73\u65b9\u6570\uff0c\u8bf7\u95ee\u8be5\u6570\u662f\u591a\u5c11\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e24\u4e2a\u6574\u6570 n \u548c m\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u4ece\u5c0f\u5230\u5927\u8f93\u51fa\u6ee1\u8db3\u52a0\u4e0a n \u540e\u662f\u5b8c\u5168\u5e73\u65b9\u6570\uff0c\u518d\u52a0\u4e0a m \u540e\u53c8\u662f\u4e00\u4e2a\u5b8c\u5168\u5e73\u65b9\u6570\u7684\u6240\u6709\u6574\u6570\uff0c\u6bcf\u4e2a\u5360\u4e00\u884c\u3002\u6211\u4eec\u4fdd\u8bc1\u5bf9\u6bcf\u4e2a\u8f93\u5165\uff0c\u81f3\u5c11\u6709\u4e00\u4e2a\u8fd9\u6837\u7684\u6574\u6570\u5b58\u5728\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n100 168\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n-99\n21\n261\n1581\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "[a, b] = list(map(int, input().split()))\n\nfor i in range(1, b+1):\n    if b % i == 0:\n        j = b // i\n        if i > j and (i + j) % 2 == 0 and (i - j) % 2 == 0:\n            print(((i-j)//2)**2 - a)\n\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "100 168",
+            "output": "-99\n21\n261\n1581\n"
+        },
+        {
+            "input": "-100 100",
+            "output": "676\n"
+        },
+        {
+            "input": "987 10640",
+            "output": "37\n694\n3502\n11782\n13654\n29989\n64549\n138142\n276742\n435934\n1762597\n7069294\n"
+        }
+    ]
+}

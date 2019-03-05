@@ -1,0 +1,29 @@
+{
+    "title": "\u4f01\u4e1a\u5956\u91d1\u53d1\u653e",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u67d0\u4f01\u4e1a\u6839\u636e\u6708\u5229\u6da6\u53d1\u653e\u5956\u91d1\uff0c\u89c4\u5219\u5982\u4e0b\uff1a\n\n1. \u5229\u6da6\u4f4e\u4e8e\u6216\u7b49\u4e8e10\u4e07\u5143\u65f6\uff0c\u5956\u91d1\u53ef\u63d010%\uff1b\n2. \u5229\u6da6\u9ad8\u4e8e10\u4e07\u5143\uff0c\u4f4e\u4e8e20\u4e07\u5143\u65f6\uff0c\u4f4e\u4e8e10\u4e07\u5143\u7684\u90e8\u5206\u630910%\u63d0\u6210\uff0c\u9ad8\u4e8e10\u4e07\u5143\u7684\u90e8\u5206\uff0c\u53ef\u63d0\u62107.5%\uff1b\n3. 20\u4e07\u523040\u4e07\u4e4b\u95f4\u65f6\uff0c\u9ad8\u4e8e20\u4e07\u5143\u7684\u90e8\u5206\uff0c\u53ef\u63d0\u62105%\uff1b\n4. 40\u4e07\u523060\u4e07\u4e4b\u95f4\u65f6\uff0c\u9ad8\u4e8e40\u4e07\u5143\u7684\u90e8\u5206\uff0c\u53ef\u63d0\u62103%\uff1b\n5. 60\u4e07\u5230100\u4e07\u4e4b\u95f4\u65f6\uff0c\u9ad8\u4e8e60\u4e07\u5143\u7684\u90e8\u5206\uff0c\u53ef\u63d0\u62101.5%\uff1b\n6. \u9ad8\u4e8e100\u4e07\u5143\u65f6\uff0c\u8d85\u8fc7100\u4e07\u5143\u7684\u90e8\u5206\u63091%\u63d0\u6210\uff1b\n\n\u7ed9\u4f60\u8be5\u4f01\u4e1a\u7684\u6708\u5229\u6da6\uff0c\u8bf7\u4f60\u8ba1\u7b97\u8be5\u4f01\u4e1a\u5e94\u53d1\u653e\u7684\u5956\u91d1\u603b\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u6b63\u6574\u6570 n (0 < n < 10^6)\uff0c\u4ee3\u8868\u8be5\u4f01\u4e1a\u7684\u6708\u5229\u6da6\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u5e94\u53d1\u653e\u7684\u603b\u5956\u91d1\uff0c\u7ed3\u679c\u53ea\u4fdd\u7559\u6574\u6570\u90e8\u5206\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n120000\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n11500\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "i = int(input())\narr = [1000000,600000,400000,200000,100000,0]\nrat = [0.01,0.015,0.03,0.05,0.075,0.1]\nr = 0\nfor idx in range(0,6):\n    if i > arr[idx]:\n        r += (i-arr[idx])*rat[idx]\n        i = arr[idx]\nprint(int(r))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "120000",
+            "output": "11500\n"
+        },
+        {
+            "input": "9000",
+            "output": "900\n"
+        },
+        {
+            "input": "897803",
+            "output": "37967\n"
+        },
+        {
+            "input": "583794",
+            "output": "33013\n"
+        },
+        {
+            "input": "1234567",
+            "output": "41845\n"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+这是一个有很多非汉字字符的文件，This is a file with many non Chinese characters.

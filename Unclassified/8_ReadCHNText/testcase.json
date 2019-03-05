@@ -1,0 +1,10 @@
+[
+    {
+        "input": "./public/A.txt",
+        "output": "文\n"
+    },
+    {
+        "input": "./public/B.txt",
+        "output": "字\n"
+    }
+]

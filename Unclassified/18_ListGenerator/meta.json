@@ -1,0 +1,17 @@
+{
+    "title": "\u8bd5\u4e00\u8bd5\u5217\u8868\u751f\u6210\u5668",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4f7f\u7528\u5217\u8868\u751f\u6210\u5668\u751f\u6210\u4e00\u4e2a\u5e73\u65b9\u6570\u5217\u8868\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u884c\u4e24\u4e2a\u6570\u5b57 l \u548c r (0 < l < r < 101) \u4ee3\u8868\u6570\u5217\u7684\u533a\u95f4\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u5217\u8868\uff0c\u8868\u793a\u4ece l \u5230 r \u7684\u6bcf\u4e2a\u6570\u7684\u5e73\u65b9\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3 5\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n[9, 16, 25]\n```\n",
+    "templateCode": "",
+    "sourceCode": "[a, b] = list(map(int, input().split()))\nprint([i**2 for i in range(a, b+1)])",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3 7",
+            "output": "[9, 16, 25, 36, 49]\n"
+        },
+        {
+            "input": "10 20",
+            "output": "[100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400]\n"
+        }
+    ]
+}

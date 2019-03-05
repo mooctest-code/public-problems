@@ -1,0 +1,21 @@
+{
+    "title": "\u5b57\u7b26\u4e32\u6392\u5e8f",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u591a\u4e2a\u7528\u9017\u53f7\u9694\u5f00\u7684\u5b57\u7b26\u4e32\uff0c\u8bf7\u4f60\u5bf9\u8fd9\u4e9b\u5b57\u7b26\u4e32\u8fdb\u884c\u6392\u5e8f\u5e76\u8f93\u51fa\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0c\u53ea\u5305\u542b\u82f1\u6587\u5b57\u6bcd\u548c\u9017\u53f7\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u6309\u7167\u5b57\u5178\u5e8f\u8f93\u51fa\u8fd9\u4e9b\u7531\u9017\u53f7\u9694\u5f00\u7684\u5b57\u7b26\u4e32\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u4e00\u4e2a\u9017\u53f7\u9694\u5f00\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\npython,c,java\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nc,java,python\n```\n",
+    "templateCode": "",
+    "sourceCode": "a = input()\nl = a.split(',')\nl.sort()\nprint(','.join(l))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "java,c,python",
+            "output": "c,java,python\n"
+        },
+        {
+            "input": "i,love,coding",
+            "output": "coding,i,love\n"
+        },
+        {
+            "input": "hello,world",
+            "output": "hello,world\n"
+        }
+    ]
+}

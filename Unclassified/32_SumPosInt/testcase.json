@@ -1,0 +1,38 @@
+[
+    {
+        "input": "4",
+        "output": "5\n"
+    },
+    {
+        "input": "5",
+        "output": "7\n"
+    },
+    {
+        "input": "9",
+        "output": "30\n"
+    },
+    {
+        "input": "12",
+        "output": "77\n"
+    },
+    {
+        "input": "14",
+        "output": "135\n"
+    },
+    {
+        "input": "23",
+        "output": "1255\n"
+    },
+    {
+        "input": "37",
+        "output": "21637\n"
+    },
+    {
+        "input": "46",
+        "output": "105558\n"
+    },
+    {
+        "input": "99",
+        "output": "169229875\n"
+    }
+]

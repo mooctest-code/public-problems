@@ -1,0 +1,14 @@
+[
+    {
+        "input": "Hello World\n3.1415 0.618 11.11",
+        "output": "World Hello\n11.11 0.62 3.14\n"
+    },
+    {
+        "input": "Hello Python\n123.456 -123.456 0 ",
+        "output": "Python Hello\n0.00 -123.46 123.46\n"
+    },
+    {
+        "input": "Hello C/C++\n7.54343 32.8626 32.652523",
+        "output": "C/C++ Hello\n32.65 32.86 7.54\n"
+    }
+]

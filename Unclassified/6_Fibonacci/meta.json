@@ -1,0 +1,25 @@
+{
+    "title": "\u6590\u6ce2\u90a3\u5951\u6570\u5217",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6590\u6ce2\u90a3\u5951\u6570\u5217\uff08Fibonacci sequence\uff09\uff0c\u53c8\u79f0\u9ec4\u91d1\u5206\u5272\u6570\u5217\uff0c\u6307\u7684\u662f\u8fd9\u6837\u4e00\u4e2a\u6570\u5217\uff1a`0, 1, 1, 2, 3, 5, 8, ...`  \u3002\n\n\u5728\u6570\u5b66\u4e0a\uff0c\u8d39\u6ce2\u90a3\u5951\u6570\u5217\u662f\u4ee5\u9012\u5f52\u7684\u65b9\u6cd5\u6765\u5b9a\u4e49\uff1a\n$$\nF_0=0,F_1=1\\\\F_n=F_{n-1}+F_{n-2}, n\\geq 2\n$$\n\u8bf7\u4f60\u4f7f\u7528\u4e0a\u8ff0\u516c\u5f0f\u8ba1\u7b97\u5f97\u5230\u7b2c n \u4e2a\u6590\u6ce2\u90a3\u5951\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u6574\u6570 n (0 < n < 20)\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u7b2c n \u4e2a\u6590\u6ce2\u90a3\u5951\u6570\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n1\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "templateCode": "",
+    "sourceCode": "n = int(input())\n\nf0, f1 = 0, 1\nfor i in range(n-1):\n    f0, f1 = f1, f0+f1\n\nprint(f0) ",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3",
+            "output": "1\n"
+        },
+        {
+            "input": "7",
+            "output": "8\n"
+        },
+        {
+            "input": "13",
+            "output": "144\n"
+        },
+        {
+            "input": "19",
+            "output": "2584\n"
+        }
+    ]
+}

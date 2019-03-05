@@ -1,0 +1,14 @@
+[
+    {
+        "input": "{1}\n{2, 3}",
+        "output": "False\n"
+    },
+    {
+        "input": "{1}\n{1}",
+        "output": "True\n"
+    },
+    {
+        "input": "{1, 2, 3}\n{2, 3, 4}",
+        "output": "False\n"
+    }
+]

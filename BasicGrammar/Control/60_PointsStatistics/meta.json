@@ -1,0 +1,33 @@
+{
+    "title": "\u7edf\u8ba1\u5f97\u5206",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u51fan\u4e2a\u7531A\u548cX\u7ec4\u6210\u7684\u5b57\u7b26\u4e32\uff0c\u7edf\u8ba1\u5b57\u7b26\u603b\u5f97\u5206\uff0c\u5176\u4e2d\u6bcf\u4e2aA\u7684\u5f97\u5206\u4e3a\u76ee\u524d\u8fde\u7eed\u51fa\u73b0\u7684A\u7684\u4e2a\u6570\uff0cX\u7684\u5f97\u5206\u4e3a0\u3002\u4f8b\u5982AAXXAXXAAA\u7684\u5f97\u5206\u4e3a1+2+1+1+2+3\u7b49\u4e8e10\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u7531 A \u548c X \u7ec4\u6210\u7684\u5b57\u7b26\u4e32\uff0c\u957f\u5ea6\u4e0d\u8d85\u8fc7 1000\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8fd9\u4e2a\u5b57\u7b26\u4e32\u7684\u7edf\u8ba1\u5f97\u5206\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nAAXXAXXAAA\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n10\n```\n",
+    "templateCode": "",
+    "sourceCode": "s = input()\n\nt = 0\nk = 1\nfor i in s:\n    if i == 'A':\n        t += k\n        k += 1\n    else: k = 1\n\nprint(t)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "AAA",
+            "output": "6\n"
+        },
+        {
+            "input": "XAXA",
+            "output": "2\n"
+        },
+        {
+            "input": "AXXAAAAXXAXAXXXAXAXXXXAAAAXAXAAXAAAAXAXAXAXAXXXXAAA",
+            "output": "49\n"
+        },
+        {
+            "input": "AAAAXXXXXXXAAAAXXXXXAXAXAAAAXXXXAXAAAAXAXAXAXXXXXXXXXXXAAAAAAAXXXXXAAAAAAAAAAXA",
+            "output": "130\n"
+        },
+        {
+            "input": "AAAAAAXXXXXXAAAAAAAXXXXXXAAAAAAAXXXXAAAAAAAAAXXXXAAAAAAXXXXXXAAAXXAXAXAXAAAAX",
+            "output": "162\n"
+        },
+        {
+            "input": "AAXAXXXAXXXXXXXAAAAAAAAAAAAAAAAAXXXXXXAAAAAAAAXXXXXXXXAAAAAAA",
+            "output": "222\n"
+        }
+    ]
+}

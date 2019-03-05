@@ -1,0 +1,25 @@
+{
+    "title": "\u6700\u5927\u516c\u7ea6\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e24\u4e2a\u6b63\u6574\u6570a\u548cb\uff0c \u8f93\u51fa\u5b83\u4eec\u7684\u6700\u5927\u516c\u7ea6\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u884c\uff0c\u4e24\u4e2a\u6b63\u6574\u6570 a \u548c b\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa a \u548c b \u7684\u6700\u5927\u516c\u7ea6\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n4 6\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n2\n```\n",
+    "templateCode": "",
+    "sourceCode": "import math\na, b = map(int, input().split())\nprint(math.gcd(a, b))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 6",
+            "output": "2\n"
+        },
+        {
+            "input": "123 4961",
+            "output": "41\n"
+        },
+        {
+            "input": "214134 13214",
+            "output": "2\n"
+        },
+        {
+            "input": "324325 30850",
+            "output": "25\n"
+        }
+    ]
+}

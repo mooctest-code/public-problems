@@ -1,0 +1,13 @@
+{
+    "title": "\u627e\u4e00\u4e2a\u5b8c\u5168\u5e73\u65b9\u6570",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e00\u4e2a\u6570\u5982\u679c\u662f\u53e6\u4e00\u4e2a\u6574\u6570\u7684\u5b8c\u5168\u5e73\u65b9\uff0c\u90a3\u4e48\u6211\u4eec\u5c31\u79f0\u8fd9\u4e2a\u6570\u4e3a\u5b8c\u5168\u5e73\u65b9\u6570\uff0c\u4e5f\u53eb\u505a\u5e73\u65b9\u6570\u3002\n\n\u73b0\u5728\u6709\u4e00\u4e2a\u6574\u6570\uff0c\u5b83\u52a0\u4e0a100\u548c\u52a0\u4e0a268\u540e\u90fd\u662f\u4e00\u4e2a\u5b8c\u5168\u5e73\u65b9\u6570\uff0c\u8bf7\u95ee\u8be5\u6570\u662f\u591a\u5c11\uff1f\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8fd9\u4e2a\u6570\n\n",
+    "templateCode": "",
+    "sourceCode": "a = 100\nb = 268\n\ndef find():\n    x = 1\n    while True:\n        s1 = int((x+100)**0.5)\n        s2 = int((x+268)**0.5)\n        if s1 ** 2 == x+100 and s2 ** 2 == x + 268:\n            return x\n        x += 1\n\nprint(find())",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None",
+            "output": "21\n"
+        }
+    ]
+}

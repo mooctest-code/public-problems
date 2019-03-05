@@ -1,0 +1,29 @@
+{
+    "title": "\u53d8\u6001\u8d85\u7ea7\u697c\u68af",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u4e00\u697c\u68af\u5171n\u7ea7\uff0c\u521a\u5f00\u59cb\u65f6\u4f60\u5728\u7b2c\u96f6\u7ea7\uff0c\u82e5\u6bcf\u6b21\u4f60\u53ef\u4ee5\u4e0a1\u7ea7\uff0c\u4e5f\u53ef\u4ee5\u4e0a2\u7ea7\uff0c...\uff0c\u4e5f\u53ef\u4ee5\u4e0an\u7ea7\u3002\u8981\u8d70\u4e0a\u7b2cn\u7ea7\uff0c\u5171\u6709\u591a\u5c11\u79cd\u8d70\u6cd5\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u697c\u68af\u7684\u7ea7\u6570 n (1 < n < 30)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u8d70\u4e0a n \u7ea7\u53f0\u9636\u7684\u4e0d\u540c\u8d70\u6cd5\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n4\n```\n\n### \u8bf4\u660e\n\n\u5bf9\u4e8e\u8d70\u4e0a 3 \u7ea7\u53f0\u9636\uff0c\u53ef\u4ee5 1 + 1 + 1\u30011 + 2\u30012 + 1\u3001 3 \u5171\u56db\u79cd\u8d70\u6cd5\u3002",
+    "templateCode": "",
+    "sourceCode": "print(1 << (int(input())-1))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2",
+            "output": "2\n"
+        },
+        {
+            "input": "3",
+            "output": "4\n"
+        },
+        {
+            "input": "10",
+            "output": "512\n"
+        },
+        {
+            "input": "12",
+            "output": "2048\n"
+        },
+        {
+            "input": "27",
+            "output": "67108864\n"
+        }
+    ]
+}

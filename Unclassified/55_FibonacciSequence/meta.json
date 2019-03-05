@@ -1,0 +1,29 @@
+{
+    "title": "\u6590\u6ce2\u90a3\u5951\u6570\u5217",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6590\u6ce2\u90a3\u5951\u6570\u5217\u6307\u7684\u662f\u8fd9\u6837\u4e00\u4e2a\u6570\u5217\uff1a1\u30011\u30012\u30013\u30015\u30018\u300113\u300121\u300134\u3002\u6570\u5b66\u4e0a\uff0c\u6590\u6ce2\u7eb3\u5951\u6570\u5217\u4ee5\u5982\u4e0b\u88ab\u4ee5\u9012\u63a8\u7684\u65b9\u6cd5\u5b9a\u4e49\uff1aF(1)=1\uff0cF(2)=1, F(n)=F(n-1)+F(n-2)\uff08n>=3\uff0cn\u2208N*\uff09\u3002\u7ed9\u5b9a n\uff0c\u8bf7\u4f60\u8ba1\u7b97\u7b2c n \u4f4d\u7684\u6590\u6ce2\u90a3\u5951\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a n (0 < n < 50) \u8868\u793a\u6590\u6ce2\u90a3\u5951\u6570\u5217\u7684\u957f\u5ea6\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u7b2c n \u4f4d\u7684\u6590\u6ce2\u90a3\u5951\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n2\n```\n",
+    "templateCode": "",
+    "sourceCode": "n = int(input())\n\nf1, f2 = 1, 1\nwhile n > 1:\n    f1, f2 = f2, f1+f2\n    n -= 1\n\nprint(f1)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1",
+            "output": "1\n"
+        },
+        {
+            "input": "3",
+            "output": "2\n"
+        },
+        {
+            "input": "14",
+            "output": "377\n"
+        },
+        {
+            "input": "23",
+            "output": "28657\n"
+        },
+        {
+            "input": "34",
+            "output": "5702887\n"
+        }
+    ]
+}

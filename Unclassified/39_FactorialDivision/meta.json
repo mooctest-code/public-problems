@@ -1,0 +1,29 @@
+{
+    "title": "\u9636\u4e58\u9664\u6cd5",
+    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e24\u4e2a\u6b63\u6574\u6570 n, m, \u8f93\u51fa n!/m!, \u5176\u4e2d\u9636\u4e58\u5b9a\u4e49\u4e3a `n! = 1*2*3*...*n (n>=1)`\u3002\n\n\u6bd4\u5982,\u82e5 n=6, m=3,\u5219 n!/m! = 6!/3! = 720/6 = 120\u3002\u662f\u4e0d\u662f\u5f88\u7b80\u5355?\n\n\u73b0\u5728\u8ba9\u6211\u4eec\u628a\u95ee\u9898\u53cd\u8fc7\u6765: \u8f93\u5165 k = n!/m!, \u8bf7\u627e\u5230\u8fd9\u6837\u7684\u6574\u6570\u4e8c\u5143\u7ec4(n,m) (n>m>=1)\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6574\u6570 k (0 < k < 10^7)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u5143\u7ec4 (n, m)\uff0c\u4e3a\u6ee1\u8db3 k = n!/m! \u7684\u4e00\u4e2a\u6574\u6570\u4e8c\u5143\u7ec4\u3002 \n\n\u5982\u679c\u7b54\u6848\u4e0d\u552f\u4e00, \u8bf7\u8f93\u51fa n \u6700\u5c0f\u7684\u4e00\u4e2a\u4e8c\u5143\u7ec4\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n72\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n(9, 7)\n```\n",
+    "templateCode": "",
+    "sourceCode": "# http://www.pythontip.com/coding/report_detail/1720/\n\nk = int(input())\n\nn=k\nm=k-1\nr=k//2+1\nwhile r>1:\n    tmpk=k\n    tmpr=r\n    while tmpk>1 and tmpk%tmpr==0 and tmpr>1:\n        tmpk=tmpk//tmpr\n        tmpr-=1\n    if tmpk==1:\n       n=r\n       m=tmpr        \n    r=r-1\n\nprint((n, m))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "42",
+            "output": "(7, 5)\n"
+        },
+        {
+            "input": "240",
+            "output": "(16, 14)\n"
+        },
+        {
+            "input": "210",
+            "output": "(7, 4)\n"
+        },
+        {
+            "input": "32488",
+            "output": "(32488, 32487)\n"
+        },
+        {
+            "input": "604800",
+            "output": "(10, 3)\n"
+        }
+    ]
+}
