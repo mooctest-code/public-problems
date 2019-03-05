@@ -49,35 +49,39 @@ Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http
 找子串,2,统计一个字符串在另一个字符串中的出现次数,字符串-内置函数-find(),MOOCTEST,80_FindSubstrings,1,http://code.mooctest.net/#/exercise/edit/2789/1557
 凯撒加密,2,给出经凯撒加密后的密文，求原文,字符串-字符编码-编码解码,MOOCTEST,95_CaesarEncryption,1,http://code.mooctest.net/#/exercise/edit/2789/1561
 批量修改字符串,2,按照一定格式格式化字符串,字符串-格式化|列表-遍历,MOOCTEST,93_ModifyString,1,null
+列表复制,1,深拷贝列表,列表-内置函数-copy()|列表-运算符-[],RUNOOB,7_ListCopy,1,null
+矩阵对角线和,2,计算矩阵（二维列表）的主对角线和,列表-嵌套,RUNOOB,38_DiagonalSum,1,null
+矩阵相加,2,两个矩阵对应位置元素相加,列表-嵌套,RUNOOB,44_MatrixAddition,1,null
+最大最小值交换,2,交换列表中最大值和最小值的位置,列表-内置函数|高阶函数-map(),RUNOOB,67_SwapMinMax,1,null
+排序,1,给一个列表排序,高阶函数-sorted()|排序|列表-内置函数-sort(),MOOCTEST,20_Sort,1,null
+统计单词,3,统计一个字符串中每个单词出现的次数并降序输出,排序|collections-Counter|列表-内置函数-sort(),MOOCTEST,53_StrWordCount,1,null
+两两相加,2,判断一个整数列表中两数相加为特定值的个数,列表-遍历,MOOCTEST,63_Add,1,null
+字符串排序,2,将字符串分隔开并进行排序,字符串-内置函数|列表-内置函数-sort(),MOOCTEST,78_SortingStrings,1,null
+列表元素处理,2,对列表进行一些处理,列表-运算符|高阶函数-filter(),MOOCTEST,79_ListElementProcessing,1,null
+多项式乘法,3,多项式相乘,列表-遍历|NumPy,MOOCTEST,3_PolynomialMultiplication,1,null
 无重复三位数,1,从四个数字选三个进行全排列,itertools-permutations,RUNOOB,1_NoDupThree,1,null
 完全平方数,3,一个整数加上某个数后是完全平方数，再加上一个数后还是安全平方数，求这个数,数学,RUNOOB,3_PerfectSquareNum,1,null
 斐波那契数列,1,求第k个斐波那契数,数学-常见数列-斐波那契,RUNOOB,6_Fibonacci,1,null
-列表复制,1,深拷贝列表,列表-内置函数-copy()|列表-运算符-[],RUNOOB,7_ListCopy,1,null
 兔子繁殖,2,n个月后有多少只兔子？,数学-常见数列-斐波那契,RUNOOB,11_RabbitReprod,1,null
 素数判断,2,判断一个数是否是素数,math,RUNOOB,12_JudgePrime,1,null
 比赛名单,3,已知一些比赛信息，找出比赛的名单,数学-其它,RUNOOB,22_CompetitionList,1,null
 递推年龄,1,使用递归的思想求出年龄,函数-递归,RUNOOB,28_RecurrenceAge,1,null
-矩阵对角线和,2,计算矩阵（二维列表）的主对角线和,列表-嵌套,RUNOOB,38_DiagonalSum,1,null
-矩阵相加,2,两个矩阵对应位置元素相加,列表-嵌套,RUNOOB,44_MatrixAddition,1,null
 lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,null
 创建随机数,1,使用random模块生成随机数,random-uniform()|random-seed(),RUNOOB,50_RandomUniform,1,null
-最大最小值交换,2,交换列表中最大值和最小值的位置,列表-内置函数|高阶函数-map(),RUNOOB,67_SwapMinMax,1,null
 年龄最大者,2,从用户字典中找出年龄最大者,字典-遍历|字典-运算符,RUNOOB,78_OldestPerson,1,null
 回文数,1,判断数字是否为回文数,数学运算-abs()|类型转换-基本数据类型,MOOCTEST,1_Plalindrome,1,null
-多项式乘法,3,多项式相乘,列表-遍历|NumPy,MOOCTEST,3_PolynomialMultiplication,1,null
 统计数字次数,2,统计一串数字中每个数字的出现次数,collections-Counter,MOOCTEST,4_Num-str-statistic,1,null
 水果出售记录,3,帮店老板统计每个水果卖出了多少,collections-Counter|列表-内置函数-sort()|functools-cmp_to_key,MOOCTEST,5_Fruit-sold-times,1,null
 *英文文本读取,2,统计英文文本中出现次数最多的英文字母,输入输出-文件|collections-Counter|字符串-内置函数|os-path,MOOCTEST,7_ReadENGText,1,null
 *中文文本读取,3,统计一个文本中出现次数最多的中文字符,输入输出-文件|collections-Counter|字符串-内置函数|os-path|字符串-字符编码,MOOCTEST,8_ReadCHNText,1,null
 试一试map()函数,2,使用 map() 函数对列表进行操作,高阶函数-map(),MOOCTEST,11_TryMapFunc,1,null
-试一试reduce()函数,2,使用 reduce() 函数计算一个列表的“和”,functools-reduce|高阶函数-lambda,MOOCTEST,12_Reduce,1,null
+试一试reduce()函数,2,使用 reduce() 函数计算一个列表的“和”,functools-reduce|函数-lambda,MOOCTEST,12_Reduce,1,null
 求集合的子集,2,判断一个集合是否为另一个集合的子集,集合-内置函数-is?(),MOOCTEST,13_GetSubset,1,null
 求集合的交集,2,求两个集合的交集,集合-内置函数-交差并,MOOCTEST,14_GetIntersection,1,null
 求集合的并集,2,求两个集合的并集,集合-内置函数-交差并,MOOCTEST,15_GetUnion,1,null
 求集合的差集,2,求两个集合的差集,集合-内置函数-交差并,MOOCTEST,16_GetSubtract,1,null
 试一试自定义类,2,设计一个学生类并实现打印方法,内置类属性-__print__,MOOCTEST,17_CustomizedClass,1,null
 试一试列表生成器,1,给定一个范围，输出每个数的平方,生成-列表生成式,MOOCTEST,18_ListGenerator,1,null
-排序,1,给一个列表排序,高阶函数-sorted()|排序|列表-内置函数-sort(),MOOCTEST,20_Sort,1,null
 百钱买百鸡,2,给你一百元买一百只鸡，有多少种买法？,数学,MOOCTEST,21_Dollars2Chickens,1,null
 奇数的个数,3,求使用 0~n 所能组成的奇数的个数,数学,MOOCTEST,23_OddNum,1,null
 桃子问题,2,有一些猴子分桃子，求原来最少有多少个桃子,数学,MOOCTEST,24_Peach,1,null
@@ -97,17 +101,13 @@ lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,nul
 求中位数,1,求一个列表的中位数,数学-其它,MOOCTEST,48_Median,1,null
 最大公约数,1,求两个数的最大公约数,数学-其它,MOOCTEST,49_GCD,1,null
 最小公倍数,1,求两个数的最小公倍数,数学-其它,MOOCTEST,50_LCM,1,null
-统计单词,3,统计一个字符串中每个单词出现的次数并降序输出,排序|collections-Counter|列表-内置函数-sort(),MOOCTEST,53_StrWordCount,1,null
 函数递归,1,按题目中的递归公式求函数值,函数-递归,MOOCTEST,54_FuncRecursive,1,null
 数字组成,3,给你一个整数数列，求能够组成不同两位数的个数,数学-组合数学,MOOCTEST,59_NumComposition,1,null
 统计字符出现次数,3,统计每个字符的出现次数并降序输出,字符串-内置函数-count()|collections-Counter|functools,MOOCTEST,62_WordCount,1,null
-两两相加,2,判断一个整数列表中两数相加为特定值的个数,列表-遍历,MOOCTEST,63_Add,1,null
 统计元素出现次数,2,使用 random 生成随机数列并统计每个数的出现次数,random-seed()|random-randint()|collections-Counter,MOOCTEST,67_ElementsCount,1,null
 默尼森数,3,满足 M=2^p-1 的素数 M,数学-常见数列,MOOCTEST,68_MonisenNum,1,null
 交换key-value,3,将key作为value、将value作为key创建新字典,字典|高阶函数-sorted(),MOOCTEST,69_Exchangekey-value,1,null
 调用库函数求最小公倍数,1,调用 math 库函数求最小公倍数,math-gcd(),MOOCTEST,75_LeastCommonMultiple,1,null
-字符串排序,2,将字符串分隔开并进行排序,字符串-内置函数|列表-内置函数-sort(),MOOCTEST,78_SortingStrings,1,null
-列表元素处理,2,对列表进行一些处理,列表-运算符|高阶函数-filter(),MOOCTEST,79_ListElementProcessing,1,null
 计算方程的根,2,给定二元一次方程的三个参数，求根,数学-数学问题,MOOCTEST,85_TheRootOfEquation,1,null
 累加,1,计算1~n的累加和,数学-其它,MOOCTEST,89_Accumulate,1,null
 累乘,1,计算 n!,数学-其它,MOOCTEST,90_Multiplication,1,null

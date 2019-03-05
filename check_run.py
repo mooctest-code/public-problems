@@ -50,9 +50,6 @@ for i in selected:
     print("Output:")
     print(testcase[i]['output'])
 
-    print("Testcases in README.md has been replaced.")
-
-
 # replace testcase in README.md
 try:
     p_r = sys.argv.index('-r')
@@ -87,12 +84,11 @@ try:
             readme.append(repl)
         else: readme[p] = repl
 
+    with open(path.join(problem, 'README.md'), 'w', encoding='utf-8') as fw:
+        fw.write(''.join(readme))
+        print("Testcases in README.md has been replaced.")
 except ValueError:
     pass
-
-with open(path.join(problem, 'README.md'), 'w', encoding='utf-8') as fw:
-    fw.write(''.join(readme))
-
 # write to testcase.json
 with open(path.join(problem, 'testcase.json'), 'w', encoding='utf-8') as out:
     # print(testcase)
