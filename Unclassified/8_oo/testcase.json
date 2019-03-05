@@ -1,0 +1,6 @@
+[
+    {
+        "input": "2\n'Tom',63;'Allen',85;'Toney',83\n'Eve',74;'Adan',97;'Julia',80",
+        "output": "['Allen', 'Toney', 'Adan', 'Julia']\n"
+    }
+]

@@ -1,11 +1,21 @@
 题目名称,难度,简单题目描述,知识点,题目来源,包名,是否上传,题目链接
 Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http://code.mooctest.net/#/exercise/edit/2785/1515
-读取和输出一个数据,1,基本数据类型的读取和输出,输入输出-标准流|类型转换-基本数据类型,谢子聪,1_BasicType,1,http://code.mooctest.net/#/exercise/edit/2785/1516
-读取和输出几个数据,1,一行中多个数据的读取和输出,输入输出-标准流|类型转换-基本数据类型|字符串-格式化-%和format()|字符串-内置函数-split(),谢子聪,2_SomeData,1,http://code.mooctest.net/#/exercise/edit/2785/1517
-读取和输出一个数组,2,一行数组的读取和输出,输入输出-标准流|函数-参数传递|生成-列表生成式|高阶函数-map()|字符串-内置函数-join(),谢子聪,3_DataList,1,http://code.mooctest.net/#/exercise/edit/2785/1518
+读取和输出一个数据,1,类型转换的读取和输出,输入输出-标准流|类型转换-类型转换,谢子聪,1_BasicType,1,http://code.mooctest.net/#/exercise/edit/2785/1516
+读取和输出几个数据,1,一行中多个数据的读取和输出,输入输出-标准流|类型转换-类型转换|字符串-格式化-%和format()|字符串-内置函数-split(),谢子聪,2_SomeData,1,http://code.mooctest.net/#/exercise/edit/2785/1517
+读取和输出一个数组,2,一行数组的读取和输出,输入输出-标准流|函数-参数传递|生成-列表生成式|序列操作-map()|字符串-内置函数-join(),谢子聪,3_DataList,1,http://code.mooctest.net/#/exercise/edit/2785/1518
 读取和输出多行数据,2,多行数据的读取和输出,输入输出-标准流|流程控制-循环|流程控制-异常,谢子聪,4_MultiLine,1,http://code.mooctest.net/#/exercise/edit/2785/1519
-读取和输出多行多列数据,3,矩阵和不定长数组的读取和输出,输入输出-标准流|流程控制-循环|高阶函数-map()|流程控制-异常|数学运算-sum(),谢子聪,5_Matrix,1,http://code.mooctest.net/#/exercise/edit/2785/1520
+读取和输出多行多列数据,3,矩阵和不定长数组的读取和输出,输入输出-标准流|流程控制-循环|序列操作-map()|流程控制-异常|数学运算-sum(),谢子聪,5_Matrix,1,http://code.mooctest.net/#/exercise/edit/2785/1520
 读取和输出Python格式的数据,1,Python数据类型数据的读取和输出,输入输出-标准流|编译执行-eval(),谢子聪,6_PythonIO,1,http://code.mooctest.net/#/exercise/edit/2785/1521
+数值计算,1,一些简单的数值计算,数值计算-运算符,Python快速入门-刘锦涛,1_num,1,http://code.mooctest.net/#/exercise/edit/2389/1430
+文本计算,2,一些简单的文本操作,字符串-运算符,Python快速入门-刘锦涛,2_str,1,http://code.mooctest.net/#/exercise/edit/2389/1431
+逻辑运算,2,一些简单的其它运算,数值计算-运算符,Python快速入门-刘锦涛,3_logic,1,http://code.mooctest.net/#/exercise/edit/2389/1432
+运动会报名册,1,一些简单的列表操作,列表-运算符,Python快速入门-刘锦涛,4_register,1,http://code.mooctest.net/#/exercise/edit/2389/1433
+运动会成绩单1,1,将运动成绩信息组成元组,元组,Python快速入门-刘锦涛,5_sport1,1,http://code.mooctest.net/#/exercise/edit/2389/1433
+运动会成绩单2,1,将运动成绩信息组成元组列表,元组|列表-嵌套,Python快速入门-刘锦涛,6_sport2,1,http://code.mooctest.net/#/exercise/edit/2389/1434
+考试成绩单,1,将运动成绩信息组成字典,字典,Python快速入门-刘锦涛,7_exam,1,http://code.mooctest.net/#/exercise/edit/2389/1435
+面向对象,2,实现一个成绩单对象，以及一个成员函数输出大于80分的同学名字,类和实例,Python快速入门-刘锦涛,9_oo,1,http://code.mooctest.net/#/exercise/edit/2389/1437
+自定义对象之迭代器,2,使用迭代器实现对学生成绩单的遍历,迭代-迭代器,Python快速入门-刘锦涛,10_iter,1,http://code.mooctest.net/#/exercise/edit/2389/1438
+自定义对象之生成器,2,使用生成器实现课程的分配,生成-生成器,Python快速入门-刘锦涛,11_gen,1,http://code.mooctest.net/#/exercise/edit/2389/1439
 整数简单四则运算,1,简单的四则运算,变量和运算符-运算符,MOOCTEST,72_SimpleArithmetic,1,http://code.mooctest.net/#/exercise/edit/2786/1522
 计算糖果,1,已知一些条件，计算三个人每个人手里的糖果数,变量和运算符-运算符,MOOCTEST,30_Candy,1,http://code.mooctest.net/#/exercise/edit/2786/1529
 求方程的结果,1,计算方差的y值,变量和运算符-运算符,MOOCTEST,71_TheResultEquation,1,http://code.mooctest.net/#/exercise/edit/2786/1524
@@ -25,7 +35,7 @@ Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http
 爱因斯坦台阶问题,1,一道很简单的数(xun)学(huan)题,流程控制-循环,MOOCTEST,105_EinsteinStairs,1,http://code.mooctest.net/#/exercise/edit/2788/1537
 成绩等级判断,2,根据方案对成绩进行分级,字符串-字符编码-编码解码|流程控制-条件判断,MOOCTEST,91_GradeLevel,1,http://code.mooctest.net/#/exercise/edit/2788/1538
 杨辉三角,3,输出前n行的杨辉三角,字符串-格式化|函数-生成器,RUNOOB,61_YangHuiTriangle,1,null
-乘法口诀表,2,输出乘法口诀表,流程控制-循环|迭代-可迭代对象-range()|字符串-格式化,RUNOOB,8_Mulyiplication,1,http://code.mooctest.net/#/exercise/edit/2788/1539
+乘法口诀表,2,输出乘法口诀表,流程控制-循环|序列操作-range()|字符串-格式化,RUNOOB,8_Mulyiplication,1,http://code.mooctest.net/#/exercise/edit/2788/1539
 判断天数,2,计算日期是该年的第几天,流程控制-条件判断|流程控制-循环,RUNOOB,4_JudgeDayNum,1,http://code.mooctest.net/#/exercise/edit/2788/1540
 个税计算,2,根据个税表格计算月收入应缴税,流程控制-循环,MOOCTEST,88_TaxCalculation,1,http://code.mooctest.net/#/exercise/edit/2788/1541
 计算各位数字和的特征,1,计算1到n之间有多少个数其各位数之和能被5整除,流程控制-循环,MOOCTEST,103_SumEachNum,1,http://code.mooctest.net/#/exercise/edit/2788/1542
@@ -52,12 +62,12 @@ Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http
 列表复制,1,深拷贝列表,列表-内置函数-copy()|列表-运算符-[],RUNOOB,7_ListCopy,1,null
 矩阵对角线和,2,计算矩阵（二维列表）的主对角线和,列表-嵌套,RUNOOB,38_DiagonalSum,1,null
 矩阵相加,2,两个矩阵对应位置元素相加,列表-嵌套,RUNOOB,44_MatrixAddition,1,null
-最大最小值交换,2,交换列表中最大值和最小值的位置,列表-内置函数|高阶函数-map(),RUNOOB,67_SwapMinMax,1,null
-排序,1,给一个列表排序,高阶函数-sorted()|排序|列表-内置函数-sort(),MOOCTEST,20_Sort,1,null
+最大最小值交换,2,交换列表中最大值和最小值的位置,列表-内置函数|序列操作-map(),RUNOOB,67_SwapMinMax,1,null
+排序,1,给一个列表排序,序列操作-sorted()|排序|列表-内置函数-sort(),MOOCTEST,20_Sort,1,null
 统计单词,3,统计一个字符串中每个单词出现的次数并降序输出,排序|collections-Counter|列表-内置函数-sort(),MOOCTEST,53_StrWordCount,1,null
 两两相加,2,判断一个整数列表中两数相加为特定值的个数,列表-遍历,MOOCTEST,63_Add,1,null
 字符串排序,2,将字符串分隔开并进行排序,字符串-内置函数|列表-内置函数-sort(),MOOCTEST,78_SortingStrings,1,null
-列表元素处理,2,对列表进行一些处理,列表-运算符|高阶函数-filter(),MOOCTEST,79_ListElementProcessing,1,null
+列表元素处理,2,对列表进行一些处理,列表-运算符|序列操作-filter(),MOOCTEST,79_ListElementProcessing,1,null
 多项式乘法,3,多项式相乘,列表-遍历|NumPy,MOOCTEST,3_PolynomialMultiplication,1,null
 无重复三位数,1,从四个数字选三个进行全排列,itertools-permutations,RUNOOB,1_NoDupThree,1,null
 完全平方数,3,一个整数加上某个数后是完全平方数，再加上一个数后还是安全平方数，求这个数,数学,RUNOOB,3_PerfectSquareNum,1,null
@@ -69,12 +79,12 @@ Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http
 lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,null
 创建随机数,1,使用random模块生成随机数,random-uniform()|random-seed(),RUNOOB,50_RandomUniform,1,null
 年龄最大者,2,从用户字典中找出年龄最大者,字典-遍历|字典-运算符,RUNOOB,78_OldestPerson,1,null
-回文数,1,判断数字是否为回文数,数学运算-abs()|类型转换-基本数据类型,MOOCTEST,1_Plalindrome,1,null
+回文数,1,判断数字是否为回文数,数学运算-abs()|类型转换-类型转换,MOOCTEST,1_Plalindrome,1,null
 统计数字次数,2,统计一串数字中每个数字的出现次数,collections-Counter,MOOCTEST,4_Num-str-statistic,1,null
 水果出售记录,3,帮店老板统计每个水果卖出了多少,collections-Counter|列表-内置函数-sort()|functools-cmp_to_key,MOOCTEST,5_Fruit-sold-times,1,null
 *英文文本读取,2,统计英文文本中出现次数最多的英文字母,输入输出-文件|collections-Counter|字符串-内置函数|os-path,MOOCTEST,7_ReadENGText,1,null
 *中文文本读取,3,统计一个文本中出现次数最多的中文字符,输入输出-文件|collections-Counter|字符串-内置函数|os-path|字符串-字符编码,MOOCTEST,8_ReadCHNText,1,null
-试一试map()函数,2,使用 map() 函数对列表进行操作,高阶函数-map(),MOOCTEST,11_TryMapFunc,1,null
+试一试map()函数,2,使用 map() 函数对列表进行操作,序列操作-map(),MOOCTEST,11_TryMapFunc,1,null
 试一试reduce()函数,2,使用 reduce() 函数计算一个列表的“和”,functools-reduce|函数-lambda,MOOCTEST,12_Reduce,1,null
 求集合的子集,2,判断一个集合是否为另一个集合的子集,集合-内置函数-is?(),MOOCTEST,13_GetSubset,1,null
 求集合的交集,2,求两个集合的交集,集合-内置函数-交差并,MOOCTEST,14_GetIntersection,1,null
@@ -106,7 +116,7 @@ lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,nul
 统计字符出现次数,3,统计每个字符的出现次数并降序输出,字符串-内置函数-count()|collections-Counter|functools,MOOCTEST,62_WordCount,1,null
 统计元素出现次数,2,使用 random 生成随机数列并统计每个数的出现次数,random-seed()|random-randint()|collections-Counter,MOOCTEST,67_ElementsCount,1,null
 默尼森数,3,满足 M=2^p-1 的素数 M,数学-常见数列,MOOCTEST,68_MonisenNum,1,null
-交换key-value,3,将key作为value、将value作为key创建新字典,字典|高阶函数-sorted(),MOOCTEST,69_Exchangekey-value,1,null
+交换key-value,3,将key作为value、将value作为key创建新字典,字典|序列操作-sorted(),MOOCTEST,69_Exchangekey-value,1,null
 调用库函数求最小公倍数,1,调用 math 库函数求最小公倍数,math-gcd(),MOOCTEST,75_LeastCommonMultiple,1,null
 计算方程的根,2,给定二元一次方程的三个参数，求根,数学-数学问题,MOOCTEST,85_TheRootOfEquation,1,null
 累加,1,计算1~n的累加和,数学-其它,MOOCTEST,89_Accumulate,1,null

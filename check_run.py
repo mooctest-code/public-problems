@@ -44,7 +44,7 @@ for i in selected:
     result = p.communicate()[0]
     testcase[i]['output'] = bytes.decode(result).replace('\r', '')
 
-    print("Testcase {}:".format(i))
+    print("Testcase {}:".format(i+1))
     print("Input:")
     print(inp)
     print("Output:")

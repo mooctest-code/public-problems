@@ -1,11 +1,12 @@
 import json
 from os import path
 
+cur_dir = path.dirname(__file__)
 problem_path = 'probleminfo.csv'
 tree_path = 'python_learning_tree.km'
 
 points = {}
-with open(problem_path, 'r', encoding="utf-8") as f:
+with open(path.join(cur_dir, problem_path), 'r', encoding="utf-8") as f:
     f.readline()
     for line in f:
         ps = line.split(',')[3].split('|')
@@ -58,16 +59,14 @@ def pop_problems(o):
             pop_problems(i)
 
 tree = {}
-with open(tree_path, 'r', encoding="utf-8") as f:
+with open(path.join(cur_dir, tree_path), 'r', encoding="utf-8") as f:
     tree = json.loads(f.read())
     put_problem_to_tree(tree['root'], '', 0)
     count_problems(tree['root'])
     pop_problems(tree['root'])
 
-# print(tree)
-
 print('Not in Tree:')
 print(set(points.keys()) - is_on_tree)
 
-with open('python_learning_tree.json', 'w', encoding='utf-8') as f:
+with open('./python_learning_tree.km', 'w', encoding='utf-8') as f:
     json.dump(tree, f, ensure_ascii=False)

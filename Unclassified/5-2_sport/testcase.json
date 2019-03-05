@@ -1,0 +1,6 @@
+[
+    {
+        "input": "'Tom'\n'110M'\n13.9\n'Eve'\n'800M'\n'4min'\n'Allen'\n'110M'\n14.2",
+        "output": "[('Tom', 13.9), ('Allen', 14.2)]\n"
+    }
+]

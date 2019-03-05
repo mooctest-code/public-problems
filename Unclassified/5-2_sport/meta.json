@@ -1,0 +1,13 @@
+{
+    "title": "实训五-2：整理运动会成绩单",
+    "desc": "### 描述\n\n运动会结束，运动会的成绩单也整理出来了，现在小南要分析110M项目同学的成绩，但是使用list+tuple的组合现在无法满足我们的需求，请你帮帮小南。\n\n### 输入\n\n一共九行，每三行对应一个同学的参赛项目和成绩，分别是，第一行对应学生姓名，第二行对应参赛项目，第三行对应比赛成绩。\n\n### 输出\n\n以元组为元素的list，list包含所有参与110M栏项目的同学信息，元组格式：(姓名,成绩)。\n\n### 样例输入\n\n```\n'Tom'\n'110M'\n14.3\n'Eve'\n'800M'\n'4min'\n'Allen'\n'110M'\n15\n```\n\n### 样例输出\n\n```\n[('Tom', 14.3), ('Allen', 15)]\n```",
+    "templateCode": "",
+    "sourceCode": "l = []\nfor i in range(3):\n    [n, p, r] = [eval(input()) for j in range(3)]\n    if p == '110M':\n        l.append((n, r))\n\nprint(l)",
+    "lang": "python3",
+    "testCases": [
+        {
+            "input": "'Tom'\n'110M'\n13.9\n'Eve'\n'800M'\n'4min'\n'Allen'\n'110M'\n14.2",
+            "output": "[('Tom', 13.9), ('Allen', 14.2)]\n"
+        }
+    ]
+}

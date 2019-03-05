@@ -1,0 +1,6 @@
+[
+    {
+        "input": "[('Tom', 63), ('Jeff', 85), ('Adan', 97), ('Julia', 80), ('Eve', 74), ('Toney', 55)]",
+        "output": "Tom\nJeff\nAdan\nJulia\nEve\nToney\n"
+    }
+]

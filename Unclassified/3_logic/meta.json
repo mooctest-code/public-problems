@@ -1,0 +1,21 @@
+{
+    "title": "实训三：逻辑运算",
+    "desc": "### 描述\n\nPython可以提供强大的逻辑运算功能帮助我们来判断两个对象是否一致。帮助小南比较经过一番运算后的对象之间是否还相等。\n\n### 输入\n\n一共四行，每行对应一个字符串 a, b, c, d\n\n### 输出\n\n分别对a，b和c，d进行加法计算，判断运算后的值是否相等。\n\n### 样例输入\n\n```\nHello \nPython\nHello\no Python\n```\n\n```\n'2'\n1\n2\n'1'\n```\n\n### 样例输出\n\n```\n'Hello Python' == 'Hello Python' is True\n```\n\n```\n'21' == '21' is True\n```\n",
+    "templateCode": "",
+    "sourceCode": "[a, b, c, d] = [eval(input()) for i in range(4)]\n\nprint('\\'{}\\' == \\'{}\\' is {}'.format(a+b, c+d, a+b == c+d))",
+    "lang": "python3",
+    "testCases": [
+        {
+            "input": "'32'\n'1'\n'1'\n'32'",
+            "output": "'321' == '132' is False\n"
+        },
+        {
+            "input": "'Hello'\n' World'\n'Hell'\n'o World'",
+            "output": "'Hello World' == 'Hello World' is True\n"
+        },
+        {
+            "input": "1\n3\n2\n2",
+            "output": "'4' == '4' is True\n"
+        }
+    ]
+}

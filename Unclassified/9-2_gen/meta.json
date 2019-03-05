@@ -1,0 +1,13 @@
+{
+    "title": "实训九-2：自定义对象（生成器）",
+    "desc": "### 描述\n\n老师对每个班的成绩都要有一个评估，来规划下一阶段的上课进度，成绩是一个很好的标杆，利用每个班的成绩单，根据每班的平均成绩，决定接下来的上课重心，平均分在80以上的班级将上课重点放在深入理解知识点上，平均分<80的班级将重点放在完成课程进度上。使用生成器完成此功能函数assignLesson()。\n\n### 输入\n\n第一行n，代表一共有多少个班级；\n之后的n行输入格式形如：Julia,80;Eve,74;Toney,55\n学生与成绩之间通过西文逗号隔开，学生成绩组合之间使用西文分号隔开。\n\n### 输出\n\n每个班级的课程难度，Normal 或 Hard\n\n### 样例输入\n\n```\n3\n'Tom',63;'Allen',85\n'Adan',97;'Julia',80\n'Eve',74;'Toney',55\n```\n\n### 样例输出\n\n```\nNormal\nHard\nNormal\n```\n",
+    "templateCode": "",
+    "sourceCode": "def assignLesson(a):\n    for c in a:\n        s = 0\n        for i in c:\n            s += i[1]\n        avg = s / len(i)\n\n        yield 'Normal' if avg < 80 else 'Hard'\n\ncnt = int(input())\n\na = []\nfor i in range(cnt):\n    l = input().split(';')\n    r = []\n    for j in l:\n        pair = j.split(',')\n        r.append((eval(pair[0]), int(pair[1])))\n    a.append(r)\n\nfor i in assignLesson(a):\n    print(i)",
+    "lang": "python3",
+    "testCases": [
+        {
+            "input": "4\n'Tom',63;'Allen',85\n'Adan',97;'Julia',80\n'Eve',74;'Toney',55\n'Jeff',82;'Jerry',99",
+            "output": "Normal\nHard\nNormal\nHard\n"
+        }
+    ]
+}
