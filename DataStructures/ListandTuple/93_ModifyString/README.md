@@ -24,4 +24,3 @@ NJU_
 ```
 ['1 NJU_Liuyun', '2 NJU_Xuxu', '3 NJU_Yangjun']
 ```
-
