@@ -1,0 +1,10 @@
+[
+    {
+        "input": "B\n",
+        "output": "True\n"
+    },
+    {
+        "input": "C\n",
+        "output": "False\n"
+    }
+]

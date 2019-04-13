@@ -1,0 +1,17 @@
+{
+    "title": "正则表达式中的findall函数",
+    "desc": "### 题目描述\n查找字符串中在给定位置之间出现的所有数字，返回数字列表\n\n### 输入描述\n第一行测试用例的个数\n下一行为测试用例的字符串\n下一行为开始位置和结束位置，中间用空格隔开\n\n### 输出描述\n字符串中所有数字的列表\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1\niselab 123 mooc 456 huidhui\n1 20\n```\n\n```\n['123', '456']\n```\n\n\n\n",
+    "templateCode": "",
+    "sourceCode": "\nimport re \nnum = int(input())\nfor i in range(num):\n    str1 = input()\n    str2 = list(map(int,input().split()))\n    startPoint = str2[0]\n    endPoint = str2[1]\n    pattern = re.compile(r'\\d+')   # 鏌ユ壘鏁板瓧\n    print(pattern.findall(str1,startPoint,endPoint)) ",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1\niselab 123 mooc 456 huidhui\n1 20\n",
+            "output": "['123', '456']\n"
+        },
+        {
+            "input": "2\niselab 123 mooc 456 huidhui\n1 7\niselab 123 mooc 456 huidhui\n1 17",
+            "output": "[]\n['123', '4']\n"
+        }
+    ]
+}

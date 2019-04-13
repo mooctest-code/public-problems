@@ -1,0 +1,14 @@
+[
+    {
+        "input": "1\nA23G4HFD567\n",
+        "output": "A46G8HFD1134\n"
+    },
+    {
+        "input": "1\na1234567dhiahdudha12\n",
+        "output": "a2469134dhiahdudha24\n"
+    },
+    {
+        "input": "2\nagdshadgjh\nemmmm156795sdab4568",
+        "output": "agdshadgjh\nemmmm313590sdab9136\n"
+    }
+]

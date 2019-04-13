@@ -1,11 +1,13 @@
 题目名称,难度,简单题目描述,知识点,题目来源,包名,是否上传,题目链接
 Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http://code.mooctest.net/#/exercise/edit/2785/1515
-读取和输出一个数据,1,类型转换的读取和输出,输入输出-标准流|类型转换-类型转换,谢子聪,1_BasicType,1,http://code.mooctest.net/#/exercise/edit/2785/1516
+读取和输出一个数据,1,类型转换的读取和输出,输入输出-标准流|内置全局函数1-类型转换-类型转换,谢子聪,1_BasicType,1,http://code.mooctest.net/#/exercise/edit/2785/1516
 读取和输出几个数据,1,一行中多个数据的读取和输出,输入输出-标准流|类型转换-类型转换|字符串-格式化-%和format()|字符串-内置函数-split(),谢子聪,2_SomeData,1,http://code.mooctest.net/#/exercise/edit/2785/1517
 读取和输出一个数组,2,一行数组的读取和输出,输入输出-标准流|函数-参数传递|生成-列表生成式|序列操作-map()|字符串-内置函数-join(),谢子聪,3_DataList,1,http://code.mooctest.net/#/exercise/edit/2785/1518
 读取和输出多行数据,2,多行数据的读取和输出,输入输出-标准流|流程控制-循环|流程控制-异常,谢子聪,4_MultiLine,1,http://code.mooctest.net/#/exercise/edit/2785/1519
-读取和输出多行多列数据,3,矩阵和不定长数组的读取和输出,输入输出-标准流|流程控制-循环|序列操作-map()|流程控制-异常|数学运算-sum(),谢子聪,5_Matrix,1,http://code.mooctest.net/#/exercise/edit/2785/1520
+读取和输出多行多列数据,3,矩阵和不定长数组的读取和输出,输入输出-标准流|流程控制-循环|序列操作-map()|流程控制-异常|内助全局函数1-数学运算-sum(),谢子聪,5_Matrix,1,http://code.mooctest.net/#/exercise/edit/2785/1520
 读取和输出Python格式的数据,1,Python数据类型数据的读取和输出,输入输出-标准流|编译执行-eval(),谢子聪,6_PythonIO,1,http://code.mooctest.net/#/exercise/edit/2785/1521
+*英文文本读取,2,统计英文文本中出现次数最多的英文字母,输入输出-文件|collections-Counter|字符串-内置函数|os-path,MOOCTEST,7_ReadENGText,1,null
+*中文文本读取,3,统计一个文本中出现次数最多的中文字符,输入输出-文件|collections-Counter|字符串-内置函数|os-path|字符串-字符编码,MOOCTEST,8_ReadCHNText,1,null
 数值计算,1,一些简单的数值计算,数值计算-运算符,Python快速入门-刘锦涛,1_num,1,http://code.mooctest.net/#/exercise/edit/2389/1430
 文本计算,2,一些简单的文本操作,字符串-运算符,Python快速入门-刘锦涛,2_str,1,http://code.mooctest.net/#/exercise/edit/2389/1431
 逻辑运算,2,一些简单的其它运算,数值计算-运算符,Python快速入门-刘锦涛,3_logic,1,http://code.mooctest.net/#/exercise/edit/2389/1432
@@ -18,11 +20,11 @@ Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http
 求方程的结果,1,计算方差的y值,变量和运算符-运算符,MOOCTEST,71_TheResultEquation,1,http://code.mooctest.net/#/exercise/edit/2786/1524
 华氏摄氏温度转换,1,将华氏温度转为摄氏温度,变量和运算符-运算符,MOOCTEST,76_TemperatureConversion,1,http://code.mooctest.net/#/exercise/edit/2786/1528
 简单位运算,1,一些基本的位运算,变量和运算符-运算符-位运算,RUNOOB,51_52_53_55_SimpleBit,1,http://code.mooctest.net/#/exercise/edit/2786/1523
-整数取位,2,取一个整数的二进制表示的某几位,变量和运算符-运算符-位运算|类型转换-进制转换,RUNOOB,54_IntegerBits,1,http://code.mooctest.net/#/exercise/edit/2786/1525
+整数取位,2,取一个整数的二进制表示的某几位,变量和运算符-运算符-位运算|内置全局函数1-类型转换-进制转换,RUNOOB,54_IntegerBits,1,http://code.mooctest.net/#/exercise/edit/2786/1525
 求长方体体积,1,给你长宽高，求长方体的体积,变量和运算符-运算符,MOOCTEST,73_CuboidVolume,1,http://code.mooctest.net/#/exercise/edit/2786/1526
 求三角形的面积,2,求三角形的面积，考虑不成立的情况,变量和运算符-运算符|流程控制-条件判断,MOOCTEST,83_AreaTriangle,1,http://code.mooctest.net/#/exercise/edit/2786/1527
 水仙花数,2,输出水仙花数（各位数字立方和等于该数本身的数）,变量和运算符-运算符,RUNOOB,64_NarcissisticNum,1,http://code.mooctest.net/#/exercise/edit/2786/1530
-整数表示,3,将一个整数用内存中存储方式表示,变量和运算符-运算符|字符串-格式化|类型转换-进制转换,MOOCTEST,42_PresentInteger,1,null
+整数表示,3,将一个整数用内存中存储方式表示,变量和运算符-运算符|字符串-格式化|内置全局函数1-类型转换-进制转换,MOOCTEST,42_PresentInteger,1,null
 闰年判断,1,判断一个年份是否为闰年,流程控制-条件判断,MOOCTEST,61_JudgeLeapYear,1,http://code.mooctest.net/#/exercise/edit/2788/1531
 简单排序,1,给三个数排序,流程控制-条件判断,RUNOOB,5_SimpleSort,1,http://code.mooctest.net/#/exercise/edit/2788/1532
 企业奖金发放,1,给定企业月利润，根据规则计算奖金,流程控制-条件判断,RUNOOB,2_EnterpriseBonuses,1,http://code.mooctest.net/#/exercise/edit/2788/1533
@@ -57,6 +59,10 @@ Hello World,1,输出 Hello World,输入输出-标准流,null,0_HelloWorld,1,http
 凯撒加密,2,给出经凯撒加密后的密文，求原文,字符串-字符编码-编码解码,MOOCTEST,95_CaesarEncryption,1,http://code.mooctest.net/#/exercise/edit/2789/1561
 递推年龄,1,使用递归的思想求出年龄,函数-递归,RUNOOB,28_RecurrenceAge,1,http://code.mooctest.net/#/exercise/edit/2793/1562
 lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,http://code.mooctest.net/#/exercise/edit/2793/1563
+DefaultParameter,1,函数默认参数的使用,函数-参数传递,顾宇,DefaultParameter.zip,0,null
+ParameterOrder,1,函数参数的位置顺序,函数-参数传递,顾宇,ParameterOrder.zip,0,null
+VariableLengthParameters,2,函数不定长参数（*）,函数-参数传递,顾宇,VariableLengthParameters.zip,0,null
+VariableLengthParameters2,2,函数不定长参数（**）,函数-参数传递,顾宇,VariableLengthParameters2.zip,0,null
 批量修改字符串,2,按照一定格式格式化字符串,字符串-格式化|列表-遍历,MOOCTEST,93_ModifyString,1,http://code.mooctest.net/#/exercise/edit/2795/1575
 列表复制,1,深拷贝列表,列表-内置函数-copy()|列表-运算符-[],RUNOOB,7_ListCopy,1,http://code.mooctest.net/#/exercise/edit/2795/1566
 矩阵对角线和,2,计算矩阵（二维列表）的主对角线和,列表-嵌套,RUNOOB,38_DiagonalSum,1,http://code.mooctest.net/#/exercise/edit/2795/1569
@@ -67,32 +73,92 @@ lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,htt
 列表元素处理,2,对列表进行一些处理,列表-运算符|序列操作-filter(),MOOCTEST,79_ListElementProcessing,1,http://code.mooctest.net/#/exercise/edit/2795/1574
 多项式乘法,3,多项式相乘,列表-遍历|NumPy,MOOCTEST,3_PolynomialMultiplication,1,http://code.mooctest.net/#/exercise/edit/2795/1565
 字符串排序,2,将字符串分隔开并进行排序,字符串-内置函数|列表-内置函数-sort(),MOOCTEST,78_SortingStrings,1,http://code.mooctest.net/#/exercise/edit/2795/1573
+DeleteChinese,1,删除字符串中的中文字符,字符串-中文字符,顾宇,100_DeleteChinese.zip,0,null
+IsChinese,1,判断输入字符是否为中文,字符串-中文字符,顾宇,101_IsChinese.zip,0,null
+UnicodeValue,1,查看输入字符串的unicode编码,字符串-中文字符,顾宇,102_UnicodeValue.zip,0,null
+ModifyQuotes,1,引号中的引号,字符串-转义字符,顾宇,103_ModifyQuotes.zip,0,null
+EscapeCharacter,2,将输入的字符串用\\将每个单词隔开,字符串-转义字符,顾宇,104_EscapeCharacter.zip,0,null
+UseOfTabs,2,将输入的字符串用制表符将每个单词隔开,字符串-转义字符,顾宇,105_UseOfTabs.zip,0,null
+OriginalString,2,简单，将转义字符原样输出,转义字符,顾宇,106_OriginalString.zip,0,null
 试一试列表生成器,1,给定一个范围，输出每个数的平方,列表-列表生成式,MOOCTEST,18_ListGenerator,1,http://code.mooctest.net/#/exercise/edit/2795/1567
+Append,1,列表内置函数append的使用,列表-内置函数,顾宇,Append.zip,0,null
+Extend,1,列表内置函数extend的使用,列表-内置函数,顾宇,Extend.zip,0,null
+Index,1,列表内置函数index的使用,列表-内置函数,顾宇,Index.zip,0,null
+Insert,1,列表内置函数insert的使用,列表-内置函数,顾宇,Insert.zip,0,null
+Remove,1,列表内置函数remove的使用,列表-内置函数,顾宇,Remove.zip,0,null
+Reverse,1,列表内置函数reverse的使用,列表-内置函数,顾宇,Reverse.zip,0,null
+Sort,1,列表内置函数sort的使用,列表-内置函数,顾宇,Sort.zip,0,null
+Count,1,列表和元组内置函数count的使用,列表-内置函数|元组-内置函数,谢子聪,Count,0,null
+元组是不可变的,1,理解元组的特性,元组,谢子聪,Immutable,0,null
 运动会成绩单2,1,将运动成绩信息组成元组,元组,Python快速入门-刘锦涛,5_sport1,1,http://code.mooctest.net/#/exercise/edit/2795/1577
 运动会成绩单3,1,将运动成绩信息组成元组列表,元组|列表-嵌套,Python快速入门-刘锦涛,6_sport2,1,http://code.mooctest.net/#/exercise/edit/2795/1578
 求集合的子集,1,判断一个集合是否为另一个集合的子集,集合-内置函数-is?(),MOOCTEST,13_GetSubset,1,http://code.mooctest.net/#/exercise/edit/2796/1580
 求集合的交集,1,求两个集合的交集,集合-内置函数-交差并,MOOCTEST,14_GetIntersection,1,http://code.mooctest.net/#/exercise/edit/2796/1581
 求集合的并集,1,求两个集合的并集,集合-内置函数-交差并,MOOCTEST,15_GetUnion,1,http://code.mooctest.net/#/exercise/edit/2796/1582
 求集合的差集,1,求两个集合的差集,集合-内置函数-交差并,MOOCTEST,16_GetSubtract,1,http://code.mooctest.net/#/exercise/edit/2796/1583
+求集合的对称差,1,求两个集合的对称差,集合-内置函数-交差并,谢子聪,17_GetSymDiff,0,null
+删除集合元素,2,删除集合元素的不同方式,集合-内置函数,谢子聪,SetRemove,0,null
+更新集合,1,更新集合的不同方式,集合-内置函数,谢子聪,SetUpdate,0,null
+判断集合的关系,1,判断两个集合之间的关系,集合-内置函数,谢子聪,IsWhat,0,null
+合并设置项,2,将默认设置和用户设置合并,字典-内置函数-update(),谢子聪,Update,0,null
 交换key-value,3,将key作为value、将value作为key创建新字典,字典|序列操作-sorted(),MOOCTEST,69_Exchangekey-value,1,http://code.mooctest.net/#/exercise/edit/2796/1584
 年龄最大者,2,从用户字典中找出年龄最大者,字典-遍历|字典-运算符,RUNOOB,78_OldestPerson,1,http://code.mooctest.net/#/exercise/edit/2796/1585
 考试成绩单,3,将运动成绩信息组成字典,字典,Python快速入门-刘锦涛,6_exam,1,http://code.mooctest.net/#/exercise/edit/2796/1579
-回文数,1,判断数字是否为回文数,数学运算-abs()|类型转换-类型转换,MOOCTEST,1_Plalindrome,1,null
-统计单词,3,统计一个字符串中每个单词出现的次数并降序输出,排序|collections-Counter|列表-内置函数-sort(),MOOCTEST,53_StrWordCount,1,null
+取值的方式,2,字典不同的取值方式,字典,谢子聪,GetValue,0,null
+遍历的方式,2,字典不同的遍历方式,字典,谢子聪,Iter,0,null
+在吗,1,判断值是否在列表、元组、字典或集合中,内置全局函数2-序列操作,谢子聪,In,0,null
+Mean,1,Statistics模块mean函数的使用,statistics,顾宇,Mean.zip,0,null
+Median,1,Statistics模块median函数的使用,statistics,顾宇,Median.zip,0,null
+Mode,1,Statistics模块mode函数的使用,statistics,顾宇,Mode.zip,0,null
+Stdev,1,Statistics模块stdev函数的使用,statistics,顾宇,Stdev.zip,0,null
+Variance,1,Statistics模块variance函数的使用,statistics,顾宇,Variance.zip,0,null
+Ceil,1,Math模块Ceil函数的使用,math,顾宇,Ceil.zip,0,null
+Degrees,1,Math模块degrees函数的使用,math,顾宇,Degrees.zip,0,null
+Fabs,1,Math模块fabs函数的使用,math,顾宇,Fabs.zip,0,null
+Factorial,1,Math模块factorial函数的使用,math,顾宇,Factorial.zip,0,null
+Hypot,1,Math模块hypot函数的使用,math,顾宇,Hypot.zip,0,null
+Log,1,Math模块log函数的使用,math,顾宇,Log.zip,0,null
+Pi,1,Math模块Pi的使用,math,顾宇,Pi.zip,0,null
+Sqrt,1,Math模块sqrt函数的使用,math,顾宇,Sqrt.zip,0,null
+最大公约数,1,求两个数的最大公约数,math,MOOCTEST,49_GCD,1,null
+最小公倍数,1,求两个数的最小公倍数,math,MOOCTEST,50_LCM,1,null
+回文数,1,判断数字是否为回文数,内置全局函数1-数学运算-abs()|内置全局函数1-类型转换-类型转换,MOOCTEST,1_Plalindrome,1,null
+统计元素出现次数,2,使用 random 生成随机数列并统计每个数的出现次数,random-seed()|random-randint()|collections-Counter,MOOCTEST,67_ElementsCount,1,null
+创建随机数,1,使用random模块生成随机数,random-uniform()|random-seed(),RUNOOB,50_RandomUniform,1,null
 无重复三位数,1,从四个数字选三个进行全排列,itertools-permutations,RUNOOB,1_NoDupThree,1,null
+试一试reduce()函数,2,使用 reduce() 函数计算一个列表的“和”,functools-reduce|函数-lambda,MOOCTEST,12_Reduce,1,null
+试一试map()函数,2,使用 map() 函数对列表进行操作,内置全局函数2-序列操作-map(),MOOCTEST,11_TryMapFunc,1,null
+试一试自定义类,2,设计一个学生类并实现打印方法,内置类属性-__print__,MOOCTEST,17_CustomizedClass,1,null
+我也想拥有姓名,2,命名元组的使用,collections-namedtuple,谢子聪,1_NamedTuple,0,null
+滑动窗口求区间最大值,2,使用双向队列求滑动窗口区间最大值,collections-deque,谢子聪,2_Deque,0,null
+合并配置项,2,使用ChainMap来合并配置项,collections-ChainMap,谢子聪,3_ChainMap,0,null
+统计单词,3,统计一个字符串中每个单词出现的次数并降序输出,排序|collections-Counter|列表-内置函数-sort(),MOOCTEST,53_StrWordCount,1,null
+水果出售记录,3,帮店老板统计每个水果卖出了多少,collections-Counter|列表-内置函数-sort()|functools-cmp_to_key,MOOCTEST,5_Fruit-sold-times,1,null
+统计数字次数,2,统计一串数字中每个数字的出现次数,collections-Counter,MOOCTEST,4_Num-str-statistic,1,null
+统计字符出现次数,3,统计每个字符的出现次数并降序输出,字符串-内置函数-count()|collections-Counter|functools,MOOCTEST,62_WordCount,1,null
+英文词典,2,使用 OrderedDict 创建一个英文词典,collections-OrderedDict,谢子聪,4_OrderedDict,0,null
+扩展内置字典,2,使用 UserDict 扩展内置的字典,collections-UserDict,谢子聪,5_UserDict,0,null
+扩展内置字符串,2,使用 UserString 扩展内置的字符串,collections-UserString,谢子聪,6_UserString,0,null
+扩展内置列表,2,使用 UserList 扩展内置的列表,collections-UserList,谢子聪,7_UserList,0,null
+日期时间的格式,1,了解ISOFormat,datetime,谢子聪,1_ISOFormat,0,null
+是第几天,1,计算某一天是该年的第几天,datetime,谢子聪,2_WhatDayIsIt,0,null
+时间差,2,计算两个日期之间相差多少天和小时,datetime,谢子聪,3_TimeDelta,0,null
+Weekday,1,判断是周几,datetime,谢子聪,4_Weekday,0,null
+冒泡排序,2,实现冒泡排序,排序-交换排序,排序算法,1_Bubble,0,null
+选择排序,2,实现选择排序,排序-选择排序,排序算法,2_Selection,0,null
+插入排序,2,实现插入排序,排序-插入排序,排序算法,3_Insertion,0,null
+计数排序,2,实现计数排序,排序-非比较排序,排序算法,4_Counting,0,null
+桶排序,2,实现桶排序,排序-非比较排序,排序算法,5_Bucket,0,null
+基数排序,2,实现基数排序,排序-非比较排序,排序算法,6_Radix,0,null
+希尔排序,3,实现希尔排序,排序-插入排序,排序算法,7_Shell,0,null
+归并排序,3,实现归并排序,排序-归并排序,排序算法,8_Merge,0,null
+快速排序,3,实现快速排序,排序-交换排序,排序算法,9_Quick,0,null
+堆排序,3,实现堆排序,排序-选择排序,排序算法,10_Heap,0,null
 完全平方数,3,一个整数加上某个数后是完全平方数，再加上一个数后还是安全平方数，求这个数,数学,RUNOOB,3_PerfectSquareNum,1,null
 斐波那契数列,1,求第k个斐波那契数,数学-常见数列-斐波那契,RUNOOB,6_Fibonacci,1,null
 兔子繁殖,2,n个月后有多少只兔子？,数学-常见数列-斐波那契,RUNOOB,11_RabbitReprod,1,null
-素数判断,2,判断一个数是否是素数,math,RUNOOB,12_JudgePrime,1,null
+素数判断,2,判断一个数是否是素数,数学,RUNOOB,12_JudgePrime,1,null
 比赛名单,3,已知一些比赛信息，找出比赛的名单,数学-其它,RUNOOB,22_CompetitionList,1,null
-创建随机数,1,使用random模块生成随机数,random-uniform()|random-seed(),RUNOOB,50_RandomUniform,1,null
-统计数字次数,2,统计一串数字中每个数字的出现次数,collections-Counter,MOOCTEST,4_Num-str-statistic,1,null
-水果出售记录,3,帮店老板统计每个水果卖出了多少,collections-Counter|列表-内置函数-sort()|functools-cmp_to_key,MOOCTEST,5_Fruit-sold-times,1,null
-*英文文本读取,2,统计英文文本中出现次数最多的英文字母,输入输出-文件|collections-Counter|字符串-内置函数|os-path,MOOCTEST,7_ReadENGText,1,null
-*中文文本读取,3,统计一个文本中出现次数最多的中文字符,输入输出-文件|collections-Counter|字符串-内置函数|os-path|字符串-字符编码,MOOCTEST,8_ReadCHNText,1,null
-试一试map()函数,2,使用 map() 函数对列表进行操作,序列操作-map(),MOOCTEST,11_TryMapFunc,1,null
-试一试reduce()函数,2,使用 reduce() 函数计算一个列表的“和”,functools-reduce|函数-lambda,MOOCTEST,12_Reduce,1,null
-试一试自定义类,2,设计一个学生类并实现打印方法,内置类属性-__print__,MOOCTEST,17_CustomizedClass,1,null
 百钱买百鸡,2,给你一百元买一百只鸡，有多少种买法？,数学,MOOCTEST,21_Dollars2Chickens,1,null
 奇数的个数,3,求使用 0~n 所能组成的奇数的个数,数学,MOOCTEST,23_OddNum,1,null
 桃子问题,2,有一些猴子分桃子，求原来最少有多少个桃子,数学,MOOCTEST,24_Peach,1,null
@@ -109,26 +175,11 @@ lambda函数,2,创建lambda匿名函数,函数-lambda,RUNOOB,49_LambdaFunc,1,htt
 变态超级楼梯,2,你可以任意走上n级台阶，求走上n级台阶的不同走法,数学-其它,MOOCTEST,44_SuperStairs,1,null
 选猴王,2,一群猴子做成一圈按照一定方法选择猴王,数学-数学问题-约瑟夫环,MOOCTEST,46_SelectMonkeyKing,1,null
 求中位数,1,求一个列表的中位数,数学-其它,MOOCTEST,48_Median,1,null
-最大公约数,1,求两个数的最大公约数,math,MOOCTEST,49_GCD,1,null
-最小公倍数,1,求两个数的最小公倍数,math,MOOCTEST,50_LCM,1,null
 数字组成,3,给你一个整数数列，求能够组成不同两位数的个数,数学-组合数学,MOOCTEST,59_NumComposition,1,null
-统计字符出现次数,3,统计每个字符的出现次数并降序输出,字符串-内置函数-count()|collections-Counter|functools,MOOCTEST,62_WordCount,1,null
-统计元素出现次数,2,使用 random 生成随机数列并统计每个数的出现次数,random-seed()|random-randint()|collections-Counter,MOOCTEST,67_ElementsCount,1,null
 默尼森数,3,满足 M=2^p-1 的素数 M,数学-常见数列,MOOCTEST,68_MonisenNum,1,null
-调用库函数求最小公倍数,1,调用 math 库函数求最小公倍数,math-gcd(),MOOCTEST,75_LeastCommonMultiple,1,null
 计算方程的根,2,给定二元一次方程的三个参数，求根,数学-数学问题,MOOCTEST,85_TheRootOfEquation,1,null
 累加,1,计算1~n的累加和,数学-其它,MOOCTEST,89_Accumulate,1,null
 累乘,1,计算 n!,数学-其它,MOOCTEST,90_Multiplication,1,null
 排队,3,n个人排队，给出所有可能队形的数量,数学-数学问题,MOOCTEST,97_Queue,1,null
 求π的值,2,根据莱布尼茨级数公式求π的近似值,数学-数学问题,MOOCTEST,100_FindPI,1,null
 分数序列求和,2,计算一个分数数列的前n项和,数学-常见数列,MOOCTEST,106_FractionalSummation,1,null
-冒泡排序,2,实现冒泡排序,排序-交换排序,排序算法,1_Bubble,0,null
-选择排序,2,实现选择排序,排序-选择排序,排序算法,2_Selection,0,null
-插入排序,2,实现插入排序,排序-插入排序,排序算法,3_Insertion,0,null
-计数排序,2,实现计数排序,排序-非比较排序,排序算法,4_Counting,0,null
-桶排序,2,实现桶排序,排序-非比较排序,排序算法,5_Bucket,0,null
-基数排序,2,实现基数排序,排序-非比较排序,排序算法,6_Radix,0,null
-希尔排序,3,实现希尔排序,排序-插入排序,排序算法,7_Shell,0,null
-归并排序,3,实现归并排序,排序-归并排序,排序算法,8_Merge,0,null
-快速排序,3,实现快速排序,排序-交换排序,排序算法,9_Quick,0,null
-堆排序,3,实现堆排序,排序-选择排序,排序算法,10_Heap,0,null

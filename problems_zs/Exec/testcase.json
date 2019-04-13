@@ -1,0 +1,6 @@
+[
+    {
+        "input": "print(\"hello\")\n",
+        "output": "hello\nNone\n"
+    }
+]

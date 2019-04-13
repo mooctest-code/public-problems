@@ -1,0 +1,10 @@
+[
+    {
+        "input": "1\niselab 123 mooc 456 huidhui\n1 20\n",
+        "output": "['123', '456']\n"
+    },
+    {
+        "input": "2\niselab 123 mooc 456 huidhui\n1 7\niselab 123 mooc 456 huidhui\n1 17",
+        "output": "[]\n['123', '4']\n"
+    }
+]

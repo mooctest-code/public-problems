@@ -1,0 +1,21 @@
+{
+    "title": "水果出售记录",
+    "desc": "### 题目描述\n\n某水果店简单地把每天销售的水果记录在一个列表中，你能帮忙店老板统计出每个水果卖出了多少，并从多到少排个序吗？\n\n### 输入格式\n\n两行输入，第一行为卖出的水果数量 n，第二行为这 n 个水果的名字，两两之间用空格隔开。\n\n### 输出格式\n\n输出多行，每一行为水果的名字和卖出的数量，按照卖出数量从多到少顺序输出，如果卖出数量相同，则按照水果名字的字典序排列。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\nApple Pear Pear\n```\n\n```\nPear 2\nApple 1\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from collections import Counter\nfrom functools import cmp_to_key\n\ndef cmp(a, b):\n    if a[1] == b[1]:\n        if a[0] < b[0]:\n            return -1\n        else: return a[0] > b[0]\n    else: return -1 if a[1] > b[1] else 1\n\nnum = int(input())\nfruitList = Counter(input().split()).most_common()\n\nfruitList.sort(key=cmp_to_key(cmp))\n\nfor fruit in fruitList:\n    print('{} {}'.format(*fruit))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "5\nApple Banana Cherry Pineapple Banana",
+            "output": "Banana 2\nApple 1\nCherry 1\nPineapple 1\n"
+        },
+        {
+            "input": "8\nApple Peach Cherry Pineapple Banana Pear Pear Apple",
+            "output": "Apple 2\nPear 2\nBanana 1\nCherry 1\nPeach 1\nPineapple 1\n"
+        },
+        {
+            "input": "5\nApple Cherry Cherry Apple Pear",
+            "output": "Apple 2\nCherry 2\nPear 1\n"
+        }
+    ]
+}

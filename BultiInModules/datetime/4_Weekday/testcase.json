@@ -1,0 +1,18 @@
+[
+    {
+        "input": "2019-08-29\n",
+        "output": "Thursday\n"
+    },
+    {
+        "input": "1900-10-01\n",
+        "output": "Monday\n"
+    },
+    {
+        "input": "2000-10-01\n",
+        "output": "Sunday\n"
+    },
+    {
+        "input": "2000-01-01\n",
+        "output": "Saturday\n"
+    }
+]

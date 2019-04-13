@@ -1,0 +1,21 @@
+{
+    "title": "给出变量的类型",
+    "desc": "### 题目描述\n\n使用python中的type函数，生成给定变量的类型。\n\n### 输入描述\n\nint类型或string类型\n\n### 输出描述\n\n变量类型\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2\n```\n\n```\n<class 'int'>\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = input()\ntry:\n    print(type(int(a)))\nexcept:\n    print(type(a))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2\n",
+            "output": "<class 'int'>\n"
+        },
+        {
+            "input": "asd\n",
+            "output": "<class 'str'>\n"
+        },
+        {
+            "input": "a\n",
+            "output": "<class 'str'>\n"
+        }
+    ]
+}

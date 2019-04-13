@@ -1,0 +1,14 @@
+[
+    {
+        "input": "A",
+        "output": "A\n"
+    },
+    {
+        "input": "ABC",
+        "output": "CBA\n"
+    },
+    {
+        "input": "123456789",
+        "output": "987654321\n"
+    }
+]

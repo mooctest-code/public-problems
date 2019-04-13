@@ -1,0 +1,14 @@
+[
+    {
+        "input": "2\n",
+        "output": "True\n"
+    },
+    {
+        "input": "asd\n",
+        "output": "False\n"
+    },
+    {
+        "input": "1.34\n",
+        "output": "False\n"
+    }
+]

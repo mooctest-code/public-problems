@@ -1,0 +1,13 @@
+{
+    "title": "这里输入题目",
+    "desc": "### 题目描述\n\n\n\n### 输入描述\n\n\n\n### 输出描述\n\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nNone\n```\n\n```\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None\n",
+            "output": ""
+        }
+    ]
+}

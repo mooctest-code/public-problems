@@ -1,0 +1,22 @@
+[
+    {
+        "input": "Sa",
+        "output": "Saturday\n"
+    },
+    {
+        "input": "Tu",
+        "output": "Tuesday\n"
+    },
+    {
+        "input": "th",
+        "output": "Thursday\n"
+    },
+    {
+        "input": "M",
+        "output": "Monday\n"
+    },
+    {
+        "input": "f",
+        "output": "Friday\n"
+    }
+]

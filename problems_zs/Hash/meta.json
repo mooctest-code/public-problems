@@ -1,0 +1,21 @@
+{
+    "title": "给出变量的哈希值",
+    "desc": "### 题目描述\n\n使用python中的hash函数，生成给定变量的hash值。\n\n### 输入描述\n\nstring类型\n\n### 输出描述\n\n变量的hash值\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\na\n```\n\n```\n7632159968281286794\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = input()\nprint(hash(a))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "a\n",
+            "output": "7632159968281286794\n"
+        },
+        {
+            "input": "asd\n",
+            "output": "3042120662208547059\n"
+        },
+        {
+            "input": "b\n",
+            "output": "-2854408774585046828\n"
+        }
+    ]
+}

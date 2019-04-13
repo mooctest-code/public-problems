@@ -1,0 +1,14 @@
+[
+    {
+        "input": "_Americano30",
+        "output": "Americano\n"
+    },
+    {
+        "input": "/34Cappuccino",
+        "output": "Cappuccino\n"
+    },
+    {
+        "input": "Mocha35",
+        "output": "Mocha\n"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "input": "1\naaa\na.a\n",
+        "output": "True\n"
+    },
+    {
+        "input": "1\naaaa\na..a\n",
+        "output": "True\n"
+    },
+    {
+        "input": "2\naaa\nab*ac*a\nabacccca\nab*ac*a\n",
+        "output": "True\nTrue\n"
+    },
+    {
+        "input": "1\n\n.*",
+        "output": "True\n"
+    }
+]

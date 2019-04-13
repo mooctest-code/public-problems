@@ -1,0 +1,18 @@
+[
+    {
+        "input": "MJQQT BTWQI",
+        "output": "HELLO WORLD\n"
+    },
+    {
+        "input": "UDYMTS",
+        "output": "PYTHON\n"
+    },
+    {
+        "input": "IFSLJW",
+        "output": "DANGER\n"
+    },
+    {
+        "input": "UWTGQJR",
+        "output": "PROBLEM\n"
+    }
+]

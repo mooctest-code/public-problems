@@ -1,0 +1,25 @@
+{
+    "title": "滑动窗口求区间最大值",
+    "desc": "### 题目描述\n\n给你一个整数列表，以及窗口大小，请你求出每个滑动窗口中的最大值。\n\n### 输入描述\n\n第一行为一组整数，两两间用空格隔开。\n\n第二行为滑动窗口的大小 k。\n\n### 输出描述\n\n输出每个滑动窗口的最大值，两两间用空格隔开。\n\n### 测试样例\n\n#### 样例1: 输入-输出-解释\n\n```\n1 5 4 3 1\n3\n```\n\n```\n5 5 4\n```\n\n```\n[1 5 4] 3 1 -> 滑动窗口中最大值为 5\n1 [5 4 3] 1 -> 滑动窗口中最大值为 5\n1 5 [4 3 1] -> 滑动窗口中最大值为 4\n因此输出 5 5 4\n```\n\n### 提示\n\n请使用 collections 库中的 [deque](<https://docs.python.org/zh-cn/3/library/collections.html#collections.deque>) 完成本题。",
+    "templateCode": "",
+    "sourceCode": "from collections import deque\n\ndef findMaxs(arr, k):\n    n = len(arr)\n    Qi = deque() \n      \n    for i in range(k): \n        while Qi and arr[i] >= arr[Qi[-1]] : \n            Qi.pop() \n    \n        Qi.append(i); \n          \n    ans = []\n    for i in range(k, n): \n        ans.append(arr[Qi[0]])\n\n        while Qi and Qi[0] <= i-k: \n            Qi.popleft()  \n\n        while Qi and arr[i] >= arr[Qi[-1]] : \n            Qi.pop() \n          \n        Qi.append(i) \n    ans.append(arr[Qi[0]])\n    return ans\n\nprint(*findMaxs(list(map(int, input().split())), int(input())))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1 5 4 3 1\n3\n",
+            "output": "5 5 4\n"
+        },
+        {
+            "input": "2 3 4 2 6 2 5 1\n3\n",
+            "output": "4 4 6 6 6 5\n"
+        },
+        {
+            "input": "2 3 1 24 9 7 1 20 19 3 8 9 1 4 9 10 4\n2\n",
+            "output": "3 3 24 24 9 7 20 20 19 8 9 9 4 9 10 10\n"
+        },
+        {
+            "input": "1 2 3\n1\n",
+            "output": "1 2 3\n"
+        }
+    ]
+}
