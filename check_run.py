@@ -54,11 +54,12 @@ for i in selected:
     print(testcase[i]['output'])
 
 # replace testcase in README.md
-try:
-    p_r = sys.argv.index('-r')
+if '-z' in sys.argv or '-r' in sys.argv:
     ntestcases = 1
-    if p_r < len(sys.argv)-1 and '-' not in sys.argv[p_r+1]:
-        ntestcases = int(sys.argv[p_r+1])
+    if '-r' in sys.argv:
+        p_r = sys.argv.index('-r')
+        if p_r < len(sys.argv)-1 and '-' not in sys.argv[p_r+1]:
+            ntestcases = int(sys.argv[p_r+1])
     
     repl = ""
     with open(path.join(problem, 'README.md'), 'r', encoding='utf-8') as f:
@@ -92,8 +93,7 @@ try:
     with open(path.join(problem, 'README.md'), 'w', encoding='utf-8') as fw:
         fw.write(''.join(readme))
         print("Testcases in README.md has been replaced.")
-except ValueError:
-    pass
+
 # write to testcase.json
 with open(path.join(problem, 'testcase.json'), 'w', encoding='utf-8') as out:
     # print(testcase)
