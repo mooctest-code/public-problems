@@ -1,0 +1,18 @@
+[
+    {
+        "input": "2\nise www.iselab.cn\ncom www.iselab.cn\n",
+        "output": "(4, 7)\nNone\n"
+    },
+    {
+        "input": "1\nwww www.baidu.com\n",
+        "output": "(0, 3)\n"
+    },
+    {
+        "input": "2\nwww www.baidu.com\nbuzhidao woyebuzhidao\n",
+        "output": "(0, 3)\n(4, 12)\n"
+    },
+    {
+        "input": "1\nemmmmmmm emmmmnmmmm",
+        "output": "None\n"
+    }
+]

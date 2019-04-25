@@ -1,0 +1,25 @@
+{
+    "title": "是第几天",
+    "desc": "### 题目描述\n\n给你一个日期，请你计算该天是该年的第几天。\n\n### 输入描述\n\n输入为一个日期，格式为 `Year-Month-Day`\n\n### 输出描述\n\n输出一个数字，表示该天是该年的第几天。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2019-08-29\n```\n\n```\n241\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from datetime import date\n\ny, m, d = map(int, input().split('-'))\nd1 = date(y, m, d)\nd2 = date(y, 1, 1)\n\nprint((d1 - d2).days + 1)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2019-08-29\n",
+            "output": "241\n"
+        },
+        {
+            "input": "1900-10-01\n",
+            "output": "274\n"
+        },
+        {
+            "input": "2000-10-01\n",
+            "output": "275\n"
+        },
+        {
+            "input": "2000-01-01\n",
+            "output": "1\n"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "input": "1\ntony sunny louis \n",
+        "output": "10001 tony\n10002 sunny\n10003 louis\n"
+    },
+    {
+        "input": "2\nshdususg sdyusgdau shaiudhi adahwdiu \na1231a 154889 sdhadbhb\n",
+        "output": "10001 shdususg\n10002 sdyusgdau\n10003 shaiudhi\n10004 adahwdiu\n10001 a1231a\n10002 154889\n10003 sdhadbhb\n"
+    }
+]

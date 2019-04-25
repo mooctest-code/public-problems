@@ -1,0 +1,14 @@
+[
+    {
+        "input": "1\nabcdef 3\n",
+        "output": "defabc\n"
+    },
+    {
+        "input": "2\ndabendanshiwo 8\ndabendannicaishi 8\n",
+        "output": "shiwodabendan\nnicaishidabendan\n"
+    },
+    {
+        "input": "4\njiusuibianSUAHI 4\njintianshizhoumo 7\nwodoumeiyouchuquwan 5\nyinweicaijibupeiyongyouzhoumo 6",
+        "output": "uibianSUAHIjius\nshizhoumojintian\nmeiyouchuquwanwodou\ncaijibupeiyongyouzhoumoyinwei\n"
+    }
+]

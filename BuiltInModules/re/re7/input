@@ -1,0 +1,17 @@
+1
+aaa
+a.a
+EOF
+1
+aaaa
+a..a
+EOF
+2
+aaa
+ab*ac*a
+abacccca
+ab*ac*a
+EOF
+1
+
+.*

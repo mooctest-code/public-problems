@@ -1,0 +1,17 @@
+{
+    "title": "使用sorted对数据按照指定的要求排序",
+    "desc": "### 题目描述\n我们现在有学生的高考成绩和年龄信息，请分别按照高考成绩和年龄对学生进行排名\n\n### 输入描述\n第一行输入为学生的姓名列表，之间使用逗号隔开\n第二行为学生的高考成绩（0-750数值），之间也使用逗号隔开\n第三行为学生的年龄（0-30之间数值），之间也使用逗号隔开\n\n### 输出描述\n第一行为学生按照高考成绩排序的列表\n第二行为学生按照年龄排序的列表\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nxiaoming xiaowang xiaoqiang\n579 626 635\n23 25 24\n```\n\n```\n[('xiaoming', 579, 23), ('xiaowang', 626, 25), ('xiaoqiang', 635, 24)]\n[('xiaoming', 579, 23), ('xiaoqiang', 635, 24), ('xiaowang', 626, 25)]\n```\n\n\n",
+    "templateCode": "",
+    "sourceCode": "#sorted\nname = list(input().split())\ngrade = list(map(int,input().split()))\nyears = list(map(int,input().split()))\n# name = ['d','b','c']\n# grade = [10,15,20]\n# years = [25,20,15]\nstudents= zip(name,grade,years)\n\nsortA = sorted(students, key=lambda s: s[1])\nprint(sortA)\nstudents= zip(name,grade,years)\nsortB = sorted(students, key=lambda s: s[2])\nprint(sortB)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "xiaoming xiaowang xiaoqiang\n579 626 635\n23 25 24\n",
+            "output": "[('xiaoming', 579, 23), ('xiaowang', 626, 25), ('xiaoqiang', 635, 24)]\n[('xiaoming', 579, 23), ('xiaoqiang', 635, 24), ('xiaowang', 626, 25)]\n"
+        },
+        {
+            "input": "xluna qiaokeli tang\n618 627 684\n25 24 23",
+            "output": "[('xluna', 618, 25), ('qiaokeli', 627, 24), ('tang', 684, 23)]\n[('tang', 684, 23), ('qiaokeli', 627, 24), ('xluna', 618, 25)]\n"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "input": "bin1,bin2,bin3\ncom1,com2,com3,com4,com5\n",
+        "output": "('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n"
+    },
+    {
+        "input": "bin1,bin2,bin3,bin4,bin5\ncom1,com2,com3\n",
+        "output": "('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n"
+    },
+    {
+        "input": "bin1,bin2,bin3,bin4,bin5\ncom1,com2,com3,com4,com5",
+        "output": "('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n('bin4', 'com4')\n('bin5', 'com5')\n"
+    }
+]

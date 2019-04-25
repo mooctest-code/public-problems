@@ -1,0 +1,25 @@
+{
+    "title": "最小公倍数",
+    "desc": "### 题目描述\n\n给你两个正整数a和b， 输出它们的最小公倍数。\n\n### 输入描述\n\n输入为两个数 a 和 b\n\n### 输出描述\n\n输出 a 和 b 的最小公倍数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4 6\n```\n\n```\n4 6\n```\n\n### Sample Output\n\n```\n12\n```\n",
+    "templateCode": "",
+    "sourceCode": "import math\na, b = map(int, input().split())\nprint(a * b // math.gcd(a, b))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 258",
+            "output": "516\n"
+        },
+        {
+            "input": "3265 86435",
+            "output": "56442055\n"
+        },
+        {
+            "input": "3243 752983",
+            "output": "2441923869\n"
+        },
+        {
+            "input": "123 789",
+            "output": "32349\n"
+        }
+    ]
+}

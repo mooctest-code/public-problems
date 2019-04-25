@@ -1,0 +1,10 @@
+[
+    {
+        "input": "xiaoming xiaowang xiaoqiang\n579 626 635\n23 25 24\n",
+        "output": "[('xiaoming', 579, 23), ('xiaowang', 626, 25), ('xiaoqiang', 635, 24)]\n[('xiaoming', 579, 23), ('xiaoqiang', 635, 24), ('xiaowang', 626, 25)]\n"
+    },
+    {
+        "input": "xluna qiaokeli tang\n618 627 684\n25 24 23",
+        "output": "[('xluna', 618, 25), ('qiaokeli', 627, 24), ('tang', 684, 23)]\n[('tang', 684, 23), ('qiaokeli', 627, 24), ('xluna', 618, 25)]\n"
+    }
+]

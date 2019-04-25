@@ -1,0 +1,17 @@
+{ 'font': 'Consolas', 'autoIndent': True}
+{ 'font': 'Hack', 'autoIndent': False}
+{ 'autoIndent': True}
+autoIndent
+autoIndent
+EOF
+{ 'font': 'Consolas', 'autoIndent': True, 'cursorStyle': 'line', 'autoSave': True}
+{ 'font': 'Hack', 'autoIndent': False}
+{ 'autoIndent': True, 'autoSave': False}
+autoIndent
+font
+EOF
+{ 'font': 'Consolas', 'autoIndent': True, 'cursorStyle': 'line', 'autoSave': True}
+{ 'font': 'Hack', 'autoIndent': False}
+{ 'autoIndent': True, 'autoSave': False}
+autoIndent
+autoSave

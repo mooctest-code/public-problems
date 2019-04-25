@@ -1,0 +1,14 @@
+[
+    {
+        "input": "grandgrandfather,grandfather,father,son,grandson\n",
+        "output": "('grandgrandfather', 'grandfather')\n('grandfather', 'father')\n('father', 'son')\n('son', 'grandson')\n"
+    },
+    {
+        "input": "a,b,c,d,e,f\n",
+        "output": "('a', 'b')\n('b', 'c')\n('c', 'd')\n('d', 'e')\n('e', 'f')\n"
+    },
+    {
+        "input": "1,2,3,4,5,6,7,8,9,7,8,9,4,5,6,1,2,3",
+        "output": "('1', '2')\n('2', '3')\n('3', '4')\n('4', '5')\n('5', '6')\n('6', '7')\n('7', '8')\n('8', '9')\n('9', '7')\n('7', '8')\n('8', '9')\n('9', '4')\n('4', '5')\n('5', '6')\n('6', '1')\n('1', '2')\n('2', '3')\n"
+    }
+]
