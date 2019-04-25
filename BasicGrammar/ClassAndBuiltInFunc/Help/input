@@ -1,0 +1,4 @@
+list.append
+EOF
+list.extend
+EOF

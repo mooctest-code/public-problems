@@ -1,0 +1,2 @@
+a = input()
+exec(a)

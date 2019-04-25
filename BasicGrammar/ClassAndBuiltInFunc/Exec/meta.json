@@ -1,0 +1,17 @@
+{
+    "title": "利用exec函数执行储存在字符串或文件中的 Python 语句",
+    "desc": "### 题目描述\n\n利用exec函数执行储存在字符串或文件中的 Python 语句\n\n### 输入描述\n\nPython 语句\n\n### 输出描述\n\nPython 语句执行结果\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nprint(\"hello\")\n```\n\n```\nhello\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = input()\nexec(a)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "print(\"hello\")\n",
+            "output": "hello\n"
+        },
+        {
+            "input": "print('Hello' + ' ' + 'Python')\n",
+            "output": "Hello Python\n"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+print("hello")
+EOF
+print('Hello' + ' ' + 'Python')
+EOF

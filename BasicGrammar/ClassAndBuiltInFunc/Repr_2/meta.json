@@ -1,0 +1,25 @@
+{
+    "title": "repr和str",
+    "desc": "### 题目描述\n\n完成 Complex 类中的 \\_\\_repr\\_\\_ 和 \\_\\_str\\_\\_ 函数，使得题目输出如测试样例所示。\n\n### 输入描述\n\n输入为两个整数 real 和 imag，分别代表复数的实数和虚数部分。\n\n### 输出描述\n\n输出请参考测试样例，分别输出该 Complex 类的实例使用 repr()、str() 和 打印其本身得到的结果。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1 2\n```\n\n```\n1.0 + 2.0j\nComplex(real=1.0, imag=2.0)\nComplex(real=1.0, imag=2.0)\n```\n\n",
+    "templateCode": "class Complex(complex):\n    def __init__(self, real, imag):\n        complex.__init__(real, imag)\n\n    def __repr__(self):\n        return # TODO\n\n    def __str__(self):\n        return # TODO\n\nreal, imag = map(int, input().split())\ncomp = Complex(real, imag)\nprint(repr(comp))\nprint(str(comp))\nprint(comp)\n",
+    "sourceCode": "class Complex(complex):\n    def __init__(self, real, imag):\n        complex.__init__(real, imag)\n\n    def __repr__(self):\n        return '{} + {}j'.format(super().real, super().imag)\n\n    def __str__(self):\n        return 'Complex(real={}, imag={})'.format(super().real, super().imag)\n\nreal, imag = map(int, input().split())\ncomp = Complex(real, imag)\nprint(repr(comp))\nprint(str(comp))\nprint(comp)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1 2\n",
+            "output": "1.0 + 2.0j\nComplex(real=1.0, imag=2.0)\nComplex(real=1.0, imag=2.0)\n"
+        },
+        {
+            "input": "-1 0\n",
+            "output": "-1.0 + 0.0j\nComplex(real=-1.0, imag=0.0)\nComplex(real=-1.0, imag=0.0)\n"
+        },
+        {
+            "input": "0 -1\n",
+            "output": "0.0 + -1.0j\nComplex(real=0.0, imag=-1.0)\nComplex(real=0.0, imag=-1.0)\n"
+        },
+        {
+            "input": "-1 2\n",
+            "output": "-1.0 + 2.0j\nComplex(real=-1.0, imag=2.0)\nComplex(real=-1.0, imag=2.0)\n"
+        }
+    ]
+}

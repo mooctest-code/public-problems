@@ -1,0 +1,2 @@
+a = input()
+help(a)
