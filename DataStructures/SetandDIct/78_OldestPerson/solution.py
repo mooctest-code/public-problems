@@ -1,3 +1,8 @@
+'''TESTCASE
+{'Cong': 22, 'Ming': 54, 'Mei': 21}
+-
+{'Li': 23, 'Han': 43, 'Lei': 19}
+'''
 d = eval(input())
 
 maxkv = ('', 0)

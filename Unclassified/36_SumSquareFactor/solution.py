@@ -1,3 +1,12 @@
+'''TESTCASE
+6
+-
+20
+-
+123
+-
+654
+'''
 def sum(n): 
     return int(n*(n+1)*(2*n+1)/6)
 

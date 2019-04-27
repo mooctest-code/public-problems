@@ -1,21 +1,25 @@
 {
-    "title": "\u5224\u65ad\u5929\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e00\u4e2a\u65e5\u671f\uff0c\u8bf7\u4f60\u5224\u65ad\u8fd9\u4e00\u5929\u662f\u8fd9\u4e00\u5e74\u7684\u7b2c\u51e0\u5929\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u65e5\u671f\uff0c\u683c\u5f0f\u4e3a`\u5e74-\u6708-\u65e5`\uff0c\u6211\u4eec\u4fdd\u8bc1\u65e5\u671f\u6b63\u786e\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e00\u4e2a\u6570\u5b57 n\uff0c\u8868\u793a\u8be5\u65e5\u671f\u662f\u8fd9\u4e00\u5e74\u7684\u7b2c n \u5929\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2018-01-03\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "title": "判断天数",
+    "desc": "### 题目描述\n\n给你一个日期，请你判断这一天是这一年的第几天。\n\n### 输入描述\n\n一个日期，格式为`年-月-日`，我们保证日期正确。\n\n### 输出描述\n\n输出一个数字 n，表示该日期是这一年的第 n 天。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2018-01-03\n```\n\n```\n3\n```\n\n### 题目来源\n\nRUNOOB.COM",
     "templateCode": "",
     "sourceCode": "[y, m, d] = list(map(int, input().split('-')))\n\nmonths = (0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334)\n_sum = months[m-1] + d\nif (y % 400 == 0 or (y % 4 == 0 and y % 100 != 0)) and m > 2:\n    _sum += 1\n\nprint(_sum)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "2018-01-03",
+            "input": "2018-01-03\n",
             "output": "3\n"
         },
         {
-            "input": "2015-06-07",
+            "input": "2015-06-07\n",
             "output": "158\n"
         },
         {
-            "input": "2016-06-07",
+            "input": "2016-06-07\n",
             "output": "159\n"
         }
-    ]
+    ],
+    "simple_desc": "计算日期是该年的第几天",
+    "difficulty": "2",
+    "tag": "流程控制-条件判断|流程控制-循环",
+    "author": "RUNOOB"
 }

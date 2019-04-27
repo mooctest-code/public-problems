@@ -13,5 +13,9 @@
             "input": "print('Hello' + ' ' + 'Python')\n",
             "output": "Hello Python\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

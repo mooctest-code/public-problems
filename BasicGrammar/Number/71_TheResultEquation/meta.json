@@ -1,21 +1,25 @@
 {
-    "title": "\u6c42\u65b9\u7a0b\u7684\u7ed3\u679c",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6c42\u65b9\u7a0b $y=2x^2+3x-5$ \u5bf9\u5e94\u7684y\u503c\uff0c\u662f\u4e00\u4e2a\u6d6e\u70b9\u6570\uff0c\u8f93\u51fa\u7ed3\u679c\u4fdd\u7559\u4e00\u4f4d\u5c0f\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u65b9\u7a0b\u7684 x \u503c\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u65b9\u7a0b\u7684 y \u503c\uff0c\u7ed3\u679c\u4fdd\u7559\u4e00\u4f4d\u5c0f\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n1.5\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n4.0\n```\n",
+    "title": "求方程的结果",
+    "desc": "### 题目描述\n\n求方程 $y=2x^2+3x-5$ 对应的y值，是一个浮点数，输出结果保留一位小数。\n\n### 输入描述\n\n输入为方程的 x 值\n\n### 输出描述\n\n输出为方程的 y 值，结果保留一位小数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1.5\n```\n\n```\n4.0\n```\n\n",
     "templateCode": "",
     "sourceCode": "x = float(input())\n\n# print(round(2*x**2+3*x-5, 1))\nprint('{:.1f}'.format(2*x**2+3*x-5))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "1.5",
+            "input": "1.5\n",
             "output": "4.0\n"
         },
         {
-            "input": "4.2",
+            "input": "4.2\n",
             "output": "42.9\n"
         },
         {
-            "input": "0",
+            "input": "0\n",
             "output": "-5.0\n"
         }
-    ]
+    ],
+    "simple_desc": "计算方差的y值",
+    "difficulty": "1",
+    "tag": "变量和运算符-运算符",
+    "author": "MOOCTEST"
 }

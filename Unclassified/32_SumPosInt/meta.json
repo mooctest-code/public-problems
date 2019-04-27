@@ -1,45 +1,49 @@
 {
-    "title": "\u6b63\u6574\u6570\u6c42\u548c",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e00\u4e2a\u6b63\u6574\u6570N\uff0c\u8bf7\u4f60\u6c42\u51fa\u4e00\u5171\u6709\u591a\u5c11\u79cd\u65b9\u5f0f\u7528\u4e0d\u8d85\u8fc7N\u7684\u6b63\u6574\u6570\u6c42\u548c\u5f97\u5230N\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6b63\u6574\u6570 N (0 < N < 100)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u7528\u4e0d\u8d85\u8fc7N\u7684\u6b63\u6574\u6570\u6c42\u548c\u5f97\u5230N\u7684\u65b9\u5f0f\u79cd\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n4\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n5\n```\n\n### \u63d0\u793a\n\n```\n4 = 4\n4 = 3 + 1\n4 = 2 + 2\n4 = 2 + 1 + 1\n4 = 1 + 1 + 1 + 1\n```",
+    "title": "正整数求和",
+    "desc": "### 题目描述\n\n给你一个正整数N，请你求出一共有多少种方式用不超过N的正整数求和得到N。\n\n### 输入描述\n\n输入为一个正整数 N (0 < N < 100)\n\n### 输出描述\n\n输出为用不超过N的正整数求和得到N的方式种数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4\n```\n\n```\n5\n```\n\n### 提示\n\n```\n4 = 4\n4 = 3 + 1\n4 = 2 + 2\n4 = 2 + 1 + 1\n4 = 1 + 1 + 1 + 1\n```",
     "templateCode": "",
     "sourceCode": "n = int(input())\n\nf = [[0 for j in range(n+1)] for i in range(n+1)]\nf[0][0] = 1\n\n# use j part to divide i\nfor i in range(0, n+1):\n    for j in range(0, i+1):\n        if i == 1:\n            f[i][1] = 1\n        else: # i = i - 1 + 1 or i - j + j\n            f[i][j] = f[i-1][j-1] + f[i-j][j]\n            \nprint(sum(f[n]))\n\n# def _sum(a, b):\n#     if a >= 2*b:\n#         return _sum(a-b, b) + _sum(a, b+1)\n#     else: return 1 if a >= b else 0\n\n# print(_sum(n, 1))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "4",
+            "input": "4\n",
             "output": "5\n"
         },
         {
-            "input": "5",
+            "input": "5\n",
             "output": "7\n"
         },
         {
-            "input": "9",
+            "input": "9\n",
             "output": "30\n"
         },
         {
-            "input": "12",
+            "input": "12\n",
             "output": "77\n"
         },
         {
-            "input": "14",
+            "input": "14\n",
             "output": "135\n"
         },
         {
-            "input": "23",
+            "input": "23\n",
             "output": "1255\n"
         },
         {
-            "input": "37",
+            "input": "37\n",
             "output": "21637\n"
         },
         {
-            "input": "46",
+            "input": "46\n",
             "output": "105558\n"
         },
         {
-            "input": "99",
+            "input": "99\n",
             "output": "169229875\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

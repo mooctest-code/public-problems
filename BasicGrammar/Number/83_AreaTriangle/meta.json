@@ -1,21 +1,25 @@
 {
-    "title": "\u6c42\u4e09\u89d2\u5f62\u7684\u9762\u79ef",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e00\u4e2a\u4e09\u89d2\u5f62\u7684\u4e09\u6761\u5427\uff0c\u4f60\u80fd\u8ba1\u7b97\u5b83\u7684\u9762\u79ef\u5417\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e09\u6761\u8fb9\u957f\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e09\u89d2\u5f62\u7684\u9762\u79ef\uff0c\u7ed3\u679c\u4fdd\u7559\u4e09\u4f4d\u5c0f\u6570\uff0c\u5982\u679c\u4e09\u6761\u8fb9\u6784\u4e0d\u6210\u4e09\u89d2\u5f62\uff0c\u5219\u8f93\u51fa 0\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3 4 5\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n6.000\n```\n",
+    "title": "求三角形的面积",
+    "desc": "### 题目描述\n\n给你一个三角形的三条吧，你能计算它的面积吗？\n\n### 输入描述\n\n输入为三条边长，两两之间用空格隔开\n\n### 输出描述\n\n输出三角形的面积，结果保留三位小数，如果三条边构不成三角形，则输出 0\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3 4 5\n```\n\n```\n6.000\n```\n\n",
     "templateCode": "",
     "sourceCode": "s= list(map(int, input().split()))\ns.sort()\n[a, b, c] = s\n\narea = 0\n\nif a + b > c:\n    l = (a + b + c) / 2\n    area = (l*(l-a)*(l-b)*(l-c))**0.5\n\nif not area:\n    print(0)\nelse: print('{:.3f}'.format(area))\n\n",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "4 5 3",
+            "input": "4 5 3\n",
             "output": "6.000\n"
         },
         {
-            "input": "7 8 9",
+            "input": "7 8 9\n",
             "output": "26.833\n"
         },
         {
-            "input": "2 5 3",
+            "input": "2 5 3\n",
             "output": "0\n"
         }
-    ]
+    ],
+    "simple_desc": "求三角形的面积，考虑不成立的情况",
+    "difficulty": "2",
+    "tag": "变量和运算符-运算符|流程控制-条件判断",
+    "author": "MOOCTEST"
 }

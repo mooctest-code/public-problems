@@ -1,3 +1,12 @@
+'''TESTCASE
+8
+-
+13
+-
+15
+-
+5
+'''
 a = int(input())
 
 ans = 0

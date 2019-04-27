@@ -1,3 +1,13 @@
+'''TESTCASE
+5
+Apple Banana Cherry Pineapple Banana
+-
+8
+Apple Peach Cherry Pineapple Banana Pear Pear Apple
+-
+5
+Apple Cherry Cherry Apple Pear
+'''
 from collections import Counter
 from functools import cmp_to_key
 

@@ -13,5 +13,9 @@
             "input": "1 2 3 4 5\n",
             "output": "5 4 3 2 1\n5 4 3 2 1\n5 4 3 2 1\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

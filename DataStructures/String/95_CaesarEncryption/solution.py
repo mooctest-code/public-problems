@@ -1,3 +1,12 @@
+'''TESTCASE
+MJQQT BTWQI
+-
+UDYMTS
+-
+IFSLJW
+-
+UWTGQJR
+'''
 s = input()
 s = list(s)
 for i in range(len(s)):

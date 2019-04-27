@@ -1,3 +1,14 @@
+'''TESTCASE
+anaconda
+-
+Python
+-
+Fibonacci
+-
+pyThon
+-
+pyTHON
+'''
 a = input()
 
 if a.istitle():

@@ -1,3 +1,10 @@
+'''TESTCASE
+100 168
+-
+-100 100
+-
+987 10640
+'''
 [a, b] = list(map(int, input().split()))
 
 for i in range(1, b+1):

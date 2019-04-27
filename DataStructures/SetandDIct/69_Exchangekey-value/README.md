@@ -1,4 +1,10 @@
-交换key-value
+---
+题目: 交换key-value
+简介: 将key作为value、将value作为key创建新字典
+难度: 3
+标签: 字典|序列操作-sorted()
+作者: MOOCTEST
+---
 
 ### 题目描述
 

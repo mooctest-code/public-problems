@@ -1,29 +1,33 @@
 {
-    "title": "\u767e\u94b1\u4e70\u767e\u9e21",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e2d\u56fd\u53e4\u4ee3\u6570\u5b66\u8457\u4f5c\u300a\u7b97\u7ecf\u300b\u4e2d\u63d0\u51fa\u4e00\u4e2a\u95ee\u9898\uff1a\u516c\u9e21\u6bcf\u53ea5\u94b1\uff0c\u6bcd\u9e21\u6bcf\u53ea3\u94b1\uff0c\u5c0f\u9e211\u94b13\u53ea\u3002\u82e5\u7528100\u94b1\u4e70100\u53ea\u9e21\uff08\u6bcf\u79cd\u9e21\u5fc5\u987b\u90fd\u4e70\u5230\uff09\uff0c\u4f60\u4e00\u5171\u6709\u591a\u5c11\u79cd\u4e70\u6cd5\uff1f\n\n\u73b0\u5728\u5047\u8bbe\u4f60\u6709 n \u5143\u94b1\u8981\u4e70 n \u53ea\u9e21\uff0c\u4f60\u6709\u591a\u5c11\u79cd\u4e70\u6cd5\u5462\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a n (0 < n < 10^7)\uff0c\u8868\u793a\u4f60\u6709 n \u5143\u94b1\u8981\u4e70 n \u53ea\u9e21\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u6570\uff0c\u8868\u793a\u7528\u8fd9 n \u5143\u4e70 n \u53ea\u9e21\u5171\u6709\u591a\u5c11\u79cd\u4e70\u6cd5\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n100\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n4\n```\n",
+    "title": "百钱买百鸡",
+    "desc": "### 题目描述\n\n中国古代数学著作《算经》中提出一个问题：公鸡每只5钱，母鸡每只3钱，小鸡1钱3只。若用100钱买100只鸡（每种鸡必须都买到），你一共有多少种买法？\n\n现在假设你有 n 元钱要买 n 只鸡，你有多少种买法呢？\n\n### 输入描述\n\n输入为 n (0 < n < 10^7)，表示你有 n 元钱要买 n 只鸡\n\n### 输出描述\n\n输出为一个数，表示用这 n 元买 n 只鸡共有多少种买法\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n100\n```\n\n```\n4\n```\n\n",
     "templateCode": "",
     "sourceCode": "n = int(input())\n\nmax_g = n // 5\n\ncnt = 0\nfor g in range(0, max_g+1):\n    if n-7*g < 0 or (n - 7 * g) % 4:\n        continue\n    cnt += 1\n\nprint(cnt)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "12",
+            "input": "12\n",
             "output": "1\n"
         },
         {
-            "input": "56",
+            "input": "56\n",
             "output": "3\n"
         },
         {
-            "input": "178",
+            "input": "178\n",
             "output": "6\n"
         },
         {
-            "input": "1000",
+            "input": "1000\n",
             "output": "36\n"
         },
         {
-            "input": "999999",
+            "input": "999999\n",
             "output": "35715\n"
         }
-    ]
+    ],
+    "simple_desc": "给你一百元买一百只鸡，有多少种买法？",
+    "difficulty": "2",
+    "tag": "数学",
+    "author": "MOOCTEST"
 }

@@ -1,6 +1,0 @@
-[
-    {
-        "input": "Hello \nWorld!\nHappy Coding\nOh",
-        "output": "Hello World!\ny\nOhOhOhOhOhOhOhOhOhOh\n"
-    }
-]

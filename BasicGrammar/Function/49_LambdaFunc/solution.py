@@ -1,3 +1,10 @@
+'''TESTCASE
+10
+20
+-
+0
+-1
+'''
 MAX = lambda x, y: x if x > y else y
 MIN = lambda x, y: x if x < y else y
 

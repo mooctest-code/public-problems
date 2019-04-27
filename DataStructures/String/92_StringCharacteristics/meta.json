@@ -1,29 +1,33 @@
 {
-    "title": "\u5224\u65ad\u5b57\u7b26\u4e32\u7279\u5f81",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0c\u8bf7\u5224\u65ad\u8fd9\u4e2a\u5b57\u7b26\u4e32\u662f\u5426\u6ee1\u8db3\u5934\u5b57\u6bcd\u5927\u5199\uff0c\u5176\u4ed6\u5b57\u6bcd\u5c0f\u5199\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u53ea\u6709\u82f1\u6587\u5b57\u6bcd\u7ec4\u6210\u7684\u5b57\u7b26\u4e32\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u5982\u679c\u6ee1\u8db3\u8981\u6c42\uff0c\u8f93\u51fa\u4e3a True\uff0c\u5982\u679c\u4e0d\u6ee1\u8db3\u5219\u5c06\u5176\u8f6c\u5316\u4e3a\u7b26\u5408\u8981\u6c42\u7684\u683c\u5f0f\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nAnaconda\n```\n\n```\npython\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nTrue\n```\n\n```\nPython\n```\n",
+    "title": "首字母大写",
+    "desc": "### 题目描述\n\n输入一个字符串，请判断这个字符串是否满足头字母大写，其他字母小写\n\n### 输入描述\n\n输入为一个只有英文字母组成的字符串\n\n### 输出描述\n\n如果满足要求，输出为 True，如果不满足则将其转化为符合要求的格式。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nAnaconda\n```\n\n```\nTrue\n```\n\n#### 样例2: 输入-输出\n\n```\npython\n```\n\n```\nPython\n```\n\n",
     "templateCode": "",
     "sourceCode": "a = input()\n\nif a.istitle():\n    print(True)\nelse: print(a.capitalize())",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "anaconda",
+            "input": "anaconda\n",
             "output": "Anaconda\n"
         },
         {
-            "input": "Python",
+            "input": "Python\n",
             "output": "True\n"
         },
         {
-            "input": "Fibonacci",
+            "input": "Fibonacci\n",
             "output": "True\n"
         },
         {
-            "input": "pyThon",
+            "input": "pyThon\n",
             "output": "Python\n"
         },
         {
-            "input": "pyTHON",
+            "input": "pyTHON\n",
             "output": "Python\n"
         }
-    ]
+    ],
+    "simple_desc": "判断字符串是否满足首字母大写，其余小写",
+    "difficulty": "1",
+    "tag": "字符串-内置函数",
+    "author": "MOOCTEST"
 }

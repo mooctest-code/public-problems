@@ -1,25 +1,29 @@
 {
-    "title": "\u7edf\u8ba1\u6709\u7279\u5f81\u6574\u6570\u7684\u548c",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u51fa [m, n] \u4e2d\u88ab3\u9664\u4f591\u5e76\u4e14\u88ab5\u9664\u4f593\u7684\u6240\u6709\u6574\u6570\u7684\u548c\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u4e2a\u5143\u7d20 m \u548c n (0 < m < n < 10^6)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa [m, n] \u4e2d\u88ab3\u9664\u4f591\u5e76\u4e14\u88ab5\u9664\u4f593\u7684\u6240\u6709\u6574\u6570\u7684\u548c\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n200 500\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n7010\n```\n",
+    "title": "统计有特征整数的和",
+    "desc": "### 题目描述\n\n输出 [m, n] 中被3除余1并且被5除余3的所有整数的和。\n\n### 输入描述\n\n输入为两个元素 m 和 n (0 < m < n < 10^6)\n\n### 输出描述\n\n输出 [m, n] 中被3除余1并且被5除余3的所有整数的和\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n200 500\n```\n\n```\n7010\n```\n\n",
     "templateCode": "",
     "sourceCode": "a = list(map(int, input().split()))\n\ncnt = 0\nfor i in range(a[0], a[1]+1):\n    if i % 3 == 1 and i % 5 == 3:\n        cnt += i\n\nprint(cnt)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "1 100",
+            "input": "1 100\n",
             "output": "303\n"
         },
         {
-            "input": "324 56545",
+            "input": "324 56545\n",
             "output": "106557514\n"
         },
         {
-            "input": "32454 45356",
+            "input": "32454 45356\n",
             "output": "33454430\n"
         },
         {
-            "input": "123 456",
+            "input": "123 456\n",
             "output": "6391\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

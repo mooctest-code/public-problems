@@ -1,3 +1,22 @@
+'''TESTCASE
+4
+-
+5
+-
+9
+-
+12
+-
+14
+-
+23
+-
+37
+-
+46
+-
+99
+'''
 n = int(input())
 
 f = [[0 for j in range(n+1)] for i in range(n+1)]

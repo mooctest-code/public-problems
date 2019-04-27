@@ -1,21 +1,25 @@
 {
-    "title": "\u6c42\u5927\u6570\u9664\u6cd5\u7684\u4f59\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6c422018\u4e2a\u67d0\u6570\uff08\u4f8b\u5982\u8f93\u51655\uff0c\u5219\u6784\u6210\u7684\u65b0\u6570\u4e3a5555555\u202655\uff0c\u51712018\u4e2a5\uff09\u9664\u4ee584\u7684\u4f59\u6570\u5e76\u8f93\u51fa\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u4e00\u4f4d\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa 2018\u4e2a\u8be5\u6570\uff082018\u4e2an\uff09\u9664\u4ee5 84 \u7684\u4f59\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n5\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n```\n55\n```\n",
+    "title": "求大数除法的余数",
+    "desc": "### 题目描述\n\n求2018个某数（例如输入5，则构成的新数为5555555…55，共2018个5）除以84的余数并输出。\n\n### 输入描述\n\n输入一个一位数 n\n\n### 输出描述\n\n输出 2018个该数（2018个n）除以 84 的余数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n5\n```\n\n```\n55\n```\n\n",
     "templateCode": "",
     "sourceCode": "print(int(input()*2018) % 84)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "4",
+            "input": "4\n",
             "output": "44\n"
         },
         {
-            "input": "6",
+            "input": "6\n",
             "output": "66\n"
         },
         {
-            "input": "8",
+            "input": "8\n",
             "output": "4\n"
         }
-    ]
+    ],
+    "simple_desc": "求一个大数除以某个数的余数",
+    "difficulty": "2",
+    "tag": "数学-其它|字符串-运算符",
+    "author": "MOOCTEST"
 }

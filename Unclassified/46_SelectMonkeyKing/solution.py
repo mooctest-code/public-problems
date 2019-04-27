@@ -1,3 +1,12 @@
+'''TESTCASE
+12 4
+-
+43 23
+-
+76 10
+-
+213 2355
+'''
 n, m = map(int, input().split())
 
 r = 0

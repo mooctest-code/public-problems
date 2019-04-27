@@ -1,3 +1,14 @@
+'''TESTCASE
+4 5
+-
+3 4
+-
+6 234
+-
+9 13
+-
+9 21342
+'''
 from itertools import permutations
 
 n, k = map(int, input().split())

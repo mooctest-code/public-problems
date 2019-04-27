@@ -1,17 +1,21 @@
 {
-    "title": "\u5e74\u9f84\u6700\u5927\u8005",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e00\u4e2a\u5b57\u5178\u5f62\u5f0f\u7684\u4eba\u53e3\u6570\u636e\uff0c\u5305\u542b\u591a\u4e2a `\u59d3\u540d: \u5e74\u9f84` \u952e\u503c\u5bf9\uff0c\u8bf7\u4f60\u8f93\u51fa\u5e74\u9f84\u6700\u5927\u8005\u7684\u59d3\u540d\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5305\u542b\u591a\u4e2a `\u59d3\u540d: \u5e74\u9f84` \u952e\u503c\u5bf9\u7684\u5b57\u5178\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u5e74\u9f84\u6700\u5927\u8005\u7684\u59d3\u540d\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n{'Cong': 22, 'Ming': 54, 'Mei': 21}\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nMing\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM\n",
+    "title": "年龄最大者",
+    "desc": "### 题目描述\n\n给你一个字典形式的人口数据，包含多个 `姓名: 年龄` 键值对，请你输出年龄最大者的姓名\n\n### 输入描述\n\n输入为一个包含多个 `姓名: 年龄` 键值对的字典\n\n### 输出描述\n\n输出年龄最大者的姓名\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{'Cong': 22, 'Ming': 54, 'Mei': 21}\n```\n\n```\nMing\n```\n\n### 题目来源\n\nRUNOOB.COM\n",
     "templateCode": "",
     "sourceCode": "d = eval(input())\n\nmaxkv = ('', 0)\nfor k, v in d.items():\n    if v > maxkv[1]:\n        maxkv = (k, v)\n\nprint(maxkv[0])",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "{'Cong': 22, 'Ming': 54, 'Mei': 21}",
+            "input": "{'Cong': 22, 'Ming': 54, 'Mei': 21}\n",
             "output": "Ming\n"
         },
         {
-            "input": "{'Li': 23, 'Han': 43, 'Lei': 19}",
+            "input": "{'Li': 23, 'Han': 43, 'Lei': 19}\n",
             "output": "Han\n"
         }
-    ]
+    ],
+    "simple_desc": "从用户字典中找出年龄最大者",
+    "difficulty": "2",
+    "tag": "字典-遍历|字典-运算符",
+    "author": "RUNOOB"
 }

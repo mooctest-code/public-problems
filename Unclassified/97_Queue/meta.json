@@ -1,33 +1,37 @@
 {
-    "title": "\u6392\u961f",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\nn\u4e2a\u4eba\u6392\u961f\uff0c\u53ef\u4ee5\u6392\u6210\u4e0d\u540c\u7684\u961f\u5f62\uff0c\u4f8b\u5982\u82e5\u67096\u4e2a\u4eba\uff0c\u5219\u53ef\u4ee5\u6392\u6210\u4e00\u961f\u6bcf\u961f6\u4eba\uff0c\u6216\u4e24\u961f\u6bcf\u961f3\u4eba\uff0c\u6216\u4e09\u961f\u6bcf\u961f2\u4eba\uff0c\u6216\u516d\u961f\u6bcf\u961f1\u4eba\u3002\u8f93\u5165\u4eba\u6570\uff0c\u8f93\u51fa\u6240\u6709\u53ef\u80fd\u7684\u961f\u5f62\u7684\u6570\u91cf\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u6392\u961f\u7684\u4eba\u6570 n (0 < n < 10^10)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u6240\u6709\u53ef\u80fd\u7684\u961f\u5f62\u7684\u6570\u91cf\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n6\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n4\n```\n",
+    "title": "排队",
+    "desc": "### 题目描述\n\nn个人排队，可以排成不同的队形，例如若有6个人，则可以排成一队每队6人，或两队每队3人，或三队每队2人，或六队每队1人。输入人数，输出所有可能的队形的数量。\n\n### 输入描述\n\n输入为排队的人数 n (0 < n < 10^10)\n\n### 输出描述\n\n输出为所有可能的队形的数量\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n6\n```\n\n```\n4\n```\n\n",
     "templateCode": "",
     "sourceCode": "a = int(input())\n\nm = int(a ** 0.5)\n\ncnt = 0\nfor i in range(1, m):\n    if a % i == 0:\n        cnt += 2\n\nif m * m == a:\n    cnt += 1\n\nprint(cnt)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "10",
+            "input": "10\n",
             "output": "4\n"
         },
         {
-            "input": "22",
+            "input": "22\n",
             "output": "4\n"
         },
         {
-            "input": "98",
+            "input": "98\n",
             "output": "6\n"
         },
         {
-            "input": "2304",
+            "input": "2304\n",
             "output": "27\n"
         },
         {
-            "input": "98756",
+            "input": "98756\n",
             "output": "12\n"
         },
         {
-            "input": "983784336",
+            "input": "983784336\n",
             "output": "80\n"
         }
-    ]
+    ],
+    "simple_desc": "n个人排队，给出所有可能队形的数量",
+    "difficulty": "3",
+    "tag": "数学-数学问题",
+    "author": "MOOCTEST"
 }

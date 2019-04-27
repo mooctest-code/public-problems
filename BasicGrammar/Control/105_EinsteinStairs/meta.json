@@ -1,13 +1,17 @@
 {
-    "title": "\u7231\u56e0\u65af\u5766\u53f0\u9636\u95ee\u9898",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7231\u56e0\u65af\u5766\u66fe\u7ecf\u63d0\u51fa\u8fc7\u8fd9\u6837\u4e00\u9053\u6709\u8da3\u7684\u6570\u5b66\u9898\uff1a\u6709\u4e00\u4e2a\u957f\u9636\u68af\uff0c\u82e5\u6bcf\u6b65\u4e0a2\u9636\uff0c\u6700\u540e\u5269\u4e0b1\u9636\uff1b\u82e5\u6bcf\u6b65\u4e0a3\u9636\uff0c\u6700\u540e\u5269\u4e0b2\u9636\uff1b\u82e5\u6bcf\u6b65\u4e0a5\u9636\uff0c\u6700\u540e\u5269\u4e0b4\u9636\uff1b\u82e5\u6bcf\u6b65\u4e0a6\u9636\uff0c\u6700\u540e\u5269\u4e0b5\u9636\uff1b\u53ea\u6709\u6bcf\u6b65\u4e0a7\u9636\uff0c\u6700\u540e\u521a\u597d\u4e00\u9636\u4e5f\u4e0d\u5269\u5168\u90e8\u8d70\u5b8c\u3002\u8ba1\u7b97\u8be5\u9636\u68af\u81f3\u5c11\u6709\u591a\u5c11\u9636\uff1f\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8be5\u9636\u68af\u7684\u9636\u6570\n",
+    "title": "爱因斯坦台阶问题",
+    "desc": "### 题目描述\n\n爱因斯坦曾经提出过这样一道有趣的数学题：有一个长阶梯，若每步上2阶，最后剩下1阶；若每步上3阶，最后剩下2阶；若每步上5阶，最后剩下4阶；若每步上6阶，最后剩下5阶；只有每步上7阶，最后刚好一阶也不剩全部走完。计算该阶梯至少有多少阶？\n\n### 输出描述\n\n输出该阶梯的阶数\n",
     "templateCode": "",
     "sourceCode": "i = 0\n\nwhile True:\n    if i%2==1 and i%3==2 and i%5==4 and i%6==5 and i%7==0:\n        print(i)\n        break\n    i += 1",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "NoInput",
+            "input": "NoInput\n",
             "output": "119\n"
         }
-    ]
+    ],
+    "simple_desc": "一道很简单的数(xun)学(huan)题",
+    "difficulty": "1",
+    "tag": "流程控制-循环",
+    "author": "MOOCTEST"
 }

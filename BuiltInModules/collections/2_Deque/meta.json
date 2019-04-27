@@ -21,5 +21,9 @@
             "input": "1 2 3\n1\n",
             "output": "1 2 3\n"
         }
-    ]
+    ],
+    "simple_desc": "使用双向队列求滑动窗口区间最大值",
+    "difficulty": "2",
+    "tag": "collections-deque",
+    "author": "谢子聪"
 }

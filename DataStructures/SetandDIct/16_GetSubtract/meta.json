@@ -1,21 +1,25 @@
 {
-    "title": "\u6c42\u96c6\u5408\u7684\u5dee\u96c6",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e24\u4e2a\u96c6\u5408\uff0c\u8bf7\u6c42\u5b83\u4eec\u7684\u5dee\u96c6\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u884c\uff0c\u5206\u522b\u4e3a\u4e24\u4e2a\u96c6\u5408 set1 \u548c set2\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a set1 \u548c set2 \u7684\u5dee\u96c6\uff08 set1 - set2 \uff09\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n{1, 2}\n{2, 3}\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n{1}\n```\n",
+    "title": "求集合的差集",
+    "desc": "### 题目描述\n\n给你两个集合，请求它们的差集\n\n### 输入描述\n\n输入为两行，分别为两个集合 set1 和 set2\n\n### 输出描述\n\n输出为 set1 和 set2 的差集（ set1 - set2 ）\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{1, 2}\n{2, 3}\n```\n\n```\n{1}\n```\n",
     "templateCode": "",
     "sourceCode": "set1 = eval(input())\nset2 = eval(input())\n\nprint(set1.difference(set2))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "{1, 2, 3}\n{2, 3, 4}",
+            "input": "{1, 2, 3}\n{2, 3, 4}\n",
             "output": "{1}\n"
         },
         {
-            "input": "{1}\n{0}",
+            "input": "{1}\n{0}\n",
             "output": "{1}\n"
         },
         {
-            "input": "{1, 2, 3}\n{0, 1, 2}",
+            "input": "{1, 2, 3}\n{0, 1, 2}\n",
             "output": "{3}\n"
         }
-    ]
+    ],
+    "simple_desc": "求两个集合的差集",
+    "difficulty": "1",
+    "tag": "集合-内置函数-交差并",
+    "author": "MOOCTEST"
 }

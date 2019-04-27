@@ -13,5 +13,9 @@
             "input": "list.extend\n",
             "output": "Help on method_descriptor in list:\n\nlist.extend = extend(self, iterable, /)\n    Extend list by appending elements from the iterable.\n\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

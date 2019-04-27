@@ -14,8 +14,12 @@
             "output": "a2469134dhiahdudha24\n"
         },
         {
-            "input": "2\nagdshadgjh\nemmmm156795sdab4568",
+            "input": "2\nagdshadgjh\nemmmm156795sdab4568\n",
             "output": "agdshadgjh\nemmmm313590sdab9136\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

@@ -1,3 +1,16 @@
+'''TESTCASE
+2
+-
+1
+-
+7
+-
+12347
+-
+98765
+-
+98773
+'''
 def is_prime(a):
     if a < 2: 
         return False

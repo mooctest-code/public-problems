@@ -21,5 +21,9 @@
             "input": "2000-01-01\n",
             "output": "Saturday\n"
         }
-    ]
+    ],
+    "simple_desc": "判断是周几",
+    "difficulty": "1",
+    "tag": "datetime",
+    "author": "谢子聪"
 }

@@ -1,4 +1,10 @@
-试一试reduce函数
+---
+题目: 试一试reduce()函数
+简介: 使用 reduce() 函数计算一个列表的“和”
+难度: 2
+标签: functools-reduce|函数-lambda
+作者: MOOCTEST
+---
 
 ### 题目描述
 

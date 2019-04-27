@@ -1,21 +1,25 @@
 {
-    "title": "\u65e5\u671f\u683c\u5f0f\u8f6c\u6362",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u5e74\u6708\u65e5\u5b57\u7b26\u4e32\uff08\u683c\u5f0f\u4e3a\u201c\u5e74\u4efd \u6708\u4efd \u65e5\u671f\u201d\uff09\uff0c\u8f93\u51fa\u5176\u89c4\u8303\u5f62\u5f0fyyyy-mm-dd\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\uff08\u683c\u5f0f\u4e3a\u201c\u5e74\u4efd \u6708\u4efd \u65e5\u671f\u201d\uff09\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u6309yyyy-mm-dd\u7684\u683c\u5f0f\u8f93\u51fa\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2000 12 25\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n2000-12-25\n```\n\n### \u63d0\u793a\n\n\u6ce8\u610f 0",
+    "title": "日期格式转换",
+    "desc": "### 题目描述\n\n输入一个年月日字符串（格式为“年份 月份 日期”），输出其规范形式 yyyy-mm-dd。\n\n### 输入描述\n\n输入格式为 `年份 月份 日期`\n\n### 输出描述\n\n按 yyyy-mm-dd 的格式输出\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2000 12 25\n```\n\n```\n2000-12-25\n```\n\n### 提示\n\n注意 0",
     "templateCode": "",
     "sourceCode": "print('%04d-%02d-%02d' %  tuple(map(int, input().split())))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "2018 10 7",
+            "input": "2018 10 7\n",
             "output": "2018-10-07\n"
         },
         {
-            "input": "2008 5 12",
+            "input": "2008 5 12\n",
             "output": "2008-05-12\n"
         },
         {
-            "input": "2000 1 1",
+            "input": "2000 1 1\n",
             "output": "2000-01-01\n"
         }
-    ]
+    ],
+    "simple_desc": "给你年月日，按照一定格式输出",
+    "difficulty": "2",
+    "tag": "字符串-格式化-填充与对齐",
+    "author": "MOOCTEST"
 }

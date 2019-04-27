@@ -1,3 +1,14 @@
+'''TESTCASE
+1
+iselab 123 mooc 456 huidhui
+1 20
+-
+2
+iselab 123 mooc 456 huidhui
+1 7
+iselab 123 mooc 456 huidhui
+1 17
+'''
 
 import re 
 num = int(input())

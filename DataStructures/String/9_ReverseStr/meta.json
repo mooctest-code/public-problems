@@ -1,21 +1,25 @@
 {
-    "title": "\u5b57\u7b26\u4e32\u5012\u7f6e",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bf7\u5c06\u4e00\u4e2a\u5b57\u7b26\u4e32\u5012\u7f6e\u5e76\u8f93\u51fa\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32 S\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a S \u7684\u5012\u7f6e\u5b57\u7b26\u4e32\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nAB\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nBA\n```\n",
+    "title": "字符串倒置",
+    "desc": "### 题目描述\n\n请将一个字符串倒置并输出\n\n### 输入描述\n\n输入为一个字符串 S\n\n### 输出描述\n\n输出为 S 的倒置字符串\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nAB\n```\n\n```\nBA\n```\n\n",
     "templateCode": "",
     "sourceCode": "print((input())[::-1])",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "A",
+            "input": "A\n",
             "output": "A\n"
         },
         {
-            "input": "ABC",
+            "input": "ABC\n",
             "output": "CBA\n"
         },
         {
-            "input": "123456789",
+            "input": "123456789\n",
             "output": "987654321\n"
         }
-    ]
+    ],
+    "simple_desc": "将一个字符串倒置输出",
+    "difficulty": "1",
+    "tag": "字符串-运算符",
+    "author": "MOOCTEST"
 }

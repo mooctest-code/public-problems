@@ -1,3 +1,12 @@
+'''TESTCASE
+1 100
+-
+324 56545
+-
+32454 45356
+-
+123 456
+'''
 a = list(map(int, input().split()))
 
 cnt = 0

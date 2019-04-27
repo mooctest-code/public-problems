@@ -1,13 +1,17 @@
 {
-    "title": "\u6c34\u4ed9\u82b1\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6240\u8c13\u201d\u6c34\u4ed9\u82b1\u6570\u201d\u662f\u6307\u4e00\u4e2a\u4e09\u4f4d\u6570\uff0c\u5176\u5404\u4f4d\u6570\u5b57\u7acb\u65b9\u548c\u7b49\u4e8e\u8be5\u6570\u672c\u8eab\u3002\u4f8b\u5982\uff1a153\u662f\u4e00\u4e2a\u201d\u6c34\u4ed9\u82b1\u6570\u201d\uff0c\u56e0\u4e3a153=1\u7684\u4e09\u6b21\u65b9\uff0b5\u7684\u4e09\u6b21\u65b9\uff0b3\u7684\u4e09\u6b21\u65b9\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u6240\u6709\u7684\u6c34\u4ed9\u82b1\u6570\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u4e00\u4e2a\u7a7a\u683c\u9694\u5f00\n",
+    "title": "水仙花数",
+    "desc": "### 题目描述\n\n所谓”水仙花数”是指一个三位数，其各位数字立方和等于该数本身。例如：153是一个”水仙花数”，因为153=1的三次方＋5的三次方＋3的三次方。\n\n### 输出描述\n\n输出所有的水仙花数，两两之间用一个空格隔开\n",
     "templateCode": "",
     "sourceCode": "l = []\nfor i in range(100, 1000):\n    if (i//100) ** 3 + ((i//10)%10) ** 3 + (i % 10) ** 3 == i:\n        l.append(i)\n\nprint(' '.join(map(str, l)))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "None",
+            "input": "None\n",
             "output": "153 370 371 407\n"
         }
-    ]
+    ],
+    "simple_desc": "输出水仙花数（各位数字立方和等于该数本身的数）",
+    "difficulty": "2",
+    "tag": "变量和运算符-运算符",
+    "author": "RUNOOB"
 }

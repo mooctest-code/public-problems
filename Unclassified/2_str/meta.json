@@ -1,13 +1,17 @@
 {
-    "title": "实训二：文本计算",
+    "title": "文本计算",
     "desc": "### 描述\n\nPython可以作为一个功能强大的计算器，同时又不仅仅是一个计算器，Python还可以帮助我们进行字符串运算。操作以下给定的字符串，获取正确的结果\n\n### 输入\n\n一共四行，每行对应一个字符串a, b, c, d\n\n### 输出\n\n拼接字符串a和b，获得字符串c的第五个字符，重复输出十次字符串d\n\n### 样例输入\n\n```\nHello \nPython!\nI Love Python\nHi\n```\n\n### 样例输出\n\n```\nHello Python\nv\nHiHiHiHiHiHiHiHiHiHi\n```\n",
     "templateCode": "",
     "sourceCode": "[a, b, c, d] = [input() for i in range(4)]\n\nprint(a+b)\nprint(c[4])\nprint(d*10)",
-    "lang": "python3",
+    "lang": "Python3",
     "testCases": [
         {
-            "input": "Hello \nWorld!\nHappy Coding\nOh",
+            "input": "Hello \nWorld!\nHappy Coding\nOh\n",
             "output": "Hello World!\ny\nOhOhOhOhOhOhOhOhOhOh\n"
         }
-    ]
+    ],
+    "simple_desc": "一些简单的文本操作",
+    "difficulty": "2",
+    "tag": "字符串-运算符",
+    "author": "Python快速入门-刘锦涛"
 }

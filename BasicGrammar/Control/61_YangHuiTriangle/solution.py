@@ -1,3 +1,12 @@
+'''TESTCASE
+1
+-
+3
+-
+7
+-
+9
+'''
 # by @colinshi in http://www.runoob.com/python/python-exercise-example61.html
 
 def sj():

@@ -1,3 +1,14 @@
+'''TESTCASE
+42
+-
+240
+-
+210
+-
+32488
+-
+604800
+'''
 # http://www.pythontip.com/coding/report_detail/1720/
 
 k = int(input())

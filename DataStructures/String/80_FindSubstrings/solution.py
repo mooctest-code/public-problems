@@ -1,3 +1,16 @@
+'''TESTCASE
+A candle lights others and consumes itself.
+an
+-
+Woyebuzhidaoyinggaixiexieshenmedongxi
+ng
+-
+zhegeceshiyonglihaonanxiea,shizaibuhuixieceshiyongli
+hi
+-
+NNN
+NN
+'''
 s1 = input()
 s2 = input()
 

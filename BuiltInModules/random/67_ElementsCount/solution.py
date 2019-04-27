@@ -1,3 +1,12 @@
+'''TESTCASE
+4
+-
+9
+-
+20
+-
+12
+'''
 import random
 from collections import Counter
 

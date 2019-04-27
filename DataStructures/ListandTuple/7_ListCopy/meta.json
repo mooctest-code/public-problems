@@ -1,17 +1,21 @@
 {
-    "title": "\u5217\u8868\u590d\u5236",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u5728\u8bb8\u591a\u7f16\u7a0b\u8bed\u8a00\u4e2d\uff0c\u5b58\u5728\u7740\u201c\u6d45\u62f7\u8d1d\u201d\u548c\u201c\u6df1\u62f7\u8d1d\u201d\u4e24\u4e2a\u6982\u5ff5\u3002\u201c\u6d45\u62f7\u8d1d\u201d\u53ea\u590d\u5236\u5185\u5b58\u5730\u5740\uff0c\u4e5f\u5c31\u662f\u5bf9\u539f\u6570\u636e\u5bf9\u8c61\u7684\u4e00\u4e2a\u5f15\u7528\uff0c\u4f46\u4f60\u6539\u53d8\u4e86\u539f\u6570\u636e\u7684\u503c\u540e\uff0c\u201c\u6d45\u62f7\u8d1d\u201d\u7684\u503c\u4e5f\u4f1a\u53d8\u5316\u3002\u800c\u201c\u6df1\u62f7\u8d1d\u201d\u5219\u662f\u5f00\u8f9f\u4e86\u65b0\u7684\u5185\u5b58\u7a7a\u95f4\u6765\u5b58\u539f\u6570\u636e\u5bf9\u8c61\u7684\u503c\u3002\n\n\u7ed9\u4f60\u4e00\u4e2a\u5217\u8868 L1\uff0c\u8bf7\u4f60\u6df1\u62f7\u8d1d L1 \u5f97\u5230 L2\uff0c\u5e76\u4fee\u6539 L2 \u7684\u7b2c\u4e00\u4e2a\u5143\u7d20\u4e3a 0\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a Python List \u5f62\u5f0f\u7684\u6574\u6570\u5217\u8868 L1\uff0c\u683c\u5f0f\u53c2\u8003\u6837\u4f8b\u8f93\u5165\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u8f93\u51fa\u5217\u8868 L2\uff0c\u4e3a\u5217\u8868 L1 \u7684\u6df1\u62f7\u8d1d\uff0c\u5e76\u4e14\u5c06\u7b2c\u4e00\u4e2a\u5143\u7d20\u7684\u503c\u6539\u4e3a 0\u3002\n\n\u7b2c\u4e8c\u884c\u8f93\u51fa\u5217\u8868 L1\u3002\n\n\u8f93\u51fa\u683c\u5f0f\u8bf7\u53c2\u8003\u6837\u4f8b\u8f93\u51fa\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n[1, 2, 3]\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n[0, 2, 3]\n[1, 2, 3]\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "title": "列表复制",
+    "desc": "### 题目描述\n\n在许多编程语言中，存在着“浅拷贝”和“深拷贝”两个概念。“浅拷贝”只复制内存地址，也就是对原数据对象的一个引用，但你改变了原数据的值后，“浅拷贝”的值也会变化。而“深拷贝”则是开辟了新的内存空间来存原数据对象的值。\n\n给你一个列表 L1，请你深拷贝 L1 得到 L2，并修改 L2 的第一个元素为 0。\n\n### 输入描述\n\n一个 Python List 形式的整数列表 L1，格式参考样例输入。\n\n### 输出描述\n\n第一行输出列表 L2，为列表 L1 的深拷贝，并且将第一个元素的值改为 0。\n\n第二行输出列表 L1。\n\n输出格式请参考样例输出。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n[1, 2, 3]\n```\n\n```\n[0, 2, 3]\n[1, 2, 3]\n```\n\n### 题目来源\n\nRUNOOB.COM",
     "templateCode": "",
     "sourceCode": "l1 = eval(input())\nl2 = l1.copy()\nl2[0] = 0\nprint(l2)\nprint(l1)\n",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "[1, 2, 3]",
+            "input": "[1, 2, 3]\n",
             "output": "[0, 2, 3]\n[1, 2, 3]\n"
         },
         {
-            "input": "[7, 4, 3]",
+            "input": "[7, 4, 3]\n",
             "output": "[0, 4, 3]\n[7, 4, 3]\n"
         }
-    ]
+    ],
+    "simple_desc": "深拷贝列表",
+    "difficulty": "1",
+    "tag": "列表-内置函数-copy()|列表-运算符-[]",
+    "author": "RUNOOB"
 }

@@ -14,8 +14,12 @@
             "output": "(0, 3)\n"
         },
         {
-            "input": "2\nbuzhidao woyebuzhidao\nemmmmmm emmmmmmmmmm",
+            "input": "2\nbuzhidao woyebuzhidao\nemmmmmm emmmmmmmmmm\n",
             "output": "None\n(0, 7)\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

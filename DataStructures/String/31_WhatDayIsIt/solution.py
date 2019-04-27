@@ -1,3 +1,14 @@
+'''TESTCASE
+Sa
+-
+Tu
+-
+th
+-
+M
+-
+f
+'''
 dayOfWeek = ['Sunday', 'Saturday', 'Friday', 'Monday', 'Tuesday', 'Thursday', 'Wednesday']
 
 s = input().lower()

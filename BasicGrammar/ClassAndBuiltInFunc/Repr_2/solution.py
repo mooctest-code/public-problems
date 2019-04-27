@@ -1,3 +1,12 @@
+'''TESTCASE
+1 2
+-
+-1 0
+-
+0 -1
+-
+-1 2
+'''
 class Complex(complex):
     def __init__(self, real, imag):
         complex.__init__(real, imag)

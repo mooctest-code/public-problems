@@ -1,21 +1,25 @@
 {
-    "title": "\u5b57\u7b26\u4e32\u6392\u5e8f",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u591a\u4e2a\u7528\u9017\u53f7\u9694\u5f00\u7684\u5b57\u7b26\u4e32\uff0c\u8bf7\u4f60\u5bf9\u8fd9\u4e9b\u5b57\u7b26\u4e32\u8fdb\u884c\u6392\u5e8f\u5e76\u8f93\u51fa\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0c\u53ea\u5305\u542b\u82f1\u6587\u5b57\u6bcd\u548c\u9017\u53f7\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u6309\u7167\u5b57\u5178\u5e8f\u8f93\u51fa\u8fd9\u4e9b\u7531\u9017\u53f7\u9694\u5f00\u7684\u5b57\u7b26\u4e32\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u4e00\u4e2a\u9017\u53f7\u9694\u5f00\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\npython,c,java\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nc,java,python\n```\n",
+    "title": "字符串排序",
+    "desc": "### 题目描述\n\n有多个用逗号隔开的字符串，请你对这些字符串进行排序并输出\n\n### 输入描述\n\n输入为一个字符串，只包含英文字母和逗号\n\n### 输出描述\n\n按照字典序输出这些由逗号隔开的字符串，两两之间用一个逗号隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\npython,c,java\n```\n\n```\nc,java,python\n```\n",
     "templateCode": "",
     "sourceCode": "a = input()\nl = a.split(',')\nl.sort()\nprint(','.join(l))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "java,c,python",
+            "input": "java,c,python\n",
             "output": "c,java,python\n"
         },
         {
-            "input": "i,love,coding",
+            "input": "i,love,coding\n",
             "output": "coding,i,love\n"
         },
         {
-            "input": "hello,world",
+            "input": "hello,world\n",
             "output": "hello,world\n"
         }
-    ]
+    ],
+    "simple_desc": "将字符串分隔开并进行排序",
+    "difficulty": "2",
+    "tag": "字符串-内置函数|列表-内置函数-sort()",
+    "author": "MOOCTEST"
 }

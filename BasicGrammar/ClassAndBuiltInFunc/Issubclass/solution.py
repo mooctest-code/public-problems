@@ -1,3 +1,8 @@
+'''TESTCASE
+B
+-
+C
+'''
 class A:
     pass
 class B(A):

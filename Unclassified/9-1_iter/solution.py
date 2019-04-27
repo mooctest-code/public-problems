@@ -1,3 +1,6 @@
+'''TESTCASE
+[('Tom', 63), ('Jeff', 85), ('Adan', 97), ('Julia', 80), ('Eve', 74), ('Toney', 55)]
+'''
 class Register:
     def __init__(self, name):
         self.name = name

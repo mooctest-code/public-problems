@@ -1,3 +1,10 @@
+'''TESTCASE
+3
+-
+5
+-
+7
+'''
 def isPrime(n):
     if n == 2: 
         return True

@@ -6,20 +6,24 @@
     "lang": "Python3",
     "testCases": [
         {
-            "input": "4 6",
+            "input": "4 6\n",
             "output": "2\n"
         },
         {
-            "input": "123 4961",
+            "input": "123 4961\n",
             "output": "41\n"
         },
         {
-            "input": "214134 13214",
+            "input": "214134 13214\n",
             "output": "2\n"
         },
         {
-            "input": "324325 30850",
+            "input": "324325 30850\n",
             "output": "25\n"
         }
-    ]
+    ],
+    "simple_desc": "求两个数的最大公约数",
+    "difficulty": "1",
+    "tag": "math",
+    "author": "MOOCTEST"
 }

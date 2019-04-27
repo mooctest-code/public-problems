@@ -1,29 +1,33 @@
 {
-    "title": "\u8ba1\u7b97\u65b9\u7a0b\u7684\u6839",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6c42\u4e00\u4e2a\u4e8c\u5143\u4e00\u6b21\u65b9\u7a0b ax^2+bx+c=0\uff0c\u5176\u4e2da,b,c\u4e3a\u4e09\u4e2a\u6574\u6570\u53c2\u6570\u7684\u5b9e\u6839\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e8c\u5143\u4e00\u6b21\u65b9\u7a0b\u7684\u4e09\u4e2a\u53c2\u6570 a b c\uff0c(a \u2260 0)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u65b9\u7a0b\u7684\u5b9e\u6839\uff0c\u683c\u5f0f\u53c2\u7167\u6837\u4f8b\u8f93\u51fa\u3002\u82e5\u6709\u4e24\u4e2a\u5b9e\u6839\uff0c\u5219\u5c0f\u7684\u5728\u524d\u5927\u7684\u5728\u540e\uff0c\u82e5\u6ca1\u6709\u5b9e\u6839\uff0c\u5219\u8f93\u51fa 'no real solution'\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n1 0 -1\n```\n\n```\n1 2 1\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nx1 = -1.0, x2 = 1.0\n```\n\n```\nx = -1.0\n```\n",
+    "title": "计算方程的根",
+    "desc": "### 题目描述\n\n求一个二元一次方程 ax^2+bx+c=0，其中a,b,c为三个整数参数的实根。\n\n### 输入描述\n\n输入为二元一次方程的三个参数 a b c，(a ≠ 0)\n\n### 输出描述\n\n输出方程的实根，格式参照样例输出。若有两个实根，则小的在前大的在后，若没有实根，则输出 'no real solution'。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1 0 -1\n```\n\n```\nx1 = -1.0, x2 = 1.0\n```\n\n#### 样例2: 输入-输出\n\n```\n1 2 1\n```\n\n```\nx = -1.0\n```\n\n",
     "templateCode": "",
     "sourceCode": "t = tuple(map(int, input().split()))\n\n(a, b, c) = t\n\ndef my_quadratic(a,b,c):\n    d = b*b - 4*a*c\n    if d < 0:\n        return 'no real solution'\n    else:\n        x1 = (-b + d**0.5)/(2*a)\n        x2 = (-b - d**0.5)/(2*a)\n        if x1 > x2:\n            x1, x2 = x2, x1\n        if x1 == x2:\n            return 'x = {:.1f}'.format(x1)\n        else: return 'x1 = {:.1f}, x2 = {:.1f}'.format(x1, x2)\n\nprint(my_quadratic(a, b, c))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "1 0 -1",
+            "input": "1 0 -1\n",
             "output": "x1 = -1.0, x2 = 1.0\n"
         },
         {
-            "input": "1 2 1",
+            "input": "1 2 1\n",
             "output": "x = -1.0\n"
         },
         {
-            "input": "1 1 -1",
+            "input": "1 1 -1\n",
             "output": "x1 = -1.6, x2 = 0.6\n"
         },
         {
-            "input": "5 10 5",
+            "input": "5 10 5\n",
             "output": "x = -1.0\n"
         },
         {
-            "input": "2 2 3",
+            "input": "2 2 3\n",
             "output": "no real solution\n"
         }
-    ]
+    ],
+    "simple_desc": "给定二元一次方程的三个参数，求根",
+    "difficulty": "2",
+    "tag": "数学-数学问题",
+    "author": "MOOCTEST"
 }

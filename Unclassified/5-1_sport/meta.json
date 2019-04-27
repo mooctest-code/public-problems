@@ -1,13 +1,17 @@
 {
     "title": "实训五-1：整理运动会成绩单",
-    "desc": "### 描述\n\n运动会结束，现在有运动会的成绩单，我们如何通过成绩单，整理有成绩的同学的名单，其中一个同学可能会有多个成绩，请你帮帮小南。\n\n### 输入\n\n一共六行，每三行对应一个同学的参赛项目和成绩，分别是，第一行对应学生姓名，第二行对应参赛项目，第三行对应比赛成绩。\n\n### 输出\n\n第二个同学的 '项目名称:项目成绩'。\n\n### 样例输入\n\n```\nTom\n110M\n14.3\nEve\n800M\n4min\n```\n\n### 样例输出\n\n```\n800M:4min\n```",
+    "desc": "### 描述\n\n运动会结束，现在有运动会的成绩单，我们如何通过成绩单，整理有成绩的同学的名单，其中一个同学可能会有多个成绩，请你帮帮小南。\n\n### 输入\n\n一共六行，每三行对应一个同学的参赛项目和成绩，分别是，第一行对应学生姓名，第二行对应参赛项目，第三行对应比赛成绩。\n\n### 输出\n\n第三个同学的 '项目名称:项目成绩'。\n\n### 样例输入\n\n```\nTom\n110M\n14.3\nEve\n800M\n4min\n```\n\n### 样例输出\n\n```\n800M:4min\n```",
     "templateCode": "",
     "sourceCode": "[n, p, r] = [input() for i in range(3)] \n[n, p, r] = [input() for i in range(3)]\n\nprint('{}:{}'.format(p, r))",
-    "lang": "python3",
+    "lang": "Python3",
     "testCases": [
         {
-            "input": "Jerry\n110M\n13.9\nDva\n800M\n3min50sec",
+            "input": "Jerry\n110M\n13.9\nDva\n800M\n3min50sec\n",
             "output": "800M:3min50sec\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

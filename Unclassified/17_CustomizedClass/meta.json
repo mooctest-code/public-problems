@@ -1,21 +1,25 @@
 {
-    "title": "\u8bd5\u4e00\u8bd5\u81ea\u5b9a\u4e49\u7c7b",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bbe\u8ba1\u4e00\u4e2a\u5b66\u751f\u7c7b\uff0c\u5e76\u53ef\u4ee5\u76f4\u63a5\u901a\u8fc7print\u65b9\u6cd5\u8f93\u51fa\u5b66\u751f\u5b9e\u4f8b\u7684\u5b66\u53f7\uff0c\u59d3\u540d\uff0c\u5e74\u9f84\uff0c\u9662\u7cfb\u7684\u503c\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u884c\u56db\u4e2a\u6570\u636e\uff0c\u5206\u522b\u4e3a\u5b66\u53f7\u3001\u59d3\u540d\u3001\u5e74\u9f84\u548c\u9662\u7cfb\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u683c\u5f0f\u8bf7\u53c2\u8003\u6837\u4f8b\u8f93\u51fa\uff0c\u5192\u53f7\u548c\u9017\u53f7\u540e\u9762\u9700\u8981\u4e00\u4e2a\u7a7a\u683c\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nNJU10001 Tom 20 SE\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nnum: NJU10001, name: Tom, age: 20, dep: SE\n```\n\n### \u8bf4\u660e\n\n\u4f60\u9700\u8981\u5b9e\u73b0 print(student) \u76f4\u63a5\u8f93\u51fa\u4e0a\u9762\u7684\u4fe1\u606f\u3002student \u4e3a\u4f60\u7684\u5b66\u751f\u7c7b\u7684\u4e00\u4e2a\u5b9e\u4f8b\u3002",
+    "title": "试一试自定义类",
+    "desc": "### 题目描述\n\n设计一个学生类，并可以直接通过print方法输出学生实例的学号，姓名，年龄，院系的值\n\n### 输入描述\n\n输入为一行四个数据，分别为学号、姓名、年龄和院系，两两之间用空格隔开\n\n### 输出描述\n\n输出格式请参考样例输出，冒号和逗号后面需要一个空格\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nNJU10001 Tom 20 SE\n```\n\n```\nnum: NJU10001, name: Tom, age: 20, dep: SE\n```\n\n### 说明\n\n你需要实现 print(student) 直接输出上面的信息。student 为你的学生类的一个实例。",
     "templateCode": "class Student:\n    def __init__(self):\n        pass\n        \n    def __str__(self):\n        pass\n\nstudent = Student()\n\nprint(student)",
     "sourceCode": "class Student:\n    def __init__(self, info):\n        [self.num, self.name, self.age, self.dep] = info\n\n    def __str__(self):\n        return ', '.join(['num: ' + self.num, 'name: ' + self.name,\n            'age: ' + str(self.age), 'dep: ' + self.dep])\n\n    __repr__ = __str__\n\ninfo = input().split()\nstudent = Student(info)\nprint(student)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "NJU10001 Tom 24 SE",
+            "input": "NJU10001 Tom 24 SE\n",
             "output": "num: NJU10001, name: Tom, age: 24, dep: SE\n"
         },
         {
-            "input": "NJU10002 Jerry 21 MSE",
+            "input": "NJU10002 Jerry 21 MSE\n",
             "output": "num: NJU10002, name: Jerry, age: 21, dep: MSE\n"
         },
         {
-            "input": "NJU10003 Tyke 22 CS",
+            "input": "NJU10003 Tyke 22 CS\n",
             "output": "num: NJU10003, name: Tyke, age: 22, dep: CS\n"
         }
-    ]
+    ],
+    "simple_desc": "设计一个学生类并实现打印方法",
+    "difficulty": "2",
+    "tag": "内置类属性-__print__",
+    "author": "MOOCTEST"
 }

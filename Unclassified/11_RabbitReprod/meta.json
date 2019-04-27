@@ -1,25 +1,29 @@
 {
-    "title": "\u5154\u5b50\u7e41\u6b96",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u4e00\u5bf9\u5154\u5b50\uff0c\u4ece\u51fa\u751f\u540e\u7b2c3\u4e2a\u6708\u8d77\u6bcf\u4e2a\u6708\u90fd\u751f\u4e00\u5bf9\u5154\u5b50\uff0c\u5c0f\u5154\u5b50\u957f\u5230\u7b2c\u4e09\u4e2a\u6708\u540e\u6bcf\u4e2a\u6708\u53c8\u751f\u4e00\u5bf9\u5154\u5b50\uff0c\u5047\u5982\u5154\u5b50\u90fd\u4e0d\u6b7b\uff0cn \u4e2a\u6708\u540e\u4f1a\u6709\u591a\u5c11\u53ea\u5154\u5b50\u5462\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u6b63\u6574\u6570 n \u4ee3\u8868\u6708\u6570\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa n \u4e2a\u6708\u540e\u7684\u5154\u5b50\u603b\u6570\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n4\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n6\n```\n\n### \u63d0\u793a\n\n\u521a\u51fa\u751f\u7684\u6708\u4efd\u4e3a\u7b2c\u4e00\u4e2a\u6708\uff0c\u7b2c\u4e09\u4e2a\u6708\u5c0f\u5154\u5b50\u51fa\u751f\u3002\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "title": "兔子繁殖",
+    "desc": "### 题目描述\n\n有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，n 个月后会有多少只兔子呢？\n\n### 输入描述\n\n一个正整数 n 代表月数。\n\n### 输出描述\n\n输出 n 个月后的兔子总数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4\n```\n\n```\n6\n```\n\n### 提示\n\n刚出生的月份为第一个月，第三个月小兔子出生。\n\n### 题目来源\n\nRUNOOB.COM",
     "templateCode": "",
     "sourceCode": "n = int(input())\n\nf1, f2 = 1, 1\nfor i in range(n-1):\n    f1, f2 = f2, f1+f2\n\nprint(f1*2)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "4",
+            "input": "4\n",
             "output": "6\n"
         },
         {
-            "input": "12",
+            "input": "12\n",
             "output": "288\n"
         },
         {
-            "input": "24",
+            "input": "24\n",
             "output": "92736\n"
         },
         {
-            "input": "37",
+            "input": "37\n",
             "output": "48315634\n"
         }
-    ]
+    ],
+    "simple_desc": "n个月后有多少只兔子？",
+    "difficulty": "2",
+    "tag": "数学-常见数列-斐波那契",
+    "author": "RUNOOB"
 }

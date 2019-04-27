@@ -1,21 +1,25 @@
 {
-    "title": "\u8bd5\u4e00\u8bd5reduce\u51fd\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bf7\u4f7f\u7528 functools \u4e2d\u7684 reduce \u51fd\u6570\u6765\u8ba1\u7b97\u4e00\u4e2a\u5217\u8868\u7684\u548c\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5217\u8868 L\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a L \u7684\u5143\u7d20\u548c\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n[1, 2, 3]\n```\n\n```\n['a', 'b', 'c']\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n6\n```\n\n```\nabc\n```\n\n### \u8bf4\u660e\n\n\u4f60\u9700\u8981\u4f7f\u7528 functools \u4e2d\u7684 reduce \u6765\u5b8c\u6210\u8fd9\u9053\u9898",
+    "title": "试一试reduce()函数",
+    "desc": "### 题目描述\n\n请使用 functools 中的 reduce 函数来计算一个列表的和。\n\n### 输入描述\n\n输入为一个列表 L。\n\n### 输出描述\n\n输出为 L 的元素和\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n[1, 2, 3]\n```\n\n```\n6\n```\n\n#### 样例2: 输入-输出\n\n```\n['a', 'b', 'c']\n```\n\n```\nabc\n```\n\n### 说明\n\n你需要使用 functools 中的 reduce 来完成这道题",
     "templateCode": "",
     "sourceCode": "from functools import reduce\nprint(reduce(lambda x,y: x+y, eval(input())))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "[1, 3, 7]",
+            "input": "[1, 3, 7]\n",
             "output": "11\n"
         },
         {
-            "input": "['a', 'c', 'e']",
+            "input": "['a', 'c', 'e']\n",
             "output": "ace\n"
         },
         {
-            "input": "[[1], [2], [3]]",
+            "input": "[[1], [2], [3]]\n",
             "output": "[1, 2, 3]\n"
         }
-    ]
+    ],
+    "simple_desc": "使用 reduce() 函数计算一个列表的“和”",
+    "difficulty": "2",
+    "tag": "functools-reduce|函数-lambda",
+    "author": "MOOCTEST"
 }

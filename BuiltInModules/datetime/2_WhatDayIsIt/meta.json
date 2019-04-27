@@ -21,5 +21,9 @@
             "input": "2000-01-01\n",
             "output": "1\n"
         }
-    ]
+    ],
+    "simple_desc": "计算某一天是该年的第几天",
+    "difficulty": "1",
+    "tag": "datetime",
+    "author": "谢子聪"
 }

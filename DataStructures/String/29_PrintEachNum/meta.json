@@ -1,29 +1,33 @@
 {
-    "title": "\u6253\u5370\u6bcf\u4f4d\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7ed9\u4f60\u4e00\u4e2a\u6b63\u6574\u6570\uff0c\u8bf7\u4f60\u8f93\u51fa\u5b83\u662f\u51e0\u4f4d\u6570\uff0c\u5e76\u4e14\u8f93\u51fa\u6bcf\u4e00\u4f4d\u4e0a\u7684\u6570\u5b57\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6b63\u6574\u6570\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u8f93\u51fa\u5b83\u7684\u4f4d\u6570\uff0c\u7b2c\u4e8c\u884c\u8f93\u51fa\u5b83\u6bcf\u4e00\u4f4d\u4e0a\u7684\u6570\u5b57\uff0c\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n123\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3\n1 2 3\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "title": "打印每位数",
+    "desc": "### 题目描述\n\n给你一个正整数，请你输出它是几位数，并且输出每一位上的数字\n\n### 输入描述\n\n输入为一个正整数\n\n### 输出描述\n\n第一行输出它的位数，第二行输出它每一位上的数字，用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n123\n```\n\n```\n3\n1 2 3\n```\n\n### 题目来源\n\nRUNOOB.COM",
     "templateCode": "",
     "sourceCode": "a = input()\n\nprint(len(a))\nprint(' '.join(a))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "123",
+            "input": "123\n",
             "output": "3\n1 2 3\n"
         },
         {
-            "input": "3274638",
+            "input": "3274638\n",
             "output": "7\n3 2 7 4 6 3 8\n"
         },
         {
-            "input": "12345",
+            "input": "12345\n",
             "output": "5\n1 2 3 4 5\n"
         },
         {
-            "input": "1",
+            "input": "1\n",
             "output": "1\n1\n"
         },
         {
-            "input": "98765",
+            "input": "98765\n",
             "output": "5\n9 8 7 6 5\n"
         }
-    ]
+    ],
+    "simple_desc": "打印一个整数的每一位",
+    "difficulty": "2",
+    "tag": "字符串-内置函数",
+    "author": "RUNOOB"
 }

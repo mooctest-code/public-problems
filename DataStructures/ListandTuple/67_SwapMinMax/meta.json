@@ -1,21 +1,25 @@
 {
-    "title": "\u6700\u5927\u6700\u5c0f\u503c\u4ea4\u6362",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u6570\u7ec4\uff0c\u8bf7\u4f60\u4ea4\u6362\u5176\u4e2d\u7684\u6700\u5927\u503c\u548c\u6700\u5c0f\u503c\uff0c\u8f93\u51fa\u4ea4\u6362\u540e\u7684\u6570\u7ec4\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u4e3a\u4e00\u4e2a\u6b63\u6574\u6570 n \u8868\u793a\u6570\u7ec4\u7684\u957f\u5ea6\n\n\u7b2c\u4e8c\u884c\u4e3a n \u4e2a\u6574\u6570\uff0c\u4e24\u4e24\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8bf7\u4f60\u8f93\u51fa\u4ea4\u6362\u6700\u5927\u503c\u548c\u6700\u5c0f\u503c\u540e\u7684\u6570\u7ec4\uff0c\u5143\u7d20\u4e24\u4e24\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n5\n1 2 3 4 1\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n4 2 3 1 4\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM\n",
+    "title": "最大最小值交换",
+    "desc": "### 题目描述\n\n输入一个数组，请你交换其中的最大值和最小值，输出交换后的数组\n\n### 输入描述\n\n第一行为一个正整数 n 表示数组的长度\n\n第二行为 n 个整数，两两间用空格隔开\n\n### 输出描述\n\n请你输出交换最大值和最小值后的数组，元素两两间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n5\n1 2 3 4 1\n```\n\n```\n4 2 3 1 4\n```\n\n### 题目来源\n\nRUNOOB.COM\n",
     "templateCode": "",
     "sourceCode": "n = int(input())\na = list(map(int, input().split()))\n\nmin_x = min(a)\nmax_x = max(a)\n\ndef convert(x):\n    r = x\n    if x == min_x:\n        r = max_x\n    if x == max_x:\n        r = min_x\n    return str(r)\n\nprint(' '.join(map(convert, a)))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "5\n1 2 3 4 1",
+            "input": "5\n1 2 3 4 1\n",
             "output": "4 2 3 1 4\n"
         },
         {
-            "input": "3\n1 2 3",
+            "input": "3\n1 2 3\n",
             "output": "3 2 1\n"
         },
         {
-            "input": "5\n-1 -2 -3 -2 -1",
+            "input": "5\n-1 -2 -3 -2 -1\n",
             "output": "-3 -2 -1 -2 -3\n"
         }
-    ]
+    ],
+    "simple_desc": "交换列表中最大值和最小值的位置",
+    "difficulty": "2",
+    "tag": "列表-内置函数|序列操作-map()",
+    "author": "RUNOOB"
 }

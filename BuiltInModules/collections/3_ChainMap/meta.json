@@ -14,8 +14,12 @@
             "output": "False\nConsolas\n"
         },
         {
-            "input": "{ 'font': 'Consolas', 'autoIndent': True, 'cursorStyle': 'line', 'autoSave': True}\n{ 'font': 'Hack', 'autoIndent': False}\n{ 'autoIndent': True, 'autoSave': False}\nautoIndent\nautoSave",
+            "input": "{ 'font': 'Consolas', 'autoIndent': True, 'cursorStyle': 'line', 'autoSave': True}\n{ 'font': 'Hack', 'autoIndent': False}\n{ 'autoIndent': True, 'autoSave': False}\nautoIndent\nautoSave\n",
             "output": "False\nTrue\n"
         }
-    ]
+    ],
+    "simple_desc": "使用ChainMap来合并配置项",
+    "difficulty": "2",
+    "tag": "collections-ChainMap",
+    "author": "谢子聪"
 }

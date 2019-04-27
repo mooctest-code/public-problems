@@ -1,1 +1,10 @@
+'''TESTCASE
+ABC
+-
+abc
+-
+AbC
+-
+A,B,c,d,E
+'''
 print((input()).swapcase())

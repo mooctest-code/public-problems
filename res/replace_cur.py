@@ -1,17 +1,17 @@
 from os import path, listdir
 import json
 
-p = '.'
 problems = []
-for f1 in listdir(p):
-    if '.' in f1:
-        continue
-    if path.isdir(f1):
-        p1 = path.join(p, f1)
-        for f2 in listdir(p1):
-            p2 = path.join(p1, f2)
-            if path.isdir(p2):
+def get_problems(p):
+    for i in listdir(p):
+        p2 = path.join(p, i)
+        if path.isdir(p2):
+            if 'solution.py' in listdir(p2):
                 problems.append(p2)
+            else:
+                get_problems(p2)
+        
+get_problems('.')
 
 for problem in problems:
     readme = []

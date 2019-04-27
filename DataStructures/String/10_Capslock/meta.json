@@ -1,25 +1,29 @@
 {
-    "title": "\u5927\u5c0f\u5199\u8f6c\u6362",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u5c06\u4e00\u4e2a\u5b57\u7b26\u4e32\u4e2d\u7684\u82f1\u6587\u5b57\u6bcd\u5c0f\u5199\u53d8\u5927\u5199\uff0c\u5927\u5199\u53d8\u5c0f\u5199\uff0c\u5176\u4ed6\u4e0d\u53d8\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u7b26\u4e32\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u8f6c\u6362\u5927\u5c0f\u5199\u540e\u7684\u5b57\u7b26\u4e32\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nAbC\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\naBc\n```\n",
+    "title": "大小写转换",
+    "desc": "### 题目描述\n\n将一个字符串中的英文字母小写变大写，大写变小写，其他不变。\n\n### 输入描述\n\n输入为一个字符串\n\n### 输出描述\n\n输出为一个转换大小写后的字符串\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nAbC\n```\n\n```\naBc\n```\n\n",
     "templateCode": "",
     "sourceCode": "print((input()).swapcase())\n",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "ABC",
+            "input": "ABC\n",
             "output": "abc\n"
         },
         {
-            "input": "abc",
+            "input": "abc\n",
             "output": "ABC\n"
         },
         {
-            "input": "AbC",
+            "input": "AbC\n",
             "output": "aBc\n"
         },
         {
-            "input": "A,B,c,d,E",
+            "input": "A,B,c,d,E\n",
             "output": "a,b,C,D,e\n"
         }
-    ]
+    ],
+    "simple_desc": "转换一个字符串中每个字符的大小写",
+    "difficulty": "1",
+    "tag": "字符串-内置函数-swapcase()",
+    "author": "MOOCTEST"
 }

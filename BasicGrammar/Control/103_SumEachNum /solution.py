@@ -1,3 +1,10 @@
+'''TESTCASE
+80
+-
+120
+-
+400
+'''
 n = int(input())
 
 cnt = 0

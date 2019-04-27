@@ -1,3 +1,12 @@
+'''TESTCASE
+xiaoming xiaowang xiaoqiang
+579 626 635
+23 25 24
+-
+xluna qiaokeli tang
+618 627 684
+25 24 23
+'''
 #sorted
 name = list(input().split())
 grade = list(map(int,input().split()))

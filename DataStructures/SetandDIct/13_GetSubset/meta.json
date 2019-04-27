@@ -1,21 +1,25 @@
 {
-    "title": "\u6c42\u96c6\u5408\u7684\u5b50\u96c6",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bf7\u5224\u65ad\u4e00\u4e2a\u96c6\u5408\u662f\u5426\u4e3a\u53e6\u4e00\u4e2a\u96c6\u5408\u7684\u5b50\u96c6\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u884c\uff0c\u5206\u522b\u4e3a\u96c6\u5408 set1 \u548c set2\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u5e03\u5c14\u503c\uff0c\u5982\u679c set1 \u662f set2 \u7684\u5b50\u96c6\uff0c\u8f93\u51fa True\uff0c\u5426\u5219\u8f93\u51fa False\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n{1}\n{1, 2, 3}\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nTrue\n```\n",
+    "title": "求集合的子集",
+    "desc": "### 题目描述\n\n请判断一个集合是否为另一个集合的子集\n\n### 输入描述\n\n输入为两行，分别为集合 set1 和 set2\n\n### 输出描述\n\n输出为一个布尔值，如果 set1 是 set2 的子集，输出 True，否则输出 False\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{1}\n{1, 2, 3}\n```\n\n```\nTrue\n```\n",
     "templateCode": "",
     "sourceCode": "set1 = eval(input())\nset2 = eval(input())\n\nprint(set1.issubset(set2))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "{1}\n{2, 3}",
+            "input": "{1}\n{2, 3}\n",
             "output": "False\n"
         },
         {
-            "input": "{1}\n{1}",
+            "input": "{1}\n{1}\n",
             "output": "True\n"
         },
         {
-            "input": "{1, 2, 3}\n{2, 3, 4}",
+            "input": "{1, 2, 3}\n{2, 3, 4}\n",
             "output": "False\n"
         }
-    ]
+    ],
+    "simple_desc": "判断一个集合是否为另一个集合的子集",
+    "difficulty": "1",
+    "tag": "集合-内置函数-is?()",
+    "author": "MOOCTEST"
 }

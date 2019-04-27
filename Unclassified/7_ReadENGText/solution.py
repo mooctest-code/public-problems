@@ -1,3 +1,8 @@
+'''TESTCASE
+./public/distrub.txt
+-
+./public/biography.txt
+'''
 from collections import Counter
 
 filePath = input()

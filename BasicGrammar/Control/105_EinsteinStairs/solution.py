@@ -1,3 +1,6 @@
+'''TESTCASE
+NoInput
+'''
 i = 0
 
 while True:

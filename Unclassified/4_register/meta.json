@@ -1,17 +1,21 @@
 {
-    "title": "实训四：运动会报名册",
+    "title": "运动会报名册",
     "desc": "### 描述\n\n小南现在是班长了，需要组织大家参加运动会，小南现在需要把报名参加运动会的同学的名字记录下来，并且可以很快的获得任意一个参赛同学的名字，但是有没有合适的方法，请你帮帮小南。\n\n### 输入\n\n一共四行，每行对应一个人名字符串。\n\n### 输出\n\n第一行：使用list组织的学生名单l1；\n第二行：输出l1中第三个学生的姓名；\n第三行：获得l1的逆序list并输出；\n\n### 样例输入\n\n```\na\nb\nc\nd\n```\n\n### 样例输出\n\n```\n['a', 'b', 'c', 'd']\nc\n['d', 'c', 'b', 'a']\n```\n",
     "templateCode": "",
     "sourceCode": "l = [input() for i in range(4)]\n\nprint(l)\nprint(l[2])\nprint(l[::-1])",
-    "lang": "python3",
+    "lang": "Python3",
     "testCases": [
         {
-            "input": "w\na\ns\nd",
+            "input": "w\na\ns\nd\n",
             "output": "['w', 'a', 's', 'd']\ns\n['d', 's', 'a', 'w']\n"
         },
         {
-            "input": "Up\nDown\nLeft\nRight",
+            "input": "Up\nDown\nLeft\nRight\n",
             "output": "['Up', 'Down', 'Left', 'Right']\nLeft\n['Right', 'Left', 'Down', 'Up']\n"
         }
-    ]
+    ],
+    "simple_desc": "一些简单的列表操作",
+    "difficulty": "1",
+    "tag": "列表-运算符",
+    "author": "Python快速入门-刘锦涛"
 }

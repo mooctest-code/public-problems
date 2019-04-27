@@ -1,21 +1,25 @@
 {
-    "title": "\u6574\u6570\u7b80\u5355\u56db\u5219\u8fd0\u7b97",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6c42\u4e24\u4e2a\u6574\u6570\u7684\u548c\u3001\u5dee\u3001\u79ef\u3001\u5546\uff08\u6574\u9664\uff09\u5e76\u683c\u5f0f\u5316\u8f93\u51fa\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u4e2a\u6574\u6570 x \u548c y\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u8bf7\u53c2\u7167\u6837\u4f8b\u8f93\u51fa\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n15 3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n15 + 3 = 18\n15 - 3 = 12\n15 * 3 = 45\n15 // 3 = 5\n```\n",
+    "title": "整数简单四则运算",
+    "desc": "### 题目描述\n\n求两个整数的和、差、积、商（整除）并格式化输出\n\n### 输入描述\n\n输入为两个整数 x 和 y\n\n### 输出描述\n\n输出请参照样例输出\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n15 3\n```\n\n```\n15 + 3 = 18\n15 - 3 = 12\n15 * 3 = 45\n15 // 3 = 5\n```\n\n",
     "templateCode": "",
     "sourceCode": "x, y = map(int, input().split())\n\nprint('{} + {} = {}'.format(x, y, x+y))\nprint('{} - {} = {}'.format(x, y, x-y))\nprint('{} * {} = {}'.format(x, y, x*y))\nprint('{} // {} = {}'.format(x, y, x//y))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "15 3",
+            "input": "15 3\n",
             "output": "15 + 3 = 18\n15 - 3 = 12\n15 * 3 = 45\n15 // 3 = 5\n"
         },
         {
-            "input": "25 12",
+            "input": "25 12\n",
             "output": "25 + 12 = 37\n25 - 12 = 13\n25 * 12 = 300\n25 // 12 = 2\n"
         },
         {
-            "input": "43 21",
+            "input": "43 21\n",
             "output": "43 + 21 = 64\n43 - 21 = 22\n43 * 21 = 903\n43 // 21 = 2\n"
         }
-    ]
+    ],
+    "simple_desc": "简单的四则运算",
+    "difficulty": "1",
+    "tag": "变量和运算符-运算符",
+    "author": "MOOCTEST"
 }

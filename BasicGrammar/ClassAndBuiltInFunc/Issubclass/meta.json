@@ -13,5 +13,9 @@
             "input": "C\n",
             "output": "False\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

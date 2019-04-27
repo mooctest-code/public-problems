@@ -1,3 +1,6 @@
+'''TESTCASE
+[('Tom', 63), ('Allen', 85), ('Adan', 74), ('Julia', 80), ('Jerry', 74), ('Toney', 55)]
+'''
 l = eval(input())
 
 m = {}

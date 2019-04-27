@@ -1,29 +1,33 @@
 {
-    "title": "\u5149\u68cd\u7684\u60b2\u4f24",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u5149\u68cd\u4eec\u5bf91\u603b\u662f\u90a3\u4e48\u654f\u611f\uff0c\u56e0\u6b64\u6bcf\u5e74\u768411.11\u88ab\u620f\u79f0\u4e3a\u5149\u68cd\u8282\u3002\u5c0fPy\u5149\u68cd\u51e0\u5341\u8f7d\uff0c\u5149\u68cd\u81ea\u6709\u5149\u68cd\u7684\u5feb\u4e50\u3002\n\u8ba9\u6211\u4eec\u52c7\u6562\u5730\u9762\u5bf9\u5149\u68cd\u7684\u8eab\u4efd\u5427\uff0c\u73b0\u5728\u5c31\u8bc1\u660e\u81ea\u5df1\uff1a\u7ed9\u4f60\u4e00\u4e2a\u6574\u6570a\uff0c\u6570\u51faa\u5728\u4e8c\u8fdb\u5236\u8868\u793a\u4e0b1\u7684\u4e2a\u6570\uff0c\u5e76\u8f93\u51fa\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6574\u6570 a\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa a \u5728\u4e8c\u8fdb\u5236\u8868\u793a\u4e0b1\u7684\u4e2a\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n7\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3\n```\n",
+    "title": "光棍的悲伤",
+    "desc": "### 题目描述\n\n光棍们对1总是那么敏感，因此每年的11.11被戏称为光棍节。小Py光棍几十载，光棍自有光棍的快乐。\n让我们勇敢地面对光棍的身份吧，现在就证明自己：给你一个整数a，数出a在二进制表示下1的个数，并输出。\n\n### 输入描述\n\n输入为一个整数 a\n\n### 输出描述\n\n输出 a 在二进制表示下1的个数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n7\n```\n\n```\n3\n```\n\n",
     "templateCode": "",
     "sourceCode": "a = int(input())\nprint(str(bin(a)).count('1'))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "1",
+            "input": "1\n",
             "output": "1\n"
         },
         {
-            "input": "123",
+            "input": "123\n",
             "output": "6\n"
         },
         {
-            "input": "856",
+            "input": "856\n",
             "output": "5\n"
         },
         {
-            "input": "24820997",
+            "input": "24820997\n",
             "output": "14\n"
         },
         {
-            "input": "134789154",
+            "input": "134789154\n",
             "output": "8\n"
         }
-    ]
+    ],
+    "simple_desc": "求一个整数的二进制表示中1的个数",
+    "difficulty": "1",
+    "tag": "字符串-内置函数-count()",
+    "author": "MOOCTEST"
 }

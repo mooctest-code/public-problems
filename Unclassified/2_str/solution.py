@@ -1,3 +1,9 @@
+'''TESTCASE
+Hello 
+World!
+Happy Coding
+Oh
+'''
 [a, b, c, d] = [input() for i in range(4)]
 
 print(a+b)

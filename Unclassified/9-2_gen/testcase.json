@@ -1,6 +1,0 @@
-[
-    {
-        "input": "4\n'Tom',63;'Allen',85\n'Adan',97;'Julia',80\n'Eve',74;'Toney',55\n'Jeff',82;'Jerry',99",
-        "output": "Normal\nHard\nNormal\nHard\n"
-    }
-]

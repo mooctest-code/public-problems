@@ -1,3 +1,22 @@
+'''TESTCASE
+{ 'font': 'Consolas', 'autoIndent': True}
+{ 'font': 'Hack', 'autoIndent': False}
+{ 'autoIndent': True}
+autoIndent
+autoIndent
+-
+{ 'font': 'Consolas', 'autoIndent': True, 'cursorStyle': 'line', 'autoSave': True}
+{ 'font': 'Hack', 'autoIndent': False}
+{ 'autoIndent': True, 'autoSave': False}
+autoIndent
+font
+-
+{ 'font': 'Consolas', 'autoIndent': True, 'cursorStyle': 'line', 'autoSave': True}
+{ 'font': 'Hack', 'autoIndent': False}
+{ 'autoIndent': True, 'autoSave': False}
+autoIndent
+autoSave
+'''
 from collections import OrderedDict
 from collections import ChainMap
 

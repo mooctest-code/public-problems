@@ -1,3 +1,6 @@
+'''TESTCASE
+NoInput
+'''
 a = [1, 2, 5]
 n = 100
 

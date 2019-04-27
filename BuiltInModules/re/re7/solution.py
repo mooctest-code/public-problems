@@ -1,3 +1,22 @@
+'''TESTCASE
+1
+aaa
+a.a
+-
+1
+aaaa
+a..a
+-
+2
+aaa
+ab*ac*a
+abacccca
+ab*ac*a
+-
+1
+
+.*
+'''
 def match( s, pattern):
     if len(s) == 0 and len(pattern) == 0:
         return True

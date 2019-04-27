@@ -1,29 +1,33 @@
 {
-    "title": "\u661f\u671f\u51e0",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u5468\u4e2d\u67d0\u4e00\u65e5\u7684\u82f1\u6587\u540d\u79f0\u7684\u524dn\u4e2a\u5b57\u6bcd\uff0c\u8bf7\u4f60\u5224\u65ad\u662f\u661f\u671f\u51e0\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u662f\u4e00\u4e2a\u5b57\u7b26\u4e32 s\uff0c\u4e3a\u4e00\u5468\u4e2d\u67d0\u4e00\u65e5\u7684\u82f1\u6587\u540d\u79f0\u7684\u524d n \u4e2a\u5b57\u6bcd\uff0c\u5927\u5c0f\u5199\u4e0d\u5b9a\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8bf7\u4f60\u5224\u65ad\u5b57\u7b26\u4e32 s \u4ee3\u8868\u7684\u662f\u661f\u671f\u51e0\uff0c\u9996\u5b57\u6bcd\u5927\u5199\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nsu\n```\n\n```\nM\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nSunday\n```\n\n```\nMonday\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "title": "星期几",
+    "desc": "### 题目描述\n\n输入一周中某一日的英文名称的前n个字母，请你判断是星期几。\n\n### 输入描述\n\n输入是一个字符串 s，为一周中某一日的英文名称的前 n 个字母，大小写不定。\n\n### 输出描述\n\n请你判断字符串 s 代表的是星期几，首字母大写。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nsu\n```\n\n```\nSunday\n```\n\n#### 样例2: 输入-输出\n\n```\nM\n```\n\n```\nMonday\n```\n\n### 题目来源\n\nRUNOOB.COM",
     "templateCode": "",
     "sourceCode": "dayOfWeek = ['Sunday', 'Saturday', 'Friday', 'Monday', 'Tuesday', 'Thursday', 'Wednesday']\n\ns = input().lower()\n\nfor i in dayOfWeek:\n    if i.lower()[0:len(s)] == s:\n        print(i)\n        break",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "Sa",
+            "input": "Sa\n",
             "output": "Saturday\n"
         },
         {
-            "input": "Tu",
+            "input": "Tu\n",
             "output": "Tuesday\n"
         },
         {
-            "input": "th",
+            "input": "th\n",
             "output": "Thursday\n"
         },
         {
-            "input": "M",
+            "input": "M\n",
             "output": "Monday\n"
         },
         {
-            "input": "f",
+            "input": "f\n",
             "output": "Friday\n"
         }
-    ]
+    ],
+    "simple_desc": "输入星期的英文表示的前几个字母，判断出是星期几",
+    "difficulty": "2",
+    "tag": "字符串-运算符|字符串-内置函数",
+    "author": "RUNOOB"
 }

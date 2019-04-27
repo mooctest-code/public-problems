@@ -1,13 +1,17 @@
 {
-    "title": "实例一：数值计算",
+    "title": "数值计算",
     "desc": "### 描述\n\nPython可以作为一个功能强大的计算器，来帮助我们进行数值运算。现在尝试利用Python来帮助我们进行数值计算。\n\n### 输入\n\n一共四行，每行对应一个数字a, b, c, d\n\n### 输出\n\na除b的值，a除b的整数部分，a除b的余-数部分，c的d次方。\n\n### 样例输入\n\n```\n20 \n3 \n2 \n10\n```\n\n### 样例输出\n\n```\n6.666666666666667\n6\n2\n1024\n```\n",
     "templateCode": "",
     "sourceCode": "[a, b, c, d] = [int(input()) for i in range(4)]\n\nprint(a/b)\n[div, mod] = divmod(a, b)\nprint(div)\nprint(mod)\nprint(c**d)",
-    "lang": "python3",
+    "lang": "Python3",
     "testCases": [
         {
-            "input": "16\n4\n5\n3",
+            "input": "16\n4\n5\n3\n",
             "output": "4.0\n4\n0\n125\n"
         }
-    ]
+    ],
+    "simple_desc": "一些简单的数值计算",
+    "difficulty": "1",
+    "tag": "数值计算-运算符",
+    "author": "Python快速入门-刘锦涛"
 }

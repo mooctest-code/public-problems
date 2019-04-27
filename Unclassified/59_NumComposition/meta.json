@@ -1,25 +1,29 @@
 {
-    "title": "\u6570\u5b57\u7ec4\u6210",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\u4e00\u4e2a\u5143\u7d20\u5927\u5c0f\u4e0d\u8d85\u8fc7 9 \u7684\u6574\u6570\u6570\u7ec4\uff0c\u8bf7\u95ee\u8be5\u6570\u7ec4\u4e2d\u7684\u6574\u6570\u80fd\u7ec4\u6210\u591a\u5c11\u4e2a\u4e92\u4e0d\u76f8\u540c\u4e14\u6570\u5b57\u4e0d\u91cd\u590d\u7684\u4e24\u4f4d\u6570\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u4e3a\u8be5\u6570\u7ec4\u7684\u957f\u5ea6 n\n\n\u7b2c\u4e8c\u884c\u4e3a n \u4e2a\u4e0d\u5927\u4e8e 9 \u7684\u6574\u6570\uff0c\u4e24\u4e24\u95f4\u7528\u7a7a\u683c\u9694\u5f00\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e92\u4e0d\u76f8\u540c\u4e14\u6570\u5b57\u4e0d\u91cd\u590d\u7684\u4e24\u4f4d\u6570\u7684\u4e2a\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n1 2 9\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n6\n```\n\n### \u8bf4\u660e\n\n\u7ec4\u6210\u7684\u610f\u601d\u662f 1, 2, 9 \u53ef\u4ee5\u7ec4\u6210 12\u300119\u300129\u300121\u300191\u300192 \u8fd96\u4e2a\u4e24\u4f4d\u6570",
+    "title": "数字组成",
+    "desc": "### 题目描述\n\n有一个元素大小不超过 9 的整数数组，请问该数组中的整数能组成多少个互不相同且数字不重复的两位数？\n\n### 输入描述\n\n第一行为该数组的长度 n\n\n第二行为 n 个不大于 9 的整数，两两间用空格隔开\n\n### 输出描述\n\n输出为互不相同且数字不重复的两位数的个数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\n1 2 9\n```\n\n```\n6\n```\n\n### 说明\n\n组成的意思是 1, 2, 9 可以组成 12、19、29、21、91、92 这6个两位数",
     "templateCode": "",
     "sourceCode": "n = int(input())\na = map(int, input().split())\ns = set(a)\nz = 0 in s\nl = len(s)\nprint((l-z)*(l-1))\n",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "9\n1 2 3 4 5 6 7 8 8",
+            "input": "9\n1 2 3 4 5 6 7 8 8\n",
             "output": "56\n"
         },
         {
-            "input": "8\n4 6 8 2 3 2 2 3",
+            "input": "8\n4 6 8 2 3 2 2 3\n",
             "output": "20\n"
         },
         {
-            "input": "11\n9 1 8 9 0 3 1 7 6 2 9",
+            "input": "11\n9 1 8 9 0 3 1 7 6 2 9\n",
             "output": "49\n"
         },
         {
-            "input": "11\n2 8 6 4 8 8 3 2 7 7 6",
+            "input": "11\n2 8 6 4 8 8 3 2 7 7 6\n",
             "output": "30\n"
         }
-    ]
+    ],
+    "simple_desc": "给你一个整数数列，求能够组成不同两位数的个数",
+    "difficulty": "3",
+    "tag": "数学-组合数学",
+    "author": "MOOCTEST"
 }

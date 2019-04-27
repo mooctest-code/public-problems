@@ -1,33 +1,37 @@
 {
-    "title": "\u5206\u62c6\u7d20\u6570\u548c",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u628a\u4e00\u4e2a\u5076\u6570\u62c6\u6210\u4e24\u4e2a\u4e0d\u540c\u7d20\u6570\u7684\u548c\uff0c\u6709\u51e0\u79cd\u62c6\u6cd5\u5462\uff1f\n\u73b0\u5728\u6765\u8003\u8651\u8003\u8651\u8fd9\u4e2a\u95ee\u9898\uff0c\u7ed9\u4f60\u4e00\u4e2a\u4e0d\u8d85\u8fc710000\u7684\u6b63\u7684\u5076\u6570n\uff0c\n\u8ba1\u7b97\u5c06\u8be5\u6570\u62c6\u6210\u4e24\u4e2a\u4e0d\u540c\u7684\u7d20\u6570\u4e4b\u548c\u7684\u65b9\u6cd5\u6570\uff0c\u5e76\u8f93\u51fa\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u4e0d\u8d85\u8fc7 10000 \u7684\u6b63\u5076\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u53ef\u4ee5\u62c6\u5206\u6210\u4e0d\u540c\u7d20\u6570\u7684\u65b9\u6cd5\u4e2a\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n10\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n1\n```\n\n### \u63d0\u793a\n\n10 \u53ef\u4ee5\u62c6\u5206\u4e3a 3+7",
+    "title": "分拆素数和",
+    "desc": "### 题目描述\n\n把一个偶数拆成两个不同素数的和，有几种拆法呢？\n现在来考虑考虑这个问题，给你一个不超过10000的正的偶数n，\n计算将该数拆成两个不同的素数之和的方法数，并输出。\n\n### 输入描述\n\n输入为一个不超过 10000 的正偶数 n\n\n### 输出描述\n\n输出为可以拆分成不同素数的方法个数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n10\n```\n\n```\n1\n```\n\n### 提示\n\n10 可以拆分为 3+7",
     "templateCode": "",
     "sourceCode": "n = int(input())\n\n# prime list\nprime = []\ncheck = [False for i in range(n)]\n\nfor i in range(2, n):\n    if not check[i]:\n        prime.append(i)\n    for j in range(0, len(prime)):\n        if i * prime[j] >= n:\n            break\n        check[i*prime[j]] = True\n        if i % prime[j] == 0:\n            break\n            \nprimeSet = set(prime)\ncnt = 0\nfor i in range(0, len(prime)):\n    if prime[i] < n-prime[i] and (n - prime[i]) in primeSet:\n        cnt += 1\n\nprint(cnt)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "10",
+            "input": "10\n",
             "output": "1\n"
         },
         {
-            "input": "100",
+            "input": "100\n",
             "output": "6\n"
         },
         {
-            "input": "432",
+            "input": "432\n",
             "output": "19\n"
         },
         {
-            "input": "2",
+            "input": "2\n",
             "output": "0\n"
         },
         {
-            "input": "4326",
+            "input": "4326\n",
             "output": "124\n"
         },
         {
-            "input": "7434",
+            "input": "7434\n",
             "output": "191\n"
         }
-    ]
+    ],
+    "simple_desc": "将一个偶数分拆成两个素数的不同方法",
+    "difficulty": "3",
+    "tag": "数学-常见数列-素数",
+    "author": "MOOCTEST"
 }

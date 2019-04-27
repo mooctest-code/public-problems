@@ -1,29 +1,33 @@
 {
-    "title": "\u6c34\u4ed9\u82b1\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6253\u5370\u51fa\u6240\u6709\u7684\"\u6c34\u4ed9\u82b1\u6570\"\uff0c\u6240\u8c13\"\u6c34\u4ed9\u82b1\u6570\"\u662f\u6307\u4e00\u4e2a\u4e09\u4f4d\u6570\uff0c\u5176\u5404\u4f4d\u6570\u5b57\u7acb\u65b9\u548c\u7b49\u4e8e\u8be5\u6570\u672c\u8eab\u3002\u4f8b\u5982\uff1a153\u662f\u4e00\u4e2a\"\u6c34\u4ed9\u82b1\u6570\"\uff0c\u56e0\u4e3a153=1\u7684\u4e09\u6b21\u65b9\uff0b5\u7684\u4e09\u6b21\u65b9\uff0b3\u7684\u4e09\u6b21\u65b9\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u4e09\u4f4d\u6574\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u79bb n \u6700\u8fd1\u7684\u4e00\u4e2a\u6c34\u4ed9\u82b1\u6570\uff0c\u7ed3\u679c\u53ea\u6709\u4e00\u4e2a\u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n372\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n371\n```\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM",
+    "title": "水仙花数",
+    "desc": "### 题目描述\n\n打印出所有的\"水仙花数\"，所谓\"水仙花数\"是指一个三位数，其各位数字立方和等于该数本身。例如：153是一个\"水仙花数\"，因为153=1的三次方＋5的三次方＋3的三次方。\n\n### 输入描述\n\n一个三位整数 n\n\n### 输出描述\n\n输出离 n 最近的一个水仙花数，结果只有一个。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n372\n```\n\n```\n371\n```\n\n### 题目来源\n\nRUNOOB.COM",
     "templateCode": "",
     "sourceCode": "nar = [153, 370, 371, 407]\na = int(input())\ndif = 999\nans = 0\nfor i in nar:\n    d = abs(a-i)\n    if d < dif:\n        dif = d\n        ans = i\nprint(ans)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "123",
+            "input": "123\n",
             "output": "153\n"
         },
         {
-            "input": "370",
+            "input": "370\n",
             "output": "370\n"
         },
         {
-            "input": "372",
+            "input": "372\n",
             "output": "371\n"
         },
         {
-            "input": "400",
+            "input": "400\n",
             "output": "407\n"
         },
         {
-            "input": "999",
+            "input": "999\n",
             "output": "407\n"
         }
-    ]
+    ],
+    "simple_desc": "输出最近的水仙花数",
+    "difficulty": "2",
+    "tag": "流程控制-循环|变量和运算符-运算符",
+    "author": "RUNOOB"
 }

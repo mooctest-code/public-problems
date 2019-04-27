@@ -17,5 +17,9 @@
             "input": "-1 -2\n",
             "output": "Point(x=-1, y=-2)\n"
         }
-    ]
+    ],
+    "simple_desc": "命名元组的使用",
+    "difficulty": "2",
+    "tag": "collections-namedtuple",
+    "author": "谢子聪"
 }

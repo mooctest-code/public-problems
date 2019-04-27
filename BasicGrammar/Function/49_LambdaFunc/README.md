@@ -1,4 +1,10 @@
-lambda函数
+---
+题目: lambda函数
+简介: 创建lambda匿名函数
+难度: 2
+标签: 函数-lambda
+作者: RUNOOB
+---
 
 ### 题目描述
 

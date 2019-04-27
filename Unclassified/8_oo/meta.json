@@ -3,11 +3,15 @@
     "desc": "### 描述\n\n小南一个人管理了好多个班级的成绩单，现在依照实例八中的Register类，定义教师类Teacher，Teacher类中包含班级和成绩单Register对象对应的dictionary，以及获取所有班级中成绩大于等于80分的所有同学名单的gte80()。\n\n小南作为一个Teacher类的对象，调用xiaoNan.gte80()，输出所有成绩在80分及以上的学生列表。\n\n### 输入\n\n第一行n，代表一共有多少个班级；\n\n之后的n行输入格式形如：Julia,80;Eve,74;Toney,55\n\n学生与成绩之间通过西文逗号隔开，学生成绩组合之间使用西文分号隔开。\n\n### 输出\n\n所有成绩在80分及以上的学生列表。\n\n### 样例输入\n\n```\n3\n'Tom',63;'Allen',85\n'Adan',97;'Julia',80\n'Eve',74;'Toney',55\n```\n\n### 样例输出\n\n```\n['Allen', 'Adan', 'Julia']\n```",
     "templateCode": "",
     "sourceCode": "class Register:\n    def __init__(self, name):\n        self.name = name\n        self.scores = []\n\n    def add_score(self, tup):\n        self.scores.append(tup)\n\n    def gte80(self):\n        g = []\n        for stu in self.scores:\n            if stu[1] >= 80:\n                g.append(stu[0])\n        return g    \n\nclass Teacher:\n    def __init__(self):\n        self.registers = []\n\n    def add_register(self, reg):\n        self.registers.append(reg)\n\n    def gte80(self):\n        g = []\n        for r in self.registers:\n            g.extend(r.gte80())\n        return g\n\ncnt = int(input())\n\nxiaonan = Teacher()\nfor i in range(cnt):\n    l = input().split(';')\n    reg = Register(i)\n    for j in l:\n        pair = j.split(',')\n        reg.add_score((eval(pair[0]), int(pair[1])))\n    xiaonan.add_register(reg)\n\nprint(xiaonan.gte80())\n",
-    "lang": "python3",
+    "lang": "Python3",
     "testCases": [
         {
-            "input": "2\n'Tom',63;'Allen',85;'Toney',83\n'Eve',74;'Adan',97;'Julia',80",
+            "input": "2\n'Tom',63;'Allen',85;'Toney',83\n'Eve',74;'Adan',97;'Julia',80\n",
             "output": "['Allen', 'Toney', 'Adan', 'Julia']\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

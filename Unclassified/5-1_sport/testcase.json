@@ -1,6 +1,0 @@
-[
-    {
-        "input": "Jerry\n110M\n13.9\nDva\n800M\n3min50sec",
-        "output": "800M:3min50sec\n"
-    }
-]

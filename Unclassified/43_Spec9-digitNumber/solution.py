@@ -1,3 +1,12 @@
+'''TESTCASE
+2
+-
+4
+-
+7
+-
+9
+'''
 # http://www.pythontip.com/coding/report_detail/1651/
 
 isfind=0

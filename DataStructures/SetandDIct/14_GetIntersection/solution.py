@@ -1,3 +1,13 @@
+'''TESTCASE
+{1}
+{1}
+-
+{1, 2, 3}
+{2, 3, 4}
+-
+{1}
+{0}
+'''
 set1 = eval(input())
 set2 = eval(input())
 

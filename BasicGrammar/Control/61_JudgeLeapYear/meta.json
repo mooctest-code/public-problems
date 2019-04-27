@@ -1,33 +1,37 @@
 {
-    "title": "\u95f0\u5e74\u5224\u65ad",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u5224\u65ad\u5e74\u4efd\u662f\u5426\u662f\u95f0\u5e74\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5e74\u4efd\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u5982\u679c\u662f\u95f0\u5e74\uff0c\u5219\u8f93\u51fa True\uff0c\u5426\u5219\u8f93\u51fa False\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n1996\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nTrue\n```\n",
+    "title": "闰年判断",
+    "desc": "### 题目描述\n\n判断年份是否是闰年\n\n### 输入描述\n\n输入为一个年份\n\n### 输出描述\n\n如果是闰年，则输出 True，否则输出 False\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1996\n```\n\n```\nTrue\n```\n\n",
     "templateCode": "",
     "sourceCode": "a = int(input())\nprint(a % 400 == 0 or (a % 4 == 0 and a % 100 != 0))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "1996",
+            "input": "1996\n",
             "output": "True\n"
         },
         {
-            "input": "2000",
+            "input": "2000\n",
             "output": "True\n"
         },
         {
-            "input": "2100",
+            "input": "2100\n",
             "output": "False\n"
         },
         {
-            "input": "3478",
+            "input": "3478\n",
             "output": "False\n"
         },
         {
-            "input": "2019",
+            "input": "2019\n",
             "output": "False\n"
         },
         {
-            "input": "2003",
+            "input": "2003\n",
             "output": "False\n"
         }
-    ]
+    ],
+    "simple_desc": "判断一个年份是否为闰年",
+    "difficulty": "1",
+    "tag": "流程控制-条件判断",
+    "author": "MOOCTEST"
 }

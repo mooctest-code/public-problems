@@ -1,17 +1,21 @@
 {
-    "title": "\u4ea4\u6362key-value",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8bf7\u5c06\u5b57\u5178\u4e2d\u7684\u952e\u548c\u503c\u4ea4\u6362\u5e76\u8fd4\u56de\u65b0\u7684\u5b57\u5178\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u5b57\u5178\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e00\u4e2a\u952e\u548c\u503c\u4ea4\u6362\u8fc7\u7684\u5b57\u5178\uff0c\u5b57\u5178\u6309\u7167\u952e\u5347\u5e8f\u6392\u5217\u8f93\u51fa\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1004}\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n{1001: 'Wangbing', 1003: 'Maling', 1004: 'Xulei'}\n```\n",
+    "title": "交换key-value",
+    "desc": "### 题目描述\n\n请将字典中的键和值交换并返回新的字典。\n\n### 输入描述\n\n输入为一个字典\n\n### 输出描述\n\n输出为一个键和值交换过的字典，字典按照键升序排列输出\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1004}\n```\n\n```\n{1001: 'Wangbing', 1003: 'Maling', 1004: 'Xulei'}\n```\n",
     "templateCode": "",
     "sourceCode": "import operator\n\na = eval(input())\n\nm = {}\nfor key in a:\n    m[a[key]] = key\n\nprint(dict(sorted(m.items(), key=operator.itemgetter(0))))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1005}",
+            "input": "{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1005}\n",
             "output": "{1001: 'Wangbing', 1003: 'Maling', 1005: 'Xulei'}\n"
         },
         {
-            "input": "{'Wangbing': 1001, 'Xulei': 1005, 'Maling': 1003}",
+            "input": "{'Wangbing': 1001, 'Xulei': 1005, 'Maling': 1003}\n",
             "output": "{1001: 'Wangbing', 1003: 'Maling', 1005: 'Xulei'}\n"
         }
-    ]
+    ],
+    "simple_desc": "将key作为value、将value作为key创建新字典",
+    "difficulty": "3",
+    "tag": "字典|序列操作-sorted()",
+    "author": "MOOCTEST"
 }

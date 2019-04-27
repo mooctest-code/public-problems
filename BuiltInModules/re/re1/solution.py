@@ -1,3 +1,14 @@
+'''TESTCASE
+1
+www www.iselab.cn
+-
+1
+www www.baidu.com
+-
+2
+buzhidao woyebuzhidao
+emmmmmm emmmmmmmmmm
+'''
 import re
 num = int(input())
 for i in range(num):

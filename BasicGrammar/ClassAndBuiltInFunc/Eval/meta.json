@@ -17,5 +17,9 @@
             "input": "2/2\n",
             "output": "1.0\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

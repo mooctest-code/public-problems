@@ -1,3 +1,10 @@
+'''TESTCASE
+0
+-
+1
+-
+2019
+'''
 import random
 
 a = int(input())

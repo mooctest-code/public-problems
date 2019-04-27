@@ -1,17 +1,21 @@
 {
-    "title": "\u6574\u6570\u53d6\u4f4d",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u8f93\u51fa\u4e00\u4e2a\u6574\u6570\u7684\u4e8c\u8fdb\u5236\u8868\u793a\u7684\u3001\u4ece\u53f3\u7aef\u5f00\u59cb\u7684\u56db\u4f4d\u8868\u793a\u7684\u5341\u8fdb\u5236\u503c\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6574\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa n \u4ece\u53f3\u7aef\u5f00\u59cb\u7684\u56db\u4f4d\u8868\u793a\u7684\u5341\u8fdb\u5236\u503c\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2019\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n3\n```\n\n### \u63d0\u793a\n\n2019 \u4ece\u53f3\u7aef\u5f00\u59cb\u7684\u56db\u4f4d\u4e3a `0011`\n\n### \u9898\u76ee\u6765\u6e90\n\nRUNOOB.COM\n",
+    "title": "整数取位",
+    "desc": "### 题目描述\n\n输出一个整数的二进制表示的、从右端开始的四位表示的十进制值\n\n### 输入描述\n\n输入为一个整数 n\n\n### 输出描述\n\n输出 n 从右端开始的四位表示的十进制值\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2019\n```\n\n```\n3\n```\n\n### 提示\n\n2019 从右端开始的四位为 `0011`\n\n### 题目来源\n\nRUNOOB.COM\n",
     "templateCode": "",
     "sourceCode": "# b = bin(int(input()))\n# print(int(b[-4:], 2))\n\nprint(int(input()) & ~(~0<<4))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "2019",
+            "input": "2019\n",
             "output": "3\n"
         },
         {
-            "input": "12345",
+            "input": "12345\n",
             "output": "9\n"
         }
-    ]
+    ],
+    "simple_desc": "取一个整数的二进制表示的某几位",
+    "difficulty": "2",
+    "tag": "变量和运算符-运算符-位运算|内置全局函数1-类型转换-进制转换",
+    "author": "RUNOOB"
 }

@@ -1,29 +1,33 @@
 {
-    "title": "\u9752\u86d9\u8df3\u53f0\u9636",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e00\u53ea\u9752\u86d9\u4e00\u6b21\u53ef\u4ee5\u8df3\u4e0a1\u7ea7\u53f0\u9636\uff0c\u4e5f\u53ef\u4ee5\u8df3\u4e0a2\u7ea7\u53f0\u9636\uff0c\u90a3\u4e48\u8be5\u9752\u86d9\u8df3\u4e0an\u7ea7\u53f0\u9636\u603b\u5171\u6709\u591a\u5c11\u79cd\u8df3\u6cd5\u5462\uff1f\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u53f0\u9636\u7684\u7ea7\u6570 n (0 \u2264 n \u2264 20)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u8df3\u4e0a n \u7ea7\u53f0\u9636\u7684\u8df3\u6cd5\u79cd\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n6\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n13\n```\n",
+    "title": "青蛙跳台阶",
+    "desc": "### 题目描述\n\n一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶，那么该青蛙跳上n级台阶总共有多少种跳法呢？\n\n### 输入描述\n\n输入为台阶的级数 n (0 ≤ n ≤ 20)\n\n### 输出描述\n\n输出为跳上 n 级台阶的跳法种数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n6\n```\n\n```\n13\n```\n\n",
     "templateCode": "",
     "sourceCode": "n = int(input())\n\nf1, f2 = 1, 2\n\nif n == 0: \n    f1 = 0\n\nwhile n > 1:\n    n -= 1\n    f1, f2 = f2, f1+f2\n\nprint(f1)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "2",
+            "input": "2\n",
             "output": "2\n"
         },
         {
-            "input": "5",
+            "input": "5\n",
             "output": "8\n"
         },
         {
-            "input": "13",
+            "input": "13\n",
             "output": "377\n"
         },
         {
-            "input": "19",
+            "input": "19\n",
             "output": "6765\n"
         },
         {
-            "input": "0",
+            "input": "0\n",
             "output": "0\n"
         }
-    ]
+    ],
+    "simple_desc": "一只青蛙跳上n级台阶有多少种方法？",
+    "difficulty": "2",
+    "tag": "动态规划-线性动规",
+    "author": "MOOCTEST"
 }

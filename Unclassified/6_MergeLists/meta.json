@@ -1,17 +1,21 @@
 {
-    "title": "\u6784\u9020\u5b57\u5178",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u5b57\u5178\u662f\u4e00\u4e2a\u952e\u503c\u5bf9\u96c6\u5408\uff0c\u6bd4\u5982 `{'a': 1, 'b': 2}` \u4e2d\uff0c`'a'` \u662f\u952e\uff0c`1` \u662f\u503c\u3002\u7ed9\u4f60\u4e24\u4e2a\u5177\u6709\u76f8\u540c\u957f\u5ea6\u7684\u5217\u8868 a \u548c b\uff0c\u8bf7\u4f60\u4ee5 a \u4e2d\u7684\u5143\u7d20\u4e3a\u952e\uff0cb \u4e2d\u5bf9\u5e94\u4f4d\u7f6e\u7684\u5143\u7d20\u4e3a\u503c\uff0c\u6784\u5efa\u4e00\u4e2a\u5b57\u5178\u3002\n\n### \u8f93\u5165\u683c\u5f0f\n\n\u8f93\u5165\u4e3a\u4e09\u884c\uff0c\u7b2c\u4e00\u884c\u662f\u4e00\u4e2a\u6b63\u6574\u6570 N\u3002\n\n\u7b2c\u4e8c\u884c\u6709 N \u4e2a\u5b57\u7b26\u4e32\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u4e00\u4e2a\u7a7a\u683c\u9694\u5f00\uff0c\u8fd9\u4e9b\u5b57\u7b26\u4e32\u7ec4\u6210\u5217\u8868 a\u3002\n\n\u7b2c\u4e09\u884c\u6709 N \u4e2a\u6574\u6570\uff0c\u4e24\u4e24\u4e4b\u95f4\u7528\u4e00\u4e2a\u7a7a\u683c\u9694\u5f00\uff0c\u8fd9\u4e9b\u6574\u6570\u7ec4\u6210\u5217\u8868 b\u3002\n\n### \u8f93\u51fa\u683c\u5f0f\n\n\u4f7f\u7528 N \u884c\u8f93\u51fa\u8fd9\u4e2a\u5b57\u5178\uff0c\u6bcf\u884c\u683c\u5f0f\u4e3a `key: value` \u3002\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\nabc def ghi\n1 2 3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\nabc: 1\ndef: 2\nghi: 3\n```\n\n",
+    "title": "构造字典",
+    "desc": "### 题目描述\n\n字典是一个键值对集合，比如 `{'a': 1, 'b': 2}` 中，`'a'` 是键，`1` 是值。给你两个具有相同长度的列表 a 和 b，请你以 a 中的元素为键，b 中对应位置的元素为值，构建一个字典。\n\n### 输入格式\n\n输入为三行，第一行是一个正整数 N。\n\n第二行有 N 个字符串，两两之间用一个空格隔开，这些字符串组成列表 a。\n\n第三行有 N 个整数，两两之间用一个空格隔开，这些整数组成列表 b。\n\n### 输出格式\n\n使用 N 行输出这个字典，每行格式为 `key: value` 。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\nabc def ghi\n1 2 3\n```\n\n```\nabc: 1\ndef: 2\nghi: 3\n```\n\n",
     "templateCode": "",
     "sourceCode": "n = int(input())\na = input().split()\nb = [int(i) for i in input().split()]\n\nfor i in range(n):\n    print('{}: {}'.format(a[i], b[i]))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "3\nabc def ghi\n3 2 1",
+            "input": "3\nabc def ghi\n3 2 1\n",
             "output": "abc: 3\ndef: 2\nghi: 1\n"
         },
         {
-            "input": "4\nab cd ef gh\n3 2 1 0",
+            "input": "4\nab cd ef gh\n3 2 1 0\n",
             "output": "ab: 3\ncd: 2\nef: 1\ngh: 0\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

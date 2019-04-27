@@ -1,3 +1,18 @@
+'''TESTCASE
+2
+ise www.iselab.cn
+com www.iselab.cn
+-
+1
+www www.baidu.com
+-
+2
+www www.baidu.com
+buzhidao woyebuzhidao
+-
+1
+emmmmmmm emmmmnmmmm
+'''
 
 import re
 num = int(input())

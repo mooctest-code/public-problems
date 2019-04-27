@@ -1,3 +1,10 @@
+'''TESTCASE
+4 5 3
+-
+7 8 9
+-
+2 5 3
+'''
 s= list(map(int, input().split()))
 s.sort()
 [a, b, c] = s

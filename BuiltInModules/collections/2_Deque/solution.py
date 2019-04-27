@@ -1,3 +1,16 @@
+'''TESTCASE
+1 5 4 3 1
+3
+-
+2 3 4 2 6 2 5 1
+3
+-
+2 3 1 24 9 7 1 20 19 3 8 9 1 4 9 10 4
+2
+-
+1 2 3
+1
+'''
 from collections import deque
 
 def findMaxs(arr, k):

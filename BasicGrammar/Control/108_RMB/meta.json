@@ -1,13 +1,17 @@
 {
-    "title": "\u4e00\u5143\u4eba\u6c11\u5e01\u5151\u6362\u65b9\u6848",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u7edf\u8ba1\u4e00\u5143\u4eba\u6c11\u5e01\u6362\u6210\u4e00\u5206\u3001\u4e24\u5206\u548c\u4e94\u5206\u7684\u6240\u6709\u5151\u6362\u65b9\u6848\u4e2a\u6570\u5e76\u8f93\u51fa\u3002\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u6240\u6709\u5151\u6362\u65b9\u6848\u4e2a\u6570\u3002\n\n### \u601d\u8003\n\n\u60f3\u4e00\u60f3\u5982\u679c\u8981\u5151\u6362 10 \u5143\u5462\uff1f\uff08\u4e0d\u7528\u5b9e\u73b0\uff09\n",
+    "title": "一元人民币兑换方案",
+    "desc": "### 题目描述\n\n统计一元人民币换成一分、两分和五分的所有兑换方案个数并输出。\n\n### 输出描述\n\n输出所有兑换方案个数。\n\n### 思考\n\n想一想如果要兑换 10 元呢？（不用实现）\n",
     "templateCode": "",
     "sourceCode": "a = [1, 2, 5]\nn = 100\n\ncnt = 0\nfor i in range(0, (n//5)+1):\n    for j in range(0, (n//2)+1):\n        x = i * 5 + j * 2\n        if x > n: break\n        for k in range(0, n+1):\n            y = x + k\n            if y > n:\n                break\n            elif y == n:\n                cnt += 1\n\nprint(cnt)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "NoInput",
+            "input": "NoInput\n",
             "output": "541\n"
         }
-    ]
+    ],
+    "simple_desc": "统计一元人民币换成一分、两分和五分的所有兑换方案个数",
+    "difficulty": "2",
+    "tag": "流程控制-循环",
+    "author": "MOOCTEST"
 }

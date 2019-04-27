@@ -1,6 +1,6 @@
 {
     "title": "zip函数的应用",
-    "desc": "### 题目描述\n对于给定的列表，前一个元素是后一个元素的师父，输出所有的师徒关系的元组对。\n\n### 输入描述\n输入为名字列表，名字之间用逗号隔开\n\n### 输出描述\n输出所有的师徒关系的元组，之间换行\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\ngrandgrandfather,grandfather,father,son,grandson\n```\n\n```\n('grandgrandfather', 'grandfather')\n('grandfather', 'father')\n('father', 'son')\n('son', 'grandson')\n```\n\n\n",
+    "desc": "### 题目描述\n\n对于给定的列表，前一个元素是后一个元素的师父，输出所有的师徒关系的元组对。\n\n### 输入描述\n\n输入为名字列表，名字之间用逗号隔开\n\n### 输出描述\n\n输出所有的师徒关系的元组，之间换行\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\ngrandgrandfather,grandfather,father,son,grandson\n```\n\n```\n('grandgrandfather', 'grandfather')\n('grandfather', 'father')\n('father', 'son')\n('son', 'grandson')\n```\n\n\n",
     "templateCode": "",
     "sourceCode": "#zip2\nstr1 = list(input().split(','))\nzipped = zip(str1[:-1],str1[1:])\nfor i in zipped:\n    print(i)",
     "lang": "Python3",
@@ -14,8 +14,12 @@
             "output": "('a', 'b')\n('b', 'c')\n('c', 'd')\n('d', 'e')\n('e', 'f')\n"
         },
         {
-            "input": "1,2,3,4,5,6,7,8,9,7,8,9,4,5,6,1,2,3",
+            "input": "1,2,3,4,5,6,7,8,9,7,8,9,4,5,6,1,2,3\n",
             "output": "('1', '2')\n('2', '3')\n('3', '4')\n('4', '5')\n('5', '6')\n('6', '7')\n('7', '8')\n('8', '9')\n('9', '7')\n('7', '8')\n('8', '9')\n('9', '4')\n('4', '5')\n('5', '6')\n('6', '1')\n('1', '2')\n('2', '3')\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

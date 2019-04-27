@@ -1,3 +1,14 @@
+'''TESTCASE
+1 0 -1
+-
+1 2 1
+-
+1 1 -1
+-
+5 10 5
+-
+2 2 3
+'''
 t = tuple(map(int, input().split()))
 
 (a, b, c) = t

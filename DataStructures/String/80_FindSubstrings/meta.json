@@ -1,25 +1,29 @@
 {
-    "title": "\u627e\u5b50\u4e32",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u5bf9\u4e8e\u5b57\u7b26\u4e32 s1\uff0c\u7edf\u8ba1\u5728\u5b57\u7b26\u4e32 s1 \u4e2d\u53e6\u4e00\u4e2a\u5b57\u7b26\u4e32 s2 \u51fa\u73b0\u7684\u6b21\u6570\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u7b2c\u4e00\u884c\u4e3a\u5b57\u7b26\u4e32 s1\uff0c\u7b2c\u4e8c\u884c\u4e3a\u5b57\u7b26\u4e32 s2\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa s2 \u5728 s1 \u4e2d\u7684\u51fa\u73b0\u6b21\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\nAABBAACC\nBB\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n1\n```\n\n### \u63d0\u793a\n\n\u9700\u8981\u8003\u8651\u91cd\u53e0\u7684\u60c5\u51b5",
+    "title": "找子串",
+    "desc": "### 题目描述\n\n对于字符串 s1，统计在字符串 s1 中另一个字符串 s2 出现的次数\n\n### 输入描述\n\n第一行为字符串 s1，第二行为字符串 s2\n\n### 输出描述\n\n输出 s2 在 s1 中的出现次数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nAABBAACC\nBB\n```\n\n```\n1\n```\n\n### 提示\n\n需要考虑重叠的情况",
     "templateCode": "",
     "sourceCode": "s1 = input()\ns2 = input()\n\nl2 = len(s2)\ncnt = 0\nfor i in range(len(s1)):\n    if s1[i:len(s2)+i] == s2:\n        cnt += 1\n\nprint(cnt)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "A candle lights others and consumes itself.\nan",
+            "input": "A candle lights others and consumes itself.\nan\n",
             "output": "2\n"
         },
         {
-            "input": "Woyebuzhidaoyinggaixiexieshenmedongxi\nng",
+            "input": "Woyebuzhidaoyinggaixiexieshenmedongxi\nng\n",
             "output": "2\n"
         },
         {
-            "input": "zhegeceshiyonglihaonanxiea,shizaibuhuixieceshiyongli\nhi",
+            "input": "zhegeceshiyonglihaonanxiea,shizaibuhuixieceshiyongli\nhi\n",
             "output": "3\n"
         },
         {
-            "input": "NNN\nNN",
+            "input": "NNN\nNN\n",
             "output": "2\n"
         }
-    ]
+    ],
+    "simple_desc": "统计一个字符串在另一个字符串中的出现次数",
+    "difficulty": "2",
+    "tag": "字符串-内置函数-find()",
+    "author": "MOOCTEST"
 }

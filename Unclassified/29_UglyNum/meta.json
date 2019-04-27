@@ -1,29 +1,33 @@
 {
-    "title": "\u4e11\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u628a\u53ea\u5305\u542b\u56e0\u5b502\u30013\u548c5\u7684\u6570\u79f0\u4f5c\u4e11\u6570\u3002\u4f8b\u59826\u30018\u90fd\u662f\u4e11\u6570\uff0c\u4f4614\u4e0d\u662f\uff0c\u56e0\u4e3a\u5b83\u5305\u542b\u56e0\u5b507\u3002\u800c1\u662f\u4e11\u6570\uff0c\u56e0\u4e3a\u5b83\u4e0d\u5305\u542b\u8fd9\u4e9b\u56e0\u5b50\u3002\u7ed9\u5b9an\uff0c\u6c42\u6309\u4ece\u5c0f\u5230\u5927\u7684\u987a\u5e8f\u7684\u7b2cn\u4e2a\u4e11\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e00\u4e2a\u6b63\u6574\u6570 n (0 < n < 1500)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u7b2c n \u4e2a\u4e11\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n4\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n4\n```\n\n### \u63d0\u793a\n\n\u524d6\u4e2a\u4e11\u6570\u4e3a 1, 2, 3, 4, 5, 6, 8",
+    "title": "丑数",
+    "desc": "### 题目描述\n\n把只包含因子2、3和5的数称作丑数。例如6、8都是丑数，但14不是，因为它包含因子7。而1是丑数，因为它不包含这些因子。给定n，求按从小到大的顺序的第n个丑数。\n\n### 输入描述\n\n输入一个正整数 n (0 < n < 1500)\n\n### 输出描述\n\n输出第 n 个丑数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4\n```\n\n```\n4\n```\n\n### 提示\n\n前6个丑数为 1, 2, 3, 4, 5, 6, 8",
     "templateCode": "",
     "sourceCode": "import queue\n\nn = int(input())\n\nq = queue.PriorityQueue()\nq.put(1)\ns = set()\ns.add(1)\nc = [2, 3, 5]\n\nfor i in range(n-1):\n    k = q.get()\n    for j in range(3):\n        x = c[j] * k\n        if x not in s:\n            s.add(x)\n            q.put(x)\n\nprint(q.get())",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "10",
+            "input": "10\n",
             "output": "12\n"
         },
         {
-            "input": "12",
+            "input": "12\n",
             "output": "16\n"
         },
         {
-            "input": "123",
+            "input": "123\n",
             "output": "3000\n"
         },
         {
-            "input": "987",
+            "input": "987\n",
             "output": "47775744\n"
         },
         {
-            "input": "1233",
+            "input": "1233\n",
             "output": "209952000\n"
         }
-    ]
+    ],
+    "simple_desc": "丑数是指只包含因子2、3和5的数，求第n个丑数",
+    "difficulty": "4",
+    "tag": "队列-优先队列",
+    "author": "MOOCTEST"
 }

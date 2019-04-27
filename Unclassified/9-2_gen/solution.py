@@ -1,3 +1,10 @@
+'''TESTCASE
+4
+'Tom',63;'Allen',85
+'Adan',97;'Julia',80
+'Eve',74;'Toney',55
+'Jeff',82;'Jerry',99
+'''
 def assignLesson(a):
     for c in a:
         s = 0

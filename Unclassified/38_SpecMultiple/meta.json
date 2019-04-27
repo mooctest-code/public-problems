@@ -1,29 +1,33 @@
 {
-    "title": "\u7279\u6b8a\u7684\u500d\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u4e00\u4e2a\u6570\u7684\u7279\u6b8a\u500d\u6570\u662f\u6307\u4ec5\u75311\u548c0\u6784\u6210\u7684\u500d\u6570\u3002\u598210\u662f2\u7684\u500d\u6570\uff0c\u540c\u65f6\u5b83\u53ea\u75311\u548c0\u6784\u6210\uff0c\u56e0\u6b64\u5b83\u662f2\u7684\u7279\u6b8a\u500d\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6b63\u6574\u6570 n (0 < n < 10^3)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a n \u7684\u6700\u5c0f\u7279\u6b8a\u500d\u6570 m\uff0c\u6211\u4eec\u4fdd\u8bc1 m \u4e0d\u8d85\u8fc7\u6574\u6570\u8303\u56f4\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2\n```\n\n```\n3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n10\n```\n\n```\n111\n```\n",
+    "title": "特殊的倍数",
+    "desc": "### 题目描述\n\n一个数的特殊倍数是指仅由1和0构成的倍数。如10是2的倍数，同时它只由1和0构成，因此它是2的特殊倍数。\n\n### 输入描述\n\n输入为一个正整数 n (0 < n < 10^3)\n\n### 输出描述\n\n输出为 n 的最小特殊倍数 m，我们保证 m 不超过整数范围\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2\n```\n\n```\n10\n```\n\n#### 样例2: 输入-输出\n\n```\n3\n```\n\n```\n111\n```\n\n",
     "templateCode": "",
     "sourceCode": "n = int(input())\n\ni=0\nwhile True:\n    i=i+1\n    if int(str(bin(i))[2:])%n == 0:\n        print(str(bin(i))[2:])\n        break\n",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "3",
+            "input": "3\n",
             "output": "111\n"
         },
         {
-            "input": "34",
+            "input": "34\n",
             "output": "111010\n"
         },
         {
-            "input": "78",
+            "input": "78\n",
             "output": "101010\n"
         },
         {
-            "input": "133",
+            "input": "133\n",
             "output": "11101111\n"
         },
         {
-            "input": "200",
+            "input": "200\n",
             "output": "1000\n"
         }
-    ]
+    ],
+    "simple_desc": "求一个数的仅有0和1构成的倍数",
+    "difficulty": "3",
+    "tag": "类型转换-进制转换",
+    "author": "MOOCTEST"
 }

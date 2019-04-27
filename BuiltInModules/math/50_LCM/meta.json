@@ -6,20 +6,24 @@
     "lang": "Python3",
     "testCases": [
         {
-            "input": "4 258",
+            "input": "4 258\n",
             "output": "516\n"
         },
         {
-            "input": "3265 86435",
+            "input": "3265 86435\n",
             "output": "56442055\n"
         },
         {
-            "input": "3243 752983",
+            "input": "3243 752983\n",
             "output": "2441923869\n"
         },
         {
-            "input": "123 789",
+            "input": "123 789\n",
             "output": "32349\n"
         }
-    ]
+    ],
+    "simple_desc": "求两个数的最小公倍数",
+    "difficulty": "1",
+    "tag": "math",
+    "author": "MOOCTEST"
 }

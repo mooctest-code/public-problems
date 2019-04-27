@@ -1,3 +1,16 @@
+'''TESTCASE
+[0, 1]
+4 2
+3
+-
+[0, 1, 2]
+1 2
+10
+-
+[0, 1]
+10 3
+10
+'''
 from collections import UserList
 
 class AutoList(UserList):

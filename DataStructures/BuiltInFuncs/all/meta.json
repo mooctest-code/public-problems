@@ -14,8 +14,12 @@
             "output": "['zhangqiang']\n"
         },
         {
-            "input": "4\nMLXG,15,78,56,48\nmage,78,45,65,47\nemmmm,45,,12,17\npaohui,47,58,45,",
+            "input": "4\nMLXG,15,78,56,48\nmage,78,45,65,47\nemmmm,45,,12,17\npaohui,47,58,45,\n",
             "output": "['MLXG', 'mage']\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

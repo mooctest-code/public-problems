@@ -1,25 +1,29 @@
 {
-    "title": "\u6768\u8f89\u4e09\u89d2",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6768\u8f89\u4e09\u89d2\u5f62\u662f\u4e8c\u9879\u5f0f\u7cfb\u6570\u7684\u4e00\u79cd\u5199\u6cd5\uff0c\u5f62\u4f3c\u4e09\u89d2\u5f62\uff0c\u5728\u4e2d\u56fd\u9996\u73b0\u4e8e\u5357\u5b8b\u6768\u8f89\u7684\u300a\u8be6\u89e3\u4e5d\u7ae0\u7b97\u672f\u300b\u5f97\u540d\uff0c\u4e66\u4e2d\u6768\u8f89\u8bf4\u660e\u662f\u5f15\u81ea\u8d3e\u5baa\u7684\u300a\u91ca\u9501\u7b97\u672f\u300b\uff0c\u6545\u53c8\u540d\u8d3e\u5baa\u4e09\u89d2\u5f62\u3002\u524d 5 \u884c\u5199\u51fa\u6765\u5982\u4e0b\uff1a\n\n```\n1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1\n```\n\n\u6768\u8f89\u4e09\u89d2\u5f62\u7b2c n \u5c42\u6b63\u597d\u5bf9\u5e94\u4e8e\u4e8c\u9879\u5f0f $(a+b)^(n-1)$ \u5c55\u5f00\u5f0f\u7684\u7cfb\u6570\u3002\u6bd4\u5982 $(a+b)^2=a^2+2ab+b^2$ \u7684\u7cfb\u6570\u4e3a `1 2 1`\uff0c\u5bf9\u5e94\u6768\u8f89\u4e09\u89d2\u7b2c\u4e09\u5c42\u3002\n\n\u7ed9\u4f60\u4e00\u4e2a\u6b63\u6574\u6570 n\uff0c\u8bf7\u4f60\u8f93\u51fa\u524d n \u5c42\u7684\u6768\u8f89\u4e09\u89d2\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u4e00\u4e2a\u6b63\u6574\u6570 n\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u524d n \u5c42\u7684\u6768\u8f89\u4e09\u89d2\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n3\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n1\n1 1\n1 2 1\n```\n",
+    "title": "杨辉三角",
+    "desc": "### 题目描述\n\n杨辉三角形是二项式系数的一种写法，形似三角形，在中国首现于南宋杨辉的《详解九章算术》得名，书中杨辉说明是引自贾宪的《释锁算术》，故又名贾宪三角形。前 5 行写出来如下：\n\n```\n1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1\n```\n\n杨辉三角形第 n 层正好对应于二项式 $(a+b)^(n-1)$ 展开式的系数。比如 $(a+b)^2=a^2+2ab+b^2$ 的系数为 `1 2 1`，对应杨辉三角第三层。\n\n给你一个正整数 n，请你输出前 n 层的杨辉三角。\n\n### 输入描述\n\n一个正整数 n\n\n### 输出描述\n\n输出前 n 层的杨辉三角\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\n```\n\n```\n1\n1 1\n1 2 1\n```\n\n",
     "templateCode": "",
     "sourceCode": "# by @colinshi in http://www.runoob.com/python/python-exercise-example61.html\n\ndef sj():\n    a = [1]\n    while True:\n        yield a\n        a = [sum(i) for i in zip([0] + a, a + [0])]\n\nn = int(input())\nfor x in sj():\n    print(' '.join(map(str, x)))\n    n -= 1\n    if not n:\n        break",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "1",
+            "input": "1\n",
             "output": "1\n"
         },
         {
-            "input": "3",
+            "input": "3\n",
             "output": "1\n1 1\n1 2 1\n"
         },
         {
-            "input": "7",
+            "input": "7\n",
             "output": "1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1\n1 5 10 10 5 1\n1 6 15 20 15 6 1\n"
         },
         {
-            "input": "9",
+            "input": "9\n",
             "output": "1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1\n1 5 10 10 5 1\n1 6 15 20 15 6 1\n1 7 21 35 35 21 7 1\n1 8 28 56 70 56 28 8 1\n"
         }
-    ]
+    ],
+    "simple_desc": "输出前n行的杨辉三角",
+    "difficulty": "3",
+    "tag": "字符串-格式化|函数-生成器",
+    "author": "RUNOOB"
 }

@@ -1,25 +1,29 @@
 {
-    "title": "\u9009\u7334\u738b",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6709\uff4e\u53ea\u7334\u5b50\uff0c\u6309\u987a\u65f6\u9488\u65b9\u5411\u56f4\u6210\u4e00\u5708\u9009\u5927\u738b\uff08\u7f16\u53f7\u4ece\uff11\u5230\uff4e\uff09\uff0c\n\u4ece\u7b2c\uff11\u53f7\u5f00\u59cb\u62a5\u6570\uff0c\u4e00\u76f4\u6570\u5230\uff4d\uff0c\u6570\u5230\uff4d\u7684\u7334\u5b50\u9000\u51fa\u5708\u5916\uff0c\u5269\u4e0b\u7684\u7334\u5b50\u518d\u63a5\u7740\u4ece1\u5f00\u59cb\u62a5\u6570\u3002\n\u5c31\u8fd9\u6837\uff0c\u76f4\u5230\u5708\u5185\u53ea\u5269\u4e0b\u4e00\u53ea\u7334\u5b50\u65f6\uff0c\u8fd9\u4e2a\u7334\u5b50\u5c31\u662f\u7334\u738b\uff0c\n\u73b0\u5728\u7ed9\u4f60n\u548cm\uff0c\u8bf7\u4f60\u8f93\u51fa\u6700\u540e\u7334\u738b\u7684\u7f16\u53f7\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u7334\u5b50\u7684\u6570\u91cf n \u548c\u62a5\u6570 m\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u6700\u540e\u7334\u738b\u7684\u7f16\u53f7\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n10 23\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n10\n```\n",
+    "title": "选猴王",
+    "desc": "### 题目描述\n\n有ｎ只猴子，按顺时针方向围成一圈选大王（编号从１到ｎ），\n从第１号开始报数，一直数到ｍ，数到ｍ的猴子退出圈外，剩下的猴子再接着从1开始报数。\n就这样，直到圈内只剩下一只猴子时，这个猴子就是猴王，\n现在给你n和m，请你输出最后猴王的编号。\n\n### 输入描述\n\n输入为猴子的数量 n 和报数 m\n\n### 输出描述\n\n输出为最后猴王的编号\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n10 23\n```\n\n```\n10\n```\n\n",
     "templateCode": "",
     "sourceCode": "n, m = map(int, input().split())\n\nr = 0\nfor i in range(2, n+1):\n    r = (r + m) % i\n\nprint(r + 1)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "12 4",
+            "input": "12 4\n",
             "output": "1\n"
         },
         {
-            "input": "43 23",
+            "input": "43 23\n",
             "output": "34\n"
         },
         {
-            "input": "76 10",
+            "input": "76 10\n",
             "output": "51\n"
         },
         {
-            "input": "213 2355",
+            "input": "213 2355\n",
             "output": "150\n"
         }
-    ]
+    ],
+    "simple_desc": "一群猴子做成一圈按照一定方法选择猴王",
+    "difficulty": "2",
+    "tag": "数学-数学问题-约瑟夫环",
+    "author": "MOOCTEST"
 }

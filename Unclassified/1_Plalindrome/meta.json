@@ -21,5 +21,9 @@
             "input": "123321\n",
             "output": "True\n"
         }
-    ]
+    ],
+    "simple_desc": "判断数字是否为回文数",
+    "difficulty": "1",
+    "tag": "内置全局函数1-数学运算-abs()|内置全局函数1-类型转换-类型转换",
+    "author": "MOOCTEST"
 }

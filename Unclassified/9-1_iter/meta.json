@@ -3,11 +3,15 @@
     "desc": "### 描述\n\n每次使用成绩单，都要写好长的一串代码，这并不Python，怎么做才能优雅地使用成绩单呢？使用list包含元组的形式构建Register，实现遍历Register的迭代器\n\n### 输入\n\n一个 list，list 中每个元素是一个元组。元组的第一个元素是学生姓名，第二个元素是学生的成绩。\n\n### 输出\n\n使用for循环迭代遍历学生名单并输出，一行对应一个学生姓名。\n\n### 样例输入\n\n```\n[('Tom', 63), ('Allen', 85), ('Adan', 97), ('Julia', 80)]\n```\n\n### 样例输出\n\n```\nTom\nAllen\nAdan\nJulia\n```\n",
     "templateCode": "",
     "sourceCode": "class Register:\n    def __init__(self, name):\n        self.name = name\n        self.scores = []\n\n    def add_score(self, tup):\n        self.scores.append(tup)\n\n    def __iter__(self):\n        self.idx = 0\n        return self\n    \n    def __next__(self):\n        if self.idx < len(self.scores):\n            x = self.idx\n            self.idx += 1\n            return self.scores[x][0]\n        else:\n            raise StopIteration\n \n\nl = eval(input())\n\nr = Register('0')\nfor i in l:\n    r.add_score(i)\n\nfor name in r:\n    print(name)",
-    "lang": "python3",
+    "lang": "Python3",
     "testCases": [
         {
-            "input": "[('Tom', 63), ('Jeff', 85), ('Adan', 97), ('Julia', 80), ('Eve', 74), ('Toney', 55)]",
+            "input": "[('Tom', 63), ('Jeff', 85), ('Adan', 97), ('Julia', 80), ('Eve', 74), ('Toney', 55)]\n",
             "output": "Tom\nJeff\nAdan\nJulia\nEve\nToney\n"
         }
-    ]
+    ],
+    "simple_desc": "0",
+    "difficulty": "简单题目描述",
+    "tag": "知识点",
+    "author": "匿名"
 }

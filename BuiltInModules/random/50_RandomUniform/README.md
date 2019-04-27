@@ -1,4 +1,10 @@
-创建随机数
+---
+题目: 创建随机数
+简介: 使用random模块生成随机数
+难度: 1
+标签: random-uniform()|random-seed()
+作者: RUNOOB
+---
 
 ### 题目描述
 

@@ -1,4 +1,10 @@
-水果出售记录
+---
+题目: 水果出售记录
+简介: 帮店老板统计每个水果卖出了多少
+难度: 3
+标签: collections-Counter|列表-内置函数-sort()|functools-cmp_to_key
+作者: MOOCTEST
+---
 
 ### 题目描述
 

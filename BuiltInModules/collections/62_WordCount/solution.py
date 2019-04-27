@@ -1,3 +1,12 @@
+'''TESTCASE
+Hello World!
+-
+This is a test text
+-
+Hola World!
+-
+fneakjnfoaidjkasopdhwquonr3o.e13[p.e13o2jme.12';e.;'1,e;'12.,dso21pmd12,'1e2,ep,[]]
+'''
 from collections import Counter
 import functools
 

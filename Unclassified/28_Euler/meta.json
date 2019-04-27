@@ -1,33 +1,37 @@
 {
-    "title": "\u6b27\u62c9\u51fd\u6570",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6b27\u62c9\u51fd\u6570\u7684\u5b9a\u4e49\u662f\uff1a\u5bf9\u4e8e n, \u6b27\u62c9\u51fd\u6570\u4e3a\u4e0e n \u4e92\u8d28\u7684\u5c0f\u4e8e n \u7684\u6b63\u6574\u6570\u7684\u4e2a\u6570\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e00\u4e2a\u6570 n (1 <= n <= 10^10)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u8f93\u51fa\u4e3a\u4e0e n \u4e92\u8d28\u7684\u5c0f\u4e8e n \u7684\u6b63\u6574\u6570\u7684\u4e2a\u6570\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n123\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n80\n```\n",
+    "title": "欧拉数",
+    "desc": "### 题目描述\n\n欧拉函数的定义是：对于 n, 欧拉函数为与 n 互质的小于 n 的正整数的个数。\n\n### 输入描述\n\n输入为一个数 n (1 <= n <= 10^10)\n\n### 输出描述\n\n输出为与 n 互质的小于 n 的正整数的个数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n123\n```\n\n```\n80\n```\n\n",
     "templateCode": "",
     "sourceCode": "def phi(n):\n    p, i = n, 2\n    while i * i < n:\n        if n % i == 0:\n            p = p // i * (i-1)\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n > 1: p = p // n * (n-1)\n    return p\n\nn = int(input())\nprint(phi(n))",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "23",
+            "input": "23\n",
             "output": "22\n"
         },
         {
-            "input": "126",
+            "input": "126\n",
             "output": "36\n"
         },
         {
-            "input": "5345",
+            "input": "5345\n",
             "output": "4272\n"
         },
         {
-            "input": "65323",
+            "input": "65323\n",
             "output": "65322\n"
         },
         {
-            "input": "432524",
+            "input": "432524\n",
             "output": "216260\n"
         },
         {
-            "input": "123456789",
+            "input": "123456789\n",
             "output": "82260072\n"
         }
-    ]
+    ],
+    "simple_desc": "输出与n互质的小于n的正整数个数",
+    "difficulty": "3",
+    "tag": "数学",
+    "author": "MOOCTEST"
 }

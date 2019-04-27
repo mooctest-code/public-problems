@@ -1,3 +1,14 @@
+'''TESTCASE
+10
+-
+12
+-
+123
+-
+987
+-
+1233
+'''
 import queue
 
 n = int(input())

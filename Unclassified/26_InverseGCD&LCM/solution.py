@@ -1,3 +1,16 @@
+'''TESTCASE
+4 60
+-
+2 228
+-
+28 392
+-
+16 2304
+-
+193 11580
+-
+128 768
+'''
 import math
 
 [gcd, lcm] = list(map(int, input().split()))

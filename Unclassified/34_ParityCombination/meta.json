@@ -1,37 +1,41 @@
 {
-    "title": "\u7ec4\u5408\u6570\u7684\u5947\u5076\u6027",
-    "desc": "### \u9898\u76ee\u63cf\u8ff0\n\n\u6c42\u7ec4\u5408\u6570 $C(n,k)$ \u7684\u5947\u5076\u6027\u3002\n\n### \u8f93\u5165\u63cf\u8ff0\n\n\u8f93\u5165\u4e3a\u4e24\u4e2a\u6574\u6570 n \u548c k (1<=n<=10^9,0<=k<=n)\n\n### \u8f93\u51fa\u63cf\u8ff0\n\n\u82e5\u7ec4\u5408\u6570 C(n, k) \u4e3a\u5947\u6570\uff0c\u5219\u8f93\u51fa True\uff0c\u5426\u5219\u8f93\u51fa False\n\n### \u6837\u4f8b\u8f93\u5165\n\n```\n2 0\n```\n\n### \u6837\u4f8b\u8f93\u51fa\n\n```\n1\n```\n\n### \u63d0\u793a\n\n\u5982n=2,k=0,\u5219\u8f93\u51fa1. \u56e0\u4e3aC(2,0)=1,\u4e3a\u5947\u6570\u3002\n",
+    "title": "组合数的奇偶性",
+    "desc": "### 题目描述\n\n求组合数 $C(n,k)$ 的奇偶性。\n\n### 输入描述\n\n输入为两个整数 n 和 k (1<=n<=10^9,0<=k<=n)\n\n### 输出描述\n\n若组合数 C(n, k) 为奇数，则输出 True，否则输出 False\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2 0\n```\n\n```\n1\n```\n\n### 提示\n\n如n=2,k=0,则输出1. 因为C(2,0)=1,为奇数。\n",
     "templateCode": "",
     "sourceCode": "n, k = map(int, input().split())\n\nprint(n&k == k)",
     "lang": "Python3",
     "testCases": [
         {
-            "input": "10 4",
+            "input": "10 4\n",
             "output": "False\n"
         },
         {
-            "input": "5 0",
+            "input": "5 0\n",
             "output": "True\n"
         },
         {
-            "input": "41231 123",
+            "input": "41231 123\n",
             "output": "False\n"
         },
         {
-            "input": "3242 32",
+            "input": "3242 32\n",
             "output": "True\n"
         },
         {
-            "input": "321 34",
+            "input": "321 34\n",
             "output": "False\n"
         },
         {
-            "input": "42358294 12322",
+            "input": "42358294 12322\n",
             "output": "False\n"
         },
         {
-            "input": "34324353 16257",
+            "input": "34324353 16257\n",
             "output": "True\n"
         }
-    ]
+    ],
+    "simple_desc": "求组合数的奇偶性",
+    "difficulty": "2",
+    "tag": "数学-组合数学",
+    "author": "MOOCTEST"
 }

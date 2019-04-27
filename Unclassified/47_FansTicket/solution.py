@@ -1,3 +1,10 @@
+'''TESTCASE
+23 10
+-
+12 14
+-
+13 5
+'''
 m, n = map(int, input().split())
 
 An = [[0 for x in range(n+1)] for x in range(m+1)]

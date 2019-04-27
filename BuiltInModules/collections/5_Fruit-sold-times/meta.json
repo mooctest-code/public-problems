@@ -6,16 +6,20 @@
     "lang": "Python3",
     "testCases": [
         {
-            "input": "5\nApple Banana Cherry Pineapple Banana",
+            "input": "5\nApple Banana Cherry Pineapple Banana\n",
             "output": "Banana 2\nApple 1\nCherry 1\nPineapple 1\n"
         },
         {
-            "input": "8\nApple Peach Cherry Pineapple Banana Pear Pear Apple",
+            "input": "8\nApple Peach Cherry Pineapple Banana Pear Pear Apple\n",
             "output": "Apple 2\nPear 2\nBanana 1\nCherry 1\nPeach 1\nPineapple 1\n"
         },
         {
-            "input": "5\nApple Cherry Cherry Apple Pear",
+            "input": "5\nApple Cherry Cherry Apple Pear\n",
             "output": "Apple 2\nCherry 2\nPear 1\n"
         }
-    ]
+    ],
+    "simple_desc": "帮店老板统计每个水果卖出了多少",
+    "difficulty": "3",
+    "tag": "collections-Counter|列表-内置函数-sort()|functools-cmp_to_key",
+    "author": "MOOCTEST"
 }
