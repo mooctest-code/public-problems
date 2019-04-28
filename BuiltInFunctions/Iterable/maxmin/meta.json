@@ -1,0 +1,21 @@
+{
+    "title": "最大值和最小值",
+    "desc": "### 题目描述\n\n得到给定整数序列的最大值和最小值\n\n### 输入描述\n\n输入为一个整数序列\n\n### 输出描述\n\n输出这个整数序列的最大值和最小值，用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n[1, 2, 3]\n```\n\n```\n3 1\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = eval(input())\nprint(max(a), min(a))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "[1, 2, 3]\n",
+            "output": "3 1\n"
+        },
+        {
+            "input": "[-10, -100, 1]\n",
+            "output": "1 -100\n"
+        }
+    ],
+    "simple_desc": "得到给定序列的最大值和最小值",
+    "difficulty": "1",
+    "tag": "内置全局函数-可迭代对象",
+    "author": "谢子聪"
+}

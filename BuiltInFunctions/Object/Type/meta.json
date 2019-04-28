@@ -1,0 +1,29 @@
+{
+    "title": "type",
+    "desc": "### 题目描述\n\n使用python中的type函数，得到给定变量的类型。\n\n### 输入描述\n\n输入为一个Python内置数据类型的数据\n\n### 输出描述\n\n输出该数据的类型\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2\n```\n\n```\n<class 'int'>\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = input()\nprint(type(eval(a)))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2\n",
+            "output": "<class 'int'>\n"
+        },
+        {
+            "input": "'asd'\n",
+            "output": "<class 'str'>\n"
+        },
+        {
+            "input": "1.234\n",
+            "output": "<class 'float'>\n"
+        },
+        {
+            "input": "[1, 2]\n",
+            "output": "<class 'list'>\n"
+        }
+    ],
+    "simple_desc": "使用 type() 得到给定变量的类型",
+    "difficulty": "1",
+    "tag": "内置全局函数-类和对象",
+    "author": "张舒"
+}

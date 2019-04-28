@@ -1,0 +1,21 @@
+{
+    "title": "求阶乘",
+    "desc": "### 题目描述\n使用Math库中的函数，求输入数据n的阶乘\n\n\n### 输入描述\n输入一个正整数n\n\n\n### 输出描述\n输出n的阶乘\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\n```\n\n```\n6\n```\n\n#### 样例2: 输入-输出\n\n```\n5\n```\n\n```\n120\n```\n\n",
+    "templateCode": "import math\n",
+    "sourceCode": "import math\nn=int(input())\nprint(math.factorial(n))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3\n",
+            "output": "6\n"
+        },
+        {
+            "input": "5\n",
+            "output": "120\n"
+        },
+        {
+            "input": "8\n",
+            "output": "40320\n"
+        }
+    ]
+}

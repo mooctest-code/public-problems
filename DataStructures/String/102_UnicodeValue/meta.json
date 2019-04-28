@@ -1,0 +1,33 @@
+{
+    "title": "字符串编码",
+    "desc": "### 题目描述\n给定中文字符串，求给定字符串的unicode编码格式的编码值\n\n\n### 输入描述\n输入一个中文字符串\n\n\n### 输出描述\n输出字符串的unicode编码格式的编码值\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n你好\n```\n\n```\nb'\\\\u6d63\\\\u72b2\\\\u30bd'\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "s=input()\nprint(s.encode('unicode-escape'))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "你好\n",
+            "output": "b'\\\\u6d63\\\\u72b2\\\\u30bd'\n"
+        },
+        {
+            "input": "中文\n",
+            "output": "b'\\\\u6d93\\\\udcad\\\\u93c2\\\\udc87'\n"
+        },
+        {
+            "input": "汉字\n",
+            "output": "b'\\\\u59f9\\\\u590a\\\\u74e7'\n"
+        },
+        {
+            "input": "同学\n",
+            "output": "b'\\\\u935a\\\\u5c7d\\\\udcad\\\\udca6'\n"
+        },
+        {
+            "input": "男生\n",
+            "output": "b'\\\\u9422\\\\u98ce\\\\u6553'\n"
+        },
+        {
+            "input": "女生\n",
+            "output": "b'\\\\u6fc2\\\\u5d07\\\\u6553'\n"
+        }
+    ]
+}

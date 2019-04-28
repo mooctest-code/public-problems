@@ -1,0 +1,13 @@
+{
+    "title": "函数不定长参数",
+    "desc": "### 题目描述\n完善test函数，使得代码框中的test函数调用语句正确执行\n\n\n### 输入描述\n无\n\n\n### 输出描述\n将test函数传入的参数打印输出\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nNone\n```\n\n```\n10\n10\n20\n30\n40\n```\n\n",
+    "templateCode": "def test(arg1,*arg2):\n\tpass\ntest(10)\ntest(10,20,30,40)\n    ",
+    "sourceCode": "def test(arg1,*arg2):\n\tprint(arg1)\n\tfor i in arg2:\n\t\tprint(i)\ntest(10)\ntest(10,20,30,40)\n    ",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None\n",
+            "output": "10\n10\n20\n30\n40\n"
+        }
+    ]
+}

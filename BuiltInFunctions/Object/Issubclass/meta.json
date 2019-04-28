@@ -1,0 +1,21 @@
+{
+    "title": "issubclass",
+    "desc": "### 题目描述\n\n使用python中的issubclass函数，判断某类是否是 class A 的子类。\n\n### 输入描述\n\n类名(B或C)\n\n### 输出描述\n\n是class A子类输出True，不是输出False\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nB\n```\n\n```\nTrue\n```\n\n",
+    "templateCode": "class A:\n    pass\nclass B(A):\n    pass\nclass C():\n    pass\n\nname = input()\n\n# TODO",
+    "sourceCode": "class A:\n    pass\nclass B(A):\n    pass\nclass C():\n    pass\nname = input()\nprint(issubclass(eval(name),A))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "B\n",
+            "output": "True\n"
+        },
+        {
+            "input": "C\n",
+            "output": "False\n"
+        }
+    ],
+    "simple_desc": "使用 issubclass 判断子类",
+    "difficulty": "1",
+    "tag": "内置全局函数-类和对象",
+    "author": "张舒"
+}

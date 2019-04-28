@@ -1,0 +1,21 @@
+{
+    "title": "help",
+    "desc": "### 题目描述\n\n使用python中的help函数，生成给定内置数据类型的函数的介绍\n\n### 输入描述\n\n给定内置数据类型的函数\n\n### 输出描述\n\n输出该函数的 help 文档\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nlist.append\n```\n\n```\nHelp on method_descriptor in list:\n\nlist.append = append(self, object, /)\n    Append object to the end of the list.\n\nNone\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = input()\nprint(help(a))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "list.append\n",
+            "output": "Help on method_descriptor in list:\n\nlist.append = append(self, object, /)\n    Append object to the end of the list.\n\nNone\n"
+        },
+        {
+            "input": "list.extend\n",
+            "output": "Help on method_descriptor in list:\n\nlist.extend = extend(self, iterable, /)\n    Extend list by appending elements from the iterable.\n\nNone\n"
+        }
+    ],
+    "simple_desc": "使用 help() 生成介绍",
+    "difficulty": "1",
+    "tag": "内置全局函数-类和对象",
+    "author": "张舒"
+}

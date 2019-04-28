@@ -1,0 +1,29 @@
+{
+    "title": "super",
+    "desc": "### 题目描述\n\n请完成类中的 add()，使得结果正确\n\n### 输入描述\n\n输入为一个整数 m\n\n### 输出描述\n\n输出 `d.add(n)` 后 `d.n` 的值\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0\n```\n\n```\n3\n```\n\n",
+    "templateCode": "class A:\n    def __init__(self):\n        self.n = 1\n\n    def add(self, m):\n        # TODO\n\nclass B(A):\n    def __init__(self):\n        self.n = 2\n\n    def add(self, m):\n        # TODO\n\nclass C(A):\n    def __init__(self):\n        self.n = 2\n\n    def add(self, m):\n        # TODO\n\nclass D(B, C):\n    def __init__(self):\n        self.n = 3\n\n    def add(self, m):\n        super().add(m)\n        self.n += m\n\nd = D()\nd.add(int(input()))\nprint(d.n)",
+    "sourceCode": "\nclass A:\n    def __init__(self):\n        self.n = 1\n\n    def add(self, m):\n        self.n += m\n\n\nclass B(A):\n    def __init__(self):\n        self.n = 2\n\n    def add(self, m):\n        # super().add(m)\n        self.n += m\n\nclass C(A):\n    def __init__(self):\n        self.n = 2\n\n    def add(self, m):\n        super().add(m)\n        self.n += m\n\nclass D(B, C):\n    def __init__(self):\n        self.n = 3\n\n    def add(self, m):\n        super().add(m)\n        self.n += m\n\nd = D()\nd.add(int(input()))\nprint(d.n)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0\n",
+            "output": "3\n"
+        },
+        {
+            "input": "3\n",
+            "output": "9\n"
+        },
+        {
+            "input": "4\n",
+            "output": "11\n"
+        },
+        {
+            "input": "1\n",
+            "output": "5\n"
+        }
+    ],
+    "simple_desc": "使用 super 计算加法",
+    "difficulty": "3",
+    "tag": "内置全局函数-类和对象",
+    "author": "谢子聪"
+}

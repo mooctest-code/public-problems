@@ -1,0 +1,13 @@
+{
+    "title": "求方差",
+    "desc": "### 题目描述\n使用Statistics库中的函数，求列表中数据的方差\n\n\n### 输入描述\n无\n\n\n### 输出描述\n输出方差\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nNone\n```\n\n```\n7.5\n```\n\n",
+    "templateCode": "import statistics\nls=[1,2,3,4,5,6,7,8,9]\n",
+    "sourceCode": "import statistics\nls=[1,2,3,4,5,6,7,8,9]\nprint(statistics.variance(ls))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None\n",
+            "output": "7.5\n"
+        }
+    ]
+}

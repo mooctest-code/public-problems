@@ -1,0 +1,21 @@
+{
+    "title": "增查属性",
+    "desc": "### 题目描述\n\n现在有一个学生类，请你使用 setattr() 和 getattr() 补充代码（不允许修改该学生类），为该学生对象增加姓名、学号和年级，并输出相关信息\n\n### 输入描述\n\n输入为三个字符串 name, sno 和 grade，分别表示姓名、学号和年级\n\n### 输出描述\n\n输出这个学生对象的信息，参考测试样例\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n小明 1632436 大三\n```\n\n```\n姓名: 小明\n学号: 1632436\n年级: 大三\n```\n\n",
+    "templateCode": "class Student:\n    def __getattr__(self, name):\n        if name == 'info':\n            return '\\n'.join([\n                '姓名: ' + getattr(self, 'name'), \n                '学号: ' + getattr(self, 'sno'), \n                '年级: ' + getattr(self, 'grade')])\n        return ''\n\n\nname, sno, grade = input().split()\nstudent = Student()\n\n# TODO\n\nprint(''' TODO ''')",
+    "sourceCode": "\nclass Student:\n    def __getattr__(self, name):\n        if name == 'info':\n            return '\\n'.join([\n                '姓名: ' + getattr(self, 'name'), \n                '学号: ' + getattr(self, 'sno'), \n                '年级: ' + getattr(self, 'grade')])\n        return ''\n\n\nname, sno, grade = input().split()\nstudent = Student()\n\nsetattr(student, 'name', name)\nsetattr(student, 'sno', sno)\nsetattr(student, 'grade', grade)\n\nprint(getattr(student, 'info'))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "小明 1632436 大三\n",
+            "output": "姓名: 小明\n学号: 1632436\n年级: 大三\n"
+        },
+        {
+            "input": "小红 MF1831900 研一\n",
+            "output": "姓名: 小红\n学号: MF1831900\n年级: 研一\n"
+        }
+    ],
+    "simple_desc": "使用 ?attr 操作增查对象属性",
+    "difficulty": "2",
+    "tag": "内置全局函数-类和对象",
+    "author": "谢子聪"
+}

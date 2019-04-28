@@ -1,0 +1,17 @@
+{
+    "title": "insert函数的使用",
+    "desc": "### 题目描述\n将输入的数据n插入到列表ls的指定位置ind上\n\n\n### 输入描述\n输入插入位置ind，插入数据n\n\n\n### 输出描述\n打印列表ls\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0,10\n```\n\n```\n[10, 1, 2, 3]\n```\n\n#### 样例2: 输入-输出\n\n```\n-1,20\n```\n\n```\n[1, 2, 20, 3]\n```\n\n",
+    "templateCode": "ls=[1,2,3]\n",
+    "sourceCode": "ls=[1,2,3]\nind,num=map(int,input().split(','))\nls.insert(ind,num)\nprint(ls)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0,10\n",
+            "output": "[10, 1, 2, 3]\n"
+        },
+        {
+            "input": "-1,20\n",
+            "output": "[1, 2, 20, 3]\n"
+        }
+    ]
+}

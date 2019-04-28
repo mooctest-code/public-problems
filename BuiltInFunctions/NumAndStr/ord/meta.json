@@ -1,0 +1,29 @@
+{
+    "title": "ord",
+    "desc": "### 题目描述\n\n计算两个字符的 ASCII 数值差\n\n### 输入描述\n\n输入为两个字符，用空格隔开\n\n### 输出描述\n\n输出这两个字符的 ASCII 数值差，差为非负数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\na b\n```\n\n```\n1\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a, b = input().split()\nprint(abs(ord(a) - ord(b)))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "a b\n",
+            "output": "1\n"
+        },
+        {
+            "input": "b a\n",
+            "output": "1\n"
+        },
+        {
+            "input": "? ~\n",
+            "output": "63\n"
+        },
+        {
+            "input": "~ ?\n",
+            "output": "63\n"
+        }
+    ],
+    "simple_desc": "使用 ord() 将字符转换为 ASCII 数值",
+    "difficulty": "1",
+    "tag": "内置全局函数-数值和字符串",
+    "author": "谢子聪"
+}

@@ -1,0 +1,21 @@
+{
+    "title": "enumerate",
+    "desc": "### 题目描述\n\n对于输入的员工列表，我们默认从第一个员工开始为员工编号，第一个员工的初始编号为10001，输出所有员工的编号和员工姓名。\n\n### 输入描述\n\n为员工姓名的列表，姓名之间用空格隔开\n\n### 输出描述\n\n所有员工id和姓名，中间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\ntony sunny louis \n```\n\n```\n10001 tony\n10002 sunny\n10003 louis\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "#enumerate\nlistEmp = list(input().split())\nfor i, element in enumerate(listEmp, start = 10001):\n        print(i,element)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "tony sunny louis \n",
+            "output": "10001 tony\n10002 sunny\n10003 louis\n"
+        },
+        {
+            "input": "shdususg sdyusgdau shaiudhi adahwdiu \n",
+            "output": "10001 shdususg\n10002 sdyusgdau\n10003 shaiudhi\n10004 adahwdiu\n"
+        }
+    ],
+    "simple_desc": "使用 enumerate 为员工加上编号",
+    "difficulty": "1",
+    "tag": "内置全局函数-可迭代对象",
+    "author": "黎宇"
+}

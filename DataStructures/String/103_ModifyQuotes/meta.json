@@ -1,0 +1,13 @@
+{
+    "title": "引号中的引号",
+    "desc": "### 题目描述\n代码框中已经定义一个字符串，但由于引号使用不当，导致语法错误，请你修改代码来修正这个错误\n\n\n### 输入描述\n无\n\n\n### 输出描述\n正确打印字符串内容\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n\"abc'def\"ghi\"gkl\"\n```\n\n```\nabc'def\"ghi\"gkl\n```\n\n",
+    "templateCode": "string=\"abc'def\"ghi\"gkl\"",
+    "sourceCode": "s=\"abc'def\\\"ghi\\\"gkl\"\nprint(s)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "\"abc'def\"ghi\"gkl\"\n",
+            "output": "abc'def\"ghi\"gkl\n"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "title": "求对数值",
+    "desc": "### 题目描述\n使用Math库中的函数，返回输入数据n的以2为底的对数值\n\n\n### 输入描述\n输入一个数n\n\n\n### 输出描述\n输出n的以2为底的对数值\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2\n```\n\n```\n1.0\n```\n\n#### 样例2: 输入-输出\n\n```\n8\n```\n\n```\n3.0\n```\n\n#### 样例1: 输入-输出\n",
+    "templateCode": "import math\n",
+    "sourceCode": "import math\nn=float(input())\nprint(math.log(n,2))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2\n",
+            "output": "1.0\n"
+        },
+        {
+            "input": "8\n",
+            "output": "3.0\n"
+        },
+        {
+            "input": "16\n",
+            "output": "4.0\n"
+        }
+    ]
+}

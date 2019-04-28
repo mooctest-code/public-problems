@@ -1,0 +1,21 @@
+{
+    "title": "返回最小的大于或等于n的整数",
+    "desc": "使用Math库中的函数，返回最小的大于或等于输入数据n的整数\n\n\n### 输入描述\n输入一个数n\n\n\n### 输出描述\n返回最小的大于或等于n的整数\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2.2\n```\n\n```\n3\n```\n\n#### 样例2: 输入-输出\n\n```\n-2.2\n```\n\n```\n-2\n```\n\n",
+    "templateCode": "import math\n",
+    "sourceCode": "import math\nn=float(input())\nprint(math.ceil(n))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2.2\n",
+            "output": "3\n"
+        },
+        {
+            "input": "-2.2\n",
+            "output": "-2\n"
+        },
+        {
+            "input": "",
+            "output": "Traceback (most recent call last):\n  File \"Model\\Math\\Ceil\\solution.py\", line 2, in <module>\n    n=float(input())\nEOFError: EOF when reading a line\n"
+        }
+    ]
+}

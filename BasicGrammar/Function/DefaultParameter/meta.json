@@ -1,0 +1,13 @@
+{
+    "title": "默认参数",
+    "desc": "### 题目描述\n请修改test函数，使得代码框中两条test函数调用语句成功运行\n\n\n### 输入描述\n参数age默认指定值\n\n\n### 输出描述\n输出为test函数打印的内容\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n10\n```\n\n```\nMy name is Alice and my age is 18\nMy name is Mike and my age is 10\n```\n\n",
+    "templateCode": "num=int(input())\ndef test(name,age):\n    print('My name is %s and my age is %d'%(name,age))\ntest('Alice',18)\ntest('Mike')",
+    "sourceCode": "num=int(input())\ndef test(name,age=num):\n    print('My name is %s and my age is %d'%(name,age))\ntest('Alice',18)\ntest('Mike')",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "10\n",
+            "output": "My name is Alice and my age is 18\nMy name is Mike and my age is 10\n"
+        }
+    ]
+}

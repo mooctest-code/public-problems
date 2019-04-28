@@ -1,0 +1,25 @@
+{
+    "title": "zip",
+    "desc": "### 题目描述\n\n我们有两个列表，一个是货仓清单，另一个是货品，一个货仓只可以存放一个物品，排在前面的货品先存入货仓，请输出货仓和商品对应的元组对（商品可能多于货仓，货仓也可能多于商品）。\n\n### 输入描述\n\n第一行是货仓列表，货仓之间用逗号间隔\n第二行是商品列表，商品之间也是使用逗号间隔\n\n### 输出描述\n\n每一行为一个货仓和商品对应的元组对\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nbin1,bin2,bin3\ncom1,com2,com3,com4,com5\n```\n\n```\n('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "#zip\nstr1 = list(input().split(','))\nstr2 = list(input().split(','))\nzipped = zip(str1,str2)\nfor i in zipped:\n    print(i)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "bin1,bin2,bin3\ncom1,com2,com3,com4,com5\n",
+            "output": "('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n"
+        },
+        {
+            "input": "bin1,bin2,bin3,bin4,bin5\ncom1,com2,com3\n",
+            "output": "('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n"
+        },
+        {
+            "input": "bin1,bin2,bin3,bin4,bin5\ncom1,com2,com3,com4,com5\n",
+            "output": "('bin1', 'com1')\n('bin2', 'com2')\n('bin3', 'com3')\n('bin4', 'com4')\n('bin5', 'com5')\n"
+        }
+    ],
+    "simple_desc": "使用 zip 得到货仓和货品的对应元组",
+    "difficulty": "1",
+    "tag": "内置全局函数-可迭代对象",
+    "author": "黎宇"
+}

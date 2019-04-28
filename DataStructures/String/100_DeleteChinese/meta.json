@@ -1,0 +1,21 @@
+{
+    "title": "字符串筛选",
+    "desc": "### 题目描述\n给定由中文和英文字母组成的字符串，求删除中文后的字符串并输出\n\n\n### 输入描述\n输入由中文和英文字母组成的字符串\n\n\n### 输出描述\n输出删除中文后的字符串\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nabc 中文 def\n```\n\n```\nabcdef\n```\n\n\n\n\n\n",
+    "templateCode": "",
+    "sourceCode": "def DeleteChinese(string):\n    s=''\n    for i in string:\n        if  65<= ord(i) <= 90 or 97<= ord(i) <= 122:\n            s+=i\n    return s\ns=input()\nprint(DeleteChinese(s))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "abc 中文 def\n",
+            "output": "abcdef\n"
+        },
+        {
+            "input": "ABC 中文 DEF\n",
+            "output": "ABCDEF\n"
+        },
+        {
+            "input": "ab 汉 cd 字 ef\n",
+            "output": "abcdef\n"
+        }
+    ]
+}

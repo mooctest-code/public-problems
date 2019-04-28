@@ -1,0 +1,29 @@
+{
+    "title": "进制转换1",
+    "desc": "### 题目描述\n\n请将输入的数字分别表示为二进制、八进制和十六进制\n\n### 输入描述\n\n输入为一个数字\n\n### 输出描述\n\n输出三个字符串，分别表示这个数字的二进制、八进制和十六进制，格式参考测试样例\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n100\n```\n\n```\n0b1100100 0o144 0x64\n```\n\n#### 样例2: 输入-输出\n\n```\n-100\n```\n\n```\n-0b1100100 -0o144 -0x64\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "a = int(input())\nprint(bin(a), oct(a), hex(a))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "100\n",
+            "output": "0b1100100 0o144 0x64\n"
+        },
+        {
+            "input": "-100\n",
+            "output": "-0b1100100 -0o144 -0x64\n"
+        },
+        {
+            "input": "10\n",
+            "output": "0b1010 0o12 0xa\n"
+        },
+        {
+            "input": "0\n",
+            "output": "0b0 0o0 0x0\n"
+        }
+    ],
+    "simple_desc": "使用 bin()、oct() 和 hex() 转换十进制数字",
+    "difficulty": "1",
+    "tag": "内置全局函数-数值和字符串",
+    "author": "谢子聪"
+}

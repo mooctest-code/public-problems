@@ -1,0 +1,21 @@
+{
+    "title": "callable",
+    "desc": "### 题目描述\n\n请你完成类 A（不允许修改类 A 外的代码），使得对象 a 可被调用\n\n### 输入描述\n\n输入为一个字符串\n\n### 输出描述\n\n输出包括三行，第一行为类 A 是否可被调用，第二行为对象 a 是否可被调用，第三行为 a() 的结果（输出输入的字符串）\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nA\n```\n\n```\nTrue\nTrue\nA\n```\n\n",
+    "templateCode": "class A:\n    def __init__(self, message):\n        self.message = message\n    \n    # TODO\n\na = A(input())\n\nprint(callable(A))\nprint(callable(a))\na()",
+    "sourceCode": "\nclass A:\n    def __init__(self, message):\n        self.message = message\n    \n    def __call__(self):\n        print(self.message)\n\na = A(input())\n\nprint(callable(A))\nprint(callable(a))\na()",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "A\n",
+            "output": "True\nTrue\nA\n"
+        },
+        {
+            "input": "B\n",
+            "output": "True\nTrue\nB\n"
+        }
+    ],
+    "simple_desc": "使用 callable 判断对象是否可被调用",
+    "difficulty": "1",
+    "tag": "内置全局函数-类和对象",
+    "author": "谢子聪"
+}

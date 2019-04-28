@@ -1,0 +1,17 @@
+{
+    "title": "求三角形斜边长",
+    "desc": "### 题目描述\n使用Math库中的函数，求以x和y为直角边的斜边长\n\n\n### 输入描述\n输入直接三角形的两个直角边长度，输入格式为：x y\n\n\n### 输出描述\n输出直角三角形斜边长度\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3 4\n```\n\n```\n5.0\n```\n\n\n",
+    "templateCode": "import math\n",
+    "sourceCode": "import math\nx,y=map(float,input().split())\nprint(math.hypot(x,y))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3 4\n",
+            "output": "5.0\n"
+        },
+        {
+            "input": "",
+            "output": "Traceback (most recent call last):\n  File \"Model\\Math\\Hypot\\solution.py\", line 2, in <module>\n    x,y=map(float,input().split())\nEOFError: EOF when reading a line\n"
+        }
+    ]
+}

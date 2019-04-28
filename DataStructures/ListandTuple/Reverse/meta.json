@@ -1,0 +1,13 @@
+{
+    "title": "reverse函数的使用",
+    "desc": "将给定列表ls逆序，并打印输出\n\n\n### 输入描述\n无\n\n\n### 输出描述\n输出列表ls的逆序\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nNone\n```\n\n```\n[9, 8, 7, 6, 5, 4, 3, 2, 1]\n```\n\n",
+    "templateCode": "ls=[1,2,3,4,5,6,7,8,9]",
+    "sourceCode": "ls=[1,2,3,4,5,6,7,8,9]\nls.reverse()\nprint(ls)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "None\n",
+            "output": "[9, 8, 7, 6, 5, 4, 3, 2, 1]\n"
+        }
+    ]
+}

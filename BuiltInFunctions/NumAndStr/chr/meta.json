@@ -1,0 +1,29 @@
+{
+    "title": "chr",
+    "desc": "### 题目描述\n\n请将输入的数字表示为 ASCII 编码的字符\n\n### 输入描述\n\n输入为一个整数 n (0 < n < 256) \n\n### 输出描述\n\n输出这个整数在 ASCII 编码中对应的字符\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n65\n```\n\n```\nA\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "print(chr(int(input())))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "65\n",
+            "output": "A\n"
+        },
+        {
+            "input": "34\n",
+            "output": "\"\n"
+        },
+        {
+            "input": "200\n",
+            "output": "È\n"
+        },
+        {
+            "input": "100\n",
+            "output": "d\n"
+        }
+    ],
+    "simple_desc": "使用 chr() 将数字表示为字符",
+    "difficulty": "1",
+    "tag": "内置全局函数-数值和字符串",
+    "author": "谢子聪"
+}
