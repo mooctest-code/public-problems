@@ -57,7 +57,7 @@ issubclass,使用 issubclass 判断子类,1,内置全局函数|类和对象,张�
 type,使用 type() 得到给定变量的类型,1,内置全局函数,张舒,Unknown,Unknown,BuiltInFunctions/Object/Type
 增查属性,使用 ?attr 操作增查对象属性,2,内置全局函数|类和对象,谢子聪,Unknown,Unknown,BuiltInFunctions/Object/attr
 super,使用 super 计算加法,3,内置全局函数|类和对象|继承,谢子聪,Unknown,Unknown,BuiltInFunctions/Object/super
-repr和str,使用 repr 和 str 函数,2,内置全局函数|类和对象,谢子聪,http://manage.mooctest.net/case/view/1666,http://code.mooctest.net/#/exercise/edit/2949/1666,BuiltInFunctions/Object/Repr_2
+repr和str,使用 repr 和 str 函数,2,内置全局函数|类和对象,谢子聪,[1666](http://manage.mooctest.net/case/view/1666),http://code.mooctest.net/#/exercise/edit/2949/1666,BuiltInFunctions/Object/Repr_2
 isintance,使用 isinstance 判断读取的变量类型,1,内置全局函数,张舒,Unknown,Unknown,BuiltInFunctions/Object/Isinstance
 callable,使用 callable 判断对象是否可被调用,1,内置全局函数|类和对象,谢子聪,Unknown,Unknown,BuiltInFunctions/Object/callable
 chr,使用 chr() 将数字表示为字符,1,内置全局函数|字符编码,谢子聪,Unknown,Unknown,BuiltInFunctions/NumAndStr/chr
