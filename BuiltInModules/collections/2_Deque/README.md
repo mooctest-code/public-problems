@@ -5,7 +5,6 @@
 标签: collections-deque|双向队列
 作者: 谢子聪
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述

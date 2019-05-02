@@ -1,33 +1,33 @@
 {
     "title": "字符串编码",
-    "desc": "### 题目描述\n给定中文字符串，求给定字符串的unicode编码格式的编码值\n\n\n### 输入描述\n输入一个中文字符串\n\n\n### 输出描述\n输出字符串的unicode编码格式的编码值\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n你好\n```\n\n```\nb'\\\\u6d63\\\\u72b2\\\\u30bd'\n```\n\n",
+    "desc": "### 题目描述\n\n给定中文字符串，求给定字符串的unicode编码格式的编码值\n\n### 输入描述\n\n输入一个中文字符串\n\n### 输出描述\n\n输出字符串的unicode编码格式的编码值\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n你好\n```\n\n```\nb'\\\\u4f60\\\\u597d'\n```\n\n",
     "templateCode": "",
-    "sourceCode": "s=input()\nprint(s.encode('unicode-escape'))",
+    "sourceCode": "\ns=input()\nprint(s.encode('unicode-escape'))",
     "lang": "Python3",
     "testCases": [
         {
             "input": "你好\n",
-            "output": "b'\\\\u6d63\\\\u72b2\\\\u30bd'\n"
+            "output": "b'\\\\u4f60\\\\u597d'\n"
         },
         {
             "input": "中文\n",
-            "output": "b'\\\\u6d93\\\\udcad\\\\u93c2\\\\udc87'\n"
+            "output": "b'\\\\u4e2d\\\\u6587'\n"
         },
         {
             "input": "汉字\n",
-            "output": "b'\\\\u59f9\\\\u590a\\\\u74e7'\n"
+            "output": "b'\\\\u6c49\\\\u5b57'\n"
         },
         {
             "input": "同学\n",
-            "output": "b'\\\\u935a\\\\u5c7d\\\\udcad\\\\udca6'\n"
+            "output": "b'\\\\u540c\\\\u5b66'\n"
         },
         {
-            "input": "男生\n",
-            "output": "b'\\\\u9422\\\\u98ce\\\\u6553'\n"
-        },
-        {
-            "input": "女生\n",
-            "output": "b'\\\\u6fc2\\\\u5d07\\\\u6553'\n"
+            "input": "123\n",
+            "output": "b'123'\n"
         }
-    ]
+    ],
+    "simple_desc": "求给定字符串的 unicode 编码值",
+    "difficulty": "1",
+    "tag": "字符串|字符编码",
+    "author": "顾宇"
 }

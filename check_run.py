@@ -147,7 +147,10 @@ if '-z' in sys.argv:
         for line in f:
             if line == '---\n':
                 break
-            metadata[metadict[line[:2]]] = line[4:-1]
+            try:
+                metadata[metadict[line[:2]]] = line[4:-1]
+            except:
+                pass
         f.readline()
         metadata['desc'] = f.read()
 

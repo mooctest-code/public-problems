@@ -2,10 +2,9 @@
 题目: repr和str
 简介: 使用 repr 和 str 函数
 难度: 2
-标签: 内置全局函数|类和对象
+标签: 内置全局函数-类和对象
 作者: 谢子聪
-慕码: [1666](http://manage.mooctest.net/case/view/1666)
-链接: http://code.mooctest.net/#/exercise/edit/2949/1666
+慕码: 1666
 ---
 
 ### 题目描述

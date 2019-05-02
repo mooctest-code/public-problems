@@ -5,7 +5,6 @@
 标签: 字符串
 作者: 顾宇
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述
@@ -29,6 +28,6 @@ python
 ```
 
 ```
-p	y	t	h	o	n	
+p	y	t	h	o	n
 ```
 

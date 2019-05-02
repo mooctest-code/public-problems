@@ -26,12 +26,11 @@ with open(path.join('.','probleminfo.csv'), 'r', encoding='utf8') as f:
         cur[info[-1]] = info[:-1]
 
 probleminfo = []
-probleminfo.append(','.join(['题目名', '简单题目描述', '难度', '知识点', '作者', '慕码链接', '题目链接', '题目文件夹']))
+probleminfo.append(','.join(['题目名', '简单题目描述', '难度', '知识点', '作者', '慕码ID', '题目文件夹']))
 for problem in problems:
     # read README.md
     readmepath = path.join(problem, 'README.md')
     meta = []
-    replace = False
     readme = None
     with open(readmepath, 'r', encoding='utf-8') as f:
         f.readline() # read '---\n'
@@ -40,24 +39,17 @@ for problem in problems:
                 break
             meta.append(line[4:-1])
 
-        if len(meta) < 7:
-            meta += ['Unknown'] * (7-len(meta))
-            replace = True
-
         if problem[2:] in cur:
             curmeta = cur[problem[2:]]
             if meta != curmeta:
                 meta = curmeta
-                replace = True
-
-        if replace:
-            readme = f.read()
+                readme = f.read()
 
     probleminfo.append(','.join(meta + [problem[2:]]))
 
-    if replace: # update meta in README.md
+    if readme: # update meta in README.md
         with open(readmepath, 'w', encoding='utf-8') as f:
-            f.write('---\n题目: {}\n简介: {}\n难度: {}\n标签: {}\n作者: {}\n慕码: {}\n链接: {}\n---\n'.format(*meta) + readme)
+            f.write('---\n题目: {}\n简介: {}\n难度: {}\n标签: {}\n作者: {}\n慕码: {}\n---\n'.format(*meta[:6]) + readme)
 
 
 with open(path.join('.','probleminfo.csv'), 'w', encoding='utf8') as f:

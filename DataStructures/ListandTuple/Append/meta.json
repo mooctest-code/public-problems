@@ -1,17 +1,21 @@
 {
-    "title": "append函数的使用",
-    "desc": "### 题目描述\n给定初始列表ls，将输入数据n添加到ls最末尾处，并打印ls\n\n\n### 输入描述\n输入整数n\n\n\n### 输出描述\n\n输出列表ls的数据\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n5\n```\n\n```\n[1, 2, 3, 5]\n```\n\n",
+    "title": "增加数据",
+    "desc": "### 题目描述\n\n给定初始列表ls，将输入数据 n 添加到 ls 最末尾处，并打印 ls\n\n### 输入描述\n\n输入整数n\n\n### 输出描述\n\n输出列表ls的数据，两两间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n5\n```\n\n```\n1 2 3 5\n```\n\n",
     "templateCode": "ls=[1,2,3]",
-    "sourceCode": "ls=[1,2,3]\nn=int(input())\nls.append(n)\nprint(ls)",
+    "sourceCode": "\nls=[1,2,3]\nn=int(input())\nls.append(n)\nprint(*ls)",
     "lang": "Python3",
     "testCases": [
         {
             "input": "5\n",
-            "output": "[1, 2, 3, 5]\n"
+            "output": "1 2 3 5\n"
         },
         {
             "input": "9\n",
-            "output": "[1, 2, 3, 9]\n"
+            "output": "1 2 3 9\n"
         }
-    ]
+    ],
+    "simple_desc": "append() 的使用",
+    "difficulty": "1",
+    "tag": "列表",
+    "author": "顾宇"
 }

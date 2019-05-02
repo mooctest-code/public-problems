@@ -5,7 +5,6 @@
 标签: random|随机数|collections-Counter
 作者: MOOCTEST
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述

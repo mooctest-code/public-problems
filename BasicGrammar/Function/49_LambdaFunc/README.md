@@ -5,7 +5,6 @@
 标签: lambda|匿名函数
 作者: RUNOOB
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述

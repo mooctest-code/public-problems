@@ -14,8 +14,8 @@
             "output": "5 4 3 2 1\n5 4 3 2 1\n5 4 3 2 1\n"
         }
     ],
-    "simple_desc": "0",
-    "difficulty": "简单题目描述",
-    "tag": "知识点",
-    "author": "匿名"
+    "simple_desc": "使用三种方式倒序输出一个列表",
+    "difficulty": "2",
+    "tag": "内置全局函数",
+    "author": "谢子聪"
 }

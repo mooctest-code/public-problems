@@ -5,7 +5,6 @@
 标签: 内置类属性-__print__
 作者: MOOCTEST
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述

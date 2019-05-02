@@ -1,7 +1,13 @@
 '''TESTCASE
-None
+1 2 3
+-
+-3 4 5 3 1 2 3 5
+-
+4 3 2
+-
+1 2 3 4 5
 '''
 
-ls=[1,5,9,3,7,6,2,4,8]
+ls = list(map(int, input().split()))
 ls.sort(reverse=True)
-print(ls)
+print(*ls)

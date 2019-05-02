@@ -1,8 +1,8 @@
 {
-    "title": "remove函数的使用",
-    "desc": "### 题目描述\n给定初始列表ls，若输入的数据n在列表中，则删除并打印列表；若数据n不再列表中，打印\"Error! The number n is not in ls!\"\n\n\n### 输入描述\n输入一个整数n\n\n\n### 输出描述\n输出列表ls内容，或报错信息\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2\n```\n\n```\n[1, 3, 4, 5, 6, 7, 8, 9]\n```\n\n#### 样例2: 输入-输出\n\n```\n12\n```\n\n```\nError! The number 12 is not in ls!\n```\n\n",
+    "title": "删除元素",
+    "desc": "### 题目描述\n\n给定初始列表ls，若输入的数据n在列表中，则删除并打印列表；若数据n不再列表中，打印\"Error! The number n is not in ls!\"\n\n### 输入描述\n\n输入一个整数n\n\n### 输出描述\n\n输出列表ls内容，或报错信息\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2\n```\n\n```\n[1, 3, 4, 5, 6, 7, 8, 9]\n```\n\n",
     "templateCode": "ls=[1,2,3,4,5,6,7,8,9]\n",
-    "sourceCode": "ls=[1,2,3,4,5,6,7,8,9]\nn=int(input())\nif n in ls:\n\tls.remove(n)\n\tprint(ls)\nelse:\n\tprint('Error! The number %d is not in ls!'%n)",
+    "sourceCode": "\nls=[1,2,3,4,5,6,7,8,9]\nn=int(input())\nif n in ls:\n\tls.remove(n)\n\tprint(ls)\nelse:\n\tprint('Error! The number %d is not in ls!'%n)",
     "lang": "Python3",
     "testCases": [
         {
@@ -13,5 +13,9 @@
             "input": "12\n",
             "output": "Error! The number 12 is not in ls!\n"
         }
-    ]
+    ],
+    "simple_desc": "从列表中删除元素",
+    "difficulty": "2",
+    "tag": "列表",
+    "author": "顾宇"
 }

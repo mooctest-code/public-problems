@@ -5,7 +5,6 @@
 标签: 类和对象
 作者: MOOCTEST
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 描述

@@ -5,7 +5,6 @@
 标签: 数值运算
 作者: Python快速入门-刘锦涛
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 描述

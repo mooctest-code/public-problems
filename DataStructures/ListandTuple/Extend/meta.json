@@ -1,8 +1,8 @@
 {
-    "title": "extend函数的使用",
-    "desc": "### 题目描述\n给定初始列表ls，将输入的列表n添加到ls最末尾，并将最终的列表打印输出\n\n\n### 输入描述\n\n输入列表n\n\n### 输出描述\n打印最终列表ls的内容\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n9,8,7,6\n```\n\n```\n[1, 2, 3, 9, 8, 7, 6]\n```\n\n",
+    "title": "列表相加",
+    "desc": "### 题目描述\n\n给定初始列表ls，将输入的列表n添加到ls最末尾，并将最终的列表打印输出\n\n### 输入描述\n\n输入列表n\n\n### 输出描述\n\n打印最终列表ls的内容\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n9,8,7,6\n```\n\n```\n[1, 2, 3, 9, 8, 7, 6]\n```\n\n",
     "templateCode": "ls=[1,2,3]",
-    "sourceCode": "ls=[1,2,3]\nn=list(map(int,input().split(',')))\nls.extend(n)\nprint(ls)",
+    "sourceCode": "\nls=[1,2,3]\nn=list(map(int,input().split(',')))\nls.extend(n)\nprint(ls)",
     "lang": "Python3",
     "testCases": [
         {
@@ -13,5 +13,9 @@
             "input": "1,2,3,4,5\n",
             "output": "[1, 2, 3, 1, 2, 3, 4, 5]\n"
         }
-    ]
+    ],
+    "simple_desc": "使用 extend() 连接两个列表",
+    "difficulty": "1",
+    "tag": "列表",
+    "author": "顾宇"
 }

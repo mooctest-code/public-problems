@@ -5,7 +5,6 @@
 标签: statistics|统计基础|数值运算
 作者: 顾宇
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述

@@ -1,8 +1,8 @@
 {
     "title": "汉字判断",
-    "desc": "### 题目描述\n输入一个字符串，判断输入字符串是否是汉字\n\n\n### 输入描述\n输入一个字符串\n\n\n### 输出描述\n是汉字返回True，不是汉字返回False\n\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n中\n```\n\n```\nTrue\n```\n\n#### 样例2: 输入-输出\n\n```\na\n```\n\n```\nFalse\n```\n\n\n",
+    "desc": "### 题目描述\n\n输入一个字符串，判断输入字符串是否是汉字\n\n### 输入描述\n\n输入一个字符串\n\n### 输出描述\n\n是汉字返回True，不是汉字返回False\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n中\n```\n\n```\nTrue\n```\n\n",
     "templateCode": "",
-    "sourceCode": "def is_chinese(uchar):\n    if uchar >= u'\\u4e00' and uchar<=u'\\u9fa5':\n        return True\n    else:\n        return False\ns=input()\nprint(is_chinese(s))",
+    "sourceCode": "\ndef is_chinese(uchar):\n    if uchar >= u'\\u4e00' and uchar<=u'\\u9fa5':\n        return True\n    else:\n        return False\ns=input()\nprint(is_chinese(s))",
     "lang": "Python3",
     "testCases": [
         {
@@ -16,6 +16,14 @@
         {
             "input": "你\n",
             "output": "True\n"
+        },
+        {
+            "input": "2\n",
+            "output": "False\n"
         }
-    ]
+    ],
+    "simple_desc": "判断字符是否为汉字",
+    "difficulty": "1",
+    "tag": "字符串|字符编码",
+    "author": "顾宇"
 }

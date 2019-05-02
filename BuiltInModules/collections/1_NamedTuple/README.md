@@ -5,7 +5,6 @@
 标签: collections-namedtuple|命名元组
 作者: 谢子聪
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述

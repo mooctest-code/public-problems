@@ -5,7 +5,6 @@
 标签: 数值运算|math
 作者: MOOCTEST
 慕码: Unknown
-链接: Unknown
 ---
 
 ### 题目描述
