@@ -2,8 +2,10 @@
 题目: 多项式乘法
 简介: 多项式相乘
 难度: 3
-标签: 列表-遍历|NumPy
+标签: 列表|NumPy
 作者: MOOCTEST
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

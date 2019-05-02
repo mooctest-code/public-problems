@@ -2,8 +2,10 @@
 题目: 我也想拥有姓名
 简介: 命名元组的使用
 难度: 2
-标签: collections-namedtuple
+标签: collections-namedtuple|命名元组
 作者: 谢子聪
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

@@ -2,8 +2,10 @@
 题目: 滑动窗口求区间最大值
 简介: 使用双向队列求滑动窗口区间最大值
 难度: 2
-标签: collections-deque
+标签: collections-deque|双向队列
 作者: 谢子聪
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

@@ -1,0 +1,21 @@
+{
+    "title": "交换key-value",
+    "desc": "### 题目描述\n\n请将字典中的键和值交换并返回新的字典。\n\n### 输入描述\n\n输入为一个字典\n\n### 输出描述\n\n输出为一个键和值交换过的字典，字典按照键升序排列输出\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1004}\n```\n\n```\n{1001: 'Wangbing', 1003: 'Maling', 1004: 'Xulei'}\n```\n",
+    "templateCode": "",
+    "sourceCode": "import operator\n\na = eval(input())\n\nm = {}\nfor key in a:\n    m[a[key]] = key\n\nprint(dict(sorted(m.items(), key=operator.itemgetter(0))))",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "{'Wangbing': 1001, 'Maling': 1003, 'Xulei': 1005}\n",
+            "output": "{1001: 'Wangbing', 1003: 'Maling', 1005: 'Xulei'}\n"
+        },
+        {
+            "input": "{'Wangbing': 1001, 'Xulei': 1005, 'Maling': 1003}\n",
+            "output": "{1001: 'Wangbing', 1003: 'Maling', 1005: 'Xulei'}\n"
+        }
+    ],
+    "simple_desc": "将key作为value、将value作为key创建新字典",
+    "difficulty": "3",
+    "tag": "字典|序列操作-sorted()",
+    "author": "MOOCTEST"
+}

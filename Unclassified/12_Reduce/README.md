@@ -4,6 +4,8 @@
 难度: 2
 标签: functools-reduce|函数-lambda
 作者: MOOCTEST
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

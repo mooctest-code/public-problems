@@ -1,0 +1,25 @@
+{
+    "title": "求集合的交集",
+    "desc": "### 题目描述\n\n给你两个集合，请求它们的交集\n\n### 输入描述\n\n输入为两行，分别为两个集合 set1 和 set2\n\n### 输出描述\n\n输出为 set1 和 set2 的交集，如果是空集请输出 None\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{1, 2}\n{2, 3}\n```\n\n```\n{2}\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "set1 = eval(input())\nset2 = eval(input())\n\ninter = set1.intersection(set2)\n\nprint(inter or None)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "{1}\n{1}\n",
+            "output": "{1}\n"
+        },
+        {
+            "input": "{1, 2, 3}\n{2, 3, 4}\n",
+            "output": "{2, 3}\n"
+        },
+        {
+            "input": "{1}\n{0}\n",
+            "output": "None\n"
+        }
+    ],
+    "simple_desc": "求两个集合的交集",
+    "difficulty": "1",
+    "tag": "集合-内置函数-交差并",
+    "author": "MOOCTEST"
+}

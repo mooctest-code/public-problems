@@ -2,8 +2,10 @@
 题目: Weekday
 简介: 判断是周几
 难度: 1
-标签: datetime
+标签: datetime|日期时间
 作者: 谢子聪
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

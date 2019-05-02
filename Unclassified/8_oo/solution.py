@@ -2,6 +2,11 @@
 2
 'Tom',63;'Allen',85;'Toney',83
 'Eve',74;'Adan',97;'Julia',80
+-
+3
+'Tom',63;'Allen',85
+'Adan',97;'Julia',80
+'Eve',74;'Toney',55
 '''
 class Register:
     def __init__(self, name):
@@ -39,7 +44,7 @@ for i in range(cnt):
     reg = Register(i)
     for j in l:
         pair = j.split(',')
-        reg.add_score((eval(pair[0]), int(pair[1])))
+        reg.add_score((str(pair[0]), int(pair[1])))
     xiaonan.add_register(reg)
 
 print(xiaonan.gte80())

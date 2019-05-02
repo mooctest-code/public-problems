@@ -4,6 +4,8 @@
 难度: 1
 标签: itertools-permutations
 作者: RUNOOB
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

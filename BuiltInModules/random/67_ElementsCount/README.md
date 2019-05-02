@@ -2,8 +2,10 @@
 题目: 统计元素出现次数
 简介: 使用 random 生成随机数列并统计每个数的出现次数
 难度: 2
-标签: random-seed()|random-randint()|collections-Counter
+标签: random|随机数|collections-Counter
 作者: MOOCTEST
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述

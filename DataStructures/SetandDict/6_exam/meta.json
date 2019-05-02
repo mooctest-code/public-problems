@@ -1,0 +1,17 @@
+{
+    "title": "考试成绩单",
+    "desc": "### 题目描述\n\n小南手上有一份纸质成绩单，现在要把成绩录入到电脑里，并且进行一些基本的统计，请你帮帮小南。\n\n### 输入描述\n\n一个 list，list 中每个元素是一个元组。元组的第一个元素是学生姓名，第二个元素是学生的成绩。\n\n### 输出描述\n\n第一行，输出一个字典，字典中的key为学生姓名，value为学生的评估成绩；\n第二行，输出成绩大于等于80分的学生列表。\n\n评估成绩：针对成绩x有评估成绩：A(90<=x)、B(80<= x <90)、C(70<= x <80)、D(60<= x < 70)、E(x < 60)；\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n[('Tom', 63), ('Allen', 85), ('Adan', 97), ('Julia', 80), ('Eve', 74), ('Toney', 55)]\n```\n\n```\n{'Tom': 'D', 'Allen': 'B', 'Adan': 'A', 'Julia': 'B', 'Eve': 'C', 'Toney': 'E'}\n['Allen', 'Adan', 'Julia']\n```\n",
+    "templateCode": "",
+    "sourceCode": "l = eval(input())\n\nm = {}\ns = []\n\ng = ['A', 'B', 'C', 'D', 'E']\n\nfor i in l:\n    m[i[0]] = g[(99-i[1])//10] if i[1] >= 60 else 'E'\n    if i[1] >= 80:\n        s.append(i[0])\nprint(m)\nprint(s)",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "[('Tom', 63), ('Allen', 85), ('Adan', 74), ('Julia', 80), ('Jerry', 74), ('Toney', 55)]\n",
+            "output": "{'Tom': 'D', 'Allen': 'B', 'Adan': 'C', 'Julia': 'B', 'Jerry': 'C', 'Toney': 'E'}\n['Allen', 'Julia']\n"
+        }
+    ],
+    "simple_desc": "将运动成绩信息组成字典",
+    "difficulty": "3",
+    "tag": "字典",
+    "author": "Python快速入门-刘锦涛"
+}

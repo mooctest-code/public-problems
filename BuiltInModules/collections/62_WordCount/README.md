@@ -2,8 +2,10 @@
 题目: 统计字符出现次数
 简介: 统计每个字符的出现次数并降序输出
 难度: 3
-标签: 字符串-内置函数-count()|collections-Counter|functools
+标签: collections-Counter|functools
 作者: MOOCTEST
+慕码: Unknown
+链接: Unknown
 ---
 
 ### 题目描述
