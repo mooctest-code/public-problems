@@ -1,8 +1,8 @@
 {
-    "title": "---",
-    "desc": "简介: 0\n难度: 简单题目描述\n标签: 知识点\n作者: 匿名\n---\n\n### 题目描述\n\n\n\n### 输入描述\n\n\n\n### 输出描述\n\n\n\n### 测试样例\n\n#### 样例1: 输出\n\n```\nNoInput\n```\n\n",
+    "title": "题目名",
+    "desc": "### 题目描述\n\n\n\n### 输入描述\n\n\n\n### 输出描述\n\n\n\n### 测试样例\n",
     "templateCode": "",
-    "sourceCode": "print(input())",
+    "sourceCode": "'''TESTCASE\nprint(input())",
     "lang": "Python3",
     "testCases": [
         {
@@ -14,8 +14,8 @@
             "output": "NoInput\n"
         }
     ],
-    "simple_desc": "0",
-    "difficulty": "简单题目描述",
+    "simple_desc": "简单题目描述",
+    "difficulty": "0",
     "tag": "知识点",
-    "author": "匿名"
+    "author": "Unknown"
 }

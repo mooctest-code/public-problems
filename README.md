@@ -2,9 +2,49 @@
 
 ## 当前情况
 
-您可以通过 [题目信息表格](res/probleminfo.csv) 和 [Python 学习路线图](http://www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
+您可以通过 [题目信息表格](/res/probleminfo.csv) 和 [Python 学习路线图](http://www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
 
-您可以在 [code.mooctest.net](http://code.mooctest.net) 上找到题目。
+我们的题目大部分将发布到 [code.mooctest.net](http://code.mooctest.net) 上。
+
+### 题库说明
+
+```
+check_run.py 测试题目和打包脚本
+gen_info.py 用于生成题目信息表格以及从表格更新信息到题目
+probleminfo.csv 题目信息表格
+
+template/ 出题模版
+res/ 一些资源文件
+
+BasicGrammar/ 基础语法题，包括输入输出、变量和运算符、流程控制和面向对象
+DataStructures/ 数据结构题，包括Python内置的数据结构和常用的数据结构
+BuiltInFunctions/ Python 内置全局函数题，包括面向数值和字符串的、可迭代对象的以及类和对象的
+BuiltInModules/ Python 内置模块题，包括一些常用的内置模块，如 math、datetime、collections 等
+Algorithms/ 算法题，使用 Python 实现的一些算法
+Unclassified/ 还未分类的题目
+```
+
+### 题目信息表格
+
+题目信息表格包含如下信息：
+
+`题目名`  `简单题目描述`  `难度 ` `知识点`  `作者`  `慕码ID`  `题目文件夹`
+
+其中：
+
+- `难度` 为 1~5 的整数。1、2 为简单，3、4 为中等，5 为困难
+
+- `知识点` 为完成这道题主要使用到的知识，可能有多个，使用 `|` 隔开。每个知识点可能有两级，比如`字符串-格式化`
+
+- `慕码ID` 为题目的 ID。
+
+  1. 如果为一个数字，如 `1234` ，则表示是 [慕码教务管理平台](http://manage.mooctest.net/) 上的一个`测试案例ID`，您可以通过 `manage.mooctest.net/case/view/` + `测试案例ID` 来访问这个测试案例。
+
+  2. 如果形式如 `1234/5678`，则表示 `试卷/测试案例ID` ，则表示是 [慕码编程平台]() 上的一道题，您可以通过 `code.mooctest.net/#/exercise/edit/` + `试卷/测试案例ID`。
+
+  3. 上面 `试卷/测试案例ID` 中的 `测试案例ID` 也可以通过 1 中的方式访问。
+
+- `题目文件夹` 为该题在本题库中的存储位置。
 
 ## 参与进来
 
@@ -17,8 +57,6 @@
 ### 2. 改进 Python 学习路线图
 
 该路线图目前为个人整理，肯定有遗漏、不合理和错误的分支，欢迎提出来。
-
-源文件为 [python_learning_tree.km](res/python_learning_tree.km)。
 
 ### 3. 改进题目信息表格
 

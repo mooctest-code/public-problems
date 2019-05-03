@@ -1,3 +1,4 @@
+
 '''TESTCASE
 NoInput
 -

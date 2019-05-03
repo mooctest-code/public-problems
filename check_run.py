@@ -37,8 +37,19 @@ metadata = {
     }]
 }
 
+silent = '-s' in sys.argv
+fromInFile = '-i' in sys.argv
+zipProblem = '-z' in sys.argv
+replaceTestcase = '-r' in sys.argv
+
+if replaceTestcase:
+    ntestcases = 1
+    p_r = sys.argv.index('-r')
+    if p_r < len(sys.argv)-1 and '-' not in sys.argv[p_r+1]:
+        ntestcases = int(sys.argv[p_r+1])
+
 def myprint(str):
-    if '-s' not in sys.argv:
+    if not silent:
         print(str)
 
 '''
@@ -47,21 +58,36 @@ Load solution.py and testcases
 testcases = []
 myprint('Load solution.py and testcases')
 with open(path.join(problem, 'solution.py'), 'r', encoding='utf-8') as f:
-    while f.readable() and f.readline() != '\'\'\'TESTCASE\n':
+    while f.readable() and len(f.readline()) < 1:
         continue
+    firstline = f.readline() # '''TESTCASE
+    if fromInFile or firstline != '\'\'\'TESTCASE\n':
+        fromInFile = True
+    else:
+        testcase = []
+        while f.readable():
+            line = f.readline()
+            if line in ('-\n', '\'\'\'\n'):
+                testcases.append(''.join(testcase))
+                testcase = []
+                if line[0] == '\'':
+                    break
+            else: testcase.append(line)
 
-    testcase = []
-    while f.readable():
-        line = f.readline()
-        if line in ('-\n', '\'\'\'\n'):
-            testcases.append({"input": ''.join(testcase)})
-            testcase = []
-            if line[0] == '\'':
-                break
-        else: testcase.append(line)
+    if zipProblem:
+        metadata['sourceCode'] = firstline + f.read()
 
-    if '-z' in sys.argv:
-        metadata['sourceCode'] = f.read()
+
+if fromInFile:
+    myprint('Load testcases from input file')
+    with open(path.join(problem, 'input'), 'r', encoding='utf-8') as f:
+        testcases = f.read().split('-\n')
+        if testcases[-1] == '':
+            testcases = testcases[:-1]
+        elif testcases[-1][-1] == '-':
+            testcases[-1] = testcases[-1][:-1]
+
+testcases = list(map(lambda x: {"input": x}, testcases))
 
 # if len(testcase) < 2:
 #     myprint("Please provide at least two testcases!")
@@ -90,12 +116,7 @@ for i in range(len(testcases)):
 '''
 Write testcase into README.md
 '''
-if '-r' in sys.argv:
-    ntestcases = 1
-    p_r = sys.argv.index('-r')
-    if p_r < len(sys.argv)-1 and '-' not in sys.argv[p_r+1]:
-        ntestcases = int(sys.argv[p_r+1])
-    
+if replaceTestcase:    
     repl = "### 测试样例\n\n"
     hasInp = 'NoInput' != testcases[0]['input'][:7]
     for i in range(ntestcases):
@@ -139,7 +160,7 @@ metadict = {
     '作者': 'author'
 }
 
-if '-z' in sys.argv:
+if zipProblem:
     # read README.md to get title and description
     with open(os.path.join(problem, 'README.md'), 'r', encoding='utf-8') as f:
         cnt = 0
