@@ -1,10 +1,10 @@
 ---
-题目: Hello World
+题目: HelloWorld
 简介: 输出 Hello World
 难度: 1
 标签: 输入输出
-作者: null
-慕码: Unknown
+作者: 匿名
+慕码: 1515
 ---
 
 ### 题目描述

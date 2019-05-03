@@ -1,10 +1,10 @@
 ---
-题目: 交换key-value
+题目: 交换键和值
 简介: 将key作为value、将value作为key创建新字典
 难度: 3
 标签: 字典
 作者: MOOCTEST
-慕码: Unknown
+慕码: 1584
 ---
 
 ### 题目描述

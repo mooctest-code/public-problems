@@ -6,7 +6,8 @@
 求集合的子集,判断一个集合是否为另一个集合的子集,1,集合,MOOCTEST,1580,DataStructures/SetandDict/13_GetSubset
 年龄最大者,从用户字典中找出年龄最大者,2,字典,RUNOOB,1585,DataStructures/SetandDict/78_OldestPerson
 求集合的差集,求两个集合的差集,1,集合,MOOCTEST,1583,DataStructures/SetandDict/16_GetSubtract
-打印菱形,打印出一个菱形,2,字符串-格式化|循环,RUNOOB,1549,DataStructures/String/23_PrintDiamond
+丑数,丑数是指只包含因子2、3和5的数，求第n个丑数,4,队列-优先队列,MOOCTEST,1686,DataStructures/Queue/29_UglyNum
+打印菱形,打印出一个菱形,2,字符串-格式化|流程控制-循环,RUNOOB,1549,DataStructures/String/23_PrintDiamond
 整数分组,将一个9位整数以3位为一组分隔开,1,字符串,MOOCTEST,1555,DataStructures/String/74_IntegerDecomposition
 汉字判断,判断字符是否为汉字,1,字符串|字符编码,顾宇,审核中,DataStructures/String/101_IsChinese
 咖啡名称提取,从字符串中提取英文字符,2,字符串,MOOCTEST,1553,DataStructures/String/70_GetCoffeeName
@@ -22,8 +23,9 @@
 打印每位数,打印一个整数的每一位,2,字符串,RUNOOB,1550,DataStructures/String/29_PrintEachNum
 大小写转换,转换一个字符串中每个字符的大小写,1,字符串,MOOCTEST,1548,DataStructures/String/10_Capslock
 日期格式转换,给你年月日，按照一定格式输出,2,字符串-格式化,MOOCTEST,1559,DataStructures/String/87_DateFormatConversion
+文本计算,一些简单的文本操作,2,字符串,刘锦涛,1693,DataStructures/String/2_str
 星期几,输入星期的英文表示的前几个字母，判断出是星期几,2,字符串|条件判断,RUNOOB,1551,DataStructures/String/31_WhatDayIsIt
-杨辉三角,输出前n行的杨辉三角,3,循环|生成器,RUNOOB,1564,DataStructures/String/61_YangHuiTriangle
+杨辉三角,输出前n行的杨辉三角,3,流程控制-循环|生成器,RUNOOB,1564,DataStructures/String/61_YangHuiTriangle
 批量修改字符串,按照一定格式格式化字符串,2,字符串|列表,MOOCTEST,1575,DataStructures/ListandTuple/93_ModifyString
 列表相加,使用 extend() 连接两个列表,1,列表,顾宇,审核中,DataStructures/ListandTuple/Extend
 试一试列表生成器,给定一个范围，输出每个数的平方,1,列表生成器,MOOCTEST,1567,DataStructures/ListandTuple/18_ListGenerator
@@ -36,6 +38,7 @@
 多项式乘法,多项式相乘,3,列表|NumPy,MOOCTEST,1565,DataStructures/ListandTuple/3_PolynomialMultiplication
 列表元素处理,对列表进行一些处理,2,列表,MOOCTEST,1574,DataStructures/ListandTuple/79_ListElementProcessing
 增加数据,append() 的使用,1,列表,顾宇,审核中,DataStructures/ListandTuple/Append
+输出星期几,输出一周中某一天的英文表示,1,列表|日期时间,匿名,1696,DataStructures/ListandTuple/81_OutputWeekday
 整理运动会成绩单2,整理运动会成绩并格式化输出,1,字符串-格式化,刘锦涛,1577,DataStructures/ListandTuple/5-1_sport
 列表复制,深拷贝列表,1,列表,RUNOOB,1566,DataStructures/ListandTuple/7_ListCopy
 矩阵相加,两个矩阵对应位置元素相加,2,列表|矩阵,RUNOOB,1570,DataStructures/ListandTuple/44_MatrixAddition
@@ -50,6 +53,7 @@ any,使用any()判断学生是否参加所有考试,1,内置全局函数-可迭�
 zip,使用 zip 得到货仓和货品的对应元组,1,内置全局函数-可迭代对象,黎宇,1650,BuiltInFunctions/Iterable/zip
 最大值和最小值,得到给定序列的最大值和最小值,1,内置全局函数-可迭代对象|统计基础,谢子聪,1646,BuiltInFunctions/Iterable/maxmin
 sum,使用 sum() 得到序列和,1,内置全局函数-可迭代对象|统计基础,谢子聪,1649,BuiltInFunctions/Iterable/sum
+试一试map函数,使用 map() 函数对列表进行操作,1,内置全局函数-可迭代对象|高阶函数,MOOCTEST,1698,BuiltInFunctions/Iterable/11_TryMapFunc
 sorted,使用sorted对数据按照指定的要求排序,2,内置全局函数-可迭代对象|排序,黎宇,1648,BuiltInFunctions/Iterable/sorted
 filter,使用 filter() 过滤出平方根是整数的数,2,内置全局函数-可迭代对象|高阶函数,黎宇,1644,BuiltInFunctions/Iterable/filter
 range,使用 range() 生成整数序列,1,内置全局函数-可迭代对象|生成器,谢子聪,1647,BuiltInFunctions/Iterable/range
@@ -60,131 +64,122 @@ super,使用 super 计算加法,3,内置全局函数-类和对象|类和对象-�
 repr和str,使用 repr 和 str 函数,2,内置全局函数-类和对象,谢子聪,1666,BuiltInFunctions/Object/Repr_2
 isintance,使用 isinstance 判断读取的变量类型,1,内置全局函数-类和对象,张舒,1664,BuiltInFunctions/Object/Isinstance
 callable,使用 callable 判断对象是否可被调用,1,内置全局函数-类和对象,谢子聪,1663,BuiltInFunctions/Object/callable
-chr,使用 chr() 将数字表示为字符,1,内置全局函数|字符编码,谢子聪,Unknown,BuiltInFunctions/NumAndStr/chr
-ascii,使用 ascii 将字符串中的特殊字符转义,1,内置全局函数|字符编码,谢子聪,Unknown,BuiltInFunctions/NumAndStr/ascii
-进制转换1,使用 bin()、oct() 和 hex() 转换十进制数字,1,内置全局函数|进制转换,谢子聪,Unknown,BuiltInFunctions/NumAndStr/binocthex
-开根号,使用 pow 或者 ** 开根号,1,内置全局函数|数值运算,谢子聪,Unknown,BuiltInFunctions/NumAndStr/pow
-进制转换2,将其他进制的数转为十进制,1,内置全局函数|进制转换,谢子聪,Unknown,BuiltInFunctions/NumAndStr/toint
-abs,使用 abs() 得到数字的绝对值,1,内置全局函数|数值运算,谢子聪,Unknown,BuiltInFunctions/NumAndStr/abs
-divmod,使用 divmod() 得到商和余数,1,内置全局函数|数值运算,谢子聪,Unknown,BuiltInFunctions/NumAndStr/divmod
-exec,利用 exec() 执行储存在字符串或文件中的 Python 语句,1,内置全局函数|编译执行,张舒,Unknown,BuiltInFunctions/NumAndStr/Exec
-eval,使用 eval() 计算表达式,1,内置全局函数|编译执行,张舒,Unknown,BuiltInFunctions/NumAndStr/Eval
-ord,使用 ord() 将字符转换为 ASCII 数值,1,内置全局函数|字符编码,谢子聪,Unknown,BuiltInFunctions/NumAndStr/ord
-分数序列求和,计算一个分数数列的前n项和,2,数值运算,MOOCTEST,Unknown,Unclassified/106_FractionalSummation
-特殊的倍数,求一个数的仅有0和1构成的倍数,3,类型转换,MOOCTEST,Unknown,Unclassified/38_SpecMultiple
-欧拉数,输出与n互质的小于n的正整数个数,3,数值运算|循环,MOOCTEST,Unknown,Unclassified/28_Euler
-逻辑运算,一些简单的其它运算,2,数值运算,Python快速入门-刘锦涛,Unknown,Unclassified/3_logic
-数值运算,一些简单的数值运算,1,数值运算,Python快速入门-刘锦涛,Unknown,Unclassified/1_num
-累加,计算1~n的累加和,1,数值运算,MOOCTEST,Unknown,Unclassified/89_Accumulate
-选猴王,一群猴子做成一圈按照一定方法选择猴王,2,数学问题,MOOCTEST,Unknown,Unclassified/46_SelectMonkeyKing
-完全平方数,一个整数加上某个数后是完全平方数，再加上一个数后还是安全平方数，求这个数,3,数学,RUNOOB,Unknown,Unclassified/3_PerfectSquareNum
-试一试reduce()函数,使用 reduce() 函数计算一个列表的“和”,2,functools-reduce|函数-lambda,MOOCTEST,Unknown,Unclassified/12_Reduce
-计算方程的根,给定二元一次方程的三个参数，求根,2,数学问题,MOOCTEST,Unknown,Unclassified/85_TheRootOfEquation
-考试成绩单,将运动成绩信息组成字典,3,字典,Python快速入门-刘锦涛,Unknown,Unclassified/6_exam
-试一试自定义类,设计一个学生类并实现打印方法,2,内置类属性-__print__,MOOCTEST,Unknown,Unclassified/17_CustomizedClass
-自由落体,模拟小球的自由落体,2,数学,MOOCTEST,Unknown,Unclassified/65_FreeFalling
-比赛名单,已知一些比赛信息，找出比赛的名单,3,数学-其它,RUNOOB,Unknown,Unclassified/22_CompetitionList
-百钱买百鸡,给你一百元买一百只鸡，有多少种买法？,2,数学,MOOCTEST,Unknown,Unclassified/21_Dollars2Chickens
-奇数的个数,求使用 0~n 所能组成的奇数的个数,3,数学,MOOCTEST,Unknown,Unclassified/23_OddNum
-正整数求和,求用不超过 N 的整数求和得到 N 的方法数,3,动态规划|函数递归,MOOCTEST,Unknown,Unclassified/32_SumPosInt
-丑数,丑数是指只包含因子2、3和5的数，求第n个丑数,4,队列-优先队列,MOOCTEST,Unknown,Unclassified/29_UglyNum
-排队,n个人排队，给出所有可能队形的数量,3,数学-数学问题,MOOCTEST,Unknown,Unclassified/97_Queue
-实训八：面向对象,实现 Register 和 Teacher 类,2,类和对象,MOOCTEST,Unknown,Unclassified/8_oo
-球迷购票问题,有几种排队方式可使售票处不致出现找不出钱,3,动态规划,匿名,Unknown,Unclassified/47_FansTicket
-逆解最大公约数与最小公倍数,给你一个最大公约数和最小公倍数，要你求一组数,3,数学,MOOCTEST,Unknown,Unclassified/26_InverseGCD&LCM
-运动会报名册,一些简单的列表操作,1,列表,Python快速入门-刘锦涛,Unknown,Unclassified/4_register
-求阶乘和,求前 n 个树每个数的阶乘和,2,循环,匿名,Unknown,Unclassified/99_SeekFactorSum
-无重复三位数,从四个数字选三个进行全排列,1,itertools-permutations,RUNOOB,Unknown,Unclassified/1_NoDupThree
-斐波那契数列,求第k个斐波那契数,1,数学问题-常见数列,RUNOOB,Unknown,Unclassified/6_Fibonacci
-文本计算,一些简单的文本操作,2,字符串,Python快速入门-刘锦涛,Unknown,Unclassified/2_str
-求中位数,求一个列表的中位数,1,数学问题,MOOCTEST,Unknown,Unclassified/48_Median
-青蛙跳台阶,一只青蛙跳上n级台阶有多少种方法？,2,动态规划-线性动规,MOOCTEST,Unknown,Unclassified/25_FrogSteps
-输出星期几,输出一周中某一天的英文表示,1,列表,匿名,Unknown,Unclassified/81_OutputWeekday
-默尼森数,满足 M=2^p-1 的素数 M,3,数学问题-常见数列,MOOCTEST,Unknown,Unclassified/68_MonisenNum
-试一试map()函数,使用 map() 函数对列表进行操作,2,内置全局函数-可迭代对象,MOOCTEST,Unknown,Unclassified/11_TryMapFunc
-统计有特征整数的和,被3除余1并且被5除余3的所有整数的和,1,数学|循环,匿名,Unknown,Unclassified/94_SumCharacteristicIntegers
-变态超级楼梯,你可以任意走上n级台阶，求走上n级台阶的不同走法,2,数学-其它,MOOCTEST,Unknown,Unclassified/44_SuperStairs
-角谷猜想,输出角谷猜想的演算过程,2,字符串-格式化|循环,MOOCTEST,Unknown,Unclassified/96_KakuguConjecture
-桃子问题,有一些猴子分桃子，求原来最少有多少个桃子,2,数学问题,MOOCTEST,Unknown,Unclassified/24_Peach
-回文数,判断数字是否为回文数,1,内置全局函数-数值和字符串|类型转换,MOOCTEST,Unknown,Unclassified/1_Plalindrome
-判断素数,判断一个数是否为素数,2,数学问题,匿名,Unknown,Unclassified/2_Prime
-求π的值,根据莱布尼茨级数公式求π的近似值,2,数学问题,MOOCTEST,Unknown,Unclassified/100_FindPI
-特殊的9位数,给定位数n，求满足一定条件的n位数,3,深度优先|DFS|递归,MOOCTEST,Unknown,Unclassified/43_Spec9-digitNumber
-累乘,计算 n!,1,数值运算,MOOCTEST,Unknown,Unclassified/90_Multiplication
-数字组成,给你一个整数数列，求能够组成不同两位数的个数,3,组合数学,MOOCTEST,Unknown,Unclassified/59_NumComposition
-组合数的奇偶性,求组合数的奇偶性,2,组合数学,MOOCTEST,Unknown,Unclassified/34_ParityCombination
-阶乘除法,将整数 k 分解为k=n!/m! 的形式,3,循环|数学,匿名,Unknown,Unclassified/39_FactorialDivision
-分拆素数和,将一个偶数分拆成两个素数的不同方法,3,数学问题-常见数列,MOOCTEST,Unknown,Unclassified/37_SplitPrimes
-全排列序列,求出n个数的全排列中的第k个排列,2,itertools-permutations,MOOCTEST,Unknown,Unclassified/40_FullyArrangedSeries
-兔子繁殖,n个月后有多少只兔子？,2,数学问题-常见数列,RUNOOB,Unknown,Unclassified/11_RabbitReprod
-素数判断,判断一个数是否是素数,2,数学,RUNOOB,Unknown,Unclassified/12_JudgePrime
-Hello World,输出 Hello World,1,输入输出,null,Unknown,BasicGrammar/IO/0_HelloWorld
-读取和输出多行数据,多行数据的读取和输出,2,输入输出|循环|异常处理,谢子聪,Unknown,BasicGrammar/IO/4_MultiLine
-读取和输出一个数据,类型转换的读取和输出,1,输入输出|内置全局函数-数值和字符串,谢子聪,Unknown,BasicGrammar/IO/1_BasicType
-读取和输出多行多列数据,矩阵和不定长数组的读取和输出,3,输入输出|循环|内置全局函数-可迭代对象|异常处理|内置全局函数-可迭代对象,谢子聪,Unknown,BasicGrammar/IO/5_Matrix
-读取和输出几个数据,一行中多个数据的读取和输出,1,输入输出|类型转换-类型转换|字符串-格式化-%和format()|字符串-内置函数-split(),谢子聪,Unknown,BasicGrammar/IO/2_SomeData
-读取和输出一个数组,一行数组的读取和输出,2,输入输出|函数-参数传递|列表生成器|内置全局函数-可迭代对象|字符串-内置函数-join(),谢子聪,Unknown,BasicGrammar/IO/3_DataList
-读取和输出Python格式的数据,Python数据类型数据的读取和输出,1,输入输出|编译执行-eval(),谢子聪,Unknown,BasicGrammar/IO/6_PythonIO
-lambda函数,创建lambda匿名函数,2,lambda|匿名函数,RUNOOB,Unknown,BasicGrammar/Function/49_LambdaFunc
-递推年龄,使用递归的思想求出年龄,1,递归,RUNOOB,Unknown,BasicGrammar/Function/28_RecurrenceAge
-计算糖果,已知一些条件，计算三个人每个人手里的糖果数,1,数值运算,MOOCTEST,Unknown,BasicGrammar/Number/30_Candy
-整数表示,将一个整数用内存中存储方式表示,3,数值运算|字符串-格式化|内置全局函数1-类型转换-进制转换,MOOCTEST,Unknown,BasicGrammar/Number/42_PresentInteger
-水仙花数,输出水仙花数（各位数字立方和等于该数本身的数）,2,数值运算,RUNOOB,Unknown,BasicGrammar/Number/64_NarcissisticNum
-求长方体体积,给你长宽高，求长方体的体积,1,数值运算,MOOCTEST,Unknown,BasicGrammar/Number/73_CuboidVolume
-整数取位,取一个整数的二进制表示的某几位,2,数值运算-位运算|内置全局函数1-类型转换-进制转换,RUNOOB,Unknown,BasicGrammar/Number/54_IntegerBits
-简单位运算,一些基本的位运算,1,数值运算-位运算,RUNOOB,Unknown,BasicGrammar/Number/51_52_53_55_SimpleBit
-求方程的结果,计算方差的y值,1,数值运算,MOOCTEST,Unknown,BasicGrammar/Number/71_TheResultEquation
-整数简单四则运算,简单的四则运算,1,数值运算,MOOCTEST,Unknown,BasicGrammar/Number/72_SimpleArithmetic
-求三角形的面积,求三角形的面积，考虑不成立的情况,2,数值运算|条件判断,MOOCTEST,Unknown,BasicGrammar/Number/83_AreaTriangle
-华氏摄氏温度转换,将华氏温度转为摄氏温度,1,数值运算,MOOCTEST,Unknown,BasicGrammar/Number/76_TemperatureConversion
-闰年判断,判断一个年份是否为闰年,1,条件判断,MOOCTEST,Unknown,BasicGrammar/Control/61_JudgeLeapYear
-判断天数,计算日期是该年的第几天,2,条件判断|循环,RUNOOB,Unknown,BasicGrammar/Control/4_JudgeDayNum
-个税计算,根据个税表格计算月收入应缴税,2,循环,MOOCTEST,Unknown,BasicGrammar/Control/88_TaxCalculation
-乘法口诀表,输出一个乘法口诀表,2,循环|格式化,RUNOOB,Unknown,BasicGrammar/Control/8_Multiplication
-算BMI值,根据BMI表格判断一个人的健康情况,1,循环|条件判断,MOOCTEST,Unknown,BasicGrammar/Control/84_BMI
-砝码问题,至少需要多少个砝码才能称出1到n克重的物品？,3,数学|循环,MOOCTEST,Unknown,BasicGrammar/Control/22_Weight
-统计得分,根据一定规则统计字符得分,2,循环,MOOCTEST,Unknown,BasicGrammar/Control/60_PointsStatistics
-几个九,给定一个数字，问多少个9组成的数字能够被整除,1,数值运算-整数运算|循环,RUNOOB,Unknown,BasicGrammar/Control/85_NumberofNine
-计算各位数字和的特征,计算有多少个数其各位数字和能被5整除,2,循环,匿名,Unknown,BasicGrammar/Control/103_SumEachNum 
-企业奖金发放,给定企业月利润，根据规则计算奖金,1,条件判断,RUNOOB,Unknown,BasicGrammar/Control/2_EnterpriseBonuses
-一元人民币兑换方案,统计一元人民币换成一分、两分和五分的所有兑换方案个数,2,循环,MOOCTEST,Unknown,BasicGrammar/Control/108_RMB
-爱因斯坦台阶问题,一道很简单的数(xun)学(huan)题,1,循环,MOOCTEST,Unknown,BasicGrammar/Control/105_EinsteinStairs
-水仙花数,输出最近的水仙花数,2,循环|数值运算,RUNOOB,Unknown,BasicGrammar/Control/13_Narcissus
-成绩等级判断,根据方案对成绩进行分级,2,字符串-字符编码|条件判断,MOOCTEST,Unknown,BasicGrammar/Control/91_GradeLevel
-简单排序,给三个数排序,1,条件判断,RUNOOB,Unknown,BasicGrammar/Control/5_SimpleSort
-进制转换,将八进制数转为十进制,2,循环,MOOCTEST,Unknown,BasicGrammar/Control/19_Conversion
-求方差,使用 variance() 求方差,1,statistics|统计基础|数值运算,顾宇,Unknown,BuiltInModules/statistics/Variance
-求平均值,使用 statistics 的 mean() 求平均值,1,statistics|统计基础|数值运算,顾宇,Unknown,BuiltInModules/statistics/Mean
-求众数,使用 mode() 求众数,1,statistics|统计基础|数值运算,顾宇,Unknown,BuiltInModules/statistics/Mode
-求中位数,使用 mode() 求中位数,1,statistics|统计基础|数值运算,顾宇,Unknown,BuiltInModules/statistics/Median
-求标准差,使用 stdev() 求标准差,1,statistics|统计基础|数值运算,顾宇,Unknown,BuiltInModules/statistics/Stdev
-时间戳格式化,将时间戳表示为时间,1,datetime|日期时间,谢子聪,Unknown,BuiltInModules/datetime/1_Time
-Weekday,判断是周几,1,datetime|日期时间,谢子聪,Unknown,BuiltInModules/datetime/4_Weekday
-时间差,计算两个日期之间相差多少天和小时,2,datetime|日期时间,谢子聪,Unknown,BuiltInModules/datetime/3_TimeDelta
-是第几天,计算某一天是该年的第几天,1,datetime|日期时间,谢子聪,Unknown,BuiltInModules/datetime/2_WhatDayIsIt
-返回最小的大于或等于n的整数,使用 ceil(n) 返回最小的 >= n 的整数,1,数值运算|math,匿名,Unknown,BuiltInModules/math/Ceil
-求绝对值,使用 fabs() 计算绝对值,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Fabs
-求阶乘,使用 factorial() 求阶乘,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Factorial
-求平方根,使用 math.sqrt() 求平方根,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Sqrt
-求圆的面积,使用 math.pi 求圆的面积,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Pi
-度转弧度,使用 radians() 将度转为弧度,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Degrees
-求对数值,使用 log() 求对数,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Log
-最小公倍数,求两个数的最小公倍数,1,数值运算|math,MOOCTEST,Unknown,BuiltInModules/math/50_LCM
-求三角形斜边长,使用 hypot() 求三角形斜边长,1,数值运算|math,顾宇,Unknown,BuiltInModules/math/Hypot
-最大公约数,求两个数的最大公约数,1,数值运算|math,MOOCTEST,Unknown,BuiltInModules/math/49_GCD
-创建随机数,使用random模块生成随机数,1,随机数,RUNOOB,Unknown,BuiltInModules/random/50_RandomUniform
-统计元素出现次数,使用 random 生成随机数列并统计每个数的出现次数,2,random|随机数|collections-Counter,MOOCTEST,Unknown,BuiltInModules/random/67_ElementsCount
-我也想拥有姓名,命名元组的使用,2,collections-namedtuple|命名元组,谢子聪,Unknown,BuiltInModules/collections/1_NamedTuple
-合并配置项,使用ChainMap来合并配置项,2,collections-ChainMap,谢子聪,Unknown,BuiltInModules/collections/3_ChainMap
-统计字符出现次数,统计每个字符的出现次数并降序输出,3,collections-Counter|functools,MOOCTEST,Unknown,BuiltInModules/collections/62_WordCount
-自定义列表,使用 UserList 实现自定义列表,2,collections-UserList,谢子聪,Unknown,BuiltInModules/collections/5_UserList
-水果出售记录,帮店老板统计每个水果卖出了多少,3,collections-Counter|functools|排序,MOOCTEST,Unknown,BuiltInModules/collections/5_Fruit-sold-times
-滑动窗口求区间最大值,使用双向队列求滑动窗口区间最大值,2,collections-deque|双向队列,谢子聪,Unknown,BuiltInModules/collections/2_Deque
-统计数字次数,统计一串数字中每个数字的出现次数,2,collections-Counter,MOOCTEST,Unknown,BuiltInModules/collections/4_Num-str-statistic
-正则表达式匹配的应用,实现函数匹配包含 . 和 * 的正则表达式,3,正则表达式,黎宇,Unknown,BuiltInModules/re/re7
-正则表达式的综合运用,使用正则表达式匹配 qq 号,3,正则表达式,黎宇,Unknown,BuiltInModules/re/re6
-正则表达式的match函数,使用 match() 匹配模式,2,正则表达式,黎宇,Unknown,BuiltInModules/re/re1
-正则表达式中sub函数的使用2,使用正则表达式的 sub() 将字符串中的数字乘以2返回,2,正则表达式,黎宇,Unknown,BuiltInModules/re/re4
-正则表达式的sub函数,使用正则表达式的 sub() 处理电话号码,2,正则表达式,黎宇,Unknown,BuiltInModules/re/re3
-正则表达式的search函数,使用正则表达式的 search() 得到匹配位置,2,正则表达式,黎宇,Unknown,BuiltInModules/re/re2
-正则表达式中的findall函数,使用正则表达式的 findall() 查找数字,2,正则表达式,黎宇,BuiltInModules/re/re5
+chr,使用 chr() 将数字表示为字符,1,内置全局函数-数值和字符串|字符串-字符编码,谢子聪,1655,BuiltInFunctions/NumAndStr/chr
+ascii,使用 ascii 将字符串中的特殊字符转义,1,内置全局函数-数值和字符串|字符串-字符编码,谢子聪,1653,BuiltInFunctions/NumAndStr/ascii
+进制转换1,使用 bin()、oct() 和 hex() 转换十进制数字,1,内置全局函数-数值和字符串|进制转换,谢子聪,1654,BuiltInFunctions/NumAndStr/binocthex
+开根号,使用 pow 或者 ** 开根号,1,内置全局函数|数值运算,谢子聪,1660,BuiltInFunctions/NumAndStr/pow
+进制转换2,将其他进制的数转为十进制,1,内置全局函数-数值和字符串|进制转换,谢子聪,1661,BuiltInFunctions/NumAndStr/toint
+abs,使用 abs() 得到数字的绝对值,1,内置全局函数|数值运算,谢子聪,1652,BuiltInFunctions/NumAndStr/abs
+divmod,使用 divmod() 得到商和余数,1,内置全局函数|数值运算,谢子聪,1656,BuiltInFunctions/NumAndStr/divmod
+exec,利用 exec() 执行储存在字符串或文件中的 Python 语句,1,内置全局函数|编译执行,张舒,1658,BuiltInFunctions/NumAndStr/Exec
+回文数,判断数字是否为回文数,1,内置全局函数|字符串,MOOCTEST,1703,BuiltInFunctions/NumAndStr/1_Plalindrome
+eval,使用 eval() 计算表达式,1,内置全局函数|编译执行,张舒,1657,BuiltInFunctions/NumAndStr/Eval
+ord,使用 ord() 将字符转换为 ASCII 数值,1,内置全局函数-数值和字符串|字符串-字符编码,谢子聪,1659,BuiltInFunctions/NumAndStr/ord
+特殊的n位数,给定位数n，求满足一定条件的n位数,3,深度优先|DFS|函数-递归,MOOCTEST,1706,Algorithms/DFS/43_Spec9-digitNumber
+分数序列求和,计算一个分数数列的前n项和,2,数学问题,MOOCTEST,1672,Algorithms/Math/106_FractionalSummation
+欧拉数,输出与n互质的小于n的正整数个数,3,数学问题|数值运算,MOOCTEST,1674,Algorithms/Math/28_Euler
+选猴王,一群猴子做成一圈按照一定方法选择猴王,2,数学问题,MOOCTEST,1676,Algorithms/Math/46_SelectMonkeyKing
+完全平方数,一个整数加上某个数后是完全平方数，再加上一个数后还是安全平方数，求这个数,3,数学问题,RUNOOB,1677,Algorithms/Math/3_PerfectSquareNum
+计算方程的根,给定二元一次方程的三个参数，求根,1,数学问题,MOOCTEST,1679,Algorithms/Math/85_TheRootOfEquation
+自由落体,模拟小球的自由落体,2,数学问题|流程控制-循环,MOOCTEST,1681,Algorithms/Math/65_FreeFalling
+比赛名单,已知一些比赛信息，找出比赛的名单,3,数学问题-逻辑判断|流程控制-条件判断,RUNOOB,1682,Algorithms/Math/22_CompetitionList
+百钱买百鸡,给你一百元买一百只鸡，有多少种买法？,2,数学问题,MOOCTEST,1683,Algorithms/Math/21_Dollars2Chickens
+奇数的个数,求使用 0~n 所能组成的奇数的个数,3,数学问题|排列组合,MOOCTEST,1684,Algorithms/Math/23_OddNum
+排队,n个人排队，给出所有可能队形的数量,3,数学问题,MOOCTEST,1687,Algorithms/Math/97_Queue
+逆解最大公约数与最小公倍数,给你一个最大公约数和最小公倍数，要你求一组数,3,数学问题,MOOCTEST,Unknown,Algorithms/Math/26_InverseGCD&LCM
+斐波那契数,求第k个斐波那契数,1,数学问题-常见数列,RUNOOB,1692,Algorithms/Math/6_Fibonacci
+默尼森数,满足 M=2^p-1 的素数 M,3,数学问题-常见数列,MOOCTEST,1697,Algorithms/Math/68_MonisenNum
+统计有特征整数的和,被3除余1并且被5除余3的所有整数的和,1,数学问题|流程控制-循环,匿名,1699,Algorithms/Math/94_SumCharacteristicIntegers
+变态超级楼梯,你可以任意走上n级台阶，求走上n级台阶的不同走法,2,数学问题,MOOCTEST,1700,Algorithms/Math/44_SuperStairs
+角谷猜想,输出角谷猜想的演算过程,2,字符串-格式化|流程控制|数学问题,MOOCTEST,1701,Algorithms/Math/96_KakuguConjecture
+桃子问题,有一些猴子分桃子，求原来最少有多少个桃子,2,数学问题,MOOCTEST,1702,Algorithms/Math/24_Peach
+判断素数,判断一个数是否为素数,2,数学问题,匿名,1704,Algorithms/Math/2_Prime
+求Pi的值,根据莱布尼茨级数公式求π的近似值,2,数学问题,MOOCTEST,1705,Algorithms/Math/100_FindPI
+数字组成,给你一个整数数列，求能够组成不同两位数的个数,3,数学问题-组合数学,MOOCTEST,1708,Algorithms/Math/59_NumComposition
+组合数的奇偶性,求组合数的奇偶性,2,数学问题-组合数学,MOOCTEST,1709,Algorithms/Math/34_ParityCombination
+阶乘除法,将整数 k 分解为k=n!/m! 的形式,3,数学问题,匿名,1710,Algorithms/Math/39_FactorialDivision
+分拆素数和,将一个偶数分拆成两个素数的不同方法,3,数学问题,MOOCTEST,1711,Algorithms/Math/37_SplitPrimes
+兔子繁殖,n个月后有多少只兔子？,2,数学问题-常见数列,RUNOOB,1713,Algorithms/Math/11_RabbitReprod
+素数判断,判断一个数是否是素数,2,数学问题,RUNOOB,1714,Algorithms/Math/12_JudgePrime
+正整数求和,求用不超过 N 的整数求和得到 N 的方法数,3,动态规划|函数-递归,MOOCTEST,1685,Algorithms/DynamicProgramming/32_SumPosInt
+球迷购票问题,有几种排队方式可使售票处不致出现找不出钱,3,动态规划,匿名,1688,Algorithms/DynamicProgramming/47_FansTicket
+青蛙跳台阶,一只青蛙跳上n级台阶有多少种方法？,2,动态规划,MOOCTEST,1695,Algorithms/DynamicProgramming/25_FrogSteps
+HelloWorld,输出 Hello World,1,输入输出,匿名,1515,BasicGrammar/IO/0_HelloWorld
+读取和输出多行数据,多行数据的读取和输出,2,输入输出|流程控制-循环|流程控制-异常处理,谢子聪,1519,BasicGrammar/IO/4_MultiLine
+读取和输出一个数据,类型转换的读取和输出,1,输入输出|类型转换|字符串-格式化,谢子聪,1516,BasicGrammar/IO/1_BasicType
+读取和输出多行多列数据,矩阵和不定长数组的读取和输出,3,输入输出|流程控制-循环|矩阵|高阶函数|流程控制-异常处理,谢子聪,1520,BasicGrammar/IO/5_Matrix
+读取和输出几个数据,一行中多个数据的读取和输出,1,输入输出|类型转换|字符串-格式化,谢子聪,1517,BasicGrammar/IO/2_SomeData
+读取和输出一个数组,一行数组的读取和输出,2,输入输出|列表生成器|高阶函数|字符串-格式化|内置全局函数-可迭代对象,谢子聪,1518,BasicGrammar/IO/3_DataList
+读取和输出Python格式的数据,Python数据类型数据的读取和输出,1,输入输出|编译执行,谢子聪,1521,BasicGrammar/IO/6_PythonIO
+试一试自定义类,设计一个学生类并实现打印方法,2,面向对象,MOOCTEST,1680,BasicGrammar/OOP/17_CustomizedClass
+lambda函数,创建lambda匿名函数,2,函数-lambda|匿名函数,RUNOOB,1563,BasicGrammar/Function/49_LambdaFunc
+递推年龄,使用递归的思想求出年龄,1,函数-递归|流程控制-循环,RUNOOB,1562,BasicGrammar/Function/28_RecurrenceAge
+计算糖果,已知一些条件，计算三个人每个人手里的糖果数,1,数值运算|条件判断,MOOCTEST,1529,BasicGrammar/Number/30_Candy
+整数表示,将一个整数用内存中存储方式表示,3,数值运算-位运算|字符串-格式化,MOOCTEST,1669,BasicGrammar/Number/42_PresentInteger
+水仙花数1,输出水仙花数（各位数字立方和等于该数本身的数）,2,流程控制-循环|数值运算,RUNOOB,1530,BasicGrammar/Number/64_NarcissisticNum
+长方体体积,给你长宽高，求长方体的体积,1,数值运算,MOOCTEST,1526,BasicGrammar/Number/73_CuboidVolume
+整数取位,取一个整数的二进制表示的某几位,2,数值运算-位运算|进制转换,RUNOOB,1525,BasicGrammar/Number/54_IntegerBits
+简单位运算,一些基本的位运算,1,数值运算-位运算,RUNOOB,1523,BasicGrammar/Number/51_52_53_55_SimpleBit
+求方程的结果,计算方差的y值,1,数值运算,MOOCTEST,1524,BasicGrammar/Number/71_TheResultEquation
+整数简单四则运算,简单的四则运算,1,数值运算|字符串-格式化,MOOCTEST,1522,BasicGrammar/Number/72_SimpleArithmetic
+求三角形的面积,求三角形的面积，考虑不成立的情况,2,数值运算|条件判断,MOOCTEST,1527,BasicGrammar/Number/83_AreaTriangle
+华氏摄氏温度转换,将华氏温度转为摄氏温度,1,数值运算,MOOCTEST,1528,BasicGrammar/Number/76_TemperatureConversion
+闰年判断,判断一个年份是否为闰年,1,流程控制-条件判断|日期时间,MOOCTEST,1531,BasicGrammar/Control/61_JudgeLeapYear
+特殊的倍数,求一个数的仅有0和1构成的倍数,3,数值运算|类型转换,MOOCTEST,1673,BasicGrammar/Control/38_SpecMultiple
+判断天数,计算日期是该年的第几天,2,流程控制|日期时间,RUNOOB,1540,BasicGrammar/Control/4_JudgeDayNum
+累加,计算1~n的累加和,1,数学问题|数值运算,MOOCTEST,1675,BasicGrammar/Control/89_Accumulate
+个税计算,根据个税表格计算月收入应缴税,2,数值运算|流程控制|条件判断,MOOCTEST,1541,BasicGrammar/Control/88_TaxCalculation
+乘法口诀表,输出一个乘法口诀表,2,流程控制|字符串-格式化,RUNOOB,1539,BasicGrammar/Control/8_Multiplication
+算BMI值,根据BMI表格判断一个人的健康情况,1,流程控制|条件判断,MOOCTEST,1536,BasicGrammar/Control/84_BMI
+砝码问题,至少需要多少个砝码才能称出1到n克重的物品？,3,数学|流程控制,MOOCTEST,1546,BasicGrammar/Control/22_Weight
+统计得分,根据一定规则统计字符得分,2,字符串-遍历|流程控制-循环,MOOCTEST,1545,BasicGrammar/Control/60_PointsStatistics
+几个九,给定一个数字，问多少个9组成的数字能够被整除,1,数值运算|流程控制,RUNOOB,1535,BasicGrammar/Control/85_NumberofNine
+计算各位数字和的特征,计算有多少个数其各位数字和能被5整除,2,流程控制|数值运算,匿名,1542,BasicGrammar/Control/103_SumEachNum 
+企业奖金发放,给定企业月利润，根据规则计算奖金,1,流程控制|数值运算,RUNOOB,1533,BasicGrammar/Control/2_EnterpriseBonuses
+一元人民币兑换方案,统计一元人民币换成一分、两分和五分的所有兑换方案个数,2,流程控制,MOOCTEST,1544,BasicGrammar/Control/108_RMB
+求阶乘和,求前 n 个树每个数的阶乘和,2,数值运算|流程控制-循环,匿名,1690,BasicGrammar/Control/99_SeekFactorSum
+爱因斯坦台阶问题,一道很简单的数(xun)学(huan)题,1,流程控制,MOOCTEST,1537,BasicGrammar/Control/105_EinsteinStairs
+水仙花数2,输出最近的水仙花数,2,流程控制|数值运算,RUNOOB,1534,BasicGrammar/Control/13_Narcissus
+累乘,计算 n!,1,数值运算|流程控制-循环,MOOCTEST,1707,BasicGrammar/Control/90_Multiplication
+成绩等级判断,根据方案对成绩进行分级,2,流程控制|列表,MOOCTEST,1538,BasicGrammar/Control/91_GradeLevel
+简单排序,给三个数排序,1,流程控制-条件判断,RUNOOB,1532,BasicGrammar/Control/5_SimpleSort
+进制转换,将八进制数转为十进制,2,流程控制|进制转换|数值运算,MOOCTEST,1543,BasicGrammar/Control/19_Conversion
+试一试reduce()函数,使用 reduce() 函数计算一个列表的“和”,2,functools-reduce|函数-lambda,MOOCTEST,Unknown,BuiltInModules/FunctionalProgramming/functools/12_Reduce
+无重复三位数,从四个数字选三个进行全排列,1,itertools-permutations,RUNOOB,1691,BuiltInModules/FunctionalProgramming/itertools/1_NoDupThree
+全排列序列,求出n个数的全排列中的第k个排列,2,itertools-permutations,MOOCTEST,1712,BuiltInModules/FunctionalProgramming/itertools/40_FullyArrangedSeries
+时间戳格式化,将时间戳表示为时间,1,datetime|日期时间,谢子聪,1604,BuiltInModules/DataTypes/datetime/1_Time
+Weekday,判断是周几,1,datetime|日期时间,谢子聪,1607,BuiltInModules/DataTypes/datetime/4_Weekday
+时间差,计算两个日期之间相差多少天和小时,2,datetime|日期时间,谢子聪,1606,BuiltInModules/DataTypes/datetime/3_TimeDelta
+是第几天,计算某一天是该年的第几天,1,datetime|日期时间,谢子聪,1605,BuiltInModules/DataTypes/datetime/2_WhatDayIsIt
+我也想拥有姓名,命名元组的使用,2,collections-namedtuple|命名元组,谢子聪,1597,BuiltInModules/DataTypes/collections/1_NamedTuple
+合并配置项,使用ChainMap来合并配置项,2,collections-ChainMap,谢子聪,1603,BuiltInModules/DataTypes/collections/3_ChainMap
+统计字符出现次数,统计每个字符的出现次数并降序输出,3,collections-Counter|functools,MOOCTEST,1602,BuiltInModules/DataTypes/collections/62_WordCount
+自定义列表,使用 UserList 实现自定义列表,2,collections-UserList,谢子聪,1601,BuiltInModules/DataTypes/collections/5_UserList
+水果出售记录,帮店老板统计每个水果卖出了多少,3,collections-Counter|functools|排序,MOOCTEST,1600,BuiltInModules/DataTypes/collections/5_Fruit-sold-times
+滑动窗口求区间最大值,使用双向队列求滑动窗口区间最大值,2,collections-deque|双向队列,谢子聪,1598,BuiltInModules/DataTypes/collections/2_Deque
+统计数字次数,统计一串数字中每个数字的出现次数,2,collections-Counter,MOOCTEST,1599,BuiltInModules/DataTypes/collections/4_Num-str-statistic
+求方差,使用 variance() 求方差,1,statistics|统计基础|数学基础,顾宇,1622,BuiltInModules/Mathematics/statistics/Variance
+求平均值,使用 statistics 的 mean() 求平均值,1,statistics|统计基础|数学基础,顾宇,1618,BuiltInModules/Mathematics/statistics/Mean
+求众数,使用 mode() 求众数,1,statistics|统计基础|数学基础,顾宇,1620,BuiltInModules/Mathematics/statistics/Mode
+求中位数,使用 mode() 求中位数,1,statistics|统计基础|数学基础,顾宇,1619,BuiltInModules/Mathematics/statistics/Median
+求中位数,求一个列表的中位数,1,统计基础|数学基础,MOOCTEST,1694,BuiltInModules/Mathematics/statistics/48_Median
+求标准差,使用 stdev() 求标准差,1,statistics|统计基础|数学基础,顾宇,1621,BuiltInModules/Mathematics/statistics/Stdev
+返回最小的大于或等于n的整数,使用 ceil(n) 返回最小的 >= n 的整数,1,数学基础|math,匿名,1608,BuiltInModules/Mathematics/math/Ceil
+求绝对值,使用 fabs() 计算绝对值,1,数学基础|math,顾宇,1610,BuiltInModules/Mathematics/math/Fabs
+求阶乘,使用 factorial() 求阶乘,1,数学基础|math,顾宇,1611,BuiltInModules/Mathematics/math/Factorial
+求平方根,使用 math.sqrt() 求平方根,1,数学基础|math,顾宇,1615,BuiltInModules/Mathematics/math/Sqrt
+求圆的面积,使用 math.pi 求圆的面积,1,数学基础|math,顾宇,1614,BuiltInModules/Mathematics/math/Pi
+度转弧度,使用 radians() 将度转为弧度,1,数学基础|math,顾宇,1609,BuiltInModules/Mathematics/math/Degrees
+求对数值,使用 log() 求对数,1,数学基础|math,顾宇,1613,BuiltInModules/Mathematics/math/Log
+最小公倍数,求两个数的最小公倍数,1,数学基础|math,MOOCTEST,1617,BuiltInModules/Mathematics/math/50_LCM
+求三角形斜边长,使用 hypot() 求三角形斜边长,1,数学基础|math,顾宇,1612,BuiltInModules/Mathematics/math/Hypot
+最大公约数,求两个数的最大公约数,1,数学基础|math,MOOCTEST,1616,BuiltInModules/Mathematics/math/49_GCD
+uniform,使用random模块生成随机数,1,随机数|random,RUNOOB,1670,BuiltInModules/Mathematics/random/50_RandomUniform
+随机元素出现次数,使用 random 生成随机数列并统计每个数的出现次数,2,random|随机数|collections-Counter,MOOCTEST,1671,BuiltInModules/Mathematics/random/67_ElementsCount
+正则表达式匹配的应用,实现函数匹配包含 . 和 * 的正则表达式,3,正则表达式|re,黎宇,1629,BuiltInModules/re/re7
+正则表达式的综合运用,使用正则表达式匹配 qq 号,3,正则表达式|re,黎宇,1628,BuiltInModules/re/re6
+正则表达式的match函数,使用 match() 匹配模式,2,正则表达式|re,黎宇,1623,BuiltInModules/re/re1
+正则表达式中sub函数的使用2,使用正则表达式的 sub() 将字符串中的数字乘以2返回,2,正则表达式|re,黎宇,1626,BuiltInModules/re/re4
+正则表达式的sub函数,使用正则表达式的 sub() 处理电话号码,2,正则表达式|re,黎宇,1625,BuiltInModules/re/re3
+正则表达式的search函数,使用正则表达式的 search() 得到匹配位置,2,正则表达式|re,黎宇,1624,BuiltInModules/re/re2
+正则表达式中的findall函数,使用正则表达式的 findall() 查找数字,2,正则表达式|re,黎宇,1627,BuiltInModules/re/re5
