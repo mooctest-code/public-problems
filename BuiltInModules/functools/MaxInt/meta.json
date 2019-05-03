@@ -1,0 +1,29 @@
+{
+    "title": "最大的整数",
+    "desc": "### 题目描述\n\n给你n个正整数，请你将它们组合成一个它们能组成的最大的正整数。\n\n### 输入描述\n\n输入为一组正整数，两两间用空格隔开\n\n### 输出描述\n\n输出为它们能够组成的最大的正整数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n12 123 13\n```\n\n```\n1312312\n```\n\n#### 样例2: 输入-输出\n\n```\n7 12 4 246\n```\n\n```\n7424612\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nfrom functools import cmp_to_key\n\ndef cmp(x, y):\n    return int(y+x) - int(x+y)\n\na = input().split()\na = sorted(a, key=cmp_to_key(cmp))\nprint(''.join(a))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "12 123 13\n",
+            "output": "1312312\n"
+        },
+        {
+            "input": "7 12 4 246\n",
+            "output": "7424612\n"
+        },
+        {
+            "input": "9 78 23 123 0\n",
+            "output": "978231230\n"
+        },
+        {
+            "input": "43 78 2 12 78\n",
+            "output": "787843212\n"
+        }
+    ],
+    "simple_desc": "将n个正整数连成一排组成一个最大的整数",
+    "difficulty": "2",
+    "tag": "functools-cmp_to_key",
+    "author": "谢子聪"
+}

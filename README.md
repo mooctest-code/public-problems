@@ -2,9 +2,9 @@
 
 ## 当前情况
 
-您可以通过 [题目信息表格](/res/probleminfo.csv) 和 [Python 学习路线图](http://www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
+您可以通过 [题目信息表格](probleminfo.csv) 和 [Python 学习路线图](http://www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
 
-我们的题目大部分将发布到 [code.mooctest.net](http://code.mooctest.net) 上。
+我们的题目将发布到 [code.mooctest.net](http://code.mooctest.net) 上。
 
 ### 题库说明
 
@@ -40,7 +40,7 @@ Unclassified/ 还未分类的题目
 
   1. 如果为一个数字，如 `1234` ，则表示是 [慕码教务管理平台](http://manage.mooctest.net/) 上的一个`测试案例ID`，您可以通过 `manage.mooctest.net/case/view/` + `测试案例ID` 来访问这个测试案例。
 
-  2. 如果形式如 `1234/5678`，则表示 `试卷/测试案例ID` ，则表示是 [慕码编程平台]() 上的一道题，您可以通过 `code.mooctest.net/#/exercise/edit/` + `试卷/测试案例ID`。
+  2. 如果形式如 `1234/5678`，则表示是 [慕码编程平台]() 上的一道题  `试卷/测试案例ID` ，您可以通过 `code.mooctest.net/#/exercise/edit/` + `试卷/测试案例ID`。
 
   3. 上面 `试卷/测试案例ID` 中的 `测试案例ID` 也可以通过 1 中的方式访问。
 

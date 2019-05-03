@@ -76,6 +76,16 @@ exec,利用 exec() 执行储存在字符串或文件中的 Python 语句,1,内�
 eval,使用 eval() 计算表达式,1,内置全局函数|编译执行,张舒,1657,BuiltInFunctions/NumAndStr/Eval
 ord,使用 ord() 将字符转换为 ASCII 数值,1,内置全局函数-数值和字符串|字符串-字符编码,谢子聪,1659,BuiltInFunctions/NumAndStr/ord
 特殊的n位数,给定位数n，求满足一定条件的n位数,3,深度优先|DFS|函数-递归,MOOCTEST,1706,Algorithms/DFS/43_Spec9-digitNumber
+计数排序,实现计数排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Counting
+归并排序,实现归并排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Merge
+希尔排序,实现希尔排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Shell
+快速排序,实现快速排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Quick
+冒泡排序,实现冒泡排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Bubble
+桶排序,实现桶排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Bucket
+堆排序,实现堆排序,3,排序算法,匿名,Unknown,Algorithms/Sort/Heap
+插入排序,实现插入排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Insertion
+基数排序,实现基数排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Radix
+选择排序,实现选择排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Selection
 分数序列求和,计算一个分数数列的前n项和,2,数学问题,MOOCTEST,1672,Algorithms/Math/106_FractionalSummation
 欧拉数,输出与n互质的小于n的正整数个数,3,数学问题|数值运算,MOOCTEST,1674,Algorithms/Math/28_Euler
 选猴王,一群猴子做成一圈按照一定方法选择猴王,2,数学问题,MOOCTEST,1676,Algorithms/Math/46_SelectMonkeyKing
@@ -144,38 +154,45 @@ lambda函数,创建lambda匿名函数,2,函数-lambda|匿名函数,RUNOOB,1563,B
 成绩等级判断,根据方案对成绩进行分级,2,流程控制|列表,MOOCTEST,1538,BasicGrammar/Control/91_GradeLevel
 简单排序,给三个数排序,1,流程控制-条件判断,RUNOOB,1532,BasicGrammar/Control/5_SimpleSort
 进制转换,将八进制数转为十进制,2,流程控制|进制转换|数值运算,MOOCTEST,1543,BasicGrammar/Control/19_Conversion
-试一试reduce()函数,使用 reduce() 函数计算一个列表的“和”,2,functools-reduce|函数-lambda,MOOCTEST,Unknown,BuiltInModules/FunctionalProgramming/functools/12_Reduce
-无重复三位数,从四个数字选三个进行全排列,1,itertools-permutations,RUNOOB,1691,BuiltInModules/FunctionalProgramming/itertools/1_NoDupThree
-全排列序列,求出n个数的全排列中的第k个排列,2,itertools-permutations,MOOCTEST,1712,BuiltInModules/FunctionalProgramming/itertools/40_FullyArrangedSeries
-时间戳格式化,将时间戳表示为时间,1,datetime|日期时间,谢子聪,1604,BuiltInModules/DataTypes/datetime/1_Time
-Weekday,判断是周几,1,datetime|日期时间,谢子聪,1607,BuiltInModules/DataTypes/datetime/4_Weekday
-时间差,计算两个日期之间相差多少天和小时,2,datetime|日期时间,谢子聪,1606,BuiltInModules/DataTypes/datetime/3_TimeDelta
-是第几天,计算某一天是该年的第几天,1,datetime|日期时间,谢子聪,1605,BuiltInModules/DataTypes/datetime/2_WhatDayIsIt
-我也想拥有姓名,命名元组的使用,2,collections-namedtuple|命名元组,谢子聪,1597,BuiltInModules/DataTypes/collections/1_NamedTuple
-合并配置项,使用ChainMap来合并配置项,2,collections-ChainMap,谢子聪,1603,BuiltInModules/DataTypes/collections/3_ChainMap
-统计字符出现次数,统计每个字符的出现次数并降序输出,3,collections-Counter|functools,MOOCTEST,1602,BuiltInModules/DataTypes/collections/62_WordCount
-自定义列表,使用 UserList 实现自定义列表,2,collections-UserList,谢子聪,1601,BuiltInModules/DataTypes/collections/5_UserList
-水果出售记录,帮店老板统计每个水果卖出了多少,3,collections-Counter|functools|排序,MOOCTEST,1600,BuiltInModules/DataTypes/collections/5_Fruit-sold-times
-滑动窗口求区间最大值,使用双向队列求滑动窗口区间最大值,2,collections-deque|双向队列,谢子聪,1598,BuiltInModules/DataTypes/collections/2_Deque
-统计数字次数,统计一串数字中每个数字的出现次数,2,collections-Counter,MOOCTEST,1599,BuiltInModules/DataTypes/collections/4_Num-str-statistic
-求方差,使用 variance() 求方差,1,statistics|统计基础|数学基础,顾宇,1622,BuiltInModules/Mathematics/statistics/Variance
-求平均值,使用 statistics 的 mean() 求平均值,1,statistics|统计基础|数学基础,顾宇,1618,BuiltInModules/Mathematics/statistics/Mean
-求众数,使用 mode() 求众数,1,statistics|统计基础|数学基础,顾宇,1620,BuiltInModules/Mathematics/statistics/Mode
-求中位数,使用 mode() 求中位数,1,statistics|统计基础|数学基础,顾宇,1619,BuiltInModules/Mathematics/statistics/Median
-求中位数,求一个列表的中位数,1,统计基础|数学基础,MOOCTEST,1694,BuiltInModules/Mathematics/statistics/48_Median
-求标准差,使用 stdev() 求标准差,1,statistics|统计基础|数学基础,顾宇,1621,BuiltInModules/Mathematics/statistics/Stdev
-返回最小的大于或等于n的整数,使用 ceil(n) 返回最小的 >= n 的整数,1,数学基础|math,匿名,1608,BuiltInModules/Mathematics/math/Ceil
-求绝对值,使用 fabs() 计算绝对值,1,数学基础|math,顾宇,1610,BuiltInModules/Mathematics/math/Fabs
-求阶乘,使用 factorial() 求阶乘,1,数学基础|math,顾宇,1611,BuiltInModules/Mathematics/math/Factorial
-求平方根,使用 math.sqrt() 求平方根,1,数学基础|math,顾宇,1615,BuiltInModules/Mathematics/math/Sqrt
-求圆的面积,使用 math.pi 求圆的面积,1,数学基础|math,顾宇,1614,BuiltInModules/Mathematics/math/Pi
-度转弧度,使用 radians() 将度转为弧度,1,数学基础|math,顾宇,1609,BuiltInModules/Mathematics/math/Degrees
-求对数值,使用 log() 求对数,1,数学基础|math,顾宇,1613,BuiltInModules/Mathematics/math/Log
-最小公倍数,求两个数的最小公倍数,1,数学基础|math,MOOCTEST,1617,BuiltInModules/Mathematics/math/50_LCM
-求三角形斜边长,使用 hypot() 求三角形斜边长,1,数学基础|math,顾宇,1612,BuiltInModules/Mathematics/math/Hypot
-最大公约数,求两个数的最大公约数,1,数学基础|math,MOOCTEST,1616,BuiltInModules/Mathematics/math/49_GCD
-uniform,使用random模块生成随机数,1,随机数|random,RUNOOB,1670,BuiltInModules/Mathematics/random/50_RandomUniform
-随机元素出现次数,使用 random 生成随机数列并统计每个数的出现次数,2,random|随机数|collections-Counter,MOOCTEST,1671,BuiltInModules/Mathematics/random/67_ElementsCount
+求方差,使用 variance() 求方差,1,statistics|统计基础|数学基础,顾宇,1622,BuiltInModules/statistics/Variance
+求平均值,使用 statistics 的 mean() 求平均值,1,statistics|统计基础|数学基础,顾宇,1618,BuiltInModules/statistics/Mean
+求众数,使用 mode() 求众数,1,statistics|统计基础|数学基础,顾宇,1620,BuiltInModules/statistics/Mode
+求中位数,使用 mode() 求中位数,1,statistics|统计基础|数学基础,顾宇,1619,BuiltInModules/statistics/Median
+求中位数,求一个列表的中位数,1,统计基础|数学基础,MOOCTEST,1694,BuiltInModules/statistics/48_Median
+求标准差,使用 stdev() 求标准差,1,statistics|统计基础|数学基础,顾宇,1621,BuiltInModules/statistics/Stdev
+时间戳格式化,将时间戳表示为时间,1,datetime|日期时间,谢子聪,1604,BuiltInModules/datetime/1_Time
+Weekday,判断是周几,1,datetime|日期时间,谢子聪,1607,BuiltInModules/datetime/4_Weekday
+时间差,计算两个日期之间相差多少天和小时,2,datetime|日期时间,谢子聪,1606,BuiltInModules/datetime/3_TimeDelta
+是第几天,计算某一天是该年的第几天,1,datetime|日期时间,谢子聪,1605,BuiltInModules/datetime/2_WhatDayIsIt
+返回最小的大于或等于n的整数,使用 ceil(n) 返回最小的 >= n 的整数,1,数学基础|math,匿名,1608,BuiltInModules/math/Ceil
+求绝对值,使用 fabs() 计算绝对值,1,数学基础|math,顾宇,1610,BuiltInModules/math/Fabs
+求阶乘,使用 factorial() 求阶乘,1,数学基础|math,顾宇,1611,BuiltInModules/math/Factorial
+求平方根,使用 math.sqrt() 求平方根,1,数学基础|math,顾宇,1615,BuiltInModules/math/Sqrt
+求圆的面积,使用 math.pi 求圆的面积,1,数学基础|math,顾宇,1614,BuiltInModules/math/Pi
+度转弧度,使用 radians() 将度转为弧度,1,数学基础|math,顾宇,1609,BuiltInModules/math/Degrees
+求对数值,使用 log() 求对数,1,数学基础|math,顾宇,1613,BuiltInModules/math/Log
+最小公倍数,求两个数的最小公倍数,1,数学基础|math,MOOCTEST,1617,BuiltInModules/math/50_LCM
+求三角形斜边长,使用 hypot() 求三角形斜边长,1,数学基础|math,顾宇,1612,BuiltInModules/math/Hypot
+最大公约数,求两个数的最大公约数,1,数学基础|math,MOOCTEST,1616,BuiltInModules/math/49_GCD
+试一试reduce()函数,使用 reduce() 函数计算一个列表的“和”,2,functools-reduce|函数-lambda,MOOCTEST,Unknown,BuiltInModules/functools/12_Reduce
+partial,使用 partial 实现偏函数,2,functools-partial,谢子聪,Unknown,BuiltInModules/functools/partial
+函数装饰器,使用 wraps 实现函数装饰器,3,functools-wraps,谢子聪,Unknown,BuiltInModules/functools/decorator
+partialmethod,使用 partialmethod 为类添加函数,2,functools-partialmethod,谢子聪,Unknown,BuiltInModules/functools/partialmethod
+total_ordering,使用 total_ordering 为类实现所有比较运算,2,functools-total_ordering,谢子聪,Unknown,BuiltInModules/functools/total_ordering
+lru_cache,使用 lru_cache 实现动态编程,1,functools-lru_cache,谢子聪,Unknown,BuiltInModules/functools/lru_cache
+函数重载,使用 singledispatch 重载函数,2,functools-singledispatch,谢子聪,Unknown,BuiltInModules/functools/FuncOverload
+最大的整数,将n个正整数连成一排组成一个最大的整数,2,functools-cmp_to_key,谢子聪,Unknown,BuiltInModules/functools/MaxInt
+无重复三位数,从四个数字选三个进行全排列,1,itertools-permutations,RUNOOB,1691,BuiltInModules/itertools/1_NoDupThree
+全排列序列,求出n个数的全排列中的第k个排列,2,itertools-permutations,MOOCTEST,1712,BuiltInModules/itertools/40_FullyArrangedSeries
+uniform,使用random模块生成随机数,1,随机数|random,RUNOOB,1670,BuiltInModules/random/50_RandomUniform
+随机元素出现次数,使用 random 生成随机数列并统计每个数的出现次数,2,random|随机数|collections-Counter,MOOCTEST,1671,BuiltInModules/random/67_ElementsCount
+我也想拥有姓名,命名元组的使用,2,collections-namedtuple|命名元组,谢子聪,1597,BuiltInModules/collections/1_NamedTuple
+合并配置项,使用ChainMap来合并配置项,2,collections-ChainMap,谢子聪,1603,BuiltInModules/collections/3_ChainMap
+统计字符出现次数,统计每个字符的出现次数并降序输出,3,collections-Counter|functools,MOOCTEST,1602,BuiltInModules/collections/62_WordCount
+自定义列表,使用 UserList 实现自定义列表,2,collections-UserList,谢子聪,1601,BuiltInModules/collections/5_UserList
+水果出售记录,帮店老板统计每个水果卖出了多少,3,collections-Counter|functools|排序,MOOCTEST,1600,BuiltInModules/collections/5_Fruit-sold-times
+滑动窗口求区间最大值,使用双向队列求滑动窗口区间最大值,2,collections-deque|双向队列,谢子聪,1598,BuiltInModules/collections/2_Deque
+统计数字次数,统计一串数字中每个数字的出现次数,2,collections-Counter,MOOCTEST,1599,BuiltInModules/collections/4_Num-str-statistic
 正则表达式匹配的应用,实现函数匹配包含 . 和 * 的正则表达式,3,正则表达式|re,黎宇,1629,BuiltInModules/re/re7
 正则表达式的综合运用,使用正则表达式匹配 qq 号,3,正则表达式|re,黎宇,1628,BuiltInModules/re/re6
 正则表达式的match函数,使用 match() 匹配模式,2,正则表达式|re,黎宇,1623,BuiltInModules/re/re1

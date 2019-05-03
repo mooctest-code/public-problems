@@ -58,8 +58,6 @@ Load solution.py and testcases
 testcases = []
 myprint('Load solution.py and testcases')
 with open(path.join(problem, 'solution.py'), 'r', encoding='utf-8') as f:
-    while f.readable() and len(f.readline()) < 1:
-        continue
     firstline = f.readline() # '''TESTCASE
     if fromInFile or firstline != '\'\'\'TESTCASE\n':
         fromInFile = True

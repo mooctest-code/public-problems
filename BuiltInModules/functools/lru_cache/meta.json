@@ -1,0 +1,29 @@
+{
+    "title": "lru_cache",
+    "desc": "### 题目描述\n\n各位都知道，递归可能会产生重复的计算，从而影响程序的运行效率，那么该如何改善呢？\n\n请阅读 [functools.lru_cache](https://docs.python.org/zh-cn/3/library/functools.html#functools.lru_cache)，为斐波那契函数 fib() 设计一个合理且足够大的缓存大小，使得该程序的输出如样例所示。\n\n### 输入描述\n\n输入为一个整数 n(0 < n < 20)，表示要得到第 n 位的斐波那契数\n\n### 输出描述\n\n输出为该 fib() 函数的命中情况\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\n```\n\n```\nHits: 1\n```\n\n#### 样例2: 输入-输出\n\n```\n5\n```\n\n```\nHits: 3\n```\n\n",
+    "templateCode": "from functools import lru_cache\n\n@lru_cache(maxsize=0) # TODO: change maxsize\ndef fib(n):\n    if n < 2:\n        return n\n    return fib(n-1) + fib(n-2)\n\nn = int(input())\nfib.cache_clear()\nfib(n)\nprint('Hits:', fib.cache_info().hits)\n    \n",
+    "sourceCode": "'''TESTCASE\nfrom functools import lru_cache\n\n@lru_cache(maxsize=128)\ndef fib(n):\n    if n < 2:\n        return n\n    return fib(n-1) + fib(n-2)\n\nn = int(input())\nfib.cache_clear()\nfib(n)\nprint('Hits:', fib.cache_info().hits)\n    \n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3\n",
+            "output": "Hits: 1\n"
+        },
+        {
+            "input": "5\n",
+            "output": "Hits: 3\n"
+        },
+        {
+            "input": "11\n",
+            "output": "Hits: 9\n"
+        },
+        {
+            "input": "19\n",
+            "output": "Hits: 17\n"
+        }
+    ],
+    "simple_desc": "使用 lru_cache 实现动态编程",
+    "difficulty": "1",
+    "tag": "functools-lru_cache",
+    "author": "谢子聪"
+}

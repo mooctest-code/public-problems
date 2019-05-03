@@ -1,0 +1,29 @@
+{
+    "title": "堆排序",
+    "desc": "### 题目描述\n\n请自行实现堆排序算法，将数从小到大排列\n\n### 输入描述\n\n输入为一组整数，两两间用空格隔开\n\n### 输出描述\n\n输出这组整数，从小到大排列，两两间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3 4 5 2 1\n```\n\n```\n1 2 3 4 5\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\n# https://www.jianshu.com/p/bbbab7fa77a2\n# 大根堆（从小打大排列）\ndef heapSort(nums):\n    # 调整堆\n    def adjustHeap(nums, i, size):\n        # 非叶子结点的左右两个孩子\n        lchild = 2 * i + 1\n        rchild = 2 * i + 2\n        # 在当前结点、左孩子、右孩子中找到最大元素的索引\n        largest = i \n        if lchild < size and nums[lchild] > nums[largest]: \n            largest = lchild \n        if rchild < size and nums[rchild] > nums[largest]: \n            largest = rchild \n        # 如果最大元素的索引不是当前结点，把大的结点交换到上面，继续调整堆\n        if largest != i: \n            nums[largest], nums[i] = nums[i], nums[largest] \n            # 第 2 个参数传入 largest 的索引是交换前大数字对应的索引\n            # 交换后该索引对应的是小数字，应该把该小数字向下调整\n            adjustHeap(nums, largest, size)\n    # 建立堆\n    def builtHeap(nums, size):\n        for i in range(len(nums)//2)[::-1]: # 从倒数第一个非叶子结点开始建立大根堆\n            adjustHeap(nums, i, size) # 对所有非叶子结点进行堆的调整\n        # print(nums)  # 第一次建立好的大根堆\n    # 堆排序 \n    size = len(nums)\n    builtHeap(nums, size) \n    for i in range(len(nums))[::-1]: \n        # 每次根结点都是最大的数，最大数放到后面\n        nums[0], nums[i] = nums[i], nums[0] \n        # 交换完后还需要继续调整堆，只需调整根节点，此时数组的 size 不包括已经排序好的数\n        adjustHeap(nums, 0, i) \n    return nums  # 由于每次大的都会放到后面，因此最后的 nums 是从小到大排列\n\na = list(map(int, input().split()))\nprint(*heapSort(a))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3 4 5 2 1\n",
+            "output": "1 2 3 4 5\n"
+        },
+        {
+            "input": "0 9 1 0 19 9 0 15 19 17\n",
+            "output": "0 0 0 1 9 9 15 17 19 19\n"
+        },
+        {
+            "input": "2 6 3 9 4 6 5 2 0 8\n",
+            "output": "0 2 2 3 4 5 6 6 8 9\n"
+        },
+        {
+            "input": "-2 1 -1 -3 9 -5 3 -4 5 -8\n",
+            "output": "-8 -5 -4 -3 -2 -1 1 3 5 9\n"
+        }
+    ],
+    "simple_desc": "实现堆排序",
+    "difficulty": "3",
+    "tag": "排序算法",
+    "author": "匿名"
+}
