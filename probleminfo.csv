@@ -70,7 +70,7 @@ sorted,使用sorted对数据按照指定的要求排序,2,内置全局函数-可
 统计有特征整数的和,被3除余1并且被5除余3的所有整数的和,1,数学问题|流程控制-循环,匿名,1699,Algorithms/Math/94_SumCharacteristicIntegers
 读取和输出几个数据,一行中多个数据的读取和输出,1,输入输出|类型转换|字符串-格式化,谢子聪,1517,BasicGrammar/IO/2_SomeData
 读取和输出多行多列数据,矩阵和不定长数组的读取和输出,3,输入输出|流程控制-循环|矩阵|高阶函数|流程控制-异常处理,谢子聪,1520,BasicGrammar/IO/5_Matrix
-HelloWorld,输出 Hello World,1,输入输出,匿名,1515,BasicGrammar/IO/0_HelloWorld
+HelloWorld,输出 Hello World,1,输入输出,匿名,2785/1515,BasicGrammar/IO/0_HelloWorld
 读取和输出Python格式的数据,Python数据类型数据的读取和输出,1,输入输出|编译执行,谢子聪,1521,BasicGrammar/IO/6_PythonIO
 读取和输出一个数组,一行数组的读取和输出,2,输入输出|列表生成器|高阶函数|字符串-格式化|内置全局函数-可迭代对象,谢子聪,1518,BasicGrammar/IO/3_DataList
 读取和输出一个数据,类型转换的读取和输出,1,输入输出|类型转换|字符串-格式化,谢子聪,1516,BasicGrammar/IO/1_BasicType
