@@ -22,7 +22,7 @@ if '-t' in sys.argv:
     problems = ['./template']
 
 cur = {}
-with open(path.join('res', 'probleminfo.csv'), 'r', encoding='utf8') as f:
+with open(path.join('.', 'probleminfo.csv'), 'r', encoding='utf8') as f:
     f.readline()
     for line in f:
         info = line[:-1].split(',')
@@ -57,5 +57,5 @@ for problem in problems:
                 '---\n题目: {}\n简介: {}\n难度: {}\n标签: {}\n作者: {}\n慕码: {}\n---\n'.format(*meta[:6]) + readme)
 
 probleminfo.append('')
-with open(path.join('res', 'probleminfo.csv'), 'w', encoding='utf8') as f:
+with open(path.join('.', 'probleminfo.csv'), 'w', encoding='utf8') as f:
     f.write('\n'.join(probleminfo))
