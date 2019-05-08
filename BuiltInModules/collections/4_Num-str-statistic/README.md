@@ -4,7 +4,7 @@
 难度: 2
 标签: collections-Counter
 作者: MOOCTEST
-慕码: 1599
+慕码: 2879/1599
 ---
 
 ### 题目描述

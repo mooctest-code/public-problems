@@ -4,7 +4,7 @@
 难度: 3
 标签: collections-Counter|functools|排序
 作者: MOOCTEST
-慕码: 1600
+慕码: 2879/1600
 ---
 
 ### 题目描述
