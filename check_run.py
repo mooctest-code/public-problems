@@ -48,9 +48,11 @@ if replaceTestcase:
     if p_r < len(sys.argv)-1 and '-' not in sys.argv[p_r+1]:
         ntestcases = int(sys.argv[p_r+1])
 
+
 def myprint(str):
     if not silent:
         print(str)
+
 
 '''
 Load solution.py and testcases
@@ -58,10 +60,11 @@ Load solution.py and testcases
 testcases = []
 myprint('Load solution.py and testcases')
 with open(path.join(problem, 'solution.py'), 'r', encoding='utf-8') as f:
-    firstline = f.readline() # '''TESTCASE
+    firstline = f.readline()  # '''TESTCASE
     if fromInFile or firstline != '\'\'\'TESTCASE\n':
         fromInFile = True
     else:
+        firstline = ''
         testcase = []
         while f.readable():
             line = f.readline()
@@ -70,7 +73,8 @@ with open(path.join(problem, 'solution.py'), 'r', encoding='utf-8') as f:
                 testcase = []
                 if line[0] == '\'':
                     break
-            else: testcase.append(line)
+            else:
+                testcase.append(line)
 
     if zipProblem:
         metadata['sourceCode'] = firstline + f.read()
@@ -94,9 +98,11 @@ testcases = list(map(lambda x: {"input": x}, testcases))
 '''
 Run solution.py
 '''
+curpath = os.getcwd()
+print(problem)
 for i in range(len(testcases)):
-    runer = subprocess.Popen(['python', path.join(problem, 'solution.py')], stdout=subprocess.PIPE,
-        stdin=subprocess.PIPE, stderr=subprocess.STDOUT)
+    runer = subprocess.Popen(['python', 'solution.py'], cwd=problem, stdout=subprocess.PIPE,
+                             stdin=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     (stdout, stderr) = runer.communicate(str.encode(testcases[i]['input']))
     if stderr:
@@ -104,7 +110,7 @@ for i in range(len(testcases)):
         sys.exit()
 
     testcases[i]['output'] = bytes.decode(stdout).replace('\r', '')
-    
+
     myprint("Testcase {}:".format(i+1))
     myprint("Input:")
     myprint(testcases[i]['input'])
@@ -114,15 +120,16 @@ for i in range(len(testcases)):
 '''
 Write testcase into README.md
 '''
-if replaceTestcase:    
+if replaceTestcase:
     repl = "### 测试样例\n\n"
     hasInp = 'NoInput' != testcases[0]['input'][:7]
     for i in range(ntestcases):
-        repl += ("#### 样例" + str(i+1) + ": " 
-            + ("输入-" if hasInp else "") + "输出\n\n"
-            + ("```\n" + testcases[i]['input'] + "```\n\n" if hasInp else "")
-            + "```\n" + testcases[i]['output'] + '```\n\n')
-    
+        repl += ("#### 样例" + str(i+1) + ": "
+                 + ("输入-" if hasInp else "") + "输出\n\n"
+                 + ("```\n" + testcases[i]['input'] +
+                    "```\n\n" if hasInp else "")
+                 + "```\n" + testcases[i]['output'] + '```\n\n')
+
     with open(path.join(problem, 'README.md'), 'r', encoding='utf-8') as f:
         readme = f.readlines()
         p = -1
@@ -141,7 +148,8 @@ if replaceTestcase:
                 break
         if p == -1:
             readme.append(repl)
-        else: readme[p] = repl
+        else:
+            readme[p] = repl
 
     with open(path.join(problem, 'README.md'), 'w', encoding='utf-8') as fw:
         fw.write(''.join(readme))
@@ -178,7 +186,7 @@ if zipProblem:
         f = open(os.path.join(problem, 'template.py'), 'r')
         metadata['templateCode'] = f.read()
         f.close()
-    except Exception: 
+    except Exception:
         pass
 
     metadata['testCases'] = testcases
@@ -192,8 +200,12 @@ if zipProblem:
     with zipfile.ZipFile(problem + '.zip', 'w') as z:
         z.write(os.path.join(problem, 'meta.json'), 'meta.json')
         # public and .mooctest folder
-        if os.path.exists(os.path.join(problem, 'workspace')):
-            z.write(os.path.join(problem, 'workspace'), 'workspace')
+        public_path = os.path.join(problem, 'public')
+        if os.path.exists(public_path):
+            for i in os.walk(public_path):
+                for f in i[2]:
+                    z.write(os.path.join(i[0], f), os.path.join(
+                        i[0].replace(problem, 'workspace'), f))
 
         myprint('zip file has been created to ' + problem + '.zip')
 
