@@ -1,0 +1,29 @@
+{
+    "title": "寻找希望",
+    "desc": "### 题目描述\n\n请从给定字符串中找到 hope，并将其替换为 action。\n\n### 输入描述\n\n输入为一个字符串\n\n### 输出描述\n\n输出将 hope 替换为 action 后的字符串\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nI think hope is a good thing.\n```\n\n```\nI think action is a good thing.\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\ns = input()\nprint(s.replace('hope', 'action'))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "I think hope is a good thing.\n",
+            "output": "I think action is a good thing.\n"
+        },
+        {
+            "input": "I like films with plenty of hope.\n",
+            "output": "I like films with plenty of action.\n"
+        },
+        {
+            "input": "No hope.\n",
+            "output": "No action.\n"
+        },
+        {
+            "input": "All we can do now is hope.\n",
+            "output": "All we can do now is action.\n"
+        }
+    ],
+    "simple_desc": "从字符串中找到 hope 并替换为其他字符串",
+    "difficulty": "2",
+    "tag": "字符串",
+    "author": "张莉"
+}

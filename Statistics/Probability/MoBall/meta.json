@@ -1,0 +1,37 @@
+{
+    "title": "摸球问题",
+    "desc": "### 题目描述\n\n设袋中有 n 只白球和 m 只黑球，它们除颜色外都相同，分别进行有放回和无返回的摸球两次，求两次都是白球的概率。\n\n### 输入描述\n\n输入为两个整数 n 和 m。\n\n### 输出描述\n\n输出两行。第一行输出有放回摸球时的概率；第二行输出无放回摸球时的概率。均保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4 2\n```\n\n```\n0.4444\n0.4000\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from math import factorial\n\n\ndef fprint(x):\n    print('{:.4f}'.format(x))\n\n\ndef f(x):\n    return factorial(x)\n\n\ndef C(b, a):\n    return f(b) / (f(a) * f(b-a))\n\n\nn, m = map(int, input().split())\n\nif n == 0:\n    fprint(0)\n    fprint(0)\nelif m == 0:\n    fprint(n > 0)\n    fprint(n > 1)\nelse:\n    fprint((n/(n+m))**2)\n    fprint(C(n, 2)/C(n+m, 2))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 2\n",
+            "output": "0.4444\n0.4000\n"
+        },
+        {
+            "input": "0 1\n",
+            "output": "0.0000\n0.0000\n"
+        },
+        {
+            "input": "1 0\n",
+            "output": "1.0000\n0.0000\n"
+        },
+        {
+            "input": "0 0\n",
+            "output": "0.0000\n0.0000\n"
+        },
+        {
+            "input": "10 0\n",
+            "output": "1.0000\n1.0000\n"
+        },
+        {
+            "input": "10 10\n",
+            "output": "0.2500\n0.2368\n"
+        }
+    ],
+    "simple_desc": "计算有无放回摸球问题的概率",
+    "difficulty": "2",
+    "tag": "概率",
+    "author": "谢子聪"
+}

@@ -1,0 +1,33 @@
+{
+    "title": "电子元件寿命",
+    "desc": "### 题目描述\n\n某电子元件的寿命 X（小时） 服从参数为 λ=0.001 的指数分布，试求该元件能使用 n 个小时以上的概率。\n\n### 输入描述\n\n输入为使用时间 n。\n\n### 输出描述\n\n输出能够使用 n 个小时以上的概率，结果保留六位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n100\n```\n\n```\n0.904837\n```\n\n#### 样例2: 输入-输出\n\n```\n1000\n```\n\n```\n0.367879\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from scipy import stats\n\nn = int(input())\ne = stats.expon.cdf(n, scale=1000)\nprint('{:.6f}'.format(1-e))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "100\n",
+            "output": "0.904837\n"
+        },
+        {
+            "input": "1000\n",
+            "output": "0.367879\n"
+        },
+        {
+            "input": "10000\n",
+            "output": "0.000045\n"
+        },
+        {
+            "input": "1234\n",
+            "output": "0.291126\n"
+        },
+        {
+            "input": "10\n",
+            "output": "0.990050\n"
+        }
+    ],
+    "simple_desc": "求寿命服从指数分布的电子元件的损耗概率",
+    "difficulty": "2",
+    "tag": "概率分布",
+    "author": "Unknown"
+}

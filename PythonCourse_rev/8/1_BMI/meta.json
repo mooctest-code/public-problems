@@ -1,0 +1,29 @@
+{
+    "title": "身体质量指数",
+    "desc": "### 题目描述\n\n身体质量指数（BMI，Body Mass Index）是国际上常用的衡量人体肥胖程度和是否健康的重要标准，计算公式为：BMI=体重/身高的平方（国际单位kg/㎡）。\n\n定义BMI类，将身高体重作为 `__init__()` 方法的参数，在 `__init__()` 方法中计算BMI指数，并使用 `printBMI()` 方法输出BMI指数（保留一位小数）。\n\n### 输入描述\n\n输入为两个浮点数表示某人的身高（m）和体重（kg）\n\n### 输出描述\n\n输出这个人的身体质量指数，保留一位小数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1.70 62.4\n```\n\n```\nBMI: 21.6\n```\n\n",
+    "templateCode": "class BMI:\n    # TODO 实现 __init__() 计算 BMI\n\n    # TODO 实现 printBMI() 打印 BMI\n    pass\n",
+    "sourceCode": "'''TESTCASE\n\n\nclass BMI:\n    def __init__(self, height, weight):\n        self.bmi = weight / (height ** 2)\n\n    def printBMI(self):\n        print('BMI: {:.1f}'.format(self.bmi))\n\n\nheight, weight = map(float, input().split())\n\nbmi = BMI(height, weight)\nbmi.printBMI()\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1.70 62.4\n",
+            "output": "BMI: 21.6\n"
+        },
+        {
+            "input": "1.63 49.6\n",
+            "output": "BMI: 18.7\n"
+        },
+        {
+            "input": "1.83 84\n",
+            "output": "BMI: 25.1\n"
+        },
+        {
+            "input": "1.54 43.3\n",
+            "output": "BMI: 18.3\n"
+        }
+    ],
+    "simple_desc": "定义一个身体质量指数 BMI 类",
+    "difficulty": "1",
+    "tag": "类和对象",
+    "author": "张莉"
+}

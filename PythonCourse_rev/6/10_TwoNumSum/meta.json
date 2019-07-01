@@ -1,0 +1,33 @@
+{
+    "title": "和为n的两个数",
+    "desc": "### 题目描述\n\n实现函数 twonumSum(l, n)，在列表 l 中查找是否有两数之和等于 n，若有则返回两数的下标元组（找到一组即可且要求其中的一个数尽量小），否则返回 None。\n\n### 输入描述\n\n输入为两行。第一行为一组有序整数，两两间用空格隔开；第二行为整数 n\n\n### 输出描述\n\n输出和为 n 的这两个数在数组中的下标（要求其中的一个数尽量小），若不存在则输出 `Not Found`\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1 4 5 6 9 11 15 19 29\n15\n```\n\n```\n1 5\n```\n\n#### 样例2: 输入-输出\n\n```\n5 8 17 19 34 67 89\n30\n```\n\n```\nNot Found\n```\n\n",
+    "templateCode": "def twonumSum(l: list, n: int):\n    # l 为有序整数列表，n 为目标两个数的和\n    # 返回 l 中和为 n 的两个数的下标\n    # 返回一组即可且要求其中的一个数尽量小\n    return None\n\n\nl = list(map(int, input().split()))\nn = int(input())\n\ntwonum = twonumSum(l, n)\nprint(*twonum) if twonum else print('Not Found')\n",
+    "sourceCode": "'''TESTCASE\n\n\ndef twonumSum(l: list, n: int):\n    i, j = 0, len(l)-1\n    while i < j:\n        s = l[i] + l[j]\n        if s < n:\n            i += 1\n        elif s > n:\n            j -= 1\n        else:\n            return (i, j)\n    return None\n\n\nl = list(map(int, input().split()))\nn = int(input())\n\ntwonum = twonumSum(l, n)\nprint(*twonum) if twonum else print('Not Found')\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1 4 5 6 9 11 15 19 29\n15\n",
+            "output": "1 5\n"
+        },
+        {
+            "input": "5 8 17 19 34 67 89\n30\n",
+            "output": "Not Found\n"
+        },
+        {
+            "input": "1 2 3 4 5 6 7 8 9 10\n9\n",
+            "output": "0 7\n"
+        },
+        {
+            "input": "-9 -8 -7 -4 5 6 8 9\n10\n",
+            "output": "Not Found\n"
+        },
+        {
+            "input": "-9 -8 -7 -4 5 6 8 9\n1\n",
+            "output": "1 7\n"
+        }
+    ],
+    "simple_desc": "从列表中寻找两个数，它们的和为 n",
+    "difficulty": "2",
+    "tag": "列表|流程控制",
+    "author": "张莉"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "人数最多的区间",
+    "desc": "### 题目描述\n\n现有某校毕业生的就业年薪匿名调查表，请你将年薪从 0 开始、间隔为 3 进行分组，分成 \\[0, 3\\), \\[3, 6\\), \\[6, 9\\) …，求出人数最多的分组。\n\n### 输入描述\n\n输入为一个就业年薪列表，每一个值代表该毕业生的年薪（浮点数，单位为 w），两两间用空格隔开\n\n### 输出描述\n\n输出人数最多的分组，如果有多个，每个占一行，按年薪从小到大排列\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4.2\n```\n\n```\n[3, 6)\n```\n\n#### 样例2: 输入-输出\n\n```\n7.6 2.6 3.2 4.4 5.4 6.8 8.8\n```\n\n```\n[3, 6)\n[6, 9)\n```\n\n### 提示\n\n可以手动实现，也可以使用 `scipy.stats` 来解决。",
+    "templateCode": "",
+    "sourceCode": "\nimport numpy as np\nfrom scipy import stats\n\na = np.array(list(map(float, input().split())))\nmode = stats.binned_statistic(\n    a, a, statistic='count', bins=[i*3 for i in range(0, int(a.max())//3+2)]).statistic\nmaxcnt = mode.max()\nfor i in range(mode.size):\n    if mode[i] == maxcnt:\n        print('[{}, {})'.format(i*3, (i+1)*3))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4.2\n",
+            "output": "[3, 6)\n"
+        },
+        {
+            "input": "7.6 2.6 3.2 4.4 5.4 6.8 8.8\n",
+            "output": "[3, 6)\n[6, 9)\n"
+        },
+        {
+            "input": "4.53 2.68 6.55 6.12 8.31 7.12 8.00 9.61 7.66 5.47 7.85 7.43 7.64 5.89 7.06 1.22 9.71 6.86 6.19 6.86\n",
+            "output": "[6, 9)\n"
+        },
+        {
+            "input": "11.34 6.46 1.50 3.53 6.52 6.69 5.09 7.46 4.67 6.77 5.10 6.68 6.24 2.23 5.38 9.55\n",
+            "output": "[6, 9)\n"
+        }
+    ],
+    "simple_desc": "得到一个数组的众数",
+    "difficulty": "2",
+    "tag": "数据汇总|列表|统计",
+    "author": "谢子聪"
+}

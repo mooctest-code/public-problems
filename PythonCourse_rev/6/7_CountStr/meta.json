@@ -1,0 +1,29 @@
+{
+    "title": "统计单词出现次数",
+    "desc": "### 题目描述\n\n请实现一个 count_str() 函数，统计每个单词的出现次数并以字典形式返回,单词统计不区分大小写。并分别按键和值的升序输出单词及其出现次数。\n\n### 输入描述\n\n输入为一个由英文字母和空格组成的字符串，空格隔开的为单词。\n\n### 输出描述\n\n输出分为多行。假设字符串中有 n 个不同的单词：\n\n前 n 行输出这 n 个单词和其出现次数，按单词的字典序排列；后 n 行同样输出这 n 个单词和其出现次数，但按单词的出现次数降序排列。\n\n输出均使用小写英文字母。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nPython C Java Go Java PHP Python Java\n```\n\n```\nc 1\ngo 1\njava 3\nphp 1\npython 2\njava 3\npython 2\nc 1\ngo 1\nphp 1\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\n\n\ndef count_str(s: str):\n    d = {}\n    for i in s.split():\n        d.setdefault(i, 0)\n        d[i] += 1\n    return d\n\n\nd = count_str(input().lower())\ncnt = sorted(d.items(), key=lambda x: x[0])\nfor i in cnt:\n    print(i[0], i[1])\n\ncnt = sorted(cnt, key=lambda x: x[1], reverse=True)\nfor i in cnt:\n    print(i[0], i[1])\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "Python C Java Go Java PHP Python Java\n",
+            "output": "c 1\ngo 1\njava 3\nphp 1\npython 2\njava 3\npython 2\nc 1\ngo 1\nphp 1\n"
+        },
+        {
+            "input": "python php python java rust php ruby\n",
+            "output": "java 1\nphp 2\npython 2\nruby 1\nrust 1\nphp 2\npython 2\njava 1\nruby 1\nrust 1\n"
+        },
+        {
+            "input": "python\n",
+            "output": "python 1\npython 1\n"
+        },
+        {
+            "input": "test TEST tesT Test\n",
+            "output": "test 4\ntest 4\n"
+        }
+    ],
+    "simple_desc": "统计字符串中每个单词的出现次数",
+    "difficulty": "2",
+    "tag": "字符串|列表|排序",
+    "author": "张莉"
+}

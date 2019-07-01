@@ -1,0 +1,33 @@
+{
+    "title": "次品检验",
+    "desc": "### 题目描述\n\n经检验，某批 n 件产品的次品率为 2%，现从中任意地依次抽出 3 件进行检验，试求分别以放回和不放回的方式抽取，恰好抽到 1 件次品的概率。\n\n### 输入描述\n\n输入为产品件数 n（0 \\< n \\< 1000000） \n\n### 输出描述\n\n输出两行。第一行为有放回抽样的概率；第二行为无放回抽取的概率。结果均保留六位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n500\n```\n\n```\n0.057624\n0.057853\n```\n\n#### 样例2: 输入-输出\n\n```\n50000\n```\n\n```\n0.057624\n0.057626\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from scipy import stats\n\nn = int(input())\n\nbi = stats.binom(3, 0.02)\npb = bi.pmf(1)\n\nhg = stats.hypergeom(n, n*0.02, 3)\nph = hg.pmf(1)\n\nprint('{:.6f}'.format(pb))\nprint('{:.6f}'.format(ph))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "500\n",
+            "output": "0.057624\n0.057853\n"
+        },
+        {
+            "input": "50000\n",
+            "output": "0.057624\n0.057626\n"
+        },
+        {
+            "input": "500000\n",
+            "output": "0.057624\n0.057624\n"
+        },
+        {
+            "input": "5000\n",
+            "output": "0.057624\n0.057647\n"
+        },
+        {
+            "input": "10000\n",
+            "output": "0.057624\n0.057635\n"
+        }
+    ],
+    "simple_desc": "使用二项分布和超几何分布求次品概率",
+    "difficulty": "3",
+    "tag": "概率分布",
+    "author": "Unknown"
+}

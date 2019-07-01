@@ -1,0 +1,29 @@
+{
+    "title": "蒙特卡罗法求圆周率",
+    "desc": "### 题目描述\n\n正方形和其内切圆的面积比为 $4r^2 : πr^2 =  1 : π/4$。因此我们可以通过在正方形上随机撒点，统计其落在园内的比例以估算出圆周率。这种通过随机数模拟实验来求取概率或随机变量的数学特征的方法称为蒙特·卡罗方法。\n\n现在请你以 0 为随机数种子，在边长为 1 的正方形上随机撒 [0, 1) 范围内的点（服从均匀分布），统计点出现在该正方形中四分之一圆上的比例，输出模拟 n 次估算出的圆周率。\n\n![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559925832263&di=2bf49605c4627b8c3dd98e6efa3b48d5&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FBxibvpyo2Us7a5z8tnWsewY88kRN1FVMZ0PFHk5P9yHethzdHliczLTFV4CLyg3lypkwGf0hgHbI1xnJB7saethw%2F640%3Fwx_fmt%3Dpng)\n\n### 输入描述\n\n输入为需要模拟的次数 n。\n\n### 输出描述\n\n输出估算出的圆周率，结果保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1000\n```\n\n```\n3.1280\n```\n\n#### 样例2: 输入-输出\n\n```\n100000\n```\n\n```\n3.1484\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\nimport random\n\nrandom.seed(0)\n\nn = int(input())\n\ncnt = 0\nfor i in range(n):\n    x = random.random()\n    y = random.random()\n\n    if x*x + y*y < 1:\n        cnt += 1\n\nprint('{:.4f}'.format(cnt*4/n))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1000\n",
+            "output": "3.1280\n"
+        },
+        {
+            "input": "100000\n",
+            "output": "3.1484\n"
+        },
+        {
+            "input": "300000\n",
+            "output": "3.1423\n"
+        },
+        {
+            "input": "456789\n",
+            "output": "3.1406\n"
+        }
+    ],
+    "simple_desc": "使用蒙特卡罗法求圆周率",
+    "difficulty": "2",
+    "tag": "概率",
+    "author": "谢子聪"
+}

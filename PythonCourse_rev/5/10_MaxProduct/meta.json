@@ -1,0 +1,29 @@
+{
+    "title": "最大连续乘积",
+    "desc": "### 题目描述\n\n给定一个数字字符串（0－9）和正整数 n，从该数字字符串中找出乘积最大的连续 n 个数字，若其中存在不止一组最大乘积则取第一组出现的连续数字，输出这些数字及它们的乘积。如果字符串不含 0（只有1-9）的话考虑如何更高效地解决这个问题。\n\n### 输入描述\n\n输入为一个数字字符串和一个正整数 n\n\n### 输出描述\n\n输出两行，第一行为第一组有最大乘积的连续 n 个数字；第二行为它们的乘积\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n7423986540924719 3\n```\n\n```\n986\n432\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\n\nfrom functools import reduce\n\n\ndef mul(x): return reduce(int.__mul__, x, 1)\n\n\na, n = input().split()\nn = int(n)\na = list(map(int, a))\nmp, mi = 0, 0\ni = 0\nwhile i+n < len(a):\n    try:\n        i = a.index(0, i, i+n) + 1\n    except ValueError:\n        p = mul(a[i:i+n])\n        if p > mp:\n            mp = p\n            mi = i\n        i += 1\n\n\nprint(''.join(map(str, a[mi:mi+n])))\nprint(mp)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "7423986540924719 3\n",
+            "output": "986\n432\n"
+        },
+        {
+            "input": "32985716817197 5\n",
+            "output": "29857\n5040\n"
+        },
+        {
+            "input": "10203040506 6\n",
+            "output": "102030\n0\n"
+        },
+        {
+            "input": "45741986417248091 6\n",
+            "output": "741986\n12096\n"
+        }
+    ],
+    "simple_desc": "给定一个数字字符串，求乘积最大的连续n个数字",
+    "difficulty": "2",
+    "tag": "流程控制",
+    "author": "张莉"
+}

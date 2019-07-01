@@ -1,0 +1,29 @@
+{
+    "title": "排队打饭",
+    "desc": "### 题目描述\n\n中午去食堂打饭，已知有一些学生按顺序排在了队伍中等待开饭，xiaochen 因有特殊情况需要插入到队伍第一个，xiaoma 也来打饭，排在了队伍最后一个，请模拟队伍的变换并得到最终的队伍顺序。\n\n### 输入描述\n\n输入为一组字符串，表示已经在排队的学生队伍，两两间用空格隔开\n\n### 输出描述\n\n输出加入 xiaochen 和 xiaoma 后的最终队伍，两两间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nxiaoming xiaoli xiaohua\n```\n\n```\nxiaochen xiaoming xiaoli xiaohua xiaoma\n```\n\n### 注\n\nxiaochen 可能本来就在队伍中\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\na: list = input().split()\nc = 'xiaochen'\nm = 'xiaoma'\n\nif c in a:\n    a.remove(c)\n\na.insert(0, c)\na.append(m)\n\nprint(*a)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "xiaoming xiaoli xiaohua\n",
+            "output": "xiaochen xiaoming xiaoli xiaohua xiaoma\n"
+        },
+        {
+            "input": "xiaoli xiaohua xiaohuang xiaochen\n",
+            "output": "xiaochen xiaoli xiaohua xiaohuang xiaoma\n"
+        },
+        {
+            "input": "xiaoliu xiaozhang xiaocong\n",
+            "output": "xiaochen xiaoliu xiaozhang xiaocong xiaoma\n"
+        },
+        {
+            "input": "xiaoming xiaoliu xiaozhang xiaochen xiaoli\n",
+            "output": "xiaochen xiaoming xiaoliu xiaozhang xiaoli xiaoma\n"
+        }
+    ],
+    "simple_desc": "得到最终打饭的队伍",
+    "difficulty": "2",
+    "tag": "知识点",
+    "author": "张莉"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "兴趣小组",
+    "desc": "### 题目描述\n\n现在有两个列表，分别存储了选择了足球兴趣小组和选择了篮球兴趣小组的学生姓名。请构建集合数据，利用集合数据的特性计算并输出如下信息：\n\n1. 选了两个兴趣小组的学生人数和姓名；\n2. 仅选了一个兴趣小组的学生人数和姓名。\n\n### 输入描述\n\n输入分为两行，第一行为选择了足球兴趣小组的学生，两两间用空格隔开；第二行为选择了篮球兴趣小组的学生，两两间用空格隔开\n\n### 输出描述\n\n输出分为两行，第一行为选了两个兴趣小组的学生人数和姓名；第二行为仅选了一个兴趣小组的学生人数和姓名，两两间用空格隔开；均按学生姓名字典序排列。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nxiaoming xiaozhang xiaoli xiaoliu\nxiaoming xiaoli xiaolin\n```\n\n```\n2 xiaoli xiaoming\n3 xiaolin xiaoliu xiaozhang\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\na = set(input().split())\nb = set(input().split())\n\nboth = a.intersection(b)\nonly = a.symmetric_difference(b)\n\nprint(len(both), *sorted(both))\nprint(len(only), *sorted(only))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "xiaoming xiaozhang xiaoli xiaoliu\nxiaoming xiaoli xiaolin\n",
+            "output": "2 xiaoli xiaoming\n3 xiaolin xiaoliu xiaozhang\n"
+        },
+        {
+            "input": "xiaoming xiaozhang xiaoli xiaoliu\nxiaoming xiaoli xiaolin xiaocong\n",
+            "output": "2 xiaoli xiaoming\n4 xiaocong xiaolin xiaoliu xiaozhang\n"
+        },
+        {
+            "input": "xiaoming xiaozhang xiaoli xiaoliu\nxiaolin\n",
+            "output": "0\n5 xiaoli xiaolin xiaoliu xiaoming xiaozhang\n"
+        },
+        {
+            "input": "xiaolin\nxiaolin\n",
+            "output": "1 xiaolin\n0\n"
+        }
+    ],
+    "simple_desc": "给定两个兴趣小组，统计学生信息",
+    "difficulty": "1",
+    "tag": "集合",
+    "author": "张莉"
+}

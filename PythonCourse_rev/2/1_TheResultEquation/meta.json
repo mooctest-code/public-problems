@@ -1,0 +1,29 @@
+{
+    "title": "求方程的结果",
+    "desc": "### 题目描述\n\n求方程 $y=x^2+2x-10$ 所对应的y值，是一个浮点数，输出结果保留两位小数。\n\n### 输入描述\n\n输入为方程的 x 值\n\n### 输出描述\n\n输出为方程的 y 值，结果保留两位小数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1.5\n```\n\n```\n-4.75\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nx = float(input())\n\nprint('{:.2f}'.format(x**2+2*x-10))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1.5\n",
+            "output": "-4.75\n"
+        },
+        {
+            "input": "4.2\n",
+            "output": "16.04\n"
+        },
+        {
+            "input": "0\n",
+            "output": "-10.00\n"
+        },
+        {
+            "input": "-1.23\n",
+            "output": "-10.95\n"
+        }
+    ],
+    "simple_desc": "计算方差的y值",
+    "difficulty": "1",
+    "tag": "数值运算",
+    "author": "张莉"
+}

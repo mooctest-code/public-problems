@@ -1,0 +1,29 @@
+{
+    "title": "通过的信号灯",
+    "desc": "### 题目描述\n\n设一汽车在开往目的地的道路上需经过 n 组信号灯，每组信号灯以 p 的概率允许或禁止汽车通过。设 X 表示汽车首次停下（可能是到目的地）时，它已通过的信号灯的组数（信号灯工作独立），求 X 的概率分布律，数学期望和方差。\n\n### 输入描述\n\n输入为 n 和 p 表示需要经过的 n 组信号灯和允许或禁止通过的概率 p。\n\n### 输出描述\n\n输出四行。前两行输出 X 的概率分布律表格，每行元素使用**制表符**隔开；第三行输出 X 的数学期望；第四行输出 X 的方差，结果均保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4 0.5\n```\n\n```\nX\t0\t1\t2\t3\t4\nP\t0.5000\t0.2500\t0.1250\t0.0625\t0.0625\n0.9375\n1.4336\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\n\ndef E(X):\n    return sum(map(lambda x: x[0]*x[1], X))\n\n\ndef V(X):\n    X2 = ((x[0]*x[0], x[1]) for x in X)\n    return E(X2) - E(X) ** 2\n\n\ninp = input().split()\nn, p = int(inp[0]), float(inp[1])\n\nX = tuple(zip((i for i in range(n+1)),\n              ((1-p)**i * (p if i < n else 1)\n               for i in range(n+1))))\n\nprint('X', *(x[0] for x in X), sep='\\t')\nprint('P', *('{:.4f}'.format(x[1])\n             for x in X), sep='\\t')\nprint('{:.4f}'.format(E(X)))\nprint('{:.4f}'.format(V(X)))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 0.5\n",
+            "output": "X\t0\t1\t2\t3\t4\nP\t0.5000\t0.2500\t0.1250\t0.0625\t0.0625\n0.9375\n1.4336\n"
+        },
+        {
+            "input": "5 0.5\n",
+            "output": "X\t0\t1\t2\t3\t4\t5\nP\t0.5000\t0.2500\t0.1250\t0.0625\t0.0312\t0.0312\n0.9688\n1.6553\n"
+        },
+        {
+            "input": "4 0.8\n",
+            "output": "X\t0\t1\t2\t3\t4\nP\t0.8000\t0.1600\t0.0320\t0.0064\t0.0016\n0.2496\n0.3089\n"
+        },
+        {
+            "input": "1 0.2\n",
+            "output": "X\t0\t1\nP\t0.2000\t0.8000\n0.8000\n0.1600\n"
+        }
+    ],
+    "simple_desc": "汽车通过的信号灯的概率分布律",
+    "difficulty": "2",
+    "tag": "概率-随机变量",
+    "author": "Unknown"
+}

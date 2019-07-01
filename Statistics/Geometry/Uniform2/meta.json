@@ -1,0 +1,33 @@
+{
+    "title": "二维均匀分布",
+    "desc": "### 题目描述\n\n设 \\(X, Y\\) \\~ G 上的均匀分布，且 `G = {(x, y)|0 ≤ y ≤ x, a ≤ x ≤ b}`。其中 a 和 b 是给定值，试求：\n\n1. `P(Y > X^2)`；\n2. \\(X, Y\\) 在平面上的落点到 y 轴距离小于 0.3 的概率。\n\n### 输入描述\n\n输入为 x 的范围 a 和 b（0 ≤ a \\< b）。\n\n### 输出描述\n\n输出两行。分别为问题 1 和问题 2 的结果，结果均保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0 1\n```\n\n```\n0.3333\n0.0900\n```\n\n#### 样例2: 输入-输出\n\n```\n0 0.4\n```\n\n```\n0.7333\n0.5625\n```\n\n### 提示\n\n使用 `scipy.integrate` 计算二重积分。",
+    "templateCode": "",
+    "sourceCode": "\nfrom scipy import integrate\n\na, b = map(eval, input().split())\n\nA = (a + b) * (b - a) / 2\n\nr = 0\nif a < 1:\n    r, e = integrate.dblquad(lambda x, y: 1/A, a, min(b, 1),\n                             lambda x: x**2, lambda x: x)\nprint('{:.4f}'.format(r))\n\nr = 0\nif a < 0.3:\n    r, e = integrate.dblquad(lambda x, y: 1/A, a, min(b, 0.3),\n                             0, lambda x: x)\n\nprint('{:.4f}'.format(r))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0 1\n",
+            "output": "0.3333\n0.0900\n"
+        },
+        {
+            "input": "0 0.4\n",
+            "output": "0.7333\n0.5625\n"
+        },
+        {
+            "input": "1 2\n",
+            "output": "0.0000\n0.0000\n"
+        },
+        {
+            "input": "0 0.2\n",
+            "output": "0.8667\n1.0000\n"
+        },
+        {
+            "input": "0.2 1.4\n",
+            "output": "0.1556\n0.0260\n"
+        }
+    ],
+    "simple_desc": "给定二维均匀分布，求二重积分",
+    "difficulty": "3",
+    "tag": "概率-概率分布|积分",
+    "author": "Unknown"
+}

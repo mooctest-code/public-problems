@@ -1,0 +1,33 @@
+{
+    "title": "温度调节器",
+    "desc": "### 题目描述\n\n将一温度调节器放置在贮存着某种液体的容器内，调节器温度定在 d 度，若液体的温度服从平均温度为温度调节器温度，标准差为 0.5 的正态分布，若要保持液体的温度至少为 c 度的概率不低于 p，试求 d 至少应为多少。\n\n### 输入描述\n\n输入为至少需要保持的最低温度 c 和概率 p。\n\n### 输出描述\n\n输出调节器的温度 d，精确到两位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n80 0.99\n```\n\n```\n81.16\n```\n\n#### 样例2: 输入-输出\n\n```\n37 0.95\n```\n\n```\n37.82\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from scipy import stats\n\nc, p = map(float, input().split())\n\nno = stats.norm(0, 1)\n\nprint('{:.2f}'.format(c - no.isf(p)*0.5))\n\n# l, r = 0, 100\n# s = 0.5\n# while True:\n#     m = (l + r) / 2\n#     t = stats.norm.sf(c, m, s)\n#     # print(t)\n#     if t - p < -1e-4:\n#         l = m\n#     elif t - p > 1e-4:\n#         r = m\n#     else:\n#         print('{:.2f}'.format(m))\n#         break\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "80 0.99\n",
+            "output": "81.16\n"
+        },
+        {
+            "input": "37 0.95\n",
+            "output": "37.82\n"
+        },
+        {
+            "input": "37 0.99\n",
+            "output": "38.16\n"
+        },
+        {
+            "input": "60 0.97\n",
+            "output": "60.94\n"
+        },
+        {
+            "input": "80 0.80\n",
+            "output": "80.42\n"
+        }
+    ],
+    "simple_desc": "求温度调节器定的温度",
+    "difficulty": "2",
+    "tag": "概率分布",
+    "author": "Unknown"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "汇率转换",
+    "desc": "### 题目描述\n\n请你根据用户的输入帮其将美元转为人民币或人民币转为美元，假设美元兑人民币的汇率为 6.91。\n\n### 输入描述\n\n用户输入为一个带有单位的金额，`USD` 表示美元，`CNY` 表示人民币，如 `100USD`、`100CNY`。\n\n### 输出描述\n\n若第二行输入为美元，将其转为人民币，若为人民币，则将其转为美元，输出保留两位小数，若为其他货币则输出 `Invalid input.`。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n10.0USD\n```\n\n```\n10.0USD is 69.10CNY\n```\n\n#### 样例2: 输入-输出\n\n```\n100EUR\n```\n\n```\nInvalid input.\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nl = input()\nc = 6.91\nr = 0\nu = 'USD'\nif l[-3:] == 'USD':\n    r = float(l[:-3]) * c\n    u = 'CNY'\nelif l[-3:] == 'CNY':\n    r = float(l[:-3]) / c\n\nprint('{} is {:.2f}{}'.format(l, r, u) if r\n      else 'Invalid input.')\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "10.0USD\n",
+            "output": "10.0USD is 69.10CNY\n"
+        },
+        {
+            "input": "100EUR\n",
+            "output": "Invalid input.\n"
+        },
+        {
+            "input": "100CNY\n",
+            "output": "100CNY is 14.47USD\n"
+        },
+        {
+            "input": "100BTC\n",
+            "output": "Invalid input.\n"
+        }
+    ],
+    "simple_desc": "人民币和美元之间的转换",
+    "difficulty": "2",
+    "tag": "流程控制",
+    "author": "谢子聪"
+}

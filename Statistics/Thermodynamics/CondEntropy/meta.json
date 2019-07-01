@@ -1,0 +1,33 @@
+{
+    "title": "最佳分割点",
+    "desc": "### 题目描述\n\n上一题，我们使用信息熵度量了数据集的分类不确定性。那么我们该如何降低这种不确定性？答：分割数据。\n\n根据条件熵的定义和性质，有 `H(X)+H(Y|X) = H(X, Y) ≤ H(X)+H(Y)`，即 `H(Y|X) ≤ H(Y)`，其说明在给定 X 的条件下，Y 的信息熵将不变或减少。\n\n![](https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=844315090,947533151&fm=15&gp=0.jpg)\n\n因此，若我们能根据某条件，将数据集分割成多个子集，数据集的不确定性将不变或减少。\n\nsklearn 自带的红酒数据集 wine 有 13 个连续性特征。现给定某特征，请你从该特征中选择一个数值 x 作为分割点，将数据集分割成 { ≤ x } 和 { > x } 的两部分，使得该数据集的不确定性最小。\n\n### 输入描述\n\n输入为 wine 数据集中某特征的名称。\n\n### 输出描述\n\n输出两行。第一行输出分割前的信息熵和分割后的条件熵，结果保留六位小数；第二行输出在给定特征下，将数据集分类不确定性最小化的特征值。\n\n若有多个值，则两两间用空格隔开。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nalcohol\n```\n\n```\n1.086038 0.705935\n12.77\n```\n\n#### 样例2: 输入-输出\n\n```\nmalic_acid\n```\n\n```\n1.086038 0.883712\n2.16\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\nfrom sklearn import datasets\nimport numpy as np\nfrom math import log\n\n\ndef h(cnt, total: int):\n    if total == 0:\n        return 0\n\n    ent = 0\n    for i in cnt:\n        p = i / total\n        if p > 0:\n            ent -= p * log(p)\n    return ent\n\n\ndef cond(data: list, target: list, target_names: list):\n    size = len(data)\n    assert(size > 0)\n\n    len_target = len(target_names)\n\n    tc = np.array([0 for i in range(len_target)])\n    ttc = np.array([target.count(i) for i in range(len_target)])\n\n    data = sorted(zip(data, target))\n\n    min_ent = h(ttc, size)\n\n    def_ent = min_ent\n\n    i = 0\n    while i < size:\n        tc[data[i][1]] += 1\n        while i < size-1 and data[i+1][0] == data[i][0]:\n            tc[data[i+1][1]] += 1\n            i += 1\n\n        l = i + 1\n        r = size - l\n\n        left_ent = h(tc, l)\n        right_ent = h(ttc-tc, r)\n        ent = l/size * left_ent + r/size * right_ent\n\n        if ent <= min_ent:\n            if ent < min_ent:\n                min_ent = ent\n                ans = []\n            ans.append(data[i][0])\n\n        i += 1\n\n    return def_ent, min_ent, ans\n\n\ndataset = datasets.load_wine()\n\nname = input()\n\nidx = dataset['feature_names'].index(name)\n\ndata = [d[idx] for d in dataset['data']]\n\nd, m, ans = cond(data,\n                 dataset['target'].tolist(),\n                 dataset['target_names'])\n\nprint('{:.6f} {:.6f}'.format(d, m))\nprint(*ans)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "alcohol\n",
+            "output": "1.086038 0.705935\n12.77\n"
+        },
+        {
+            "input": "malic_acid\n",
+            "output": "1.086038 0.883712\n2.16\n"
+        },
+        {
+            "input": "ash\n",
+            "output": "1.086038 0.971767\n2.02\n"
+        },
+        {
+            "input": "alcalinity_of_ash\n",
+            "output": "1.086038 0.893902\n17.8\n"
+        },
+        {
+            "input": "proline\n",
+            "output": "1.086038 0.660898\n750.0\n"
+        }
+    ],
+    "simple_desc": "计算不同分割下的分类条件熵",
+    "difficulty": "3",
+    "tag": "决策树|信息熵-条件熵",
+    "author": "谢子聪"
+}

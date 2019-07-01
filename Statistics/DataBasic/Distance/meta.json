@@ -1,0 +1,33 @@
+{
+    "title": "全距和内距",
+    "desc": "### 题目描述\n\n现有某校毕业生的就业年薪匿名调查表，请你分别求出该就业年薪表的全距和内距。\n\n请使用公式  `1+i*(n-1)/4` （NumPy 以及相关库使用的公式）计算四分位数。计算四分位数时，需要考虑如下情况：\n\n- 若求得的位置恰好是一个整数,则对应位置的观察值就是相应的四分位数。\n- 若求得的位置不是一个整数,则靠近这个数字的位置上的数据为相应的四分位数。即小数位小 于0.5,则取左边位置的数据;小数位大于0.5,则取右边位置的数据。\n- 若求得的位置恰好在两个整数的中间,即小数位为0.5，则计算左右位置数据的算术平均数为 相应的四分位数。\n\n### 输入描述\n\n输入为一个就业年薪列表，每一个值代表该毕业生的年薪（浮点数，单位为 w），两两间用空格隔开。\n\n### 输出描述\n\n输出年薪的全距和内距，保留两位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n7.6 2.6 3.2 4.4 5.4 6.8 8.8\n```\n\n```\n6.20 3.40\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\nimport numpy as np\nfrom math import floor, ceil\nfrom scipy import stats\n\n\ndef myprint(*args):\n    args = ['{:.2f}'.format(i) for i in args]\n    print(*args)\n\n\ndef ishalf(x: float):\n    return x - floor(x) == 0.5\n\n\na = np.array(list(map(float, input().split())))\nl = a.size\n\nq1, q3 = (np.quantile(a, i, interpolation='midpoint' if ishalf((l-1)*i) else 'nearest')\n          for i in (0.25, 0.75))\n\nmyprint(a.max()-a.min(), q3-q1)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "7.6 2.6 3.2 4.4 5.4 6.8 8.8\n",
+            "output": "6.20 3.40\n"
+        },
+        {
+            "input": "6.69 5.09 7.46 4.67 6.77 5.09\n",
+            "output": "2.79 1.68\n"
+        },
+        {
+            "input": "4.53 2.68 6.55 6.12 8.31 7.12 8.00 9.61 7.66 5.47 7.85 7.43 7.64 5.89 7.06 1.22 9.71 6.86 6.19 6.86\n",
+            "output": "8.49 1.54\n"
+        },
+        {
+            "input": "11.34 6.46 1.50 3.53 6.52 6.69 5.09 7.46 4.67 6.77 5.10 6.68 6.24 2.23 5.38 9.55\n",
+            "output": "9.84 1.60\n"
+        },
+        {
+            "input": "11.34 3.53 6.52 6.46 8.31 7.12 1.50 6.69 5.09 7.46 4.67 6.77\n",
+            "output": "9.84 2.03\n"
+        }
+    ],
+    "simple_desc": "计算一组数的全距和内距",
+    "difficulty": "2",
+    "tag": "数据汇总|列表|统计",
+    "author": "谢子聪"
+}

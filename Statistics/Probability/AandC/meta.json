@@ -1,0 +1,33 @@
+{
+    "title": "排列组合公式",
+    "desc": "### 题目描述\n\n请实现排列组合中的排列数公式 $A^m_n$ 和组合数公式 $C^m_n$ 。\n\n### 输入描述\n\n输入为两个非负整数 n 和 m，表示从 n 个元素中取出 m 个元素。\n\n### 输出描述\n\n输出 $A^m_n$ 和 $C^m_n$。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4 2\n```\n\n```\n12 6\n```\n\n#### 样例2: 输入-输出\n\n```\n10 3\n```\n\n```\n720 120\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\nfrom functools import reduce\n\n\ndef fprint(x):\n    print('{:.4f}'.format(x))\n\n\ndef f(a, b):\n    return reduce(int.__mul__, (i for i in range(a, b+1)), 1)\n\n\ndef A(n, m):\n    if n and m:\n        return f(n-m+1, n)\n    return 0\n\n\ndef C(n, m):\n    if m == 0:\n        return 0\n    return A(n, m) // f(2, m)\n\n\nn, m = map(int, input().split())\nprint(A(n, m), C(n, m))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 2\n",
+            "output": "12 6\n"
+        },
+        {
+            "input": "10 3\n",
+            "output": "720 120\n"
+        },
+        {
+            "input": "32 7\n",
+            "output": "16963914240 3365856\n"
+        },
+        {
+            "input": "1 0\n",
+            "output": "0 0\n"
+        },
+        {
+            "input": "0 1\n",
+            "output": "0 0\n"
+        }
+    ],
+    "simple_desc": "实现排列组合公式",
+    "difficulty": "2",
+    "tag": "排列组合",
+    "author": "谢子聪"
+}

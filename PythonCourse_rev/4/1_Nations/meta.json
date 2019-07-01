@@ -1,0 +1,21 @@
+{
+    "title": "国家语言",
+    "desc": "### 题目描述\n\n请根据输入创建一个国家（键）和语言（值）映射的词典 nations，完成如下操作：\n\n1. 显示字典所有的键（所有国家），按国家名的字典序排列；\n2. 显示字典所有的值（所有语言），按语言的字典序排列；\n3. 显示字典所有的项（所有 `国家-语言` 键值对），按国家名的字典序排列；\n4. 获取国家 `France` 对应的语言，如果不存在则输出 `Unknown`；\n5. 添加 `{'Spain': 'Spanish', 'Japan': 'Japanese'}` 到该字典中，并输出所有国家，按国家名的字典序排列\n\n### 输入描述\n\n输入第一行为一个整数 N，表示接下来有 N 行输入。\n\n接下来 N 行每行为两个字符串 Nation 和 Language，分别为一个国家（键）和其使用的语言（值），两两间用空格隔开。\n\n### 输出描述\n\n输出请参考题目描述和测试样例。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\nChina Chinese\nUSA English\nFrance French\n```\n\n```\nChina France USA\nChinese English French\nChina-Chinese France-French USA-English\nFrench\nChina France Japan Spain USA\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nn = int(input())\n\nnations = {}\nfor i in range(n):\n    c, l = input().split()\n    nations[c] = l\n\nprint(*sorted(nations.keys()))\nprint(*sorted(nations.values()))\nprint(*['{}-{}'.format(c, l) for (c, l) in sorted(nations.items())])\nprint(nations.get('France', 'Unknown'))\n\nnations.update({'Spain': 'Spanish', 'Japan': 'Japanese'})\nprint(*sorted(nations.keys()))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3\nChina Chinese\nUSA English\nFrance French\n",
+            "output": "China France USA\nChinese English French\nChina-Chinese France-French USA-English\nFrench\nChina France Japan Spain USA\n"
+        },
+        {
+            "input": "4\nChina Chinese\nEngland English\nGermany German\nSpain Spanish\n",
+            "output": "China England Germany Spain\nChinese English German Spanish\nChina-Chinese England-English Germany-German Spain-Spanish\nUnknown\nChina England Germany Japan Spain\n"
+        }
+    ],
+    "simple_desc": "使用字典创建国家和语言映射词典，完成相关操作",
+    "difficulty": "3",
+    "tag": "字典",
+    "author": "张莉"
+}

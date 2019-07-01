@@ -1,0 +1,29 @@
+{
+    "title": "ndarray形状操作",
+    "desc": "### 题目描述\n\nNumPy 提供了多种机制，可以让使用者方便地转换 array 的形状。\n\n**任务 1** ：构建一个 3\\*4、范围在 [0, 20) 的随机整数数组 a；\n\n#### 拆分数组\n\n**任务 2** ：用 `hsplit` 将 a 按行分成两个 array，分别为 ha1, ha2；\n\n**任务 3** ：用 `vsplit` 将 a 按列分成三个 array，分别为 va1, va2 和 va3；\n\n#### 拼接数组\n\n**任务 4** ：用 `hstack` 将 ha1 和 ha2 在水平方向上拼接成一个数组；\n\n**任务 5** ：用 `vstack` 将 va1 和 va2 在垂直方向上拼接成一个数组；\n\n#### “拉平” 数组\n\n**任务 6** ：尝试使用 `reshape`，`ravel` 和 `flatten` 将 a 变成 1\\*12 的形状。\n\n### 输入描述\n\n输入为一个整数，表示随机数种子。\n\n### 输出描述\n\n请在输入的随机数种子下，输出：\n\n1. 任务 1 构成的随机整数数组；\n2. 任务 2 中的 ha1；\n3. 任务 3 中的 va1；\n4. 任务 4 的结果；\n5. 任务 5 的结果；\n6. 任务 6 中的结果；\n\n格式参数测试样例。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0\n```\n\n```\na:\n [[12 15  0  3]\n [ 3  7  9 19]\n [18  4  6 12]]\nha1:\n [[12 15]\n [ 3  7]\n [18  4]]\nva1:\n [[12 15  0  3]]\nhstack:\n [[12 15  0  3]\n [ 3  7  9 19]\n [18  4  6 12]]\nvstack:\n [[12 15  0  3]\n [ 3  7  9 19]]\na:\n [12 15  0  3  3  7  9 19 18  4  6 12]\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "import numpy as np\n\nnp.random.seed(int(input()))\n\na = np.random.randint(0, 20, (3, 4))\nprint('a:\\n', a)\n\nha1, ha2 = np.hsplit(a, 2)\nprint('ha1:\\n', ha1)\n\nva1, va2, va3 = np.vsplit(a, 3)\nprint('va1:\\n', va1)\n\nprint('hstack:\\n', np.hstack((ha1, ha2)))\nprint('vstack:\\n', np.vstack((va1, va2)))\n\nprint('a:\\n', a.flatten())\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0\n",
+            "output": "a:\n [[12 15  0  3]\n [ 3  7  9 19]\n [18  4  6 12]]\nha1:\n [[12 15]\n [ 3  7]\n [18  4]]\nva1:\n [[12 15  0  3]]\nhstack:\n [[12 15  0  3]\n [ 3  7  9 19]\n [18  4  6 12]]\nvstack:\n [[12 15  0  3]\n [ 3  7  9 19]]\na:\n [12 15  0  3  3  7  9 19 18  4  6 12]\n"
+        },
+        {
+            "input": "10\n",
+            "output": "a:\n [[ 9  4 15  0]\n [17 16 17  8]\n [ 9  0 10  8]]\nha1:\n [[ 9  4]\n [17 16]\n [ 9  0]]\nva1:\n [[ 9  4 15  0]]\nhstack:\n [[ 9  4 15  0]\n [17 16 17  8]\n [ 9  0 10  8]]\nvstack:\n [[ 9  4 15  0]\n [17 16 17  8]]\na:\n [ 9  4 15  0 17 16 17  8  9  0 10  8]\n"
+        },
+        {
+            "input": "20\n",
+            "output": "a:\n [[ 3 15  9 11]\n [ 7  2  0  8]\n [19 16  6  6]]\nha1:\n [[ 3 15]\n [ 7  2]\n [19 16]]\nva1:\n [[ 3 15  9 11]]\nhstack:\n [[ 3 15  9 11]\n [ 7  2  0  8]\n [19 16  6  6]]\nvstack:\n [[ 3 15  9 11]\n [ 7  2  0  8]]\na:\n [ 3 15  9 11  7  2  0  8 19 16  6  6]\n"
+        },
+        {
+            "input": "14\n",
+            "output": "a:\n [[11 12  7  6]\n [10 10 16  8]\n [13 11  0  4]]\nha1:\n [[11 12]\n [10 10]\n [13 11]]\nva1:\n [[11 12  7  6]]\nhstack:\n [[11 12  7  6]\n [10 10 16  8]\n [13 11  0  4]]\nvstack:\n [[11 12  7  6]\n [10 10 16  8]]\na:\n [11 12  7  6 10 10 16  8 13 11  0  4]\n"
+        }
+    ],
+    "simple_desc": "学习各种 ndarray 形状操作",
+    "difficulty": "2",
+    "tag": "numpy",
+    "author": "刘锦涛"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "数据集抽样",
+    "desc": "### 题目描述\n\n对数据进行抽样时，我们希望抽样的数据和原数据能有相似的分布。那么该如何度量两个数据分布的相似度/距离呢？答：相对熵（KL散度）。两个分布越相近，它们的相对熵则越小。\n\n假设原数据集为 Q，抽样的数据集为 P，有：\n\n![](https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D485/sign=0ebf25bbd92a283447a637036eb4c92e/a2cc7cd98d1001e957e721a9b50e7bec55e797b8.jpg)\n\n现给定 sklearn 的自带数据集，试使用 pandas 的 `sample(frac=x, random_state=0)` 分别随机选取 `x={0.01, 0.1, 0.5, 0.9}` 的样本，计算它们的目标（target）分布与原数据集的目标分布之间的相对熵。\n\n### 输入描述\n\n输入为数据集的名称。\n\n### 输出描述\n\n输出四行，分别为抽取 0.01、0.1、0.5 和 0.9 比例下的样本数据集和原数据集目标分类的相对熵。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\niris\n```\n\n```\n0.405465\n0.088999\n0.011047\n0.000165\n```\n\n#### 样例2: 输入-输出\n\n```\ndigits\n```\n\n```\n0.456712\n0.051774\n0.004002\n0.000118\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\nfrom sklearn import datasets\nimport pandas as pd\nfrom math import log\n\n\ndef getp(x: pd.Series):\n    px = {}\n    for idx, cnt in x.value_counts().items():\n        px[idx] = cnt / x.size\n    return px\n\n\ndef rel(p: dict, q: dict):\n    return sum((p[i] * log(p[i]/q[i]) for i in p))\n\n\nname = input()\n\ndataset = eval('datasets.load_' + name + '()')\n\ntarget = pd.Series(dataset['target'])\n\nq = getp(target)\n\nfor i in (0.01, 0.1, 0.5, 0.9):\n    p = getp(target.sample(frac=i, random_state=0))\n    print('{:.6f}'.format(rel(p, q)))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "iris\n",
+            "output": "0.405465\n0.088999\n0.011047\n0.000165\n"
+        },
+        {
+            "input": "digits\n",
+            "output": "0.456712\n0.051774\n0.004002\n0.000118\n"
+        },
+        {
+            "input": "wine\n",
+            "output": "0.514267\n0.000252\n0.007146\n0.000117\n"
+        },
+        {
+            "input": "breast_cancer\n",
+            "output": "0.102442\n0.000381\n0.000618\n0.000116\n"
+        }
+    ],
+    "simple_desc": "计算抽样分布之间的相似度",
+    "difficulty": "2",
+    "tag": "数据抽样|信息熵-相对熵",
+    "author": "谢子聪"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "三角形的周长和面积",
+    "desc": "### 题目描述\n\n给你三条边长，请你先判断其是否能构成三角形，若能，输出这个三角形的边长和面积，否则输出 `Can't construct a triangle.`。\n\n### 输入描述\n\n输入为三条边长，均为正整数，两两之间用空格隔开\n\n### 输出描述\n\n若该三条边能构成三角形，输出该三角形的周长和面积，面积保留两位小数，否则输出 `Can't construct a triangle.`\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4 5 3\n```\n\n```\n12 6.00\n```\n\n#### 样例2: 输入-输出\n\n```\n3 4 7\n```\n\n```\nCan't construct a triangle.\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\ns = list(map(int, input().split()))\ns.sort()\n[a, b, c] = s\n\narea = 0\n\nif a + b > c:\n    l = (a + b + c) / 2\n    area = (l*(l-a)*(l-b)*(l-c))**0.5\n\nif not area:\n    print('Can\\'t construct a triangle.')\nelse:\n    print('{} {:.2f}'.format(sum(s), area))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4 5 3\n",
+            "output": "12 6.00\n"
+        },
+        {
+            "input": "3 4 7\n",
+            "output": "Can't construct a triangle.\n"
+        },
+        {
+            "input": "2 5 3\n",
+            "output": "Can't construct a triangle.\n"
+        },
+        {
+            "input": "10 12 14\n",
+            "output": "36 58.79\n"
+        }
+    ],
+    "simple_desc": "求三角形的周长和面积，考虑不成立的情况",
+    "difficulty": "2",
+    "tag": "数值运算|条件判断",
+    "author": "张莉"
+}

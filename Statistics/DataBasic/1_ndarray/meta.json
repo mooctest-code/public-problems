@@ -1,0 +1,29 @@
+{
+    "title": "构建数组",
+    "desc": "### 题目描述\n\n[NumPy](http://www.numpy.org/) (Numerical Python) 是一个 Python 科学计算库。NumPy 提供高性能的矩阵运算，同时包含很多实用的数学函数，是大部分机器学习框架使用的基础库。\n\nndarray (又名 array) 是 NumPy 的基本数组类型，请分别使用如下方式构建一维 ndarray：\n\n1. 读取输入数组，将其转换为一个大小为 size 的一维数组；\n2. 使用 `zeros` 生成一个大小为 size 的全零数组；\n3. 使用 `arange` 生成一个起点为 0，步长为 0.2，大小为 size 的数列；\n4. 使用 `linspace` 生成一个起点为 0，终点为 2，大小为 size 的数列；\n5. 使用 size 作为随机数种子，生成一个 [1, 3) 之间平均分布，大小为 size 的随机数组\n\n构建上述数组后，请计算它们的数组和，并将结果重构为一个二维数组，二维数组的第一维大小为 2。\n\n### 输入描述\n\n输入包括两行。第一行为数组的大小 size（偶数）；第二行为任务 1 中的整数数组，大小为 size，两两间用空格隔开。\n\n### 输出描述\n\n第一行分别输出这个二维数组的 `ndim, shape, size, itemsize, dtype` 属性。\n\n从第二行开始输出这个二维数组。\n\n格式参考测试样例。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4\n3 0 6 4\n```\n\n```\nndim: 2, shape: (2, 2), size: 4, itemsize: 8, dtype: float64\n[[ 5.93405968  2.96113117]\n [10.67870205  9.02963199]]\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "import numpy as np\n\nn = int(input())\nnp.random.seed(n)\n\na1 = np.array(list(map(int, input().split())))\na2 = np.zeros(n)\na3 = np.arange(0, n*0.2-0.1, 0.2)\na4 = np.linspace(0, 2, n)\na5 = 1 + 2 * np.random.rand(n)\n\na = a1 + a2 + a3 + a4 + a5\na = a.reshape((2, n//2))\n\nprint('ndim: {}, shape: {}, size: {}, itemsize: {}, dtype: {}'.format(\n    a.ndim, a.shape, a.size, a.itemsize, a.dtype))\nprint(a)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4\n3 0 6 4\n",
+            "output": "ndim: 2, shape: (2, 2), size: 4, itemsize: 8, dtype: float64\n[[ 5.93405968  2.96113117]\n [10.67870205  9.02963199]]\n"
+        },
+        {
+            "input": "2\n0 1\n",
+            "output": "ndim: 2, shape: (2, 1), size: 2, itemsize: 8, dtype: float64\n[[1.8719898 ]\n [4.25185246]]\n"
+        },
+        {
+            "input": "16\n9 6 3 4 5 8 9 1 2 3 1 5 3 1 4 6\n",
+            "output": "ndim: 2, shape: (2, 8), size: 16, itemsize: 8, dtype: float64\n[[10.44658216  8.37966002  5.76806958  6.0912039   8.054791   11.11282855\n  13.37745232  4.66079618]\n [ 5.8073164   8.88202172  6.46069609  9.82265135  9.44528102  6.65023768\n  10.16722928 12.58697451]]\n"
+        },
+        {
+            "input": "6\n1 9 7 2 3 1\n",
+            "output": "ndim: 2, shape: (2, 3), size: 6, itemsize: 8, dtype: float64\n[[ 3.7857203  11.26395961 10.84245825]\n [ 4.88339325  6.61531336  6.19010413]]\n"
+        }
+    ],
+    "simple_desc": "使用 numpy 构建 ndarray",
+    "difficulty": "1",
+    "tag": "numpy",
+    "author": "刘锦涛"
+}

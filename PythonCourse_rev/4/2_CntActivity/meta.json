@@ -1,0 +1,29 @@
+{
+    "title": "参加活动次数",
+    "desc": "### 题目描述\n\n现在有一个列表，记录了每次主题演讲活动的参与学生姓名。请根据这个列表统计出每个学生参加活动的次数，并记录到字典中。\n\n### 输入描述\n\n输入为一个记录每次主题演讲活动的参与学生姓名的列表，两两间用空格隔开\n\n### 输出描述\n\n输出每个学生的姓名和参加活动的次数，格式为 `姓名: 次数`，按学生姓名字典序排列，每个学生占一行\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nxiaoma xiaowang xiaoma xiaoliu xiaoma xiaoliu\n```\n\n```\nxiaoliu: 2\nxiaoma: 3\nxiaowang: 1\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\na = input().split()\n\nd = {}\nfor i in a:\n    d.setdefault(i, 0)\n    d[i] += 1\n\ncnt = sorted(d.items())\nfor s, c in cnt:\n    print('{}: {}'.format(s, c))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "xiaoma xiaowang xiaoma xiaoliu xiaoma xiaoliu\n",
+            "output": "xiaoliu: 2\nxiaoma: 3\nxiaowang: 1\n"
+        },
+        {
+            "input": "xiaoma xiaowang xiaoliu xiaoma xiaoma xiaowang\n",
+            "output": "xiaoliu: 1\nxiaoma: 3\nxiaowang: 2\n"
+        },
+        {
+            "input": "a b c c b a b c b\n",
+            "output": "a: 2\nb: 4\nc: 3\n"
+        },
+        {
+            "input": "a d b d e c c f c b a b c b\n",
+            "output": "a: 2\nb: 4\nc: 4\nd: 2\ne: 1\nf: 1\n"
+        }
+    ],
+    "simple_desc": "统计每个学生参加活动的次数",
+    "difficulty": "2",
+    "tag": "列表|字典",
+    "author": "张莉"
+}

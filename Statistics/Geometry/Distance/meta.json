@@ -1,0 +1,33 @@
+{
+    "title": "距离度量",
+    "desc": "### 题目描述\n\n**闵可夫斯基距离**（Minkowski Distance）是一组距离的定义，其公式类似于 p范数。\n\n![Minkowski Distance](https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D183/sign=aace18b19f58d109c0e3adbae25accd0/d53f8794a4c27d1ea581400b16d5ad6edcc4385d.jpg)\n\n- 当 `p = 1` 时，得到的是绝对距离，也叫曼哈顿距离或街区距离；\n- 当 `p = 2` 时，得到的是欧式距离；\n- 当 `p -> ∞` 时，得到的是切比雪夫距离。\n\n给定两个高维数据，它们有相同数量的多个连续型特征，试计算它们之间的距离。\n\n### 输入描述\n\n输入分为两行。第一行为第一个数据的特征，两两间用空格隔开；第二行为第二个数据的特征，两两间用空格隔开。\n\n### 输出描述\n\n请分别输出这两个数据的绝对距离、欧氏距离和切比雪夫距离。结果均保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0 1 0 1\n1 1 0 0\n```\n\n```\n2.0000 1.4142 1.0000\n```\n\n#### 样例2: 输入-输出\n\n```\n8.99 1.78 -7.53 -1.44 -1.79 -2.58\n4.1 3.22 0.37 -5.0 3.49 0.76\n```\n\n```\n26.4100 11.8365 7.9000\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\n\ndef pnorm(X, p):\n    if p == 'inf':\n        return max(map(abs, X))\n    return sum(map(lambda x: abs(x)**p, X)) ** (1/p)\n\n\ndef minkowskiDistance(x, y, p):\n    return pnorm([z[0]-z[1] for z in zip(x, y)], p)\n\n\ndef myprint(*args):\n    print(*map('{:.4f}'.format, args))\n\n\nx = tuple(map(float, input().split()))\ny = tuple(map(float, input().split()))\n\nmyprint(minkowskiDistance(x, y, 1),\n        minkowskiDistance(x, y, 2),\n        minkowskiDistance(x, y, 'inf'))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0 1 0 1\n1 1 0 0\n",
+            "output": "2.0000 1.4142 1.0000\n"
+        },
+        {
+            "input": "8.99 1.78 -7.53 -1.44 -1.79 -2.58\n4.1 3.22 0.37 -5.0 3.49 0.76\n",
+            "output": "26.4100 11.8365 7.9000\n"
+        },
+        {
+            "input": "1 2 3\n4 5 6\n",
+            "output": "9.0000 5.1962 3.0000\n"
+        },
+        {
+            "input": "6.08 -8.48 6.63 8.52 -0.53 -7.97 -1.0 6.72 -3.05 5.84\n-4.28 -6.31 -6.78 2.28 -0.71 -2.2 -2.23 5.26 3.3 9.25\n",
+            "output": "50.5800 20.4872 13.4100\n"
+        },
+        {
+            "input": "9.12 3.92 2.73 4.02 3.74 3.76 0.09 3.37 8.2 8.72\n0.19 1.32 5.57 0.78 5.22 2.41 8.74 9.41 4.95 6.85\n",
+            "output": "40.2500 15.3116 8.9300\n"
+        }
+    ],
+    "simple_desc": "使用 P范数 度量两个数据的距离",
+    "difficulty": "2",
+    "tag": "数据汇总-距离度量",
+    "author": "Unknown"
+}

@@ -1,0 +1,37 @@
+{
+    "title": "集火",
+    "desc": "### 题目描述\n\n许多游戏中都有\"集火\"这一概念，即集中火力在一个目标上以快速消灭目标。现在你和你的队友准备集火在一个目标上，假设已知每个队友的命中率和伤害量和目标的血量，且所有攻击都在同一时刻命中到目标上，求目标被消灭的概率。\n\n### 输入描述\n\n输入分为四行。第一行为队友的数量 n（0 < n < 9）；第二行为每个队友的命中率；第三行为每个队友的伤害量，均为正整数；第四行为一个正整数表示目标的血量。\n\n### 输出描述\n\n输出目标被消灭的概率，结果保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n4\n0.5 0.6 0.4 0.5\n60 40 80 60\n100\n```\n\n```\n0.6900\n```\n\n#### 样例2: 输入-输出\n\n```\n5\n0.5 0.6 0.4 0.5 0.4\n60 40 80 60 80\n100\n```\n\n```\n0.7900\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "import queue\n\nn = int(input())\nhit = list(map(float, input().split()))\nhurt = list(map(float, input().split()))\nblood = int(input())\npdie = 0\n\n\ndef dfs(x, h, p):\n    global pdie\n    if x == n:\n        if h >= blood:\n            pdie += p\n        return\n    dfs(x+1, h+hurt[x], p * hit[x])\n    dfs(x+1, h, p*(1-hit[x]))\n\n\ndfs(0, 0, 1)\nprint('{:.4f}'.format(pdie))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "4\n0.5 0.6 0.4 0.5\n60 40 80 60\n100\n",
+            "output": "0.6900\n"
+        },
+        {
+            "input": "5\n0.5 0.6 0.4 0.5 0.4\n60 40 80 60 80\n100\n",
+            "output": "0.7900\n"
+        },
+        {
+            "input": "8\n0.5 0.3 0.5 0.5 0.8 0.5 0.3 0.4\n40 80 60 30 40 40 40 40\n200\n",
+            "output": "0.3353\n"
+        },
+        {
+            "input": "2\n0.4 0.4\n50 50\n100\n",
+            "output": "0.1600\n"
+        },
+        {
+            "input": "1\n0.5\n100\n100\n",
+            "output": "0.5000\n"
+        },
+        {
+            "input": "3\n0.4 0.3 0.5\n20 20 20\n100\n",
+            "output": "0.0000\n"
+        }
+    ],
+    "simple_desc": "判断集火是否消灭了目标",
+    "difficulty": "2",
+    "tag": "概率-独立性",
+    "author": "谢子聪"
+}

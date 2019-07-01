@@ -1,0 +1,29 @@
+{
+    "title": "查找用户",
+    "desc": "### 题目描述\n\n给定一个字典 users，字典中保存了某一个网站已经注册的帐号（包括用户名和密码对），查找是否存在注册用户 “xiaohong”，若用户名存在则输出其密码，否则输出 “not found”。\n\n### 输入描述\n\n输入为字典 users\n\n### 输出描述\n\n若用户 xiaohong 存在输出其密码，或者输出 `not found`\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n{'xiaohong': 'x1a0h0nG', 'xiaoming': '123456', 'xiaoli': 'liLilI'}\n```\n\n```\nx1a0h0nG\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nd: dict = eval(input())\n\nprint(d.get('xiaohong', 'not found'))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "{'xiaohong': 'x1a0h0nG', 'xiaoming': '123456', 'xiaoli': 'liLilI'}\n",
+            "output": "x1a0h0nG\n"
+        },
+        {
+            "input": "{'xiaoming': '123456', 'xiaoli': 'liLilI'}\n",
+            "output": "not found\n"
+        },
+        {
+            "input": "{'xiaohong': '123456', 'xiaoming': '123456', 'xiaoli': 'liLilI'}\n",
+            "output": "123456\n"
+        },
+        {
+            "input": "{'Xiaohong': '123456', 'xiaoming': '123456', 'xiaoli': 'liLilI'}\n",
+            "output": "not found\n"
+        }
+    ],
+    "simple_desc": "从用户字典中查找指定用户",
+    "difficulty": "1",
+    "tag": "字典",
+    "author": "张莉"
+}

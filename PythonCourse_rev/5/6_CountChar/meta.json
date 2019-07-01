@@ -1,0 +1,29 @@
+{
+    "title": "统计字母出现次数",
+    "desc": "### 题目描述\n\n给你一个字符串，请你用字典相关方法来计算每个字母（按字母顺序，且不区分大小写）出现的次数。例如，字符串 “I am a student.” 的统计结果为: `2,0,0,1,1,0,0,0,1,0,0,0,1,1,0,0,0,0,1,2,1,0,0,0,0,0`。表示字符 `A` 或 `a` 共出现了2次，字符 `D` 或 `d` 共出现了1次，依此类推。\n\n### 输入描述\n\n输入为一个字符串\n\n### 输出描述\n\n输出每个字母在该字符串中的出现次数，按字母顺序，两两间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nI am a student.\n```\n\n```\n2 0 0 1 1 0 0 0 1 0 0 0 1 1 0 0 0 0 1 2 1 0 0 0 0 0\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\na = ord('a')\nz = ord('z')\ncnt = [0 for i in range(z-a+1)]\nfor i in input().lower():\n    if i.isalpha():\n        cnt[ord(i)-a] += 1\n\nprint(*cnt)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "I am a student.\n",
+            "output": "2 0 0 1 1 0 0 0 1 0 0 0 1 1 0 0 0 0 1 2 1 0 0 0 0 0\n"
+        },
+        {
+            "input": "Hello Python\n",
+            "output": "0 0 0 0 1 0 0 2 0 0 0 2 0 1 2 1 0 0 0 1 0 0 0 0 1 0\n"
+        },
+        {
+            "input": "Hello World!\n",
+            "output": "0 0 0 1 1 0 0 1 0 0 0 3 0 0 2 0 0 1 0 0 0 0 1 0 0 0\n"
+        },
+        {
+            "input": "Madam I'm Adam\n",
+            "output": "4 0 0 2 0 0 0 0 1 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0\n"
+        }
+    ],
+    "simple_desc": "统计字符串中每个字母出现的次数",
+    "difficulty": "2",
+    "tag": "字符串|列表|流程控制",
+    "author": "张莉"
+}

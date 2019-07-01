@@ -1,0 +1,33 @@
+{
+    "title": "扑克顺子",
+    "desc": "### 题目描述\n\n扑克牌除大王和小王外有13张不同牌面的牌：A、2、3、…、10、J、Q、K，如果大于或等于五张牌连在一起称为顺子，完成函数 getStraight(cards) 简易模拟判断已抓的牌中是否包含顺子并将最大的顺子返回。\n\n其中，顺子的大定义为：\n\n1. 顺子牌数多的顺子大；\n2. 当顺子牌数相同时，牌面更大的大。\n\n### 输入描述\n\n输入为你手上的牌，包括 A、2、3、…、10、J、Q、K，两两间用空格隔开\n\n### 输出描述\n\n输出你手上最大的顺子，若不存在顺子，输入 `Not Found`\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\nA 2 3 4 5 8 9 9 10 J Q\n```\n\n```\n8 9 10 J Q\n```\n\n#### 样例2: 输入-输出\n\n```\nJ 3 5 4 2 3 A 9 4 8 10 Q 6\n```\n\n```\nA 2 3 4 5 6\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\n\ncard_map = {\n    'A': '1', 'J': '11', 'Q': '12', 'K': '13'\n}\n\nfor k, v in list(card_map.items()):\n    card_map[v] = k\n\n\ndef convert(x): return card_map.get(x, x)\n\n\ndef getStraight(cards: list):\n    cards = sorted(map(int,\n                       map(convert, set(cards))))\n    sl, sr = 0, 0\n    i = 0\n    while i < len(cards):\n        j = i+1\n        while j < len(cards) and cards[j] - cards[j-1] == 1:\n            j += 1\n        l, r = j-i, sr - sl\n        if l > 4 and l >= r:\n            sl, sr = i, j\n        i = j\n\n    return list(map(convert,\n                    map(str,\n                        cards[sl:sr])))\n\n\nstraight = getStraight(input().split())\nprint(*straight) if straight else print('Not Found')\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "A 2 3 4 5 8 9 9 10 J Q\n",
+            "output": "8 9 10 J Q\n"
+        },
+        {
+            "input": "J 3 5 4 2 3 A 9 4 8 10 Q 6\n",
+            "output": "A 2 3 4 5 6\n"
+        },
+        {
+            "input": "A 2 3 3 4 5 6 8 9 10 J Q\n",
+            "output": "A 2 3 4 5 6\n"
+        },
+        {
+            "input": "3 5 4 A 2\n",
+            "output": "A 2 3 4 5\n"
+        },
+        {
+            "input": "A 2 3 4\n",
+            "output": "Not Found\n"
+        }
+    ],
+    "simple_desc": "检测手牌上是否有顺子",
+    "difficulty": "3",
+    "tag": "列表",
+    "author": "张莉"
+}

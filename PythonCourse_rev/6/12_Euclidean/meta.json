@@ -1,0 +1,29 @@
+{
+    "title": "递归辗转相除法",
+    "desc": "### 题目描述\n\n辗转相除法又名欧里几何法，它的定义为：\n\n> 两个正整数 a 和 b（a > b），它们的最大公约数等于 a 除以 b 的余数 c 和 b 之间的最大公约数。\n\n请实现一个 gcd(a, b) 递归函数，使用辗转相除法求最大公约数。\n\n### 输入描述\n\n输入为两个正整数 a 和 b\n\n### 输出描述\n\n输出这两个数的最大公约数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n6 4\n```\n\n```\n2\n```\n\n",
+    "templateCode": "def gcd(a: int, b: int):\n    # 使用递归辗转相除法求 a 和 b 的最大公约数\n    pass\n\n\na, b = map(int, input().split())\nprint(gcd(a, b))\n",
+    "sourceCode": "'''TESTCASE\n\n\ndef gcd(a: int, b: int):\n    return gcd(b, a % b) if b else a\n\n\na, b = map(int, input().split())\nprint(gcd(a, b))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "6 4\n",
+            "output": "2\n"
+        },
+        {
+            "input": "123 82\n",
+            "output": "41\n"
+        },
+        {
+            "input": "36 78\n",
+            "output": "6\n"
+        },
+        {
+            "input": "10 10\n",
+            "output": "10\n"
+        }
+    ],
+    "simple_desc": "使用辗转相除法求最大公约数",
+    "difficulty": "2",
+    "tag": "函数-递归",
+    "author": "张莉"
+}

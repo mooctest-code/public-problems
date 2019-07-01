@@ -1,0 +1,29 @@
+{
+    "title": "互质随机数",
+    "desc": "### 题目描述\n\n使用 random 函数库中的函数产生两个 100 以内的随机整数，并判断它们是否互质。\n\n### 输入描述\n\n输入为一个随机种子\n\n### 输出描述\n\n在该随机种子下，随机生成两个 100 以内的正整数 a 和 b，若它们互质，输出 `a and b are coprime` 或者输出 `a and b aren't coprime`\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0\n```\n\n```\n50 and 98 aren't coprime\n```\n\n#### 样例2: 输入-输出\n\n```\n10\n```\n\n```\n74 and 5 are coprime\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nimport random\nimport math\n\nrandom.seed(int(input()))\n\na = random.randint(1, 100)\nb = random.randint(1, 100)\nt = '' if math.gcd(a, b) == 1 else 'n\\'t'\nprint('{} and {} are{} coprime'.format(a, b, t))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0\n",
+            "output": "50 and 98 aren't coprime\n"
+        },
+        {
+            "input": "10\n",
+            "output": "74 and 5 are coprime\n"
+        },
+        {
+            "input": "100\n",
+            "output": "19 and 59 are coprime\n"
+        },
+        {
+            "input": "10\n",
+            "output": "74 and 5 are coprime\n"
+        }
+    ],
+    "simple_desc": "生成两个 100 以内的随机整数，判断它们是否互质",
+    "difficulty": "1",
+    "tag": "随机数|random|函数",
+    "author": "张莉"
+}

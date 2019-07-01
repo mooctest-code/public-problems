@@ -1,0 +1,29 @@
+{
+    "title": "时间戳格式化",
+    "desc": "### 题目描述\n\n时间戳表示自从1970年1月1日午夜（历元）经过了多长时间。\n\n请将一个时间戳格式化为日期时间，并求该时间是本年度的第几天。\n\n### 输入描述\n\n输入为一个浮点数，表示时间戳。\n\n### 输出描述\n\n第一行使用 `Year-Month-Day Hour:Minute` 的格式输出该时间戳表示的时间。\n\n第二行输出该日期时间是该年度的第几天。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n1555134795.4250443\n```\n\n```\n2019-04-13 13:53\n是2019年的第103天\n```\n\n#### 样例2: 输入-输出\n\n```\n4738295.54372\n```\n\n```\n1970-02-25 04:11\n是1970年的第56天\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\nfrom datetime import datetime\nfrom datetime import date\nt = datetime.fromtimestamp(float(input()))\nprint(t.strftime(\"%Y-%m-%d %H:%M\"))\n\nd1 = t.date()\nd2 = date(t.year, 1, 1)\n\nprint('是{}年的第{}天'.format(t.year, (d1 - d2).days + 1))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "1555134795.4250443\n",
+            "output": "2019-04-13 13:53\n是2019年的第103天\n"
+        },
+        {
+            "input": "4738295.54372\n",
+            "output": "1970-02-25 04:11\n是1970年的第56天\n"
+        },
+        {
+            "input": "123789763.43671\n",
+            "output": "1973-12-04 02:02\n是1973年的第338天\n"
+        },
+        {
+            "input": "3104.123788\n",
+            "output": "1970-01-01 08:51\n是1970年的第1天\n"
+        }
+    ],
+    "simple_desc": "将时间戳表示为时间",
+    "difficulty": "1",
+    "tag": "datetime|日期时间",
+    "author": "谢子聪"
+}

@@ -1,0 +1,29 @@
+{
+    "title": "求次方",
+    "desc": "### 题目描述\n\n给你两个正实数 x 和 y，请使用两种方法计算 x 的 y 次方的值\n\n### 输入描述\n\n输入为两个正实数 x 和 y\n\n### 输出描述\n\n输出包括两行，为用两种方法计算得到的 x^y 值\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n2 3\n```\n\n```\n8.0\n8.0\n```\n\n#### 样例2: 输入-输出\n\n```\n100 0.5\n```\n\n```\n10.0\n10.0\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\na, b = map(float, input().split())\n\nprint(a**b)\nprint(pow(a, b))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "2 3\n",
+            "output": "8.0\n8.0\n"
+        },
+        {
+            "input": "100 0.5\n",
+            "output": "10.0\n10.0\n"
+        },
+        {
+            "input": "2 2\n",
+            "output": "4.0\n4.0\n"
+        },
+        {
+            "input": "0.5 5\n",
+            "output": "0.03125\n0.03125\n"
+        }
+    ],
+    "simple_desc": "求 x^y 次方",
+    "difficulty": "1",
+    "tag": "数值运算",
+    "author": "张莉"
+}

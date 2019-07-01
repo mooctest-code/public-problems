@@ -1,0 +1,29 @@
+{
+    "title": "仓库取元件",
+    "desc": "### 题目描述\n\n某电子设备制造厂所用的元件是由 n 家元件制造厂提供的。设这 n 家工厂的产品在仓库中混合在一起，且无区别的标志，请你求\n\n1. 在仓库中随机地取一只元件，求它是次品的概率;\n2. 在仓库中随机地取一只元件，若已知取到的是次品，为分析此次品出自\n   何厂，需求出此次品由这 n 家工厂生产的概率分别是多少。\n\n### 输入描述\n\n输入分为三行。第一行为元件制造厂的厂家数 n；第二行分别为这 n 家元件制造厂的次品率；第三行分别为这 n 家元件在该仓库中的份额。\n\n### 输出描述\n\n输入分为两行。第一行为问题 1 的答案；第二行为问题 2 的答案，两两间用空格隔开。结果均保留四位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3\n0.02 0.01 0.03\n0.15 0.80 0.05\n```\n\n```\n0.0125\n0.2400 0.6400 0.1200\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\n\ndef fprint(*args):\n    print(*map(lambda x: '{:.4f}'.format(x), args))\n\n\nn = int(input())\np = list(zip(map(float, input().split()),\n             map(float, input().split())))\npa = 0\nfor pab, pb in p:\n    pa += pab * pb\n\nfprint(pa)\n\npba = []\nfor pab, pb in p:\n    pba.append(pab*pb/pa)\n\nfprint(*pba)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3\n0.02 0.01 0.03\n0.15 0.80 0.05\n",
+            "output": "0.0125\n0.2400 0.6400 0.1200\n"
+        },
+        {
+            "input": "4\n0.01 0.02 0.03 0.04\n0.4 0.3 0.2 0.1\n",
+            "output": "0.0200\n0.2000 0.3000 0.3000 0.2000\n"
+        },
+        {
+            "input": "2\n0.03 0.02\n0.4 0.6\n",
+            "output": "0.0240\n0.5000 0.5000\n"
+        },
+        {
+            "input": "1\n0.02\n1.0\n",
+            "output": "0.0200\n1.0000\n"
+        }
+    ],
+    "simple_desc": "从仓库中取出次品的概率",
+    "difficulty": "2",
+    "tag": "概率-贝叶斯公式",
+    "author": "Unknown"
+}

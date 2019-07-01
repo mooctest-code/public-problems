@@ -1,0 +1,29 @@
+{
+    "title": "模拟考",
+    "desc": "### 题目描述\n\n现有某班级学生本学期两次模拟考试的物理成绩，试求这两次模拟考的协方差和相关系数。\n\n### 输入描述\n\n输入两行。第一行为第一次模拟考的成绩；第二行为第二次模拟考的成绩。两两间用空格隔开。\n\n### 输出描述\n\n输出这两次模拟考的协方差和相关系数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n78 74 60 42 53 63 70 90 54 82\n85 69 76 53 70 59 82 95 60 67\n```\n\n```\n128.7400 0.7398\n```\n\n#### 样例2: 输入-输出\n\n```\n60 42 53 68 70 90 54 82\n59 82 95 60 87 70 53 70\n```\n\n```\n-34.6250 -0.1681\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\n\ndef mixedMoment(data, k: int, l: int):\n    return sum(map(lambda d: (d[0]**k)*(d[1]**l), data)) / len(data)\n\n\ndef mixedCentralMoment(data, k: int, l: int):\n    x, y = zip(*data)\n    avgx = sum(x) / len(data)\n    avgy = sum(y) / len(data)\n    _data = list(map(lambda d: (d[0]-avgx, d[1]-avgy), data))\n    return mixedMoment(_data, k, l)\n\n\ndef std(data):\n    l = len(data)\n    avg = sum(data) / l\n    d = sum(map(lambda x: (x-avg)**2, data))\n    return (d / l) ** 0.5\n\n\na = list(map(int, input().split()))\nb = list(map(int, input().split()))\n\ncov = mixedCentralMoment(list(zip(a, b)), 1, 1)\nrel = cov / (std(a) * std(b))\n\nprint('{:.4f} {:.4f}'.format(cov, rel))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "78 74 60 42 53 63 70 90 54 82\n85 69 76 53 70 59 82 95 60 67\n",
+            "output": "128.7400 0.7398\n"
+        },
+        {
+            "input": "60 42 53 68 70 90 54 82\n59 82 95 60 87 70 53 70\n",
+            "output": "-34.6250 -0.1681\n"
+        },
+        {
+            "input": "60 42 93 68 70 90 54 82\n90 53 70 59 62 55 60 87\n",
+            "output": "44.8750 0.2026\n"
+        },
+        {
+            "input": "45 70 33 75 70 56 74 7 99 24\n50 39 84 95 44 55 8 70 92 2\n",
+            "output": "146.8300 0.1806\n"
+        }
+    ],
+    "simple_desc": "求两次模拟考试的协方差和相关系数",
+    "difficulty": "2",
+    "tag": "协方差|相关系数",
+    "author": "Unknown"
+}

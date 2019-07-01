@@ -1,0 +1,29 @@
+{
+    "title": "混合矩和混合中心矩",
+    "desc": "### 题目描述\n\n现给定一组二维点坐标，请实现函数 `mixedMoment` 和 `mixedCentralMoment` 计算该组坐标的混合矩和混合中心矩。\n\n### 输入描述\n\n输入第一行为该组点坐标 x 坐标的值，第二行为该组点坐标 y 坐标的值，两两间用空格隔开。\n\n接下来有 k 行，每行为两个数值 k 和 l，表示要求 x 的 k 阶与 y 的 l 阶的混合矩和混合中心矩。\n\n### 输出描述\n\n输出 k 行，每行为两个数值表示 k+l 阶的混合矩和混合中心矩。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n8.82 7.96 7.13 5.15 0.9\n8.09 2.6 9.48 0.0 9.89\n1 1\n1 2\n2 1\n```\n\n```\n33.7086 -2.3153\n271.9737 -11.6404\n256.8051 20.8367\n```\n\n#### 样例2: 输入-输出\n\n```\n3.91 3.54 5.25 8.32 2.98 2.63 6.4 8.59\n3.11 9.49 8.35 7.34 2.02 6.63 1.78 2.14\n1 1\n2 2\n```\n\n```\n25.4865 -1.0853\n966.9461 35.9460\n```\n\n",
+    "templateCode": "def mixedMoment(data, k: int, l: int):\n    return  # TODO\n\n\ndef mixedCentralMoment(data, k: int, l: int):\n    return  # TODO\n\n\nx = map(float, input().split())\ny = map(float, input().split())\n\npoints = list(zip(x, y))\n\nwhile True:\n    try:\n        k, l = map(int, input().split())\n        print('{:.4f} {:.4f}'.format(\n            mixedMoment(points, k, l),\n            mixedCentralMoment(points, k, l)))\n    except EOFError:\n        break\n",
+    "sourceCode": "\n\ndef mixedMoment(data, k: int, l: int):\n    return sum(map(lambda d: (d[0]**k)*(d[1]**l), data)) / len(data)\n\n\ndef mixedCentralMoment(data, k: int, l: int):\n    x, y = zip(*data)\n    avgx = sum(x) / len(data)\n    avgy = sum(y) / len(data)\n    _data = list(map(lambda d: (d[0]-avgx, d[1]-avgy), data))\n    return mixedMoment(_data, k, l)\n\n\nx = map(float, input().split())\ny = map(float, input().split())\n\npoints = list(zip(x, y))\n\nwhile True:\n    try:\n        k, l = map(int, input().split())\n        print('{:.4f} {:.4f}'.format(\n            mixedMoment(points, k, l),\n            mixedCentralMoment(points, k, l)))\n    except EOFError:\n        break\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "8.82 7.96 7.13 5.15 0.9\n8.09 2.6 9.48 0.0 9.89\n1 1\n1 2\n2 1\n",
+            "output": "33.7086 -2.3153\n271.9737 -11.6404\n256.8051 20.8367\n"
+        },
+        {
+            "input": "3.91 3.54 5.25 8.32 2.98 2.63 6.4 8.59\n3.11 9.49 8.35 7.34 2.02 6.63 1.78 2.14\n1 1\n2 2\n",
+            "output": "25.4865 -1.0853\n966.9461 35.9460\n"
+        },
+        {
+            "input": "0.96 9.35 6.28 0.37 9.75 2.92 3.1 4.93 3.1 5.38 0.11 8.18 9.93 6.51 5.09 2.14\n1.48 5.5 5.32 8.37 4.82 6.43 7.17 3.19 1.65 2.35 9.59 5.65 7.63 8.21 8.02 4.6\n1 1\n2 1\n2 2\n",
+            "output": "27.3741 -0.0768\n196.4875 6.6015\n1234.8927 61.4229\n"
+        },
+        {
+            "input": "1.56 3.58 4.99\n6.73 4.92 8.45\n1 1\n3 3\n",
+            "output": "23.4260 0.8023\n27196.3113 7.4859\n"
+        }
+    ],
+    "simple_desc": "求一组二维点坐标的混合矩和混合中心矩",
+    "difficulty": "3",
+    "tag": "数据汇总-矩",
+    "author": "谢子聪"
+}

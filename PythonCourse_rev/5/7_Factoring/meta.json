@@ -1,0 +1,29 @@
+{
+    "title": "质因数分解",
+    "desc": "### 题目描述\n\n给定一个整数 n，对其进行质因数分解，输出分解后的式子。\n\n### 输入描述\n\n输入为一个整数 n（2 < n < 1000）\n\n### 输出描述\n\n输出分解后的式子，参考测试样例\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n60\n```\n\n```\n60=2*2*3*5\n```\n\n#### 样例2: 输入-输出\n\n```\n17\n```\n\n```\n17=17\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\n\n\ndef factoring(a):\n    f = []\n    i = 2\n    while a > 1:\n        while a > 1 and a % i == 0:\n            f.append(i)\n            a //= i\n        i += 1\n    return f\n\n\na = int(input())\nprint('{}={}'.format(a, '*'.join(map(str, factoring(a)))))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "60\n",
+            "output": "60=2*2*3*5\n"
+        },
+        {
+            "input": "17\n",
+            "output": "17=17\n"
+        },
+        {
+            "input": "100\n",
+            "output": "100=2*2*5*5\n"
+        },
+        {
+            "input": "32\n",
+            "output": "32=2*2*2*2*2\n"
+        }
+    ],
+    "simple_desc": "将整数进行质因数分解",
+    "difficulty": "2",
+    "tag": "流程控制",
+    "author": "张莉"
+}

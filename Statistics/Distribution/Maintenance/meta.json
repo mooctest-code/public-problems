@@ -1,0 +1,33 @@
+{
+    "title": "设备维护",
+    "desc": "### 题目描述\n\n设有 n 台同类型的设备，各台工作是相互独立的，发生故障的概率都是 0.01。现在需要指派一些人共同维护这 n 台设备。试计算至少需要多少维修工人才能保证每台设备的及时维修率大于 0.99。\n\n### 输入描述\n\n输入为设备数 n。\n\n### 输出描述\n\n输出至少需要的维修工人数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n80\n```\n\n```\n3\n```\n\n#### 样例2: 输入-输出\n\n```\n20\n```\n\n```\n2\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "\nfrom scipy import stats\n\nn = int(input())\n\nx = stats.binom(n, 0.01)\ni = 0\nwhile True:\n    if x.cdf(i) > 0.99:\n        break\n    i += 1\n\nprint(i)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "80\n",
+            "output": "3\n"
+        },
+        {
+            "input": "20\n",
+            "output": "2\n"
+        },
+        {
+            "input": "100\n",
+            "output": "4\n"
+        },
+        {
+            "input": "0\n",
+            "output": "0\n"
+        },
+        {
+            "input": "50\n",
+            "output": "3\n"
+        }
+    ],
+    "simple_desc": "计算需要多少人维护设备",
+    "difficulty": "2",
+    "tag": "概率分布-二项分布",
+    "author": "谢子聪"
+}

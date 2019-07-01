@@ -1,0 +1,29 @@
+{
+    "title": "特殊的素数",
+    "desc": "### 题目描述\n\n给定一个三位整数 x，输出离 x 最近且满足以下条件的3位整数：该数是素数，该数的个位数字与十位数字之和被10除所得余数恰好是该数的百位数字。例如，293是素数并且（3+9）被10除的余数是2，因此293是满足条件的三位素数。\n\n### 输入描述\n\n输入为一个三位整数 x\n\n### 输出描述\n\n输出离 x 最近且满足题目中描述的三位整数，我们保证这样的数只有一个\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n290\n```\n\n```\n293\n```\n\n#### 样例2: 输入-输出\n\n```\n100\n```\n\n```\n101\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\n\n\ndef is_prime(a):\n    if a < 2:\n        return False\n    if a % 2 == 0:\n        return a == 2\n    x = int(a ** 0.5)+1\n    for i in range(3, x, 2):\n        if a % i == 0:\n            return False\n    return True\n\n\ndef find(iterable, default):\n    for i in iterable:\n        s = list(map(int, str(i)))\n        if (s[2] + s[1]) % 10 == s[0] and is_prime(i):\n            return i\n    return default\n\n\nx = int(input())\n\nl = find(range(100, x), -2000)\nr = find(range(x+1, 1000), 2000)\n\ndl, dr = x - l, r - x\n\nprint(l if dl < dr else r)\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "290\n",
+            "output": "293\n"
+        },
+        {
+            "input": "100\n",
+            "output": "101\n"
+        },
+        {
+            "input": "999\n",
+            "output": "101\n"
+        },
+        {
+            "input": "600\n",
+            "output": "743\n"
+        }
+    ],
+    "simple_desc": "输出满足给定条件的素数",
+    "difficulty": "3",
+    "tag": "流程控制",
+    "author": "张莉"
+}

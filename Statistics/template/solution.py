@@ -1,0 +1,5 @@
+'''TESTCASE
+NoInput
+-
+NoInput
+'''

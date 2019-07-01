@@ -17,7 +17,11 @@ def get_problems(p):
 
 
 get_problems('.')
-problems.remove('./template')
+try:
+    problems.remove('./template')
+except ValueError:
+    pass
+
 if '-t' in sys.argv:
     problems = ['./template']
 

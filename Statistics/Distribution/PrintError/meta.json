@@ -1,0 +1,33 @@
+{
+    "title": "印刷错误",
+    "desc": "### 题目描述\n\n假设书本每页印刷错误的概率为 p，请分别使用二项分布和泊松逼近求一本 n 页的书印刷错误小于三页的概率。\n\n### 输入描述\n\n输入为浮点数 p（p \\< 0.05）和正整数 n（ n \\>= 20）。\n\n### 输出描述\n\n输出两行。第一行为使用二项分布得到的概率；第二行为使用泊松分布得到的概率。结果均保留六位小数。\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n0.001 1000\n```\n\n```\n0.919791\n0.919699\n```\n\n#### 样例2: 输入-输出\n\n```\n0.001 100\n```\n\n```\n0.999850\n0.999845\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "from scipy import stats\n\ninp = input().split()\np, n = float(inp[0]), int(inp[1])\n\nbi = stats.binom(n, p)\nprint('{:.6f}'.format(bi.cdf(2)))\n\npo = stats.poisson(n*p)\nprint('{:.6f}'.format(po.cdf(2)))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "0.001 1000\n",
+            "output": "0.919791\n0.919699\n"
+        },
+        {
+            "input": "0.001 100\n",
+            "output": "0.999850\n0.999845\n"
+        },
+        {
+            "input": "0.04 100\n",
+            "output": "0.232143\n0.238103\n"
+        },
+        {
+            "input": "0.004 362\n",
+            "output": "0.822056\n0.821782\n"
+        },
+        {
+            "input": "0.0001 100000\n",
+            "output": "0.002768\n0.002769\n"
+        }
+    ],
+    "simple_desc": "使用二项分布和泊松近似计算印刷错误的概率",
+    "difficulty": "2",
+    "tag": "概率分布",
+    "author": "Unknown"
+}

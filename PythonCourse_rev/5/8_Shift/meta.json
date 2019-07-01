@@ -1,0 +1,33 @@
+{
+    "title": "循环左移",
+    "desc": "### 题目描述\n\n给定正整数 n（1 < n < 100），验证命题：如果一个三位整数是 n 的倍数，则这个整数循环左移后得到的另两个三位数也是 n 的倍数。命题为真则输出“这是一个真命题”；命题为假则输出“这是一个假命题”。\n\n### 输入描述\n\n输入为一个整数 n\n\n### 输出描述\n\n若题目描述中的命题为真，输出 `这是一个真命题`，否则输出 `这是一个假命题`\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n37\n```\n\n```\n这是一个真命题\n```\n\n#### 样例2: 输入-输出\n\n```\n12\n```\n\n```\n这是一个假命题\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\ni = int(input())\ntrue = True\nfor j in range(2, 100):\n    k = i * j\n    if k < 99:\n        continue\n    if k > 999:\n        break\n    s = str(k)\n    if int(s[1:]+s[0]) % i or int(s[-1]+s[:-1]) % i:\n        true = False\n        break\n\nprint('这是一个{}命题'.format('真' if true else '假'))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "37\n",
+            "output": "这是一个真命题\n"
+        },
+        {
+            "input": "12\n",
+            "output": "这是一个假命题\n"
+        },
+        {
+            "input": "9\n",
+            "output": "这是一个真命题\n"
+        },
+        {
+            "input": "19\n",
+            "output": "这是一个假命题\n"
+        },
+        {
+            "input": "75\n",
+            "output": "这是一个假命题\n"
+        }
+    ],
+    "simple_desc": "验证某个数的倍数循环左移后仍然是这个数的倍数",
+    "difficulty": "3",
+    "tag": "流程控制",
+    "author": "张莉"
+}

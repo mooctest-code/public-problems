@@ -1,0 +1,29 @@
+{
+    "title": "咖啡名称提取",
+    "desc": "### 题目描述\n\n有一个咖啡信息列表，列表中每一项表示咖啡信息，由咖啡名称、 价格和一些其他非字母字符组成，请使用一个 get_coffee_name 函数将咖啡名字从该咖啡信息中提取出来。\n\n### 输入描述\n\n输入为一个咖啡信息列表，每一项包含咖啡名称、 价格和一些其他非字母字符\n\n### 输出描述\n\n输出为列表中每一项中的咖啡名称，两两间用空格隔开\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n_Americano30 /34Cappuccino ?Mocha35\n```\n\n```\nAmericano Cappuccino Mocha\n```\n\n### 提示\n\n咖啡名称只由英文字母组成\n",
+    "templateCode": "\ndef get_coffee_name(s: str):\n    return  # 完成这个函数，返回字符串 s 中的咖啡名称\n\n\nprint(*map(get_coffee_name, input().split()))\n",
+    "sourceCode": "'''TESTCASE\n\n\ndef get_coffee_name(s: str):\n    return ''.join(filter(str.isalpha, s))\n\n\nprint(*map(get_coffee_name, input().split()))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "_Americano30 /34Cappuccino ?Mocha35\n",
+            "output": "Americano Cappuccino Mocha\n"
+        },
+        {
+            "input": "/34Cappuccino Mocha35 ?Latte32\n",
+            "output": "Cappuccino Mocha Latte\n"
+        },
+        {
+            "input": "/34Cappuccino Americano34 ?Latte32\n",
+            "output": "Cappuccino Americano Latte\n"
+        },
+        {
+            "input": "32Latte43 Americano34\n",
+            "output": "Latte Americano\n"
+        }
+    ],
+    "simple_desc": "从字符串中提取英文字符",
+    "difficulty": "2",
+    "tag": "字符串|函数",
+    "author": "MOOCTEST"
+}

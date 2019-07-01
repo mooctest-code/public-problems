@@ -1,0 +1,29 @@
+{
+    "title": "字符串排序",
+    "desc": "### 题目描述\n\n将字符串按字符的 ASCII 码值顺序排序后输出。\n\n### 输入描述\n\n输入为一个字符串 S\n\n### 输出描述\n\n输出将 S 排序后的字符串\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\ndfacd\n```\n\n```\nacddf\n```\n\n",
+    "templateCode": "",
+    "sourceCode": "'''TESTCASE\ns = input()\nprint(''.join(sorted(s)))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "dfacd\n",
+            "output": "acddf\n"
+        },
+        {
+            "input": "python\n",
+            "output": "hnopty\n"
+        },
+        {
+            "input": "-=43bjBvgsa\n",
+            "output": "-34=Babgjsv\n"
+        },
+        {
+            "input": "dsa-34nNe\n",
+            "output": "-34Nadens\n"
+        }
+    ],
+    "simple_desc": "将原字符串按字符的ASCII码值顺序排序后输出。",
+    "difficulty": "1",
+    "tag": "字符串",
+    "author": "张莉"
+}
