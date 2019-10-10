@@ -1,7 +1,10 @@
+# deprecated
 from os import path, listdir
 import json
 
 problems = []
+
+
 def get_problems(p):
     for i in listdir(p):
         p2 = path.join(p, i)
@@ -10,7 +13,8 @@ def get_problems(p):
                 problems.append(p2)
             else:
                 get_problems(p2)
-        
+
+
 get_problems('.')
 
 for problem in problems:
@@ -64,9 +68,9 @@ for problem in problems:
         temp = ": " + ("输入-" if inps else "") + "输出\n\n"
         for i in range(len(outs)):
             replace += ("#### 样例" + str(i+1) + temp
-                    + ('```\n' + inps[i] + '```\n\n' if inps else '')
-                    + "```\n" + outs[i] + "```\n\n")
+                        + ('```\n' + inps[i] + '```\n\n' if inps else '')
+                        + "```\n" + outs[i] + "```\n\n")
         readme[rl] = replace
-    
+
     with open(path.join(problem, 'README.md'), 'w', encoding='utf-8') as f:
         f.write(''.join(readme))

@@ -2,7 +2,13 @@ from os import path, listdir
 import json
 import subprocess
 
+'''
+这个脚本用于将 meta.json 转换为 README.md 和 solution.py
+'''
+
 problems = []
+
+
 def get_problems(p):
     for i in listdir(p):
         p2 = path.join(p, i)
@@ -11,7 +17,8 @@ def get_problems(p):
                 problems.append(p2)
             else:
                 get_problems(p2)
-        
+
+
 get_problems('.')
 try:
     problems.remove('./template')

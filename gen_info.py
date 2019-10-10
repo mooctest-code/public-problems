@@ -3,6 +3,12 @@ import json
 import sys
 import subprocess
 
+'''
+该脚本从其所在目录嵌套查找所有题目，
+1. 若该题目不在当前题目信息表格中，则加入
+2. 若已存在且信息不一致，会将题目信息表格中的信息更新到题目 README 中
+'''
+
 problems = []
 
 
@@ -10,7 +16,8 @@ def get_problems(p):
     for i in listdir(p):
         p2 = path.join(p, i)
         if path.isdir(p2):
-            if 'meta.json' in listdir(p2):
+            p2list = listdir(p2)
+            if 'README.md' in p2list and 'solution.py' in p2list:
                 problems.append(p2)
             else:
                 get_problems(p2)

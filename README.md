@@ -2,27 +2,34 @@
 
 ## 当前情况
 
-您可以通过 [题目信息表格](probleminfo.csv) 和 [Python 学习路线图](http://www.iselab.cn/fds/#/resources) 查看当前的题目列表以及知识点分布。
+您可以通过 [题目信息表格](probleminfo.csv) 和 [Python 学习路线图](https://xxxzc.github.io/fds/#/resources) 查看当前的题目列表以及知识点分布。
 
 我们的题目将发布到 [code.mooctest.net](http://code.mooctest.net) 上。
 
 ### 题库说明
 
 ```
-check_run.py 测试题目和打包脚本
-gen_info.py 用于生成题目信息表格以及从表格更新信息到题目
-probleminfo.csv 题目信息表格
-
 template/ 出题模版
-res/ 一些资源文件
-
-BasicGrammar/ 基础语法题，包括输入输出、变量和运算符、流程控制和面向对象
-DataStructures/ 数据结构题，包括Python内置的数据结构和常用的数据结构
-BuiltInFunctions/ Python 内置全局函数题，包括面向数值和字符串的、可迭代对象的以及类和对象的
-BuiltInModules/ Python 内置模块题，包括一些常用的内置模块，如 math、datetime、collections 等
+PythonBasic/ Python基础
+	BasicGrammar/ 基础语法题，包括输入输出、变量和运算符、流程控制和面向对象
+	DataStructures/ 数据结构题，包括Python内置的数据结构和常用的数据结构
+	BuiltInFunctions/ 内置全局函数题
+	BuiltInModules/ 内置模块题，包括一些常用内置模块的使用
 Algorithms/ 算法题，使用 Python 实现的一些算法
-Unclassified/ 还未分类的题目
+DataScience/ 数据科学
+	Statistics/ 概率统计题，数据科学基础课程配套题，详见文件夹中的 README.md
+	NumPy/ NumPy 相关题目
+	Pandas/ Pandas 相关题目（待出）
+	
+Unclassified/ 未分类的题目
+
+probleminfo.csv 题目信息表格
+run.py 题目测试和打包脚本
+gen_info.py 用于生成题目信息表格以及从表格更新信息到题目的 README
+res/ 一些资源文件，其中的 .km 文件是思维导图，需要使用百度脑图打开
 ```
+
+[百度脑图桌面版](https://github.com/NaoTu/DesktopNaotu)
 
 ### 题目信息表格
 
@@ -37,13 +44,12 @@ Unclassified/ 还未分类的题目
 - `知识点` 为完成这道题主要使用到的知识，可能有多个，使用 `|` 隔开。每个知识点可能有两级，比如`字符串-格式化`
 
 - `慕码ID` 为题目的 ID。
-
-  1. 如果为一个数字，如 `1234` ，则表示是 [慕码教务管理平台](http://manage.mooctest.net/) 上的一个`测试案例ID`，您可以通过 `manage.mooctest.net/case/view/` + `测试案例ID` 来访问这个测试案例。
-
-  2. 如果形式如 `1234/5678`，则表示是 [慕码编程平台]() 上的一道题  `试卷/测试案例ID` ，您可以通过 `code.mooctest.net/#/exercise/edit/` + `试卷/测试案例ID`。
-
-  3. 上面 `试卷/测试案例ID` 中的 `测试案例ID` 也可以通过 1 中的方式访问。
-
+1. 如果为一个数字，如 `1234` ，则表示是 [慕码教务管理平台](http://manage.mooctest.net/) 上的一个`测试案例ID`，您可以通过 `manage.mooctest.net/case/view/` + `测试案例ID` 来访问这个测试案例。
+  
+2. 如果形式如 `1234/5678`，则表示是 [慕码编程平台]() 上的一道题  `试卷/测试案例ID` ，您可以通过 `code.mooctest.net/#/exercise/edit/` + `试卷/测试案例ID`。
+  
+3. 上面 `试卷/测试案例ID` 中的 `测试案例ID` 也可以通过 1 中的方式访问。
+  
 - `题目文件夹` 为该题在本题库中的存储位置。
 
 ## 参与进来

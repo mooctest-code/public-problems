@@ -1,0 +1,29 @@
+{
+    "title": "坐标点类",
+    "desc": "### 题目描述\n\n定义平面直接坐标系的坐标点类 Point，使用横坐标值 x 与纵坐标值 y 初始化，重载 \\- 运算，计算两个坐标点之间直线的欧式距离。\n\n两点之间欧式距离公式：`d = sqrt((x2 - x1)^2 + (y2 - y1)^2)`\n\n### 输入描述\n\n输入包含两行。每行为两个浮点数 x 和 y，表示一个坐标点的横坐标值和纵坐标值\n\n### 输出描述\n\n输出这两个坐标点间的直线欧式距离，结果保留两位小数\n\n### 测试样例\n\n#### 样例1: 输入-输出\n\n```\n3.0 4.0\n6.0 0\n```\n\n```\n5.00\n```\n\n",
+    "templateCode": "class Point:\n    # TODO 实现 __init__ 存储坐标\n\n    # TODO 实现 __sub__ 计算返回两个坐标的直线欧式距离\n    pass\n\n\nx1, y1 = map(float, input().split())\nx2, y2 = map(float, input().split())\n\np1 = Point(x1, y1)\np2 = Point(x2, y2)\n\nprint('{:.2f}'.format(p2 - p1))\n",
+    "sourceCode": "'''TESTCASE\n\n\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n\n    def __sub__(self, rhs):\n        return ((self.x-rhs.x)**2+(self.y-rhs.y)**2)**0.5\n\n\nx1, y1 = map(float, input().split())\nx2, y2 = map(float, input().split())\n\np1 = Point(x1, y1)\np2 = Point(x2, y2)\n\nprint('{:.2f}'.format(p2 - p1))\n",
+    "lang": "Python3",
+    "testCases": [
+        {
+            "input": "3.0 4.0\n6.0 0\n",
+            "output": "5.00\n"
+        },
+        {
+            "input": "1.4 -2.0\n1.5 4.2\n",
+            "output": "6.20\n"
+        },
+        {
+            "input": "-1 1.2\n-3.2 5\n",
+            "output": "4.39\n"
+        },
+        {
+            "input": "0 0\n0 0\n",
+            "output": "0.00\n"
+        }
+    ],
+    "simple_desc": "实现坐标点类并重载 - 运算符",
+    "difficulty": "2",
+    "tag": "类和对象",
+    "author": "张莉"
+}

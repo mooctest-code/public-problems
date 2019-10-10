@@ -1,5 +1,0 @@
-'''TESTCASE
-NoInput
--
-NoInput
-'''
