@@ -1,15 +1,15 @@
 题目名,简单题目描述,难度,知识点,作者,慕码ID,题目文件夹
 特殊的n位数,给定位数n，求满足一定条件的n位数,3,深度优先|DFS|函数-递归,MOOCTEST,1706,Algorithms/DFS/43_Spec9-digitNumber
-计数排序,实现计数排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Counting
-归并排序,实现归并排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Merge
-希尔排序,实现希尔排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Shell
-快速排序,实现快速排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Quick
-冒泡排序,实现冒泡排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Bubble
-桶排序,实现桶排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Bucket
-堆排序,实现堆排序,3,排序算法,匿名,Unknown,Algorithms/Sort/Heap
-插入排序,实现插入排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Insertion
-基数排序,实现基数排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Radix
-选择排序,实现选择排序,2,排序算法,匿名,Unknown,Algorithms/Sort/Selection
+计数排序,实现计数排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Counting
+归并排序,实现归并排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Merge
+希尔排序,实现希尔排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Shell
+快速排序,实现快速排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Quick
+冒泡排序,实现冒泡排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Bubble
+桶排序,实现桶排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Bucket
+堆排序,实现堆排序,3,排序算法,Unknown,Unknown,Algorithms/Sort/Heap
+插入排序,实现插入排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Insertion
+基数排序,实现基数排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Radix
+选择排序,实现选择排序,2,排序算法,Unknown,Unknown,Algorithms/Sort/Selection
 分数序列求和,计算一个分数数列的前n项和,2,数学问题,MOOCTEST,1672,Algorithms/Math/106_FractionalSummation
 欧拉数,输出与n互质的小于n的正整数个数,3,数学问题|数值运算,MOOCTEST,1674,Algorithms/Math/28_Euler
 选猴王,一群猴子做成一圈按照一定方法选择猴王,2,数学问题,MOOCTEST,1676,Algorithms/Math/46_SelectMonkeyKing
@@ -23,20 +23,20 @@
 逆解最大公约数与最小公倍数,给你一个最大公约数和最小公倍数，要你求一组数,3,数学问题,MOOCTEST,Unknown,Algorithms/Math/26_InverseGCD&LCM
 斐波那契数,求第k个斐波那契数,1,数学问题-常见数列,RUNOOB,1692,Algorithms/Math/6_Fibonacci
 默尼森数,满足 M=2^p-1 的素数 M,3,数学问题-常见数列,MOOCTEST,1697,Algorithms/Math/68_MonisenNum
-统计有特征整数的和,被3除余1并且被5除余3的所有整数的和,1,数学问题|流程控制-循环,匿名,1699,Algorithms/Math/94_SumCharacteristicIntegers
+统计有特征整数的和,被3除余1并且被5除余3的所有整数的和,1,数学问题|流程控制-循环,Unknown,1699,Algorithms/Math/94_SumCharacteristicIntegers
 变态超级楼梯,你可以任意走上n级台阶，求走上n级台阶的不同走法,2,数学问题,MOOCTEST,1700,Algorithms/Math/44_SuperStairs
 角谷猜想,输出角谷猜想的演算过程,2,字符串-格式化|流程控制|数学问题,MOOCTEST,1701,Algorithms/Math/96_KakuguConjecture
 桃子问题,有一些猴子分桃子，求原来最少有多少个桃子,2,数学问题,MOOCTEST,1702,Algorithms/Math/24_Peach
-判断素数,判断一个数是否为素数,2,数学问题,匿名,1704,Algorithms/Math/2_Prime
+判断素数,判断一个数是否为素数,2,数学问题,Unknown,1704,Algorithms/Math/2_Prime
 求Pi的值,根据莱布尼茨级数公式求π的近似值,2,数学问题,MOOCTEST,1705,Algorithms/Math/100_FindPI
 数字组成,给你一个整数数列，求能够组成不同两位数的个数,3,数学问题-组合数学,MOOCTEST,1708,Algorithms/Math/59_NumComposition
 组合数的奇偶性,求组合数的奇偶性,2,数学问题-组合数学,MOOCTEST,1709,Algorithms/Math/34_ParityCombination
-阶乘除法,将整数 k 分解为k=n!/m! 的形式,3,数学问题,匿名,1710,Algorithms/Math/39_FactorialDivision
+阶乘除法,将整数 k 分解为k=n!/m! 的形式,3,数学问题,Unknown,1710,Algorithms/Math/39_FactorialDivision
 分拆素数和,将一个偶数分拆成两个素数的不同方法,3,数学问题,MOOCTEST,1711,Algorithms/Math/37_SplitPrimes
 兔子繁殖,n个月后有多少只兔子？,2,数学问题-常见数列,RUNOOB,1713,Algorithms/Math/11_RabbitReprod
 素数判断,判断一个数是否是素数,2,数学问题,RUNOOB,1714,Algorithms/Math/12_JudgePrime
 正整数求和,求用不超过 N 的整数求和得到 N 的方法数,3,动态规划|函数-递归,MOOCTEST,1685,Algorithms/DynamicProgramming/32_SumPosInt
-球迷购票问题,有几种排队方式可使售票处不致出现找不出钱,3,动态规划,匿名,1688,Algorithms/DynamicProgramming/47_FansTicket
+球迷购票问题,有几种排队方式可使售票处不致出现找不出钱,3,动态规划,Unknown,1688,Algorithms/DynamicProgramming/47_FansTicket
 青蛙跳台阶,一只青蛙跳上n级台阶有多少种方法？,2,动态规划,MOOCTEST,1695,Algorithms/DynamicProgramming/25_FrogSteps
 时间戳格式化,将时间戳表示为时间,1,datetime|日期时间,谢子聪,2880/1604,Unclassified/PythonCourse_rev/6/1_Time
 统计单词出现次数,统计字符串中每个单词的出现次数,2,字符串|列表|排序,张莉,Unknown,Unclassified/PythonCourse_rev/6/7_CountStr
@@ -119,7 +119,7 @@ BMI指数中国标准,实现 ChinaBMI 子类，重写父类方法，输出相关
 多项式乘法,多项式相乘,3,列表|NumPy,MOOCTEST,2795/1565,PythonBasic/DataStructures/ListandTuple/3_PolynomialMultiplication
 列表元素处理,对列表进行一些处理,2,列表,MOOCTEST,2795/1574,PythonBasic/DataStructures/ListandTuple/79_ListElementProcessing
 增加数据,append() 的使用,1,列表,顾宇,审核中,PythonBasic/DataStructures/ListandTuple/Append
-输出星期几,输出一周中某一天的英文表示,1,列表|日期时间,匿名,1696,PythonBasic/DataStructures/ListandTuple/81_OutputWeekday
+输出星期几,输出一周中某一天的英文表示,1,列表|日期时间,Unknown,1696,PythonBasic/DataStructures/ListandTuple/81_OutputWeekday
 整理运动会成绩单2,整理运动会成绩并格式化输出,1,字符串-格式化,刘锦涛,2795/1577,PythonBasic/DataStructures/ListandTuple/5-1_sport
 列表复制,深拷贝列表,1,列表,RUNOOB,2795/1566,PythonBasic/DataStructures/ListandTuple/7_ListCopy
 矩阵相加,两个矩阵对应位置元素相加,2,列表|矩阵,RUNOOB,2795/1570,PythonBasic/DataStructures/ListandTuple/44_MatrixAddition
@@ -156,7 +156,7 @@ exec,利用 exec() 执行储存在字符串或文件中的 Python 语句,1,内�
 回文数,判断数字是否为回文数,1,内置全局函数|字符串,MOOCTEST,1703,PythonBasic/BuiltInFunctions/NumAndStr/1_Plalindrome
 eval,使用 eval() 计算表达式,1,内置全局函数|编译执行,张舒,2948/1657,PythonBasic/BuiltInFunctions/NumAndStr/Eval
 ord,使用 ord() 将字符转换为 ASCII 数值,1,内置全局函数-数值和字符串|字符串-字符编码,谢子聪,2948/1659,PythonBasic/BuiltInFunctions/NumAndStr/ord
-HelloWorld,输出 Hello World,1,输入输出,匿名,2785/1515,PythonBasic/BasicGrammar/IO/0_HelloWorld
+HelloWorld,输出 Hello World,1,输入输出,Unknown,2785/1515,PythonBasic/BasicGrammar/IO/0_HelloWorld
 读取和输出多行数据,多行数据的读取和输出,2,输入输出|流程控制-循环|流程控制-异常处理,谢子聪,2785/1519,PythonBasic/BasicGrammar/IO/4_MultiLine
 读取和输出一个数据,类型转换的读取和输出,1,输入输出|类型转换|字符串-格式化,谢子聪,2785/1516,PythonBasic/BasicGrammar/IO/1_BasicType
 读取和输出多行多列数据,矩阵和不定长数组的读取和输出,3,输入输出|流程控制-循环|矩阵|高阶函数|流程控制-异常处理,谢子聪,2785/1520,PythonBasic/BasicGrammar/IO/5_Matrix
@@ -169,7 +169,7 @@ BMI指数中国标准,实现 ChinaBMI 子类，重写父类方法，输出相关
 试一试自定义类,设计一个学生类并实现打印方法,2,面向对象,MOOCTEST,1680,PythonBasic/BasicGrammar/OOP/17_CustomizedClass
 不可变的默认参数,修改默认参数，使得输出正确,1,函数-参数传递,谢子聪,Unknown,PythonBasic/BasicGrammar/Function/decorator
 每个占一行,使用不定长参数实现每行输出一个参数,1,函数-参数传递,谢子聪,Unknown,PythonBasic/BasicGrammar/Function/VarLengthParam
-lambda函数,创建lambda匿名函数,2,函数-lambda|匿名函数,RUNOOB,2793/1563,PythonBasic/BasicGrammar/Function/49_LambdaFunc
+lambda函数,创建lambdaUnknown函数,2,函数-lambda|Unknown函数,RUNOOB,2793/1563,PythonBasic/BasicGrammar/Function/49_LambdaFunc
 递推年龄,使用递归的思想求出年龄,1,函数-递归|流程控制-循环,RUNOOB,2793/1562,PythonBasic/BasicGrammar/Function/28_RecurrenceAge
 计算糖果,已知一些条件，计算三个人每个人手里的糖果数,1,数值运算|条件判断,MOOCTEST,2786/1529,PythonBasic/BasicGrammar/Number/30_Candy
 整数表示,将一个整数用内存中存储方式表示,3,数值运算-位运算|字符串-格式化,MOOCTEST,1669,PythonBasic/BasicGrammar/Number/42_PresentInteger
@@ -193,10 +193,10 @@ lambda函数,创建lambda匿名函数,2,函数-lambda|匿名函数,RUNOOB,2793/1
 几个九,给定一个数字，问多少个9组成的数字能够被整除,1,数值运算|流程控制,RUNOOB,2788/1535,PythonBasic/BasicGrammar/Control/85_NumberofNine
 企业奖金发放,给定企业月利润，根据规则计算奖金,1,流程控制|数值运算,RUNOOB,2788/1533,PythonBasic/BasicGrammar/Control/2_EnterpriseBonuses
 一元人民币兑换方案,统计一元人民币换成一分、两分和五分的所有兑换方案个数,2,流程控制,MOOCTEST,2788/1544,PythonBasic/BasicGrammar/Control/108_RMB
-求阶乘和,求前 n 个树每个数的阶乘和,2,数值运算|流程控制-循环,匿名,1690,PythonBasic/BasicGrammar/Control/99_SeekFactorSum
+求阶乘和,求前 n 个树每个数的阶乘和,2,数值运算|流程控制-循环,Unknown,1690,PythonBasic/BasicGrammar/Control/99_SeekFactorSum
 爱因斯坦台阶问题,一道很简单的数(xun)学(huan)题,1,流程控制,MOOCTEST,2788/1537,PythonBasic/BasicGrammar/Control/105_EinsteinStairs
 水仙花数2,输出最近的水仙花数,2,流程控制|数值运算,RUNOOB,2788/1534,PythonBasic/BasicGrammar/Control/13_Narcissus
-计算各位数字和的特征,计算有多少个数其各位数字和能被5整除,2,流程控制|数值运算,匿名,2788/1542,PythonBasic/BasicGrammar/Control/103_SumEachNum
+计算各位数字和的特征,计算有多少个数其各位数字和能被5整除,2,流程控制|数值运算,Unknown,2788/1542,PythonBasic/BasicGrammar/Control/103_SumEachNum
 累乘,计算 n!,1,数值运算|流程控制-循环,MOOCTEST,1707,PythonBasic/BasicGrammar/Control/90_Multiplication
 成绩等级判断,根据方案对成绩进行分级,2,流程控制|列表,MOOCTEST,2788/1538,PythonBasic/BasicGrammar/Control/91_GradeLevel
 简单排序,给三个数排序,1,流程控制-条件判断,RUNOOB,2788/1532,PythonBasic/BasicGrammar/Control/5_SimpleSort
@@ -211,7 +211,7 @@ lambda函数,创建lambda匿名函数,2,函数-lambda|匿名函数,RUNOOB,2793/1
 Weekday,判断是周几,1,datetime|日期时间,谢子聪,2880/1607,PythonBasic/BuiltInModules/datetime/4_Weekday
 时间差,计算两个日期之间相差多少天和小时,2,datetime|日期时间,谢子聪,2880/1606,PythonBasic/BuiltInModules/datetime/3_TimeDelta
 是第几天,计算某一天是该年的第几天,1,datetime|日期时间,谢子聪,2880/1605,PythonBasic/BuiltInModules/datetime/2_WhatDayIsIt
-返回最小的大于或等于n的整数,使用 ceil(n) 返回最小的 >= n 的整数,1,数学基础|math,匿名,2881/1608,PythonBasic/BuiltInModules/math/Ceil
+返回最小的大于或等于n的整数,使用 ceil(n) 返回最小的 >= n 的整数,1,数学基础|math,Unknown,2881/1608,PythonBasic/BuiltInModules/math/Ceil
 求绝对值,使用 fabs() 计算绝对值,1,数学基础|math,顾宇,2881/1610,PythonBasic/BuiltInModules/math/Fabs
 求阶乘,使用 factorial() 求阶乘,1,数学基础|math,顾宇,2881/1611,PythonBasic/BuiltInModules/math/Factorial
 求平方根,使用 math.sqrt() 求平方根,1,数学基础|math,顾宇,2881/1615,PythonBasic/BuiltInModules/math/Sqrt
@@ -247,52 +247,52 @@ uniform,使用random模块生成随机数,1,随机数|random,RUNOOB,1670,PythonB
 正则表达式的sub函数,使用正则表达式的 sub() 处理电话号码,2,正则表达式|re,黎宇,2883/1625,PythonBasic/BuiltInModules/re/re3
 正则表达式的search函数,使用正则表达式的 search() 得到匹配位置,2,正则表达式|re,黎宇,2883/1624,PythonBasic/BuiltInModules/re/re2
 正则表达式中的findall函数,使用正则表达式的 findall() 查找数字,2,正则表达式|re,黎宇,2883/1627,PythonBasic/BuiltInModules/re/re5
-人数最多的区间,得到一个数组的众数,2,数据汇总|列表|统计,谢子聪,Unknown,DataScience/Statistics/DataBasic/Mode
-四分位数,求一组数的四分位数,2,数据汇总|列表|统计,谢子聪,Unknown,DataScience/Statistics/DataBasic/Quantile
-全距和内距,计算一组数的全距和内距,2,数据汇总|列表|统计,谢子聪,Unknown,DataScience/Statistics/DataBasic/Distance
-构建数组,使用 numpy 构建 ndarray,1,numpy,刘锦涛,Unknown,DataScience/Statistics/DataBasic/1_ndarray
-ndarray形状操作,学习各种 ndarray 形状操作,2,numpy,刘锦涛,Unknown,DataScience/Statistics/DataBasic/3_shape
-偏差,计算一组数的偏差平方和、方差和标准差,2,数据汇总|列表|数组,谢子聪,Unknown,DataScience/Statistics/DataBasic/Difference
-ndarray的算术运算,使用 ndarray 进行一些简单的算术运算,2,numpy,刘锦涛,Unknown,DataScience/Statistics/DataBasic/2_operation
-平均数,计算一组数的平均数,2,数据汇总|列表|统计,谢子聪,Unknown,DataScience/Statistics/DataBasic/Average
-确诊率,求某试剂的确诊率,3,概率-贝叶斯公式,匿名,Unknown,DataScience/Statistics/Probability/Morbidity
-仓库取元件,从仓库中取出次品的概率,2,概率-贝叶斯公式,Unknown,Unknown,DataScience/Statistics/Probability/Artifacts
-蒙特卡罗法求圆周率,使用蒙特卡罗法求圆周率,2,概率,谢子聪,Unknown,DataScience/Statistics/Probability/MonteCarloPi
-摸球问题,计算有无放回摸球问题的概率,2,概率-条件概率,谢子聪,Unknown,DataScience/Statistics/Probability/MoBall
-命中靶子,有 n 个人射击靶子，求命中率,2,概率-独立性,匿名,Unknown,DataScience/Statistics/Probability/HitTarget
-模拟抛骰子,简单模拟抛骰子,2,概率,谢子聪,Unknown,DataScience/Statistics/Probability/TossDice
-小麦种子,使用全概率公式求解小麦种子问题,2,概率-全概率公式,谢子聪,Unknown,DataScience/Statistics/Probability/WheatSeed
-透镜未被打破的概率,计算透镜未被打破的概率,2,概率-乘法公式,谢子聪,Unknown,DataScience/Statistics/Probability/Lens
-模拟抛硬币,简单模拟抛硬币,2,概率,谢子聪,Unknown,DataScience/Statistics/Probability/TossCoin
-排列组合公式,实现排列组合公式,2,排列组合,谢子聪,Unknown,DataScience/Statistics/Probability/AandC
-集火,判断集火是否消灭了目标,2,概率-独立性,谢子聪,Unknown,DataScience/Statistics/Probability/CollectFire
-加球后摸球问题,往一个袋子加球后，摸到白球的概率,2,概率-全概率公式,谢子聪,Unknown,DataScience/Statistics/Probability/AddBall
-射击圆盘,求射击圆盘指定范围的概率,3,概率-随机变量,Unknown,Unknown,DataScience/Statistics/Distribution/ShootDisc
-高尔顿钉板,计算高尔顿钉板概率,2,概率分布,谢子聪,Unknown,DataScience/Statistics/Distribution/GaltonBoard
-电子元件寿命,求寿命服从指数分布的电子元件的损耗概率,2,概率分布,Unknown,Unknown,DataScience/Statistics/Distribution/ServiceLife
-印刷错误,使用二项分布和泊松近似计算印刷错误的概率,2,概率分布,Unknown,Unknown,DataScience/Statistics/Distribution/PrintError
-瓶装汽水,求瓶装汽水的均值和标准差,3,概率分布,Unknown,Unknown,DataScience/Statistics/Distribution/SodaWater
-温度调节器,求温度调节器定的温度,2,概率分布,Unknown,Unknown,DataScience/Statistics/Distribution/Thermostat
-通过的信号灯,汽车通过的信号灯的概率分布律,2,概率-随机变量,Unknown,Unknown,DataScience/Statistics/Distribution/PassLamp
-遇到的信号灯,汽车遇到的信号灯的组数,2,概率分布-几何分布,Unknown,Unknown,DataScience/Statistics/Distribution/MeetLamp
-次品检验,使用二项分布和超几何分布求次品概率,3,概率分布,Unknown,Unknown,DataScience/Statistics/Distribution/Inferior
-设备维护,计算需要多少人维护设备,2,概率分布,谢子聪,Unknown,DataScience/Statistics/Distribution/Maintenance
-分层抽样,分层抽样给定数据集,2,数据抽样|pandas,谢子聪,Unknown,DataScience/Statistics/Thermodynamics/Stratified
-最佳分割点,计算不同分割下的分类条件熵,3,决策树|信息熵-条件熵,谢子聪,Unknown,DataScience/Statistics/Thermodynamics/CondEntropy
-加载数据集,加载 sklearn 中自带的数据集,1,sklearn-datasets|数据集,谢子聪,Unknown,DataScience/Statistics/Thermodynamics/Dataset
-分类信息熵,计算数据集中分类的信息熵,2,决策树-信息熵,谢子聪,Unknown,DataScience/Statistics/Thermodynamics/Entropy
-数据集抽样,计算抽样分布之间的相似度,2,数据抽样|信息熵-相对熵,谢子聪,Unknown,DataScience/Statistics/Thermodynamics/RelEntropy
-求未知概率值,已知概率根据独立性求未知概率,3,概率-概率分布,Unknown,Unknown,DataScience/Statistics/Geometry/UnknownProb
-二维均匀分布,给定二维均匀分布，求二重积分,3,概率-概率分布|积分,Unknown,Unknown,DataScience/Statistics/Geometry/Uniform2
-P范数,实现 P-范数 的计算,2,数据汇总-P范数,Unknown,Unknown,DataScience/Statistics/Geometry/PNorm
-矩的计算,计算数据的原点矩和中心矩,2,数据汇总-矩,Unknown,Unknown,DataScience/Statistics/Geometry/Moment
-模拟考,求两次模拟考试的协方差和相关系数,2,协方差|相关系数,Unknown,Unknown,DataScience/Statistics/Geometry/MockExam
-距离度量,使用 P范数 度量两个数据的距离,2,数据汇总-距离度量,Unknown,Unknown,DataScience/Statistics/Geometry/Distance
-摸两次球,求从袋中摸两次球的联合概率,3,概率-联合概率|随机变量,Unknown,Unknown,DataScience/Statistics/Geometry/Mo2Ball
-余弦相似度,计算两个数据的余弦相似度,2,数据度量-余弦相似度,谢子聪,Unknown,DataScience/Statistics/Geometry/CosineSim
-偏度和峰度,计算一组数据的偏度和峰度,2,数据汇总-形态度量,Unknown,Unknown,DataScience/Statistics/Geometry/Morphometric
-混合矩和混合中心矩,求一组二维点坐标的混合矩和混合中心矩,3,数据汇总-矩,谢子聪,Unknown,DataScience/Statistics/Geometry/MixedMoment
-构建数组,使用 numpy 构建 ndarray,1,numpy,刘锦涛,Unknown,DataScience/NumPy/1_ndarray
-ndarray形状操作,学习各种 ndarray 形状操作,2,numpy,刘锦涛,Unknown,DataScience/NumPy/3_shape
-ndarray的算术运算,使用 ndarray 进行一些简单的算术运算,2,numpy,刘锦涛,Unknown,DataScience/NumPy/2_operation
-加载数据集,加载 sklearn 中自带的数据集,1,sklearn-datasets|数据集,谢子聪,Unknown,DataScience/Pandas/Dataset
+人数最多的区间,得到一个数组的众数,2,数据汇总|列表|统计,谢子聪,3097/1753,DataScience/Statistics/DataBasic/Mode
+四分位数,求一组数的四分位数,2,数据汇总|列表|统计,谢子聪,3097/1754,DataScience/Statistics/DataBasic/Quantile
+全距和内距,计算一组数的全距和内距,2,数据汇总|列表|统计,谢子聪,3097/1752,DataScience/Statistics/DataBasic/Distance
+构建数组,使用 numpy 构建 ndarray,1,numpy,刘锦涛,3097/1746,DataScience/Statistics/DataBasic/1_ndarray
+ndarray形状操作,学习各种 ndarray 形状操作,2,numpy,刘锦涛,3097/1748,DataScience/Statistics/DataBasic/3_shape
+偏差,计算一组数的偏差平方和、方差和标准差,2,数据汇总|列表|数组,谢子聪,3097/1751,DataScience/Statistics/DataBasic/Difference
+ndarray的算术运算,使用 ndarray 进行一些简单的算术运算,2,numpy,刘锦涛,3097/1747,DataScience/Statistics/DataBasic/2_operation
+平均数,计算一组数的平均数,2,数据汇总|列表|统计,谢子聪,3097/1755,DataScience/Statistics/DataBasic/Average
+确诊率,求某试剂的确诊率,3,概率-贝叶斯公式,谢子聪,3098/1765,DataScience/Statistics/Probability/Morbidity
+仓库取元件,从仓库中取出次品的概率,2,概率-贝叶斯公式,Unknown,3098/1764,DataScience/Statistics/Probability/Artifacts
+蒙特卡罗法求圆周率,使用蒙特卡罗法求圆周率,2,概率,谢子聪,3098/1758,DataScience/Statistics/Probability/MonteCarloPi
+摸球问题,计算有无放回摸球问题的概率,2,概率-条件概率,谢子聪,3098/1761,DataScience/Statistics/Probability/MoBall
+命中靶子,有 n 个人射击靶子，求命中率,2,概率-独立性,谢子聪,3098/1766,DataScience/Statistics/Probability/HitTarget
+模拟抛骰子,简单模拟抛骰子,2,概率,谢子聪,3098/1757,DataScience/Statistics/Probability/TossDice
+小麦种子,使用全概率公式求解小麦种子问题,2,概率-全概率公式,谢子聪,3098/1763,DataScience/Statistics/Probability/WheatSeed
+透镜未被打破的概率,计算透镜未被打破的概率,2,概率-乘法公式,谢子聪,3098/1760,DataScience/Statistics/Probability/Lens
+模拟抛硬币,简单模拟抛硬币,2,概率,谢子聪,3098/1756,DataScience/Statistics/Probability/TossCoin
+排列组合公式,实现排列组合公式,2,排列组合,谢子聪,3098/1759,DataScience/Statistics/Probability/AandC
+集火,判断集火是否消灭了目标,2,概率-独立性,谢子聪,3098/1767,DataScience/Statistics/Probability/CollectFire
+加球后摸球问题,往一个袋子加球后，摸到白球的概率,2,概率-全概率公式,谢子聪,3098/1762,DataScience/Statistics/Probability/AddBall
+射击圆盘,求射击圆盘指定范围的概率,3,概率-随机变量,谢子聪,3120/1778,DataScience/Statistics/Distribution/ShootDisc
+高尔顿钉板,计算高尔顿钉板概率,2,概率分布,谢子聪,3120/1781,DataScience/Statistics/Distribution/GaltonBoard
+电子元件寿命,求寿命服从指数分布的电子元件的损耗概率,2,概率分布,谢子聪,3120/1785,DataScience/Statistics/Distribution/ServiceLife
+印刷错误,使用二项分布和泊松近似计算印刷错误的概率,2,概率分布,谢子聪,3120/1782,DataScience/Statistics/Distribution/PrintError
+瓶装汽水,求瓶装汽水的均值和标准差,3,概率分布,谢子聪,3120/1787,DataScience/Statistics/Distribution/SodaWater
+温度调节器,求温度调节器定的温度,2,概率分布,谢子聪,3120/1786,DataScience/Statistics/Distribution/Thermostat
+通过的信号灯,汽车通过的信号灯的概率分布律,2,概率-随机变量,谢子聪,3120/1779,DataScience/Statistics/Distribution/PassLamp
+遇到的信号灯,汽车遇到的信号灯的组数,2,概率分布-几何分布,谢子聪,3120/1783,DataScience/Statistics/Distribution/MeetLamp
+次品检验,使用二项分布和超几何分布求次品概率,3,概率分布,谢子聪,3120/1784,DataScience/Statistics/Distribution/Inferior
+设备维护,计算需要多少人维护设备,2,概率分布,谢子聪,3120/1780,DataScience/Statistics/Distribution/Maintenance
+分层抽样,分层抽样给定数据集,2,数据抽样|pandas,谢子聪,3165/1809,DataScience/Statistics/Thermodynamics/Stratified
+最佳分割点,计算不同分割下的分类条件熵,3,决策树|信息熵-条件熵,谢子聪,3165/1807,DataScience/Statistics/Thermodynamics/CondEntropy
+加载数据集,加载 sklearn 中自带的数据集,1,sklearn-datasets|数据集,谢子聪,3165/1805,DataScience/Statistics/Thermodynamics/Dataset
+分类信息熵,计算数据集中分类的信息熵,2,决策树-信息熵,谢子聪,3165/1806,DataScience/Statistics/Thermodynamics/Entropy
+数据集抽样,计算抽样分布之间的相似度,2,数据抽样|信息熵-相对熵,谢子聪,3165/1808,DataScience/Statistics/Thermodynamics/RelEntropy
+求未知概率值,已知概率根据独立性求未知概率,3,概率-概率分布,谢子聪,3154/1798,DataScience/Statistics/Geometry/UnknownProb
+二维均匀分布,给定二维均匀分布，求二重积分,3,概率-概率分布|积分,谢子聪,3154/1799,DataScience/Statistics/Geometry/Uniform2
+P范数,实现 P-范数 的计算,2,数据汇总-P范数,谢子聪,3154/1802,DataScience/Statistics/Geometry/PNorm
+矩的计算,计算数据的原点矩和中心矩,2,数据汇总-矩,谢子聪,3154/1795,DataScience/Statistics/Geometry/Moment
+模拟考,求两次模拟考试的协方差和相关系数,2,协方差|相关系数,谢子聪,3154/1801,DataScience/Statistics/Geometry/MockExam
+距离度量,使用 P范数 度量两个数据的距离,2,数据汇总-距离度量,谢子聪,3154/1803,DataScience/Statistics/Geometry/Distance
+摸两次球,求从袋中摸两次球的联合概率,3,概率-联合概率|随机变量,谢子聪,3154/1797,DataScience/Statistics/Geometry/Mo2Ball
+余弦相似度,计算两个数据的余弦相似度,2,数据度量-余弦相似度,谢子聪,3154/1804,DataScience/Statistics/Geometry/CosineSim
+偏度和峰度,计算一组数据的偏度和峰度,2,数据汇总-形态度量,谢子聪,3154/1800,DataScience/Statistics/Geometry/Morphometric
+混合矩和混合中心矩,求一组二维点坐标的混合矩和混合中心矩,3,数据汇总-矩,谢子聪,3154/1796,DataScience/Statistics/Geometry/MixedMoment
+构建数组,使用 numpy 构建 ndarray,1,numpy,刘锦涛,3097/1746,DataScience/NumPy/1_ndarray
+ndarray形状操作,学习各种 ndarray 形状操作,2,numpy,刘锦涛,3097/1748,DataScience/NumPy/3_shape
+ndarray的算术运算,使用 ndarray 进行一些简单的算术运算,2,numpy,刘锦涛,3097/1747,DataScience/NumPy/2_operation
+加载数据集,加载 sklearn 中自带的数据集,1,sklearn-datasets|数据集,谢子聪,3165/1805,DataScience/Pandas/Dataset
