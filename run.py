@@ -51,7 +51,7 @@ fromInFile = args.input
 myprint('Load solution.py and testcases')
 with open(path.join(problem, 'solution.py'), 'r', encoding='utf-8') as f:
     firstline = f.readline()  # '''TESTCASE
-    if not fromInFile and firstline != "'''TESTCASE\n":
+    if not fromInFile or firstline != "'''TESTCASE\n":
         myprint('Not find testcase in solution.py')
         fromInFile = True
     else:
